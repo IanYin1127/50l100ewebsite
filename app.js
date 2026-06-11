@@ -321,11 +321,20 @@ function renderSchema() {
   `).join("");
 }
 
+function applySearch() {
+  state.q = el("globalSearch").value;
+  render();
+}
+
 function bindEvents() {
   el("globalSearch").addEventListener("input", (e) => {
     state.q = e.target.value;
     render();
   });
+  el("globalSearch").addEventListener("keydown", (e) => {
+    if (e.key === "Enter") applySearch();
+  });
+  el("searchButton").addEventListener("click", applySearch);
   el("clearSearch").addEventListener("click", () => {
     state.q = "";
     el("globalSearch").value = "";
