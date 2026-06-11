@@ -4,6 +4,7 @@ const state = {
   industry: "全部",
   subIndustry: "全部",
   level: "全部",
+  policyDept: "全部",
   view: "cards",
 };
 
@@ -43,6 +44,7 @@ const universityOrder = [
 
 const universityRank = new Map(universityOrder.map((name, index) => [normalizeUniversityName(name), index]));
 const resources = sortResources(data.resources || []);
+const policies = data.policies || [];
 
 const fields = [
   ["平台名称", "平台或中心名称"],
@@ -149,6 +151,7 @@ function initFilters() {
   setOptions(el("industryFilter"), uniq(resources.map((r) => r["一级产业分类"])), state.industry);
   setOptions(el("subIndustryFilter"), uniq(resources.map((r) => r["二级产业分类"])), state.subIndustry);
   setOptions(el("levelFilter"), uniq(resources.map((r) => r["平台等级"])), state.level);
+  setOptions(el("policyDeptFilter"), uniq(policies.map((p) => p["部门"])), state.policyDept);
 }
 
 function refreshSubIndustryOptions() {
@@ -171,12 +174,19 @@ function updateKpis() {
 
 function render() {
   const filtered = getFiltered();
+  syncSearchMode();
+  if (state.view === "keyLabs") {
+    renderKeyLabs();
+    renderCharts(filtered);
+    return;
+  }
   el("resultSummary").textContent = `当前筛选出 ${filtered.length} 条资源，共 ${uniq(filtered.map((r) => r["所属高校"])).length} 所高校、${uniq(filtered.map((r) => r["一级产业分类"])).length} 个一级产业分类`;
   if (state.view === "cards") renderCards(filtered);
   if (state.view === "universities") renderGroups(filtered, "所属高校", "高校");
   if (state.view === "industries") renderGroups(filtered, "一级产业分类", "行业");
   if (state.view === "table") renderTable(filtered);
   renderCharts(filtered);
+  renderPolicies();
 }
 
 function renderCards(items) {
@@ -312,6 +322,34 @@ function renderLabs() {
   `).join("") || `<div class="empty">暂无重点实验室数据。</div>`;
 }
 
+function getFilteredLabs() {
+  const q = state.q.trim().toLowerCase();
+  return [...(data.labs || [])]
+    .filter((group) => {
+      if (!q) return true;
+      const haystack = [group.university, ...(group.labs || [])].join(" ").toLowerCase();
+      return haystack.includes(q);
+    })
+    .sort((a, b) => compareUniversityName(a.university, b.university));
+}
+
+function renderKeyLabs() {
+  const labs = getFilteredLabs();
+  const total = labs.reduce((sum, group) => sum + (group.labs || []).length, 0);
+  el("resultSummary").textContent = `当前展示 ${labs.length} 所高校、${total} 个全国重点实验室资源`;
+  el("resourceView").className = "lab-grid";
+  el("resourceView").innerHTML = labs.map((group) => `
+    <article class="lab-card">
+      <span class="tag">全重资源</span>
+      <h3>${escapeHtml(group.university)}</h3>
+      <p>共 ${(group.labs || []).length} 个全国重点实验室。</p>
+      <ul class="mini-list">
+        ${(group.labs || []).map((lab) => `<li>${escapeHtml(lab)}</li>`).join("")}
+      </ul>
+    </article>
+  `).join("") || `<div class="empty">没有匹配的全国重点实验室资源。</div>`;
+}
+
 function renderSchema() {
   el("schemaView").innerHTML = fields.map(([name, desc]) => `
     <article class="schema-item">
@@ -321,12 +359,64 @@ function renderSchema() {
   `).join("");
 }
 
+function getFilteredPolicies() {
+  return policies.filter((item) => state.policyDept === "全部" || item["部门"] === state.policyDept);
+}
+
+function renderPolicies() {
+  const items = getFilteredPolicies();
+  el("policySummary").textContent = `当前展示 ${items.length} 条政策明细，来源于 ${uniq(items.map((item) => item["部门"])).length} 个政策分类。`;
+  el("policyView").innerHTML = items.map((item) => `
+    <article class="policy-card">
+      <div class="policy-meta">
+        <span class="tag">${escapeHtml(item["部门"] || "政策")}</span>
+        ${item["政策子项"] ? `<span class="tag">${escapeHtml(item["政策子项"])}</span>` : ""}
+        ${item["支持类别"] ? `<span class="tag">${escapeHtml(item["支持类别"])}</span>` : ""}
+      </div>
+      <h3>${escapeHtml(item["政策名称"] || "未命名政策")}</h3>
+      ${policySection("支持对象", item["支持对象"])}
+      ${policySection("申报条件 / 支持范围", [item["申报条件"], item["支持范围"]].filter(Boolean).join("\n"))}
+      ${policySection("资助标准 / 支持方式与额度", [item["资助标准"], item["支持方式与额度"]].filter(Boolean).join("\n"))}
+    </article>
+  `).join("") || `<div class="empty">暂无政策数据。</div>`;
+}
+
+function policySection(label, value) {
+  if (!value) return "";
+  return `<div class="policy-section"><b>${escapeHtml(label)}</b><p>${formatText(value)}</p></div>`;
+}
+
 function applySearch() {
   state.q = el("globalSearch").value;
   render();
 }
 
+function isSearchOpen() {
+  return !el("searchPanel").hidden;
+}
+
+function syncSearchMode() {
+  document.body.classList.toggle("search-mode", Boolean(state.q.trim()) || isSearchOpen());
+  document.body.classList.toggle("lab-mode", state.view === "keyLabs");
+}
+
+function setSearchPanel(open) {
+  el("searchPanel").hidden = !open;
+  el("searchToggle").setAttribute("aria-expanded", String(open));
+  el("searchToggle").setAttribute("aria-label", open ? "关闭搜索" : "打开搜索");
+  syncSearchMode();
+  if (open) {
+    setTimeout(() => el("globalSearch").focus(), 0);
+  }
+}
+
 function bindEvents() {
+  el("searchToggle").addEventListener("click", () => {
+    setSearchPanel(!isSearchOpen());
+  });
+  el("closeSearch").addEventListener("click", () => {
+    setSearchPanel(false);
+  });
   el("globalSearch").addEventListener("input", (e) => {
     state.q = e.target.value;
     render();
@@ -358,6 +448,10 @@ function bindEvents() {
     state.level = e.target.value;
     render();
   });
+  el("policyDeptFilter").addEventListener("change", (e) => {
+    state.policyDept = e.target.value;
+    renderPolicies();
+  });
   document.querySelectorAll(".view-tabs button").forEach((btn) => {
     btn.addEventListener("click", () => {
       document.querySelectorAll(".view-tabs button").forEach((item) => item.classList.remove("active"));
@@ -373,8 +467,25 @@ function init() {
   updateKpis();
   renderLabs();
   renderSchema();
+  renderPolicies();
   render();
   bindEvents();
+  initBackToTop();
+}
+
+function initBackToTop() {
+  const btn = el("backToTop");
+  if (!btn) return;
+  const toggle = () => {
+    const visible = window.scrollY > 320;
+    btn.hidden = !visible;
+    btn.classList.toggle("visible", visible);
+  };
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+  window.addEventListener("scroll", toggle, { passive: true });
+  toggle();
 }
 
 init();

@@ -18,8 +18,21 @@
         <a href="#resources">资源查询</a>
         <a href="#insights">维度展示</a>
         <a href="#labs">重点实验室</a>
+        <a href="#policies">政策汇编</a>
+        <button id="searchToggle" class="search-toggle" type="button" aria-controls="searchPanel" aria-expanded="false" aria-label="打开搜索">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <circle cx="10.5" cy="10.5" r="6.5"></circle>
+            <path d="M16 16l5 5"></path>
+          </svg>
+        </button>
       </div>
     </nav>
+    <div id="searchPanel" class="search-panel" hidden>
+      <input id="globalSearch" type="search" placeholder="搜索平台名称、研究方向、核心技术、服务、设备、联系人等" />
+      <button id="searchButton" class="primary-search" type="button">搜索</button>
+      <button id="clearSearch" class="secondary-search" type="button">清空</button>
+      <button id="closeSearch" class="close-search" type="button" aria-label="关闭搜索">×</button>
+    </div>
     <section class="hero-content">
       <div>
         <p class="eyebrow">高校平台资源归集 · 产业维度查询 · 供需链接入口</p>
@@ -27,11 +40,6 @@
         <p class="hero-desc">
           面向高校科研平台、产业领域、核心技术能力与可对外服务的综合展示页面。支持按高校、行业大类、细分方向和平台等级快速筛选，帮助企业与园区更高效地找到可链接资源。
         </p>
-        <div class="hero-search">
-          <input id="globalSearch" type="search" placeholder="搜索平台名称、研究方向、核心技术、服务、设备、联系人等" />
-          <button id="searchButton" class="primary-search" type="button">搜索</button>
-          <button id="clearSearch" class="secondary-search" type="button">清空</button>
-        </div>
       </div>
       <div class="hero-card">
         <p>数据总览</p>
@@ -93,6 +101,7 @@
         <button data-view="universities" type="button">高校视图</button>
         <button data-view="industries" type="button">行业视图</button>
         <button data-view="table" type="button">紧凑表格</button>
+        <button data-view="keyLabs" type="button">全重资源</button>
       </div>
       <div id="resourceView" class="resource-grid"></div>
     </section>
@@ -132,6 +141,23 @@
       <div id="labView" class="lab-grid"></div>
     </section>
 
+    <section id="policies" class="panel">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Policy Collection</p>
+          <h2>政策汇编</h2>
+        </div>
+        <p id="policySummary">汇总 50L-100E 相关政策条目。</p>
+      </div>
+      <div class="policy-tools">
+        <label>
+          政策来源
+          <select id="policyDeptFilter"></select>
+        </label>
+      </div>
+      <div id="policyView" class="policy-grid"></div>
+    </section>
+
     <section class="panel">
       <div class="section-head">
         <div>
@@ -148,6 +174,12 @@
     <span>慧湖50L100E · GitHub Pages 静态部署版本</span>
     <span>数据来源：高校平台资源清单</span>
   </footer>
+
+  <button id="backToTop" class="back-to-top" type="button" aria-label="返回顶部" hidden>
+    <svg aria-hidden="true" viewBox="0 0 24 24">
+      <path d="M12 5l-7 7h4v7h6v-7h4z" fill="currentColor"/>
+    </svg>
+  </button>
 
   <script src="./data.js"></script>
   <script src="./app.js"></script>
