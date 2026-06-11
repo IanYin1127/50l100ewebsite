@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>慧湖50L100E</title>
+  <meta name="description" content="慧湖50L100E高校平台资源数据归集与展示页面" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="topbar">
+      <div class="brand">
+        <span class="brand-mark">慧</span>
+        <span>慧湖50L100E</span>
+      </div>
+      <div class="nav-actions">
+        <a href="#resources">资源查询</a>
+        <a href="#insights">维度展示</a>
+        <a href="#labs">重点实验室</a>
+      </div>
+    </nav>
+    <section class="hero-content">
+      <div>
+        <p class="eyebrow">高校平台资源归集 · 产业维度查询 · 供需链接入口</p>
+        <h1>慧湖50L100E</h1>
+        <p class="hero-desc">
+          面向高校科研平台、产业领域、核心技术能力与可对外服务的综合展示页面。支持按高校、行业大类、细分方向和平台等级快速筛选，帮助企业与园区更高效地找到可链接资源。
+        </p>
+        <div class="hero-search">
+          <input id="globalSearch" type="search" placeholder="搜索平台名称、研究方向、核心技术、服务、设备、联系人等" />
+          <button id="clearSearch" type="button">清空</button>
+        </div>
+      </div>
+      <div class="hero-card">
+        <p>数据总览</p>
+        <strong id="heroTotal">-</strong>
+        <span>高校平台资源</span>
+        <small id="heroUpdated">数据加载中</small>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="kpis" aria-label="关键统计">
+      <article>
+        <span>平台资源</span>
+        <strong id="kpiResources">0</strong>
+      </article>
+      <article>
+        <span>覆盖高校</span>
+        <strong id="kpiUniversities">0</strong>
+      </article>
+      <article>
+        <span>一级产业</span>
+        <strong id="kpiIndustries">0</strong>
+      </article>
+      <article>
+        <span>重点实验室</span>
+        <strong id="kpiLabs">0</strong>
+      </article>
+    </section>
+
+    <section id="resources" class="panel">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Resource Finder</p>
+          <h2>资源查询</h2>
+        </div>
+        <p id="resultSummary">正在加载数据</p>
+      </div>
+      <div class="filters">
+        <label>
+          所属高校
+          <select id="universityFilter"></select>
+        </label>
+        <label>
+          一级产业分类
+          <select id="industryFilter"></select>
+        </label>
+        <label>
+          二级产业分类
+          <select id="subIndustryFilter"></select>
+        </label>
+        <label>
+          平台等级
+          <select id="levelFilter"></select>
+        </label>
+      </div>
+      <div class="view-tabs" role="tablist" aria-label="展示视图">
+        <button class="active" data-view="cards" type="button">资源卡片</button>
+        <button data-view="universities" type="button">高校视图</button>
+        <button data-view="industries" type="button">行业视图</button>
+        <button data-view="table" type="button">紧凑表格</button>
+      </div>
+      <div id="resourceView" class="resource-grid"></div>
+    </section>
+
+    <section id="insights" class="panel">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Dimension Insights</p>
+          <h2>维度展示</h2>
+        </div>
+        <p>按高校、行业大类、平台等级查看资源分布。</p>
+      </div>
+      <div class="charts">
+        <article>
+          <h3>高校资源分布</h3>
+          <div id="universityChart" class="bar-chart"></div>
+        </article>
+        <article>
+          <h3>行业大类分布</h3>
+          <div id="industryChart" class="bar-chart"></div>
+        </article>
+        <article>
+          <h3>平台等级分布</h3>
+          <div id="levelChart" class="bar-chart"></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="labs" class="panel">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Linked Labs</p>
+          <h2>可链接重点实验室</h2>
+        </div>
+        <p>按高校归集可链接重点实验室资源。</p>
+      </div>
+      <div id="labView" class="lab-grid"></div>
+    </section>
+
+    <section class="panel">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Data Schema</p>
+          <h2>字段说明</h2>
+        </div>
+        <p>页面使用 Excel 中“高校平台资源清单”为主数据源。</p>
+      </div>
+      <div id="schemaView" class="schema-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <span>慧湖50L100E · GitHub Pages 静态部署版本</span>
+    <span>数据来源：高校平台资源清单</span>
+  </footer>
+
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
