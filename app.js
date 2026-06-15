@@ -315,7 +315,7 @@ function renderLabs() {
     <article class="lab-card">
       <span class="tag">${(group.labs || []).length} 个实验室</span>
       <h3>${escapeHtml(group.university)}</h3>
-      ${group.sourceUniversity ? `<p>依托高校：${escapeHtml(group.sourceUniversity)}</p>` : ""}
+      ${group.sourceUniversity && group.sourceUniversity !== group.university ? `<p>依托高校：${escapeHtml(group.sourceUniversity)}</p>` : ""}
       <ul class="mini-list">
         ${(group.labs || []).map((lab) => `<li>${escapeHtml(lab)}</li>`).join("")}
       </ul>
@@ -343,7 +343,7 @@ function renderKeyLabs() {
     <article class="lab-card">
       <span class="tag">全重资源</span>
       <h3>${escapeHtml(group.university)}</h3>
-      <p>共 ${(group.labs || []).length} 个全国重点实验室。${group.sourceUniversity ? `依托高校：${escapeHtml(group.sourceUniversity)}。` : ""}</p>
+      <p>共 ${(group.labs || []).length} 个全国重点实验室。${group.sourceUniversity && group.sourceUniversity !== group.university ? `依托高校：${escapeHtml(group.sourceUniversity)}。` : ""}</p>
       <ul class="mini-list">
         ${(group.labs || []).map((lab) => `<li>${escapeHtml(lab)}</li>`).join("")}
       </ul>
