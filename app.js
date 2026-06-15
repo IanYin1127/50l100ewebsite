@@ -315,6 +315,7 @@ function renderLabs() {
     <article class="lab-card">
       <span class="tag">${(group.labs || []).length} 个实验室</span>
       <h3>${escapeHtml(group.university)}</h3>
+      ${group.sourceUniversity ? `<p>依托高校：${escapeHtml(group.sourceUniversity)}</p>` : ""}
       <ul class="mini-list">
         ${(group.labs || []).map((lab) => `<li>${escapeHtml(lab)}</li>`).join("")}
       </ul>
@@ -327,7 +328,7 @@ function getFilteredLabs() {
   return [...(data.labs || [])]
     .filter((group) => {
       if (!q) return true;
-      const haystack = [group.university, ...(group.labs || [])].join(" ").toLowerCase();
+      const haystack = [group.university, group.sourceUniversity, ...(group.labs || [])].join(" ").toLowerCase();
       return haystack.includes(q);
     })
     .sort((a, b) => compareUniversityName(a.university, b.university));
@@ -342,7 +343,7 @@ function renderKeyLabs() {
     <article class="lab-card">
       <span class="tag">全重资源</span>
       <h3>${escapeHtml(group.university)}</h3>
-      <p>共 ${(group.labs || []).length} 个全国重点实验室。</p>
+      <p>共 ${(group.labs || []).length} 个全国重点实验室。${group.sourceUniversity ? `依托高校：${escapeHtml(group.sourceUniversity)}。` : ""}</p>
       <ul class="mini-list">
         ${(group.labs || []).map((lab) => `<li>${escapeHtml(lab)}</li>`).join("")}
       </ul>
