@@ -18,7 +18,7 @@
 - **样式**：手写 CSS，使用 CSS 变量（`:root`）统一主题，响应式布局依赖 `@media` 查询。
 - **数据**：静态 JSON 对象注入到全局变量 `window.HUIHU_DATA` 中，通过 `data.js` 加载。
 - **图表**：纯 CSS/HTML 实现的条形图，未引入任何图表库。
-- **Excel 解析**：通过 CDN 引入 SheetJS（`xlsx`）库，在浏览器端解析上传的 Excel 文件。
+- **Excel 解析**：`app.js` 运行时动态加载 SheetJS（`xlsx`）CDN 库，在浏览器端解析上传的 Excel 文件。页面本身不直接引用该脚本。
 - **部署**：GitHub Pages（分支部署模式）。
 
 > 注意：仓库中没有 `package.json`、`pyproject.toml`、`vite.config.js`、`_config.yml` 或任何构建配置文件，也不依赖 npm、Python 后端或其他运行时。
@@ -40,18 +40,19 @@
 
 ### 关键文件说明
 
-- `index.html`：定义页面骨架，引用 `styles.css`、`data.js`、`app.js`、SheetJS CDN。包含顶部导航、标签切换、搜索面板、KPI、资源查询、维度展示、重点实验室、政策汇编、数据更新、字段说明等区域。
+- `index.html`：定义页面骨架，引用 `styles.css`、`data.js`、`app.js`。顶部 `site-header` 包含品牌栏与模块标签页，滚动时始终固定在视口顶部；默认首页为“资源查询”；“数据更新”页需要输入密码才能进入上传区域。
 - `styles.css`：定义设计系统（颜色、间距、阴影、圆角）、布局网格、组件样式、搜索面板、标签导航、数据更新模块、响应式断点（1020px / 700px）。
 - `app.js`：包含全部运行时逻辑：
   - 全局状态 `state`（搜索词、筛选条件、当前视图、折叠状态、当前标签）。
   - 工具函数（HTML 转义、文本规范化、高校排序、资源排序）。
   - 筛选逻辑 `getFiltered`、`getFilteredLabs`、`getFilteredPolicies`。
-  - 渲染函数（卡片、高校视图、行业视图、紧凑表格、全重资源、图表、政策、字段说明）。
+  - 渲染函数（卡片、高校视图、行业视图、紧凑表格、全重资源、图表、政策）。
   - 标签切换 `setActiveSection`、`bindTabs`。
   - Excel 导入与 `data.js` 生成 `initExcelUpload`、`workbookToResources`、`buildDataJs`。
+  - 数据更新密码验证 `initUpdateAuth` / `syncUpdateAuth`（默认密码 `330889`）。
   - 事件绑定 `bindEvents`。
   - 初始化 `init`。
-- `data.js`：约 3600 行，由 Excel 转换生成的静态 JS 文件，包含：
+- `data.js`：约 3650 行，由 Excel 转换生成的静态 JS 文件，包含：
   - `meta`：标题、生成日期、源文件名、资源/高校/产业/政策/实验室数量统计。
   - `resources`：平台资源数组。
   - `labs`：可链接全国重点实验室分组数据。
@@ -87,9 +88,10 @@ python -m http.server 8080
 
 1. 使用 `平台资源清单-更新模板.xlsx` 录入或修改数据。
 2. 打开网页，切换到“数据更新”标签页。
-3. 上传 Excel 文件，核对预览。
-4. 下载生成的 `data.js`。
-5. 替换仓库中的 `data.js` 并提交。
+3. 输入更新密码 `330889`，解锁文件上传区域。
+4. 上传 Excel 文件，核对预览。
+5. 下载生成的 `data.js`。
+6. 替换仓库中的 `data.js` 并提交。
 
 ### 手动更新
 
@@ -150,7 +152,7 @@ python -m http.server 8080
 1. **状态与常量**：`state`、`data`、`universityOrder`、`fields`、`resourceFields` 等。
 2. **工具函数**：`escapeHtml`、`normalizeUniversityName`、`compareResource`、`truncate`、`formatText` 等。
 3. **筛选逻辑**：`getFiltered`、`getFilteredLabs`、`getFilteredPolicies`。
-4. **渲染函数**：`renderCards`、`renderGroups`、`renderTable`、`renderCharts`、`renderLabs`、`renderKeyLabs`、`renderPolicies`、`renderSchema` 等。
+4. **渲染函数**：`renderCards`、`renderGroups`、`renderTable`、`renderCharts`、`renderLabs`、`renderKeyLabs`、`renderPolicies` 等。
 5. **标签切换**：`getSectionFromHash`、`setActiveSection`、`bindTabs`。
 6. **Excel 导入**：`initExcelUpload`、`readExcelFile`、`workbookToResources`、`validateResources`、`buildDataJs`、`previewResources`。
 7. **事件绑定**：`bindEvents`。
@@ -177,15 +179,17 @@ python -m http.server 8080
 - 当前项目**没有自动化测试**（无 Jest、Vitest、Playwright、Cypress 等配置）。
 - 修改后应进行以下手动验证：
   1. 在本地静态服务器打开页面，确认无控制台报错。
-  2. 检查 KPI 数字是否与 `data.js` 中 `meta` 一致。
-  3. 测试顶部标签切换：概览、资源查询、维度展示、重点实验室、政策汇编、数据更新。
-  4. 测试搜索框输入关键词，观察资源卡片和政策是否正确过滤。
-  5. 切换四种筛选条件（所属高校、一级产业、二级产业、平台等级），确认二级产业下拉随一级产业联动。
-  6. 切换五种视图（资源卡片、高校视图、行业视图、紧凑表格、全重资源）。
-  7. 在 700px、1020px 及以上宽度下检查响应式布局，确认顶部导航标签可滚动或换行。
-  8. 检查“展开/收起资源列表”按钮和“返回顶部”按钮行为。
-  9. 在“数据更新”标签页上传 `平台资源清单-更新模板.xlsx`，验证能正确解析、预览并下载 `data.js`。
-  10. 将下载的 `data.js` 替换本地文件后刷新页面，确认 KPI 和列表数据更新正确。
+  2. 页面默认显示“资源查询”标签。
+  3. 滚动页面，确认顶部 `site-header`（品牌栏 + 标签页）始终固定在上方。
+  4. 测试顶部标签切换：资源查询、维度展示、重点实验室、政策汇编、数据更新。
+  5. 测试搜索框输入关键词，观察资源卡片和政策是否正确过滤。
+  6. 切换四种筛选条件（所属高校、一级产业、二级产业、平台等级），确认二级产业下拉随一级产业联动。
+  7. 切换五种视图（资源卡片、高校视图、行业视图、紧凑表格、全重资源）。
+  8. 在 700px、1020px 及以上宽度下检查响应式布局，确认顶部导航标签可滚动或换行。
+  9. 检查“展开/收起资源列表”按钮和“返回顶部”按钮行为。
+  10. 在“数据更新”标签页输入错误密码，确认无法进入上传；输入 `330889` 后解锁上传功能。
+  11. 在解锁后的“数据更新”页上传 `平台资源清单-更新模板.xlsx`，验证能正确解析、预览并下载 `data.js`。
+  12. 将下载的 `data.js` 替换本地文件后刷新页面，确认列表数据更新正确。
 
 ## 安全注意事项
 
@@ -194,6 +198,7 @@ python -m http.server 8080
 - 联系人和电话等敏感信息已随数据公开在 `data.js` 中，任何修改都应注意数据隐私合规。
 - 不要上传真实账号、密钥、令牌等到仓库。仓库中不存在 `.env`、`.gitignore` 或 CI 密钥文件，如有新增需单独审查。
 - Excel 导入在浏览器端完成，不会将文件上传到任何服务器；生成的 `data.js` 由用户本地下载后手动替换。
+- “数据更新”入口设有前端密码保护（默认 `330889`），仅作简单访问控制，不能替代服务端鉴权。密码硬编码在 `app.js` 中，如需修改请同步更新本说明。
 
 ## 常见修改场景
 

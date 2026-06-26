@@ -8,27 +8,28 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <nav class="topbar">
-    <div class="brand">
-      <span class="brand-mark">慧</span>
-      <span>慧湖50L100E</span>
-    </div>
-    <button id="searchToggle" class="search-toggle" type="button" aria-controls="searchPanel" aria-expanded="false" aria-label="打开搜索">
-      <svg aria-hidden="true" viewBox="0 0 24 24">
-        <circle cx="10.5" cy="10.5" r="6.5"></circle>
-        <path d="M16 16l5 5"></path>
-      </svg>
-    </button>
-  </nav>
+  <header class="site-header">
+    <nav class="topbar">
+      <div class="brand">
+        <span class="brand-mark">慧</span>
+        <span>慧湖50L100E</span>
+      </div>
+      <button id="searchToggle" class="search-toggle" type="button" aria-controls="searchPanel" aria-expanded="false" aria-label="打开搜索">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <circle cx="10.5" cy="10.5" r="6.5"></circle>
+          <path d="M16 16l5 5"></path>
+        </svg>
+      </button>
+    </nav>
 
-  <div class="main-tabs" role="tablist" aria-label="页面模块">
-    <button class="active" data-section="overview" type="button">概览</button>
-    <button data-section="resources" type="button">资源查询</button>
-    <button data-section="insights" type="button">维度展示</button>
-    <button data-section="labs" type="button">重点实验室</button>
-    <button data-section="policies" type="button">政策汇编</button>
-    <button data-section="update" type="button">数据更新</button>
-  </div>
+    <div class="main-tabs" role="tablist" aria-label="页面模块">
+      <button class="active" data-section="resources" type="button">资源查询</button>
+      <button data-section="insights" type="button">维度展示</button>
+      <button data-section="labs" type="button">重点实验室</button>
+      <button data-section="policies" type="button">政策汇编</button>
+      <button data-section="update" type="button">数据更新</button>
+    </div>
+  </header>
 
   <div id="searchPanel" class="search-panel" hidden>
     <input id="globalSearch" type="search" placeholder="搜索平台名称、研究方向、核心技术、服务、设备、联系人等" />
@@ -37,44 +38,7 @@
     <button id="closeSearch" class="close-search" type="button" aria-label="关闭搜索">×</button>
   </div>
 
-  <header class="hero" data-section="overview">
-    <section class="hero-content">
-      <div>
-        <p class="eyebrow">高校平台资源归集 · 产业维度查询 · 供需链接入口</p>
-        <h1>慧湖50L100E</h1>
-        <p class="hero-desc">
-          面向高校科研平台、产业领域、核心技术能力与可对外服务的综合展示页面。支持按高校、行业大类、细分方向和平台等级快速筛选，帮助企业与园区更高效地找到可链接资源。
-        </p>
-      </div>
-      <div class="hero-card">
-        <p>数据总览</p>
-        <strong id="heroTotal">-</strong>
-        <span>高校平台资源</span>
-        <small id="heroUpdated">数据加载中</small>
-      </div>
-    </section>
-  </header>
-
   <main>
-    <section class="kpis" aria-label="关键统计" data-section="overview">
-      <article>
-        <span>平台资源</span>
-        <strong id="kpiResources">0</strong>
-      </article>
-      <article>
-        <span>覆盖高校</span>
-        <strong id="kpiUniversities">0</strong>
-      </article>
-      <article>
-        <span>一级产业</span>
-        <strong id="kpiIndustries">0</strong>
-      </article>
-      <article>
-        <span>重点实验室</span>
-        <strong id="kpiLabs">0</strong>
-      </article>
-    </section>
-
     <section id="resourcesSection" class="panel" data-section="resources">
       <div class="section-head">
         <div>
@@ -175,59 +139,60 @@
         </div>
         <p>上传 Excel 平台资源清单，生成新的 data.js 文件。</p>
       </div>
-      <div class="update-card">
-        <h3>上传平台资源清单</h3>
-        <p>请选择符合模板格式的 Excel 文件（.xlsx 或 .xls）。系统会保留现有重点实验室和政策数据，仅更新平台资源部分。</p>
+      <div id="updateAuth" class="update-card">
+        <h3>需要密码访问</h3>
+        <p>请输入更新密码以解锁文件上传功能。</p>
         <div class="update-actions">
-          <label class="file-input-label">
-            <input id="excelFileInput" type="file" accept=".xlsx,.xls" />
-            <span id="fileName">点击选择 Excel 文件</span>
-          </label>
-          <button id="generateDataJs" class="primary-btn" type="button" disabled>生成 data.js</button>
-          <a id="downloadDataJs" class="download-btn" href="#" download="data.js" hidden>下载 data.js</a>
+          <input id="updatePassword" type="password" placeholder="请输入密码" style="padding:12px 14px;border:1px solid var(--line);border-radius:14px;min-width:220px;" />
+          <button id="updateAuthBtn" class="primary-btn" type="button">进入</button>
         </div>
-        <div id="updateStatus" class="update-status" hidden></div>
+        <div id="updateAuthStatus" class="update-status" hidden></div>
       </div>
-      <div id="updatePreview" class="update-preview" hidden>
-        <h3>数据预览 <small id="previewCount"></small></h3>
-        <div class="preview-table-wrap">
-          <table id="previewTable">
-            <thead>
-              <tr>
-                <th>序号</th>
-                <th>平台名称</th>
-                <th>所属高校</th>
-                <th>一级产业分类</th>
-                <th>二级产业分类</th>
-                <th>平台等级</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
+      <div id="updateContent" hidden>
+        <div class="update-card">
+          <h3>上传平台资源清单</h3>
+          <p>请选择符合模板格式的 Excel 文件（.xlsx 或 .xls）。系统会保留现有重点实验室和政策数据，仅更新平台资源部分。</p>
+          <div class="update-actions">
+            <label class="file-input-label">
+              <input id="excelFileInput" type="file" accept=".xlsx,.xls" />
+              <span id="fileName">点击选择 Excel 文件</span>
+            </label>
+            <button id="generateDataJs" class="primary-btn" type="button" disabled>生成 data.js</button>
+            <a id="downloadDataJs" class="download-btn" href="#" download="data.js" hidden>下载 data.js</a>
+          </div>
+          <div id="updateStatus" class="update-status" hidden></div>
         </div>
-      </div>
-      <div class="update-guide">
-        <h3>更新步骤</h3>
-        <ol>
-          <li>下载并使用 <a href="./平台资源清单-更新模板.xlsx" download>平台资源清单-更新模板.xlsx</a> 录入数据。</li>
-          <li>在本页上传填写好的 Excel 文件，核对预览信息。</li>
-          <li>点击“生成 data.js”，然后下载生成的文件。</li>
-          <li>用下载的 <code>data.js</code> 替换仓库根目录下的同名文件。</li>
-          <li>提交并推送到 GitHub，GitHub Pages 会自动更新。</li>
-        </ol>
+        <div id="updatePreview" class="update-preview" hidden>
+          <h3>数据预览 <small id="previewCount"></small></h3>
+          <div class="preview-table-wrap">
+            <table id="previewTable">
+              <thead>
+                <tr>
+                  <th>序号</th>
+                  <th>平台名称</th>
+                  <th>所属高校</th>
+                  <th>一级产业分类</th>
+                  <th>二级产业分类</th>
+                  <th>平台等级</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="update-guide">
+          <h3>更新步骤</h3>
+          <ol>
+            <li>下载并使用 <a href="./平台资源清单-更新模板.xlsx" download>平台资源清单-更新模板.xlsx</a> 录入数据。</li>
+            <li>在本页上传填写好的 Excel 文件，核对预览信息。</li>
+            <li>点击“生成 data.js”，然后下载生成的文件。</li>
+            <li>用下载的 <code>data.js</code> 替换仓库根目录下的同名文件。</li>
+            <li>提交并推送到 GitHub，GitHub Pages 会自动更新。</li>
+          </ol>
+        </div>
       </div>
     </section>
 
-    <section id="schemaSection" class="panel" data-section="overview">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Data Schema</p>
-          <h2>字段说明</h2>
-        </div>
-        <p>页面使用 Excel 中“高校平台资源清单”为主数据源。</p>
-      </div>
-      <div id="schemaView" class="schema-grid"></div>
-    </section>
   </main>
 
   <footer>

@@ -168,16 +168,6 @@ function refreshSubIndustryOptions() {
   state.subIndustry = el("subIndustryFilter").value;
 }
 
-function updateKpis() {
-  const labsCount = (data.labs || []).reduce((sum, group) => sum + (group.labs || []).length, 0);
-  el("heroTotal").textContent = resources.length;
-  el("heroUpdated").textContent = data.meta?.generatedAt ? `更新于 ${data.meta.generatedAt}` : "本地静态数据";
-  el("kpiResources").textContent = resources.length;
-  el("kpiUniversities").textContent = uniq(resources.map((r) => r["所属高校"])).length;
-  el("kpiIndustries").textContent = uniq(resources.map((r) => r["一级产业分类"])).length;
-  el("kpiLabs").textContent = labsCount;
-}
-
 function render() {
   const filtered = getFiltered();
   syncSearchMode();
@@ -380,15 +370,6 @@ function renderKeyLabs() {
   `).join("") || `<div class="empty">没有匹配的全国重点实验室资源。</div>`;
 }
 
-function renderSchema() {
-  el("schemaView").innerHTML = fields.slice(0, -1).map(([name, desc]) => `
-    <article class="schema-item">
-      <h3>${escapeHtml(name)}</h3>
-      <p>${escapeHtml(desc)}</p>
-    </article>
-  `).join("");
-}
-
 function getFilteredPolicies() {
   return policies.filter((item) => state.policyDept === "全部" || item["部门"] === state.policyDept);
 }
@@ -469,7 +450,7 @@ function setSearchPanel(open) {
 
 function getSectionFromHash() {
   const hash = window.location.hash.replace(/^#/, "");
-  const valid = ["overview", "resources", "insights", "labs", "policies", "update"];
+  const valid = ["resources", "insights", "labs", "policies", "update"];
   return valid.includes(hash) ? hash : "resources";
 }
 
@@ -492,7 +473,7 @@ function setActiveSection(section, { updateHash = true } = {}) {
   if (section === "insights") renderCharts(getFiltered());
   if (section === "labs" && firstRender) renderLabs();
   if (section === "policies" && firstRender) renderPolicies();
-  if (section === "overview" && firstRender) renderSchema();
+  if (section === "update") syncUpdateAuth();
 }
 
 function bindTabs() {
@@ -752,13 +733,48 @@ function showUpdateStatus(message, type) {
   status.hidden = false;
 }
 
+const UPDATE_PASSWORD = "330889";
+let updateUnlocked = false;
+
+function initUpdateAuth() {
+  const btn = el("updateAuthBtn");
+  const input = el("updatePassword");
+  const status = el("updateAuthStatus");
+  if (!btn || !input) return;
+  const verify = () => {
+    if (input.value === UPDATE_PASSWORD) {
+      updateUnlocked = true;
+      syncUpdateAuth();
+      status.hidden = true;
+    } else {
+      status.textContent = "密码错误，请重新输入。";
+      status.className = "update-status error";
+      status.hidden = false;
+      input.value = "";
+      input.focus();
+    }
+  };
+  btn.addEventListener("click", verify);
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") verify();
+  });
+}
+
+function syncUpdateAuth() {
+  const authPanel = el("updateAuth");
+  const content = el("updateContent");
+  if (!authPanel || !content) return;
+  authPanel.hidden = updateUnlocked;
+  content.hidden = !updateUnlocked;
+}
+
 function init() {
   state.activeSection = getSectionFromHash();
   initFilters();
-  updateKpis();
   bindEvents();
   bindTabs();
   initExcelUpload();
+  initUpdateAuth();
   setActiveSection(state.activeSection, { updateHash: false });
   window.scrollTo({ top: 0, behavior: "auto" });
   initBackToTop();
