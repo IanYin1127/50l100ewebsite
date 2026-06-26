@@ -6,8 +6,9 @@ const state = {
   level: "全部",
   policyDept: "全部",
   view: "cards",
-  resourcesCollapsed: true,
-  activeSection: "overview",
+  resourcesCollapsed: false,
+  activeSection: "resources",
+  renderedSections: new Set(),
 };
 
 const data = window.HUIHU_DATA || { resources: [], labs: [], taxonomy: {}, policies: {}, meta: {} };
@@ -183,14 +184,10 @@ function render() {
   syncResourceCollapseButton();
   if (state.resourcesCollapsed) {
     renderCollapsedResourceSummary(filtered);
-    renderCharts(filtered);
-    renderPolicies();
     return;
   }
   if (state.view === "keyLabs") {
     renderKeyLabs();
-    renderCharts(filtered);
-    renderPolicies();
     return;
   }
   el("resultSummary").textContent = `当前筛选出 ${filtered.length} 条资源，共 ${uniq(filtered.map((r) => r["所属高校"])).length} 所高校、${uniq(filtered.map((r) => r["一级产业分类"])).length} 个一级产业分类`;
@@ -198,8 +195,6 @@ function render() {
   if (state.view === "universities") renderGroups(filtered, "所属高校", "高校");
   if (state.view === "industries") renderGroups(filtered, "一级产业分类", "行业");
   if (state.view === "table") renderTable(filtered);
-  renderCharts(filtered);
-  renderPolicies();
 }
 
 function renderCollapsedResourceSummary(items) {
@@ -238,7 +233,7 @@ function renderCards(items) {
         <span class="tag">${escapeHtml(item["平台等级"] || "未标注等级")}</span>
       </div>
       <h3>${escapeHtml(item["平台名称"])}</h3>
-      <p>${formatText(truncate(item["研究方向"], 150))}</p>
+      <p>${formatText(truncate(item["研究方向"], 260))}</p>
       <details>
         <summary>查看完整信息</summary>
         <div class="detail-list">
@@ -313,7 +308,7 @@ function renderTable(items) {
             <td>${escapeHtml(item["一级产业分类"])}</td>
             <td>${escapeHtml(item["二级产业分类"])}</td>
             <td>${escapeHtml(item["平台等级"])}</td>
-            <td>${formatText(truncate(item["可对外提供的核心服务"], 100))}</td>
+            <td>${formatText(truncate(item["可对外提供的核心服务"], 160))}</td>
             <td>${escapeHtml([item["联系人"], item["联系电话"]].filter(Boolean).join(" "))}</td>
           </tr>
         `).join("")}
@@ -475,29 +470,33 @@ function setSearchPanel(open) {
 function getSectionFromHash() {
   const hash = window.location.hash.replace(/^#/, "");
   const valid = ["overview", "resources", "insights", "labs", "policies", "update"];
-  return valid.includes(hash) ? hash : "overview";
+  return valid.includes(hash) ? hash : "resources";
 }
 
-function setActiveSection(section) {
+function setActiveSection(section, { updateHash = true } = {}) {
   state.activeSection = section;
   document.querySelectorAll("[data-section]").forEach((element) => {
+    if (element.closest(".main-tabs")) return;
     element.classList.toggle("section-active", element.dataset.section === section);
   });
-  document.querySelectorAll(".nav-tab").forEach((btn) => {
+  document.querySelectorAll(".main-tabs button").forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.section === section);
   });
-  if (window.location.hash !== `#${section}`) {
-    window.location.hash = section;
+  if (updateHash && window.location.hash !== `#${section}`) {
+    history.replaceState(null, "", `#${section}`);
   }
 
+  const firstRender = !state.renderedSections.has(section);
+  if (firstRender) state.renderedSections.add(section);
   if (section === "resources") render();
   if (section === "insights") renderCharts(getFiltered());
-  if (section === "labs") renderLabs();
-  if (section === "policies") renderPolicies();
+  if (section === "labs" && firstRender) renderLabs();
+  if (section === "policies" && firstRender) renderPolicies();
+  if (section === "overview" && firstRender) renderSchema();
 }
 
 function bindTabs() {
-  document.querySelectorAll(".nav-tab").forEach((btn) => {
+  document.querySelectorAll(".main-tabs button").forEach((btn) => {
     btn.addEventListener("click", () => {
       setActiveSection(btn.dataset.section);
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -586,6 +585,24 @@ function initBackToTop() {
 /* Excel 导入与 data.js 生成 */
 let parsedResources = null;
 let generatedDataJsBlobUrl = null;
+let xlsxLoadingPromise = null;
+
+function loadXlsx() {
+  if (typeof XLSX !== "undefined") return Promise.resolve(XLSX);
+  if (xlsxLoadingPromise) return xlsxLoadingPromise;
+  xlsxLoadingPromise = new Promise((resolve, reject) => {
+    const script = document.createElement("script");
+    script.src = "https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js";
+    script.async = true;
+    script.onload = () => {
+      if (typeof XLSX !== "undefined") resolve(XLSX);
+      else reject(new Error("SheetJS 加载失败"));
+    };
+    script.onerror = () => reject(new Error("无法加载 SheetJS，请检查网络"));
+    document.head.appendChild(script);
+  });
+  return xlsxLoadingPromise;
+}
 
 function initExcelUpload() {
   const fileInput = el("excelFileInput");
@@ -611,11 +628,8 @@ function initExcelUpload() {
       showUpdateStatus("请先选择 Excel 文件。", "error");
       return;
     }
-    if (typeof XLSX === "undefined") {
-      showUpdateStatus("Excel 解析库加载失败，请检查网络连接后刷新页面。", "error");
-      return;
-    }
     try {
+      await loadXlsx();
       const workbook = await readExcelFile(file);
       parsedResources = workbookToResources(workbook);
       const validation = validateResources(parsedResources);
@@ -742,14 +756,11 @@ function init() {
   state.activeSection = getSectionFromHash();
   initFilters();
   updateKpis();
-  renderLabs();
-  renderSchema();
-  renderPolicies();
-  render();
   bindEvents();
   bindTabs();
   initExcelUpload();
-  setActiveSection(state.activeSection);
+  setActiveSection(state.activeSection, { updateHash: false });
+  window.scrollTo({ top: 0, behavior: "auto" });
   initBackToTop();
 }
 

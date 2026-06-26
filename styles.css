@@ -83,58 +83,53 @@ footer {
   border-radius: 12px;
 }
 
-.nav-actions {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.nav-actions a,
-.nav-actions .nav-tab,
 .search-toggle {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 48px;
-  min-height: 38px;
-  padding: 9px 14px;
+  width: 42px;
+  height: 42px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent), var(--primary));
+  border: 0;
+  border-radius: 999px;
+  line-height: 1;
+}
+
+.main-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px min(5vw, 72px);
+  background: #ffffff;
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 4px 20px rgba(16, 32, 51, 0.04);
+}
+
+.main-tabs button {
+  padding: 9px 16px;
   color: var(--ink);
   background: #fff;
   border: 1px solid var(--line);
   border-radius: 999px;
-  font-size: inherit;
+  font-size: 14px;
   line-height: 1.3;
   white-space: nowrap;
   box-shadow: 0 1px 2px rgba(16, 32, 51, 0.04);
-  -webkit-appearance: none;
-  appearance: none;
 }
 
-.nav-actions .nav-tab:hover,
-.nav-actions a:hover {
+.main-tabs button:hover {
   color: var(--primary-dark);
   background: var(--soft);
   border-color: var(--primary);
 }
 
-.nav-actions .nav-tab.active {
+.main-tabs button.active {
   color: #fff;
   background: linear-gradient(135deg, var(--accent), var(--primary));
   border-color: transparent;
   box-shadow: 0 4px 12px rgba(36, 87, 214, 0.25);
-}
-
-.search-toggle {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  color: #fff;
-  background: linear-gradient(135deg, var(--accent), var(--primary));
-  border-color: transparent;
-  line-height: 1;
 }
 
 .search-toggle svg {
@@ -293,7 +288,8 @@ main {
   padding: 34px min(5vw, 72px) 48px;
 }
 
-[data-section] {
+main [data-section]:not(.section-active),
+body > header[data-section]:not(.section-active) {
   display: none;
 }
 
@@ -374,8 +370,8 @@ main {
   margin-bottom: 18px;
 }
 
-body.search-mode #resources .filters,
-body.lab-mode #resources .filters {
+body.search-mode [data-section="resources"] .filters,
+body.lab-mode [data-section="resources"] .filters {
   display: none;
 }
 
@@ -411,16 +407,29 @@ select {
   border-radius: 999px;
 }
 
-.view-tabs .ghost-tab {
-  margin-left: auto;
+.view-tabs .ghost-tab,
+.view-tools .ghost-tab {
   color: var(--primary-dark);
   background: #fff;
   border: 1px solid var(--line);
 }
 
-.view-tabs .ghost-tab.active {
+.view-tabs .ghost-tab.active,
+.view-tools .ghost-tab.active {
   color: #fff;
   background: linear-gradient(135deg, #64748b, var(--primary));
+}
+
+.view-tools {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.view-tools .ghost-tab {
+  padding: 10px 14px;
+  border-radius: 999px;
 }
 
 .resource-grid {
@@ -433,6 +442,7 @@ select {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  min-width: 0;
   padding: 18px;
   border-radius: 20px;
 }
@@ -440,17 +450,27 @@ select {
 .resource-card h3 {
   margin-bottom: 0;
   line-height: 1.45;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.resource-card p,
+.resource-card .detail-list span {
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  min-width: 0;
 }
 
 .tag {
   display: inline-flex;
   align-items: center;
+  min-width: 0;
   max-width: 100%;
   padding: 6px 9px;
   overflow: hidden;
@@ -966,22 +986,23 @@ footer {
   text-decoration: underline;
 }
 
-/* 顶部导航标签在移动端可横向滚动 */
-@media (max-width: 1020px) {
-  .nav-actions {
+/* 顶部导航标签在窄屏下横向滚动 */
+@media (max-width: 700px) {
+  .main-tabs {
     flex-wrap: nowrap;
+    justify-content: flex-start;
     overflow-x: auto;
     padding-bottom: 4px;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+    -ms-overflow-style: none;
   }
 
-  .nav-actions::-webkit-scrollbar {
+  .main-tabs::-webkit-scrollbar {
     display: none;
   }
 
-  .nav-actions .nav-tab,
-  .nav-actions .search-toggle {
+  .main-tabs button {
     flex: 0 0 auto;
   }
 }

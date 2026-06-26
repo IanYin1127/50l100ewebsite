@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>慧湖50L100E</title>
   <meta name="description" content="慧湖50L100E高校平台资源数据归集与展示页面" />
-  <link rel="stylesheet" href="./styles.css?v=2" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <nav class="topbar">
@@ -13,21 +13,22 @@
       <span class="brand-mark">慧</span>
       <span>慧湖50L100E</span>
     </div>
-    <div class="nav-actions">
-      <button class="nav-tab active" data-section="overview" type="button">概览</button>
-      <button class="nav-tab" data-section="resources" type="button">资源查询</button>
-      <button class="nav-tab" data-section="insights" type="button">维度展示</button>
-      <button class="nav-tab" data-section="labs" type="button">重点实验室</button>
-      <button class="nav-tab" data-section="policies" type="button">政策汇编</button>
-      <button class="nav-tab" data-section="update" type="button">数据更新</button>
-      <button id="searchToggle" class="search-toggle" type="button" aria-controls="searchPanel" aria-expanded="false" aria-label="打开搜索">
-        <svg aria-hidden="true" viewBox="0 0 24 24">
-          <circle cx="10.5" cy="10.5" r="6.5"></circle>
-          <path d="M16 16l5 5"></path>
-        </svg>
-      </button>
-    </div>
+    <button id="searchToggle" class="search-toggle" type="button" aria-controls="searchPanel" aria-expanded="false" aria-label="打开搜索">
+      <svg aria-hidden="true" viewBox="0 0 24 24">
+        <circle cx="10.5" cy="10.5" r="6.5"></circle>
+        <path d="M16 16l5 5"></path>
+      </svg>
+    </button>
   </nav>
+
+  <div class="main-tabs" role="tablist" aria-label="页面模块">
+    <button class="active" data-section="overview" type="button">概览</button>
+    <button data-section="resources" type="button">资源查询</button>
+    <button data-section="insights" type="button">维度展示</button>
+    <button data-section="labs" type="button">重点实验室</button>
+    <button data-section="policies" type="button">政策汇编</button>
+    <button data-section="update" type="button">数据更新</button>
+  </div>
 
   <div id="searchPanel" class="search-panel" hidden>
     <input id="globalSearch" type="search" placeholder="搜索平台名称、研究方向、核心技术、服务、设备、联系人等" />
@@ -74,7 +75,7 @@
       </article>
     </section>
 
-    <section id="resources" class="panel" data-section="resources">
+    <section id="resourcesSection" class="panel" data-section="resources">
       <div class="section-head">
         <div>
           <p class="eyebrow">Resource Finder</p>
@@ -106,12 +107,14 @@
         <button data-view="industries" type="button">行业视图</button>
         <button data-view="table" type="button">紧凑表格</button>
         <button data-view="keyLabs" type="button">全重资源</button>
+      </div>
+      <div class="view-tools">
         <button id="resourceCollapseToggle" class="ghost-tab" type="button">收起资源列表</button>
       </div>
       <div id="resourceView" class="resource-grid"></div>
     </section>
 
-    <section id="insights" class="panel" data-section="insights">
+    <section id="insightsSection" class="panel" data-section="insights">
       <div class="section-head">
         <div>
           <p class="eyebrow">Dimension Insights</p>
@@ -135,7 +138,7 @@
       </div>
     </section>
 
-    <section id="labs" class="panel" data-section="labs">
+    <section id="labsSection" class="panel" data-section="labs">
       <div class="section-head">
         <div>
           <p class="eyebrow">Linked Labs</p>
@@ -146,7 +149,7 @@
       <div id="labView" class="lab-grid"></div>
     </section>
 
-    <section id="policies" class="panel" data-section="policies">
+    <section id="policiesSection" class="panel" data-section="policies">
       <div class="section-head">
         <div>
           <p class="eyebrow">Policy Collection</p>
@@ -164,7 +167,7 @@
       <div id="policyView" class="policy-grid"></div>
     </section>
 
-    <section id="update" class="panel" data-section="update">
+    <section id="updateSection" class="panel" data-section="update">
       <div class="section-head">
         <div>
           <p class="eyebrow">Data Update</p>
@@ -215,7 +218,7 @@
       </div>
     </section>
 
-    <section id="schema" class="panel" data-section="overview">
+    <section id="schemaSection" class="panel" data-section="overview">
       <div class="section-head">
         <div>
           <p class="eyebrow">Data Schema</p>
@@ -238,8 +241,7 @@
     </svg>
   </button>
 
-  <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
-  <script src="./data.js?v=2"></script>
-  <script src="./app.js?v=2"></script>
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
 </body>
 </html>
