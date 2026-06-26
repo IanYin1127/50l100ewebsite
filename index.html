@@ -8,31 +8,35 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <header class="hero">
-    <nav class="topbar">
-      <div class="brand">
-        <span class="brand-mark">慧</span>
-        <span>慧湖50L100E</span>
-      </div>
-      <div class="nav-actions">
-        <a href="#resources">资源查询</a>
-        <a href="#insights">维度展示</a>
-        <a href="#labs">重点实验室</a>
-        <a href="#policies">政策汇编</a>
-        <button id="searchToggle" class="search-toggle" type="button" aria-controls="searchPanel" aria-expanded="false" aria-label="打开搜索">
-          <svg aria-hidden="true" viewBox="0 0 24 24">
-            <circle cx="10.5" cy="10.5" r="6.5"></circle>
-            <path d="M16 16l5 5"></path>
-          </svg>
-        </button>
-      </div>
-    </nav>
-    <div id="searchPanel" class="search-panel" hidden>
-      <input id="globalSearch" type="search" placeholder="搜索平台名称、研究方向、核心技术、服务、设备、联系人等" />
-      <button id="searchButton" class="primary-search" type="button">搜索</button>
-      <button id="clearSearch" class="secondary-search" type="button">清空</button>
-      <button id="closeSearch" class="close-search" type="button" aria-label="关闭搜索">×</button>
+  <nav class="topbar">
+    <div class="brand">
+      <span class="brand-mark">慧</span>
+      <span>慧湖50L100E</span>
     </div>
+    <div class="nav-actions">
+      <button class="nav-tab active" data-section="overview" type="button">概览</button>
+      <button class="nav-tab" data-section="resources" type="button">资源查询</button>
+      <button class="nav-tab" data-section="insights" type="button">维度展示</button>
+      <button class="nav-tab" data-section="labs" type="button">重点实验室</button>
+      <button class="nav-tab" data-section="policies" type="button">政策汇编</button>
+      <button class="nav-tab" data-section="update" type="button">数据更新</button>
+      <button id="searchToggle" class="search-toggle" type="button" aria-controls="searchPanel" aria-expanded="false" aria-label="打开搜索">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <circle cx="10.5" cy="10.5" r="6.5"></circle>
+          <path d="M16 16l5 5"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <div id="searchPanel" class="search-panel" hidden>
+    <input id="globalSearch" type="search" placeholder="搜索平台名称、研究方向、核心技术、服务、设备、联系人等" />
+    <button id="searchButton" class="primary-search" type="button">搜索</button>
+    <button id="clearSearch" class="secondary-search" type="button">清空</button>
+    <button id="closeSearch" class="close-search" type="button" aria-label="关闭搜索">×</button>
+  </div>
+
+  <header class="hero" data-section="overview">
     <section class="hero-content">
       <div>
         <p class="eyebrow">高校平台资源归集 · 产业维度查询 · 供需链接入口</p>
@@ -51,7 +55,7 @@
   </header>
 
   <main>
-    <section class="kpis" aria-label="关键统计">
+    <section class="kpis" aria-label="关键统计" data-section="overview">
       <article>
         <span>平台资源</span>
         <strong id="kpiResources">0</strong>
@@ -70,7 +74,7 @@
       </article>
     </section>
 
-    <section id="resources" class="panel">
+    <section id="resources" class="panel" data-section="resources">
       <div class="section-head">
         <div>
           <p class="eyebrow">Resource Finder</p>
@@ -102,11 +106,12 @@
         <button data-view="industries" type="button">行业视图</button>
         <button data-view="table" type="button">紧凑表格</button>
         <button data-view="keyLabs" type="button">全重资源</button>
+        <button id="resourceCollapseToggle" class="ghost-tab" type="button">收起资源列表</button>
       </div>
       <div id="resourceView" class="resource-grid"></div>
     </section>
 
-    <section id="insights" class="panel">
+    <section id="insights" class="panel" data-section="insights">
       <div class="section-head">
         <div>
           <p class="eyebrow">Dimension Insights</p>
@@ -130,7 +135,7 @@
       </div>
     </section>
 
-    <section id="labs" class="panel">
+    <section id="labs" class="panel" data-section="labs">
       <div class="section-head">
         <div>
           <p class="eyebrow">Linked Labs</p>
@@ -141,7 +146,7 @@
       <div id="labView" class="lab-grid"></div>
     </section>
 
-    <section id="policies" class="panel">
+    <section id="policies" class="panel" data-section="policies">
       <div class="section-head">
         <div>
           <p class="eyebrow">Policy Collection</p>
@@ -155,10 +160,62 @@
           <select id="policyDeptFilter"></select>
         </label>
       </div>
+      <div id="policyInsights" class="policy-insights"></div>
       <div id="policyView" class="policy-grid"></div>
     </section>
 
-    <section class="panel">
+    <section id="update" class="panel" data-section="update">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Data Update</p>
+          <h2>数据更新</h2>
+        </div>
+        <p>上传 Excel 平台资源清单，生成新的 data.js 文件。</p>
+      </div>
+      <div class="update-card">
+        <h3>上传平台资源清单</h3>
+        <p>请选择符合模板格式的 Excel 文件（.xlsx 或 .xls）。系统会保留现有重点实验室和政策数据，仅更新平台资源部分。</p>
+        <div class="update-actions">
+          <label class="file-input-label">
+            <input id="excelFileInput" type="file" accept=".xlsx,.xls" />
+            <span id="fileName">点击选择 Excel 文件</span>
+          </label>
+          <button id="generateDataJs" class="primary-btn" type="button" disabled>生成 data.js</button>
+          <a id="downloadDataJs" class="download-btn" href="#" download="data.js" hidden>下载 data.js</a>
+        </div>
+        <div id="updateStatus" class="update-status" hidden></div>
+      </div>
+      <div id="updatePreview" class="update-preview" hidden>
+        <h3>数据预览 <small id="previewCount"></small></h3>
+        <div class="preview-table-wrap">
+          <table id="previewTable">
+            <thead>
+              <tr>
+                <th>序号</th>
+                <th>平台名称</th>
+                <th>所属高校</th>
+                <th>一级产业分类</th>
+                <th>二级产业分类</th>
+                <th>平台等级</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="update-guide">
+        <h3>更新步骤</h3>
+        <ol>
+          <li>下载并使用 <a href="./平台资源清单-更新模板.xlsx" download>平台资源清单-更新模板.xlsx</a> 录入数据。</li>
+          <li>在本页上传填写好的 Excel 文件，核对预览信息。</li>
+          <li>点击“生成 data.js”，然后下载生成的文件。</li>
+          <li>用下载的 <code>data.js</code> 替换仓库根目录下的同名文件。</li>
+          <li>提交并推送到 GitHub，GitHub Pages 会自动更新。</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="schema" class="panel" data-section="overview">
       <div class="section-head">
         <div>
           <p class="eyebrow">Data Schema</p>
@@ -181,6 +238,7 @@
     </svg>
   </button>
 
+  <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
   <script src="./data.js"></script>
   <script src="./app.js"></script>
 </body>

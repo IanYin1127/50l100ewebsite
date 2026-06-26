@@ -6,9 +6,11 @@ const state = {
   level: "全部",
   policyDept: "全部",
   view: "cards",
+  resourcesCollapsed: true,
+  activeSection: "overview",
 };
 
-const data = window.HUIHU_DATA || { resources: [], labs: [], taxonomy: {}, meta: {} };
+const data = window.HUIHU_DATA || { resources: [], labs: [], taxonomy: {}, policies: {}, meta: {} };
 
 const universityOrder = [
   "苏州大学独墅湖校区",
@@ -60,7 +62,10 @@ const fields = [
   ["核心共享设备", "可共享或支撑服务的核心设备"],
   ["联系人", "资源联系人"],
   ["联系电话", "联系电话"],
+  ["序号", "平台资源的顺序编号"],
 ];
+
+const resourceFields = fields.map(([name]) => name);
 
 const el = (id) => document.getElementById(id);
 const uniq = (arr) => [...new Set(arr.filter(Boolean))].sort((a, b) => a.localeCompare(b, "zh-CN"));
@@ -175,9 +180,17 @@ function updateKpis() {
 function render() {
   const filtered = getFiltered();
   syncSearchMode();
+  syncResourceCollapseButton();
+  if (state.resourcesCollapsed) {
+    renderCollapsedResourceSummary(filtered);
+    renderCharts(filtered);
+    renderPolicies();
+    return;
+  }
   if (state.view === "keyLabs") {
     renderKeyLabs();
     renderCharts(filtered);
+    renderPolicies();
     return;
   }
   el("resultSummary").textContent = `当前筛选出 ${filtered.length} 条资源，共 ${uniq(filtered.map((r) => r["所属高校"])).length} 所高校、${uniq(filtered.map((r) => r["一级产业分类"])).length} 个一级产业分类`;
@@ -187,6 +200,27 @@ function render() {
   if (state.view === "table") renderTable(filtered);
   renderCharts(filtered);
   renderPolicies();
+}
+
+function renderCollapsedResourceSummary(items) {
+  const uniCount = uniq(items.map((r) => r["所属高校"])).length;
+  const industryCount = uniq(items.map((r) => r["一级产业分类"])).length;
+  el("resultSummary").textContent = `资源列表已收起：当前筛选范围内有 ${items.length} 条资源，覆盖 ${uniCount} 所高校、${industryCount} 个一级产业分类`;
+  el("resourceView").className = "collapsed-summary";
+  el("resourceView").innerHTML = `
+    <article class="summary-card">
+      <span class="tag">已收起</span>
+      <h3>资源列表已折叠</h3>
+      <p>当前条件下共 ${items.length} 条资源。点击“展开资源列表”查看卡片、分组或表格详情。</p>
+    </article>
+  `;
+}
+
+function syncResourceCollapseButton() {
+  const btn = el("resourceCollapseToggle");
+  if (!btn) return;
+  btn.textContent = state.resourcesCollapsed ? "展开资源列表" : "收起资源列表";
+  btn.classList.toggle("active", state.resourcesCollapsed);
 }
 
 function renderCards(items) {
@@ -352,7 +386,7 @@ function renderKeyLabs() {
 }
 
 function renderSchema() {
-  el("schemaView").innerHTML = fields.map(([name, desc]) => `
+  el("schemaView").innerHTML = fields.slice(0, -1).map(([name, desc]) => `
     <article class="schema-item">
       <h3>${escapeHtml(name)}</h3>
       <p>${escapeHtml(desc)}</p>
@@ -366,7 +400,9 @@ function getFilteredPolicies() {
 
 function renderPolicies() {
   const items = getFilteredPolicies();
-  el("policySummary").textContent = `当前展示 ${items.length} 条政策明细，来源于 ${uniq(items.map((item) => item["部门"])).length} 个政策分类。`;
+  const deptCount = uniq(items.map((item) => item["部门"])).length;
+  el("policySummary").textContent = `当前展示 ${items.length} 条精简政策，来源于 ${deptCount} 个政策分类。`;
+  renderPolicyInsights(items);
   el("policyView").innerHTML = items.map((item) => `
     <article class="policy-card">
       <div class="policy-meta">
@@ -374,12 +410,37 @@ function renderPolicies() {
         ${item["政策子项"] ? `<span class="tag">${escapeHtml(item["政策子项"])}</span>` : ""}
         ${item["支持类别"] ? `<span class="tag">${escapeHtml(item["支持类别"])}</span>` : ""}
       </div>
-      <h3>${escapeHtml(item["政策名称"] || "未命名政策")}</h3>
-      ${policySection("支持对象", item["支持对象"])}
-      ${policySection("申报条件 / 支持范围", [item["申报条件"], item["支持范围"]].filter(Boolean).join("\n"))}
-      ${policySection("资助标准 / 支持方式与额度", [item["资助标准"], item["支持方式与额度"]].filter(Boolean).join("\n"))}
+      <h3>${escapeHtml(shortPolicyTitle(item["政策名称"] || "未命名政策"))}</h3>
+      ${policySection("给谁", conciseText(item["支持对象"] || inferPolicyAudience(item), 70))}
+      ${policySection("支持什么", conciseText([item["政策子项"], item["支持类别"], item["申报条件"], item["支持范围"]].filter(Boolean).join("；"), 120))}
+      ${policySection("多少钱", conciseText(item["资助标准"] || item["支持方式与额度"] || "按政策条款执行", 90))}
     </article>
   `).join("") || `<div class="empty">暂无政策数据。</div>`;
+}
+
+function renderPolicyInsights(items) {
+  const insights = [
+    ["政策方向", `共 ${items.length} 条政策，重点围绕高校合作、人才培养、技术转移、研发资源开放、产教融合。`],
+    ["企业重点", "优先看实习留用、联合攻关、技术合同、研发资源共享补助。"],
+    ["高校重点", "优先看研究生培养基地、产业教授、科研平台、技术转移输出补助。"],
+  ];
+  el("policyInsights").innerHTML = insights.map(([title, text]) => `<article><b>${escapeHtml(title)}</b><p>${escapeHtml(text)}</p></article>`).join("");
+}
+
+function shortPolicyTitle(value) {
+  return String(value || "").replace(/\n+/g, "").replace(/苏园管|苏园人才办/g, " · $&").trim();
+}
+
+function conciseText(value, limit) {
+  const text = normalizeNumberedText(value || "").replace(/\s+/g, " ").trim();
+  return text.length > limit ? `${text.slice(0, limit)}…` : text;
+}
+
+function inferPolicyAudience(item) {
+  const text = [item["申报条件"], item["支持范围"], item["支持类别"]].filter(Boolean).join(" ");
+  if (/企业|用人单位/.test(text)) return "企业 / 用人单位";
+  if (/高校|院校|科研/.test(text)) return "高校 / 科研机构";
+  return "符合政策条件的申报主体";
 }
 
 function policySection(label, value) {
@@ -409,6 +470,46 @@ function setSearchPanel(open) {
   if (open) {
     setTimeout(() => el("globalSearch").focus(), 0);
   }
+}
+
+function getSectionFromHash() {
+  const hash = window.location.hash.replace(/^#/, "");
+  const valid = ["overview", "resources", "insights", "labs", "policies", "update"];
+  return valid.includes(hash) ? hash : "overview";
+}
+
+function setActiveSection(section) {
+  state.activeSection = section;
+  document.querySelectorAll("[data-section]").forEach((element) => {
+    element.classList.toggle("section-active", element.dataset.section === section);
+  });
+  document.querySelectorAll(".nav-tab").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.section === section);
+  });
+  if (window.location.hash !== `#${section}`) {
+    window.location.hash = section;
+  }
+
+  if (section === "resources") render();
+  if (section === "insights") renderCharts(getFiltered());
+  if (section === "labs") renderLabs();
+  if (section === "policies") renderPolicies();
+}
+
+function bindTabs() {
+  document.querySelectorAll(".nav-tab").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      setActiveSection(btn.dataset.section);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+  window.addEventListener("hashchange", () => {
+    const section = getSectionFromHash();
+    if (section !== state.activeSection) {
+      setActiveSection(section);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  });
 }
 
 function bindEvents() {
@@ -453,6 +554,10 @@ function bindEvents() {
     state.policyDept = e.target.value;
     renderPolicies();
   });
+  el("resourceCollapseToggle").addEventListener("click", () => {
+    state.resourcesCollapsed = !state.resourcesCollapsed;
+    render();
+  });
   document.querySelectorAll(".view-tabs button").forEach((btn) => {
     btn.addEventListener("click", () => {
       document.querySelectorAll(".view-tabs button").forEach((item) => item.classList.remove("active"));
@@ -461,17 +566,6 @@ function bindEvents() {
       render();
     });
   });
-}
-
-function init() {
-  initFilters();
-  updateKpis();
-  renderLabs();
-  renderSchema();
-  renderPolicies();
-  render();
-  bindEvents();
-  initBackToTop();
 }
 
 function initBackToTop() {
@@ -487,6 +581,176 @@ function initBackToTop() {
   });
   window.addEventListener("scroll", toggle, { passive: true });
   toggle();
+}
+
+/* Excel 导入与 data.js 生成 */
+let parsedResources = null;
+let generatedDataJsBlobUrl = null;
+
+function initExcelUpload() {
+  const fileInput = el("excelFileInput");
+  const fileName = el("fileName");
+  const generateBtn = el("generateDataJs");
+  const downloadLink = el("downloadDataJs");
+
+  fileInput.addEventListener("change", () => {
+    const file = fileInput.files[0];
+    if (!file) return;
+    fileName.textContent = file.name;
+    parsedResources = null;
+    generatedDataJsBlobUrl = null;
+    downloadLink.hidden = true;
+    generateBtn.disabled = false;
+    el("updatePreview").hidden = true;
+    showUpdateStatus("文件已选择，点击“生成 data.js”开始解析。", "info");
+  });
+
+  generateBtn.addEventListener("click", async () => {
+    const file = fileInput.files[0];
+    if (!file) {
+      showUpdateStatus("请先选择 Excel 文件。", "error");
+      return;
+    }
+    if (typeof XLSX === "undefined") {
+      showUpdateStatus("Excel 解析库加载失败，请检查网络连接后刷新页面。", "error");
+      return;
+    }
+    try {
+      const workbook = await readExcelFile(file);
+      parsedResources = workbookToResources(workbook);
+      const validation = validateResources(parsedResources);
+      if (!validation.valid) {
+        showUpdateStatus(`数据校验未通过：${validation.message}`, "error");
+        return;
+      }
+      previewResources(parsedResources);
+      const dataJsContent = buildDataJs(parsedResources);
+      if (generatedDataJsBlobUrl) {
+        URL.revokeObjectURL(generatedDataJsBlobUrl);
+      }
+      generatedDataJsBlobUrl = URL.createObjectURL(new Blob([dataJsContent], { type: "application/javascript;charset=utf-8" }));
+      downloadLink.href = generatedDataJsBlobUrl;
+      downloadLink.hidden = false;
+      showUpdateStatus(`解析成功，共 ${parsedResources.length} 条资源。请核对预览后下载 data.js。`, "success");
+    } catch (err) {
+      showUpdateStatus(`解析失败：${err.message}`, "error");
+      console.error(err);
+    }
+  });
+}
+
+function readExcelFile(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      try {
+        const array = new Uint8Array(e.target.result);
+        const workbook = XLSX.read(array, { type: "array" });
+        resolve(workbook);
+      } catch (err) {
+        reject(err);
+      }
+    };
+    reader.onerror = () => reject(new Error("读取文件失败"));
+    reader.readAsArrayBuffer(file);
+  });
+}
+
+function workbookToResources(workbook) {
+  const sheetName = workbook.SheetNames[0];
+  const worksheet = workbook.Sheets[sheetName];
+  const rows = XLSX.utils.sheet_to_json(worksheet, { header: 1, defval: "" });
+  if (rows.length < 2) {
+    throw new Error("Excel 内容为空或缺少表头");
+  }
+  const headers = rows[0].map((h) => String(h || "").trim());
+  const missing = resourceFields.filter((f) => !headers.includes(f));
+  if (missing.length) {
+    throw new Error(`缺少必需字段：${missing.join("、")}`);
+  }
+
+  return rows.slice(1).map((row) => {
+    const item = {};
+    headers.forEach((h, i) => {
+      if (resourceFields.includes(h)) {
+        item[h] = row[i] !== undefined ? String(row[i]).trim() : "";
+      }
+    });
+    return item;
+  }).filter((item) => item["平台名称"]);
+}
+
+function validateResources(items) {
+  if (!items.length) {
+    return { valid: false, message: "未解析到有效数据，请检查 Excel 内容。" };
+  }
+  const missingNameIndex = items.findIndex((i) => !i["平台名称"]);
+  if (missingNameIndex !== -1) {
+    return { valid: false, message: `第 ${missingNameIndex + 2} 行缺少平台名称。` };
+  }
+  return { valid: true };
+}
+
+function buildDataJs(newResources) {
+  const labsCount = (data.labs || []).reduce((sum, group) => sum + (group.labs || []).length, 0);
+  const today = new Date().toISOString().slice(0, 10);
+  const newData = {
+    meta: {
+      ...(data.meta || {}),
+      generatedAt: today,
+      resourceCount: newResources.length,
+      universityCount: uniq(newResources.map((r) => r["所属高校"])).length,
+      industryCount: uniq(newResources.map((r) => r["一级产业分类"])).length,
+      labGroupCount: (data.labs || []).length,
+      labCount: labsCount,
+    },
+    resources: newResources,
+    taxonomy: data.taxonomy || {},
+    labs: data.labs || [],
+    policies: data.policies || [],
+  };
+  return `window.HUIHU_DATA = ${JSON.stringify(newData, null, 2)};\n`;
+}
+
+function previewResources(items) {
+  const preview = el("updatePreview");
+  const tbody = el("previewTable").querySelector("tbody");
+  const count = el("previewCount");
+  const displayItems = items.slice(0, 10);
+  tbody.innerHTML = displayItems.map((item) => `
+    <tr>
+      <td>${escapeHtml(item["序号"])}</td>
+      <td>${escapeHtml(item["平台名称"])}</td>
+      <td>${escapeHtml(item["所属高校"])}</td>
+      <td>${escapeHtml(item["一级产业分类"])}</td>
+      <td>${escapeHtml(item["二级产业分类"])}</td>
+      <td>${escapeHtml(item["平台等级"])}</td>
+    </tr>
+  `).join("");
+  count.textContent = `共 ${items.length} 条，显示前 ${displayItems.length} 条`;
+  preview.hidden = false;
+}
+
+function showUpdateStatus(message, type) {
+  const status = el("updateStatus");
+  status.textContent = message;
+  status.className = `update-status ${type}`;
+  status.hidden = false;
+}
+
+function init() {
+  state.activeSection = getSectionFromHash();
+  initFilters();
+  updateKpis();
+  renderLabs();
+  renderSchema();
+  renderPolicies();
+  render();
+  bindEvents();
+  bindTabs();
+  initExcelUpload();
+  setActiveSection(state.activeSection);
+  initBackToTop();
 }
 
 init();
