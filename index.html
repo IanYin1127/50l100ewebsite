@@ -14,12 +14,6 @@
         <span class="brand-mark">慧</span>
         <span>慧湖50L100E</span>
       </div>
-      <button id="searchToggle" class="search-toggle" type="button" aria-controls="searchPanel" aria-expanded="false" aria-label="打开搜索">
-        <svg aria-hidden="true" viewBox="0 0 24 24">
-          <circle cx="10.5" cy="10.5" r="6.5"></circle>
-          <path d="M16 16l5 5"></path>
-        </svg>
-      </button>
     </nav>
 
     <div class="main-tabs" role="tablist" aria-label="页面模块">
@@ -31,22 +25,28 @@
     </div>
   </header>
 
-  <div id="searchPanel" class="search-panel" hidden>
-    <input id="globalSearch" type="search" placeholder="搜索平台名称、研究方向、核心技术、服务、设备、联系人等" />
-    <button id="searchButton" class="primary-search" type="button">搜索</button>
-    <button id="clearSearch" class="secondary-search" type="button">清空</button>
-    <button id="closeSearch" class="close-search" type="button" aria-label="关闭搜索">×</button>
-  </div>
+  <section class="hero" data-section="resources">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="eyebrow">高校平台资源清单</p>
+        <h1>慧湖 50L100E</h1>
+        <p class="hero-desc">汇聚高校、科研院所的平台资源，提供资源查询、多维筛选、统计洞察与政策浏览，助力产学研高效对接。</p>
+      </div>
+      <div class="hero-kpis" id="heroKpis"></div>
+    </div>
+  </section>
 
   <main>
     <section id="resourcesSection" class="panel" data-section="resources">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Resource Finder</p>
-          <h2>资源查询</h2>
-        </div>
-        <p id="resultSummary">正在加载数据</p>
+      <div class="search-bar">
+        <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24">
+          <circle cx="10.5" cy="10.5" r="6.5"></circle>
+          <path d="M16 16l5 5"></path>
+        </svg>
+        <input id="globalSearch" type="search" placeholder="搜索平台名称、研究方向、核心技术、服务、设备、联系人等" />
+        <button id="clearSearch" class="search-clear" type="button" aria-label="清空搜索">×</button>
       </div>
+
       <div class="filters">
         <label>
           所属高校
@@ -65,6 +65,12 @@
           <select id="levelFilter"></select>
         </label>
       </div>
+
+      <div class="section-head">
+        <h2>资源查询</h2>
+        <p id="resultSummary">正在加载数据</p>
+      </div>
+
       <div class="view-tabs" role="tablist" aria-label="展示视图">
         <button class="active" data-view="cards" type="button">资源卡片</button>
         <button data-view="universities" type="button">高校视图</button>
@@ -72,9 +78,11 @@
         <button data-view="table" type="button">紧凑表格</button>
         <button data-view="keyLabs" type="button">全重资源</button>
       </div>
+
       <div class="view-tools">
         <button id="resourceCollapseToggle" class="ghost-tab" type="button">收起资源列表</button>
       </div>
+
       <div id="resourceView" class="resource-grid"></div>
     </section>
 
@@ -143,7 +151,7 @@
         <h3>需要密码访问</h3>
         <p>请输入更新密码以解锁文件上传功能。</p>
         <div class="update-actions">
-          <input id="updatePassword" type="password" placeholder="请输入密码" style="padding:12px 14px;border:1px solid var(--line);border-radius:14px;min-width:220px;" />
+          <input id="updatePassword" class="update-password" type="password" placeholder="请输入密码" />
           <button id="updateAuthBtn" class="primary-btn" type="button">进入</button>
         </div>
         <div id="updateAuthStatus" class="update-status" hidden></div>
@@ -192,7 +200,6 @@
         </div>
       </div>
     </section>
-
   </main>
 
   <footer>

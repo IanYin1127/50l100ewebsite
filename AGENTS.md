@@ -4,9 +4,10 @@
 
 ## 项目概述
 
-本项目是一个部署在 GitHub Pages 上的纯静态网页，用于展示“50L100E 高校平台资源清单”及相关政策汇编。页面提供资源查询、多维度筛选、视图切换、统计图表、重点实验室展示、政策浏览和数据更新能力。
+本项目是一个部署在 GitHub Pages 上的纯静态网页，用于展示“50L100E 高校平台资源清单”及相关政策汇编。页面提供资源查询、多维度筛选、视图切换、统计图表、重点实验室展示、政策浏览和浏览器端 Excel 导入能力。
 
 - **仓库名**：`50l100ewebsite`
+- **远程仓库**：`https://github.com/IanYin1127/50l100ewebsite.git`
 - **部署分支**：`main`
 - **部署目录**：仓库根目录 `/`
 - **入口页面**：`index.html`
@@ -21,7 +22,7 @@
 - **Excel 解析**：`app.js` 运行时动态加载 SheetJS（`xlsx`）CDN 库，在浏览器端解析上传的 Excel 文件。页面本身不直接引用该脚本。
 - **部署**：GitHub Pages（分支部署模式）。
 
-> 注意：仓库中没有 `package.json`、`pyproject.toml`、`vite.config.js`、`_config.yml` 或任何构建配置文件，也不依赖 npm、Python 后端或其他运行时。
+> 注意：仓库中没有 `package.json`、`pyproject.toml`、`Cargo.toml`、`Gemfile`、`go.mod`、`vite.config.js`、`_config.yml` 或任何构建配置文件，也不依赖 npm、Python 后端或其他运行时。
 
 ## 文件结构
 
@@ -56,7 +57,7 @@
   - `meta`：标题、生成日期、源文件名、资源/高校/产业/政策/实验室数量统计。
   - `resources`：平台资源数组。
   - `labs`：可链接全国重点实验室分组数据。
-  - `taxonomy`：产业分类体系。
+  - `taxonomy`：产业分类体系（按一级产业组织二级产业列表）。
   - `policies`：政策条目数组。
 
 ## 构建与运行

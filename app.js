@@ -168,6 +168,24 @@ function refreshSubIndustryOptions() {
   state.subIndustry = el("subIndustryFilter").value;
 }
 
+function renderKPIs() {
+  const meta = data.meta || {};
+  const items = [
+    ["平台资源", meta.resourceCount || resources.length],
+    ["合作高校", meta.universityCount || uniq(resources.map((r) => r["所属高校"])).length],
+    ["产业分类", meta.industryCount || uniq(resources.map((r) => r["一级产业分类"])).length],
+    ["重点实验室", (data.labs || []).reduce((sum, g) => sum + (g.labs || []).length, 0)],
+  ];
+  const kpis = el("heroKpis");
+  if (!kpis) return;
+  kpis.innerHTML = items.map(([label, value]) => `
+    <article class="kpi-card">
+      <span>${escapeHtml(label)}</span>
+      <strong>${escapeHtml(String(value))}</strong>
+    </article>
+  `).join("");
+}
+
 function render() {
   const filtered = getFiltered();
   syncSearchMode();
@@ -429,23 +447,8 @@ function applySearch() {
   render();
 }
 
-function isSearchOpen() {
-  return !el("searchPanel").hidden;
-}
-
 function syncSearchMode() {
-  document.body.classList.toggle("search-mode", Boolean(state.q.trim()) || isSearchOpen());
   document.body.classList.toggle("lab-mode", state.view === "keyLabs");
-}
-
-function setSearchPanel(open) {
-  el("searchPanel").hidden = !open;
-  el("searchToggle").setAttribute("aria-expanded", String(open));
-  el("searchToggle").setAttribute("aria-label", open ? "关闭搜索" : "打开搜索");
-  syncSearchMode();
-  if (open) {
-    setTimeout(() => el("globalSearch").focus(), 0);
-  }
 }
 
 function getSectionFromHash() {
@@ -493,12 +496,6 @@ function bindTabs() {
 }
 
 function bindEvents() {
-  el("searchToggle").addEventListener("click", () => {
-    setSearchPanel(!isSearchOpen());
-  });
-  el("closeSearch").addEventListener("click", () => {
-    setSearchPanel(false);
-  });
   el("globalSearch").addEventListener("input", (e) => {
     state.q = e.target.value;
     render();
@@ -506,7 +503,6 @@ function bindEvents() {
   el("globalSearch").addEventListener("keydown", (e) => {
     if (e.key === "Enter") applySearch();
   });
-  el("searchButton").addEventListener("click", applySearch);
   el("clearSearch").addEventListener("click", () => {
     state.q = "";
     el("globalSearch").value = "";
@@ -771,6 +767,7 @@ function syncUpdateAuth() {
 function init() {
   state.activeSection = getSectionFromHash();
   initFilters();
+  renderKPIs();
   bindEvents();
   bindTabs();
   initExcelUpload();
