@@ -1,0 +1,38 @@
+name: 分享平台成果或反馈运行状态
+description: 提交官方成果链接、平台更名、合并、停运或来源更新信息
+title: "[平台信息] "
+body:
+  - type: input
+    id: platform
+    attributes:
+      label: 平台名称与所属高校
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 信息类型
+      options:
+        - 新成果或动态
+        - 官方来源补充
+        - 更名或合并
+        - 运行或停运核实
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 官方原文链接
+      description: 请提供高校、院所或平台的公开原文，方便核实。
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: 原文发布日期
+      placeholder: YYYY-MM-DD
+  - type: textarea
+    id: description
+    attributes:
+      label: 补充说明
+      description: 提交后由维护者核实，不会自动发布。请勿填写未公开的电话或个人信息。

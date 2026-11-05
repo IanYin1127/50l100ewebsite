@@ -246,6 +246,7 @@ function renderCards(items) {
         <span class="tag">${escapeHtml(item["平台等级"] || "未标注等级")}</span>
       </div>
       <h3>${escapeHtml(item["平台名称"])}</h3>
+      ${renderPlatformUpdates(item)}
       <p>${formatText(truncate(item["研究方向"], 260))}</p>
       <details>
         <summary>查看完整信息</summary>
@@ -468,7 +469,7 @@ function syncSearchMode() {
 
 function getSectionFromHash() {
   const hash = window.location.hash.replace(/^#/, "");
-  const valid = ["resources", "insights", "labs", "policies", "update"];
+  const valid = ["resources", "insights", "labs", "policies", "updates", "update"];
   return valid.includes(hash) ? hash : "resources";
 }
 
@@ -494,6 +495,7 @@ function setActiveSection(section, { updateHash = true } = {}) {
   if (section === "insights") renderCharts(getFiltered());
   if (section === "labs" && firstRender) renderLabs();
   if (section === "policies" && firstRender) renderPolicies();
+  if (section === "updates") renderMonitoring();
   if (section === "update") syncUpdateAuth();
 }
 
@@ -833,6 +835,7 @@ function init() {
     button.tabIndex = active ? 0 : -1;
   });
   renderKPIs();
+  initMonitoring();
   bindEvents();
   bindTabs();
   initExcelUpload();
@@ -840,6 +843,93 @@ function init() {
   setActiveSection(state.activeSection, { updateHash: false });
   window.scrollTo({ top: 0, behavior: "auto" });
   initBackToTop();
+}
+
+const monitoring = window.HUIHU_MONITORING || { platforms: {}, items: [], sourceChecks: {}, generatedAt: null };
+const monitorLabels = {
+  recent_activity: "近期有公开动态", needs_review: "长期未见动态，待核实",
+  source_error: "来源访问异常，待核实", unknown: "尚无匹配动态",
+  unconfigured: "待补充官方来源", not_checked: "已配置来源，尚未执行监测",
+  verified_operating: "人工确认运行", verified_ceased: "人工确认停运",
+};
+
+function externalLink(url, label) {
+  try {
+    const parsed = new URL(url);
+    if (parsed.protocol !== "https:" || parsed.username || parsed.password) return "";
+    return `<a href="${escapeHtml(parsed.href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`;
+  } catch { return ""; }
+}
+
+function monitorRecord(item) {
+  const record = monitoring.platforms?.[String(item["序号"])];
+  return record && record.name === item["平台名称"] && record.university === item["所属高校"]
+    ? record : { status: "unconfigured", sourceIds: [] };
+}
+
+function monitorNews(item) {
+  if (!monitorRecord(item).name) return [];
+  return (monitoring.items || []).filter((entry) => entry.platformId === String(item["序号"]));
+}
+
+function monitoringStale() {
+  return monitoring.generatedAt && Date.now() - Date.parse(monitoring.generatedAt) > 3 * 86400000;
+}
+
+function renderPlatformUpdates(item) {
+  const record = monitorRecord(item);
+  const news = monitorNews(item).slice(0, 3);
+  return `<div class="platform-updates">
+    <span class="tag monitor-tag">${escapeHtml(monitorLabels[record.status] || "待核实")}</span>
+    ${monitoringStale() ? '<small>监测记录已超过 3 天未刷新</small>' : ""}
+    ${record.lastActivityAt ? `<small>最近公开动态：${escapeHtml(record.lastActivityAt)}</small>` : ""}
+    ${news.length ? `<details><summary>成果与动态（${monitorNews(item).length}）</summary><ul class="mini-list">${news.map((entry) => `<li>${externalLink(entry.url, entry.title)}<br><small>${escapeHtml(entry.publishedAt || "日期待核实")} · ${escapeHtml(entry.sourceName)}</small></li>`).join("")}</ul></details>` : ""}
+    ${record.homepage ? externalLink(record.homepage, "访问平台官方页面 ↗") : ""}
+  </div>`;
+}
+
+function initMonitoring() {
+  setOptions(el("updateUniversity"), uniqByUniversityOrder(resources.map((r) => r["所属高校"])), "全部");
+  ["updateSearch", "updateUniversity", "updateStatusFilter"].forEach((id) => {
+    el(id).addEventListener(id === "updateSearch" ? "input" : "change", renderMonitoring);
+  });
+}
+
+function renderMonitoring() {
+  const q = el("updateSearch").value.trim().toLowerCase();
+  const university = el("updateUniversity").value;
+  const status = el("updateStatusFilter").value;
+  const selected = resources.filter((item) => {
+    const record = monitorRecord(item);
+    return (university === "全部" || item["所属高校"] === university)
+      && (status === "all" || record.status === status)
+      && (!q || includes(item, q) || monitorNews(item).some((entry) => includes(entry, q)));
+  });
+  const ids = new Set(selected.filter((item) => monitorRecord(item).name).map((item) => String(item["序号"])));
+  const feed = (monitoring.items || []).filter((item) => ids.has(item.platformId))
+    .filter((item) => !q || includes(item, q) || selected.some((resource) => String(resource["序号"]) === item.platformId && includes(resource, q)))
+    .sort((a, b) => String(b.publishedAt || "").localeCompare(String(a.publishedAt || "")));
+  const configured = resources.filter((item) => monitorRecord(item).sourceIds?.length).length;
+  const checked = resources.filter((item) => monitorRecord(item).checkedAt).length;
+  const counters = [["已配置官方来源", `${configured} / ${resources.length}`], ["已执行来源检查", checked], ["已收录成果与动态", (monitoring.items || []).length], ["来源访问异常", Object.values(monitoring.sourceChecks || {}).filter((source) => source.state === "error").length]];
+  el("monitorStats").innerHTML = counters.map(([label, value]) => `<article class="kpi-card"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></article>`).join("");
+  el("monitorFreshness").textContent = monitoring.generatedAt
+    ? `最近采集：${new Date(monitoring.generatedAt).toLocaleString("zh-CN")}。${monitoringStale() ? "记录已超过 3 天未刷新，请检查定时任务。" : ""}`
+    : "定时采集尚未首次运行。下列人工核实条目附有原文；来源配置不代表已确认平台正在运行。";
+  el("updatesSummary").textContent = `当前条件下共 ${feed.length} 条成果与动态`;
+  el("updatesFeed").innerHTML = feed.map((entry) => {
+    const resource = resources.find((item) => String(item["序号"]) === entry.platformId);
+    return `<article class="policy-card"><span class="tag">${escapeHtml(entry.kind || "动态")}</span><h3>${externalLink(entry.url, entry.title)}</h3><p>${escapeHtml(resource?.["平台名称"] || "平台待匹配")}</p><small>原文发布：${escapeHtml(entry.publishedAt || "待核实")}<br>来源：${escapeHtml(entry.sourceName)}<br>收录：${escapeHtml(String(entry.discoveredAt || "").slice(0, 10))}</small></article>`;
+  }).join("") || '<div class="empty">尚无符合条件的动态。可通过“分享成果”提交官方链接；未收录不代表没有成果。</div>';
+  el("monitorSummary").textContent = `当前展示 ${selected.length} 个平台；监测状态基于已配置来源，不覆盖全部互联网信息。`;
+  el("monitorView").innerHTML = selected.map((item) => {
+    const record = monitorRecord(item);
+    const sources = (record.sourceIds || []).map((sid) => {
+      const check = monitoring.sourceChecks?.[sid];
+      return check ? `<li>${externalLink(check.url, check.name)}<br><small>${check.state === "error" ? `访问异常，连续 ${Number(check.consecutiveFailures) || 1} 次` : "来源检查完成"} · ${escapeHtml(String(check.checkedAt || "").slice(0, 10))}</small></li>` : `<li>${escapeHtml(sid)}：尚未检查</li>`;
+    }).join("");
+    return `<article class="resource-card"><span class="tag">${escapeHtml(item["所属高校"])}</span><h3>${escapeHtml(item["平台名称"])}</h3>${renderPlatformUpdates(item)}${sources ? `<details><summary>查看监测依据</summary><ul class="mini-list">${sources}</ul><p>来源可访问性与平台实际运行状态分别记录。</p></details>` : ""}${record.verification ? `<p>人工核验：${escapeHtml(record.verification.date)} ${externalLink(record.verification.evidenceUrl, "核验依据")}</p>` : ""}</article>`;
+  }).join("") || '<div class="empty">没有匹配的平台，请调整条件。</div>';
 }
 
 init();

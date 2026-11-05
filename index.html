@@ -22,6 +22,7 @@
       <button data-section="insights" type="button">维度展示</button>
       <button data-section="labs" type="button">重点实验室</button>
       <button data-section="policies" type="button">政策汇编</button>
+      <button data-section="updates" type="button">成果与运行监测</button>
       <button data-section="update" type="button">数据更新</button>
     </div>
   </header>
@@ -144,6 +145,27 @@
       <div id="policyView" class="policy-grid"></div>
     </section>
 
+    <section id="updatesSection" class="panel" data-section="updates">
+      <div class="section-head">
+        <div><p class="eyebrow">Platform Updates</p><h2>成果与运行监测</h2></div>
+        <a class="ghost-tab" href="https://github.com/IanYin1127/50l100ewebsite/issues/new?template=platform-update.yml" target="_blank" rel="noopener noreferrer">分享成果 / 反馈平台状态</a>
+      </div>
+      <p class="monitor-note">自动汇集已确认官方来源的动态。近期动态只代表公开活动线索；无新动态或来源无法访问，不等于平台停止运行。</p>
+      <p id="monitorFreshness" role="status"></p>
+      <div id="monitorStats" class="monitor-stats"></div>
+      <div class="monitor-controls">
+        <label>搜索平台或成果<input id="updateSearch" type="search" placeholder="平台名称、成果标题或高校" /></label>
+        <label>高校<select id="updateUniversity"></select></label>
+        <label>平台核验状态<select id="updateStatusFilter"><option value="all">全部状态</option><option value="recent_activity">近期有公开动态</option><option value="needs_review">长期未见动态</option><option value="source_error">来源访问异常</option><option value="unknown">尚无匹配动态</option><option value="not_checked">尚未执行监测</option><option value="unconfigured">待补充来源</option><option value="verified_operating">人工确认运行</option><option value="verified_ceased">人工确认停运</option></select></label>
+      </div>
+      <h3>最新成果与动态</h3>
+      <p id="updatesSummary" role="status" aria-live="polite"></p>
+      <div id="updatesFeed" class="policy-grid"></div>
+      <h3 class="monitor-heading">平台监测清单</h3>
+      <p id="monitorSummary" role="status" aria-live="polite"></p>
+      <div id="monitorView" class="resource-grid"></div>
+    </section>
+
     <section id="updateSection" class="panel" data-section="update">
       <div class="section-head">
         <div>
@@ -219,6 +241,7 @@
   </button>
 
   <script src="./data.js"></script>
+  <script src="./monitoring-data.js"></script>
   <script src="./app.js"></script>
 </body>
 </html>

@@ -1,0 +1,2253 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "suda-research",
+      "name": "苏州大学科学技术研究院·科研进展",
+      "url": "https://scit.suda.edu.cn/kydt/list.htm",
+      "format": "html",
+      "allowedHosts": [
+        "scit.suda.edu.cn"
+      ],
+      "articlePattern": "/(?:[0-9a-f]{2}/[0-9a-f]{2}|\\d{4}/\\d{4})/c\\d+a\\d+/page.htm",
+      "platformIds": [
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "83",
+        "84",
+        "85",
+        "86",
+        "87",
+        "88",
+        "89",
+        "90",
+        "91",
+        "92",
+        "93",
+        "94",
+        "95",
+        "96",
+        "97",
+        "98",
+        "99",
+        "100",
+        "101",
+        "102",
+        "103",
+        "104",
+        "105",
+        "106"
+      ],
+      "dedicated": false,
+      "kind": "成果",
+      "verifiedAt": "2026-11-05",
+      "verificationUrl": "https://scit.suda.edu.cn/main.htm",
+      "autoPublish": true,
+      "maxArticleFetches": 6
+    },
+    {
+      "id": "xjtlu-news",
+      "name": "西交利物浦大学官方新闻",
+      "url": "https://www.xjtlu.edu.cn/zh/news",
+      "format": "html",
+      "allowedHosts": [
+        "www.xjtlu.edu.cn"
+      ],
+      "articlePattern": "/zh/news/\\d{4}/\\d{2}/[^/]+",
+      "platformIds": [
+        "133",
+        "134",
+        "135",
+        "136",
+        "137",
+        "138",
+        "139",
+        "140",
+        "141",
+        "142",
+        "143",
+        "144",
+        "145",
+        "146",
+        "147",
+        "148",
+        "149",
+        "150",
+        "151",
+        "152",
+        "153",
+        "154",
+        "155",
+        "156",
+        "157",
+        "158",
+        "159",
+        "160"
+      ],
+      "dedicated": false,
+      "kind": "动态",
+      "verifiedAt": "2026-11-05",
+      "verificationUrl": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+      "autoPublish": true,
+      "maxArticleFetches": 6
+    },
+    {
+      "id": "radiation-results",
+      "name": "放射医学实验室·科研成果",
+      "url": "https://sklrmp.suda.edu.cn/8750/list.htm",
+      "format": "html",
+      "allowedHosts": [
+        "sklrmp.suda.edu.cn"
+      ],
+      "articlePattern": "/(?:[0-9a-f]{2}/[0-9a-f]{2}|\\d{4}/\\d{4})/c\\d+a\\d+/page.htm",
+      "platformIds": [
+        "36"
+      ],
+      "dedicated": true,
+      "kind": "成果",
+      "verifiedAt": "2026-11-05",
+      "verificationUrl": "https://sklrmp.suda.edu.cn/",
+      "autoPublish": true,
+      "maxArticleFetches": 6
+    },
+    {
+      "id": "radiation-news",
+      "name": "放射医学实验室·综合新闻",
+      "url": "https://sklrmp.suda.edu.cn/12792/list.htm",
+      "format": "html",
+      "allowedHosts": [
+        "sklrmp.suda.edu.cn"
+      ],
+      "articlePattern": "/(?:[0-9a-f]{2}/[0-9a-f]{2}|\\d{4}/\\d{4})/c\\d+a\\d+/page.htm",
+      "platformIds": [
+        "36"
+      ],
+      "dedicated": true,
+      "kind": "动态",
+      "verifiedAt": "2026-11-05",
+      "verificationUrl": "https://sklrmp.suda.edu.cn/",
+      "autoPublish": true,
+      "maxArticleFetches": 6
+    },
+    {
+      "id": "seu-news",
+      "name": "东南大学苏州校区官方动态",
+      "url": "https://szxq.seu.edu.cn/xqxw/list.htm",
+      "format": "html",
+      "allowedHosts": [
+        "szxq.seu.edu.cn"
+      ],
+      "articlePattern": "/(?:[0-9a-f]{2}/[0-9a-f]{2}|\\d{4}/\\d{4})/c\\d+a\\d+/page.htm",
+      "platformIds": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "dedicated": false,
+      "kind": "动态",
+      "verifiedAt": "2026-11-05",
+      "verificationUrl": "https://szxq.seu.edu.cn/xqxw/list.htm",
+      "autoPublish": true,
+      "maxArticleFetches": 6
+    },
+    {
+      "id": "sdu-news",
+      "name": "山东大学苏州研究院官方动态",
+      "url": "https://suz.sdu.edu.cn/index/yjyyw.htm",
+      "format": "html",
+      "allowedHosts": [
+        "suz.sdu.edu.cn"
+      ],
+      "articlePattern": "/info/\\d+/\\d+\\.htm",
+      "platformIds": [
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29"
+      ],
+      "dedicated": false,
+      "kind": "动态",
+      "verifiedAt": "2026-11-05",
+      "verificationUrl": "https://suz.sdu.edu.cn/index/yjyyw.htm",
+      "autoPublish": true,
+      "maxArticleFetches": 6
+    },
+    {
+      "id": "ncepu-news",
+      "name": "华北电力大学苏州研究院官方动态",
+      "url": "https://szyjy.ncepu.edu.cn/xwdt/index.htm",
+      "format": "html",
+      "allowedHosts": [
+        "szyjy.ncepu.edu.cn"
+      ],
+      "articlePattern": "/xwdt/[0-9a-f]{32}\\.htm",
+      "platformIds": [
+        "13",
+        "14",
+        "15"
+      ],
+      "dedicated": false,
+      "kind": "动态",
+      "verifiedAt": "2026-11-05",
+      "verificationUrl": "https://szyjy.ncepu.edu.cn/xwdt/index.htm",
+      "autoPublish": true,
+      "maxArticleFetches": 6
+    },
+    {
+      "id": "xjtu-news",
+      "name": "西安交通大学苏州研究院官方动态",
+      "url": "https://www.xjtusz.cn/xinwendongtai.html",
+      "format": "html",
+      "allowedHosts": [
+        "www.xjtusz.cn"
+      ],
+      "articlePattern": "/xinwendongtai/\\d+\\.html",
+      "platformIds": [
+        "122",
+        "123",
+        "124",
+        "125",
+        "126",
+        "127",
+        "128",
+        "129",
+        "130",
+        "131",
+        "132"
+      ],
+      "dedicated": false,
+      "kind": "动态",
+      "verifiedAt": "2026-11-05",
+      "verificationUrl": "https://www.xjtusz.cn/xinwendongtai.html",
+      "autoPublish": true,
+      "maxArticleFetches": 6
+    },
+    {
+      "id": "nusri-news",
+      "name": "苏州工业园区新国大研究院官方动态",
+      "url": "https://www.nusri.cn/news/nusrinews/",
+      "format": "html",
+      "allowedHosts": [
+        "www.nusri.cn"
+      ],
+      "articlePattern": "/(?:nusri/)?news/nusrinews/\\d+\\.html",
+      "platformIds": [
+        "118",
+        "119"
+      ],
+      "dedicated": false,
+      "kind": "动态",
+      "verifiedAt": "2026-11-05",
+      "verificationUrl": "https://www.nusri.cn/news/nusrinews/",
+      "autoPublish": true,
+      "maxArticleFetches": 6
+    },
+    {
+      "id": "sjtu-ai-news",
+      "name": "上海交通大学苏州人工智能研究院官方动态",
+      "url": "https://szai.sjtu.edu.cn/?list/29=",
+      "format": "html",
+      "allowedHosts": [
+        "szai.sjtu.edu.cn"
+      ],
+      "articlePattern": "\\?(?:content/|content%2[Ff])\\d+=",
+      "platformIds": [
+        "30",
+        "31",
+        "32"
+      ],
+      "dedicated": false,
+      "kind": "动态",
+      "verifiedAt": "2026-11-05",
+      "verificationUrl": "https://szai.sjtu.edu.cn/?list/29=",
+      "autoPublish": true,
+      "maxArticleFetches": 6
+    }
+  ],
+  "platforms": [
+    {
+      "id": "33",
+      "name": "儿童血液与肿瘤省高校重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "34",
+      "name": "纺织行业纺织材料阻燃整理重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "35",
+      "name": "纺织行业丝绸功能材料与技术重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "36",
+      "name": "放射医学与辐射防护国家重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "https://sklrmp.suda.edu.cn/",
+      "sourceIds": [
+        "suda-research",
+        "radiation-results",
+        "radiation-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "37",
+      "name": "工业废水重金属离子污染物深度处理及资源化利用 - 公共技术服务平台",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "38",
+      "name": "纺织行业医疗健康用蚕丝制品重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "39",
+      "name": "纺织行业智能纺织服装柔性器件重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "40",
+      "name": "江苏省碳基功能材料与器件高技术研究重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "41",
+      "name": "感染与免疫省高校重点实验室（苏州大学）",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "42",
+      "name": "环保功能吸附材料制备技术国家地方联合工程研究中心（江苏）",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "43",
+      "name": "机能评定与体能训练实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "44",
+      "name": "基因组资源国际联合研究中心",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "45",
+      "name": "江苏省纺织印染业节能减排与清洁生产工程中心",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "46",
+      "name": "江苏省化工吸附分离新材料与环境治理工程研究中心",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "47",
+      "name": "江苏省节能环保材料测试与技术服务中心",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "48",
+      "name": "江苏省精准诊疗药物创制工程研究中心",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "49",
+      "name": "江苏省泥鳅遗传与育种重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "50",
+      "name": "江苏省水产动物营养重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "51",
+      "name": "江苏省苏州丝绸技术服务中心",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "52",
+      "name": "江苏省苏州医疗器械临床前研究与评价公共技术服务中心",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "53",
+      "name": "江苏省碳基功能材料与器件高技术研究重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "54",
+      "name": "江苏省先进功能高分子材料设计及应用重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "55",
+      "name": "江苏省新型高分子功能材料工程研究中心",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "56",
+      "name": "江苏省中小企业环保产业公共技术服务平台",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "57",
+      "name": "江苏省重大脑疾病创新药物研发及转化重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "58",
+      "name": "教育部“碳基功能材料与器件国际合作联合实验室”",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "59",
+      "name": "老年病与免疫教育部重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "60",
+      "name": "石油和化工行业导向生物医用功能的高分子材料设计与合成重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "61",
+      "name": "石油和化工行业颗粒技术工程实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "62",
+      "name": "石油和化工行业有机废水吸附治理及其资源化重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "63",
+      "name": "丝绸工程省高校重点实验室（苏州大学）",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "64",
+      "name": "苏州市癌症分子遗传学重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "65",
+      "name": "苏州市表界面智能材料重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "66",
+      "name": "苏州市病原生物科学与抗感染医药重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "67",
+      "name": "苏州市蚕丝生物技术重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "68",
+      "name": "苏州市大分子设计与精密合成重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "69",
+      "name": "苏州市电磁辐射防护重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "70",
+      "name": "苏州市动物实验研究重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "71",
+      "name": "苏州市儿科转化医学重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "72",
+      "name": "苏州市防治高脂性疾病药物研究重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "73",
+      "name": "苏州市功能纳米与软物质材料重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "74",
+      "name": "苏州市环保吸附材料与技术重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "75",
+      "name": "苏州市健康化学与分子诊断重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "76",
+      "name": "苏州市健康人居科学及前沿技术重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "77",
+      "name": "苏州市精准催化技术重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "78",
+      "name": "苏州市抗肿瘤生物技术药物重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "79",
+      "name": "苏州市粒子辐射效应及应用研究国际联合实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "80",
+      "name": "苏州市绿色化工重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "81",
+      "name": "苏州市纳米技术与生物医药重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "82",
+      "name": "苏州市脑病诊疗国际联合实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "83",
+      "name": "苏州市软物质材料与新能源重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "84",
+      "name": "苏州市生物组织工程材料与技术重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "85",
+      "name": "苏州市衰老与神经疾病重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "86",
+      "name": "苏州市丝绸文物测试与复制保护技术重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "87",
+      "name": "苏州市疼痛基础研究与临床治疗重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "88",
+      "name": "苏州市系统生物医学重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "89",
+      "name": "苏州市先进光子学材料重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "90",
+      "name": "苏州市新型半导体光电材料与器件重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "91",
+      "name": "苏州市血栓与血管性疾病重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "92",
+      "name": "苏州市治疗性抗体及其关键技术重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "93",
+      "name": "苏州市智能医学与装备重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "94",
+      "name": "苏州市肿瘤放射生物学重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "95",
+      "name": "苏州市肿瘤精准医学重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "96",
+      "name": "苏州市肿瘤微环境病理学重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "97",
+      "name": "苏州市资源分子精准转化重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "98",
+      "name": "苏作技艺数智化技术江苏省文化和旅游重点实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "99",
+      "name": "未来媒体与国际传播力建设大数据实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "100",
+      "name": "现代丝绸国家工程技术研究中心",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "101",
+      "name": "新型功能高分子材料国家地方联合工程研究中心 (江苏)",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "102",
+      "name": "血液和血管疾病诊疗药物技术教育部工程中心",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "103",
+      "name": "有机合成国家级重点实验室培育建设点苏州大学）",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "104",
+      "name": "智能环境与能源新材料国际联合研究中心",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "105",
+      "name": "中国 - 葡萄牙文化遗产保护科学 \"一带一路\" 联合实验室",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "106",
+      "name": "重大慢性病预防与转化医学省高校重点实验室(苏州大学)",
+      "university": "苏州大学独墅湖校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "suda-research"
+      ],
+      "verification": null
+    },
+    {
+      "id": "133",
+      "name": "低空创新研究院",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "134",
+      "name": "第三代半导体电力电子器件与功率集成国际创新研究院",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "135",
+      "name": "功能分子材料和器件优质创新平台",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "136",
+      "name": "江苏省数据科学与认知计算工程研究中心",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "137",
+      "name": "江苏省细胞治疗纳米制剂重点建设实验室",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "138",
+      "name": "人工智能产业研究院",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "139",
+      "name": "人工智能应用优质创新提升平台",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "140",
+      "name": "苏州多模态大数据创新应用实验室",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "141",
+      "name": "苏州工业园区 MEMS 先进高性能传感器芯片成果转化平台",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "142",
+      "name": "苏州工业园区单分子单细胞成像分析创新科研平台",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "143",
+      "name": "苏州工业园区泛能源大数据与智能计算创新科研平台",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "144",
+      "name": "苏州市 AI 驱动生物创新药概念验证中心",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "145",
+      "name": "苏州市代谢综合症新药研究重点实验室",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "146",
+      "name": "苏州市泛能源大数据创新应用实验室",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "147",
+      "name": "苏州市供应链技术重点实验室",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "148",
+      "name": "苏州市具身智能未来教育概念验证中心",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "149",
+      "name": "苏州市宽带无线接入技术重点实验室",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "150",
+      "name": "苏州市认知计算应用技术重点实验室",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "151",
+      "name": "苏州市新能源技术重点实验室",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "152",
+      "name": "苏州市虚拟现实技术重点实验室",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "153",
+      "name": "苏州市智能虚拟工程重点实验室",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "154",
+      "name": "退行性疾病药物研究创新平台",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "155",
+      "name": "西交利物浦大学后量子迁移交叉学科实验室",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "156",
+      "name": "西浦慧湖生物大分子表征分析中心",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "157",
+      "name": "西浦文化、传播与社会研究中心",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "158",
+      "name": "西浦先进半导体研究中心",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "159",
+      "name": "西浦智库",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "160",
+      "name": "先进材料研究中心",
+      "university": "西交利物浦大学",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtlu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "161",
+      "name": "仿生界面材料科学全国重点实验室\n苏州仿生材料科学与工程中心",
+      "university": "中国科学技术大学苏州高等研究院",
+      "aliases": [
+        "仿生界面材料科学全国重点实验室",
+        "苏州仿生材料科学与工程中心"
+      ],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "162",
+      "name": "极端条件量子电子学研究中心",
+      "university": "中国科学技术大学苏州高等研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "163",
+      "name": "江苏省多模态数字孪生技术重点实验室",
+      "university": "中国科学技术大学苏州高等研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "165",
+      "name": "苏州市城市公共安全重点实验室",
+      "university": "中国科学技术大学苏州高等研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "166",
+      "name": "苏州市仿生界面科学重点实验室",
+      "university": "中国科学技术大学苏州高等研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "167",
+      "name": "苏州市嵌入式系统软件重点实验室",
+      "university": "中国科学技术大学苏州高等研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "168",
+      "name": "苏州市人工智能创新应用实验室（智慧医疗影像）",
+      "university": "中国科学技术大学苏州高等研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "169",
+      "name": "苏州市水环境科学重点实验室",
+      "university": "中国科学技术大学苏州高等研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "170",
+      "name": "苏州市通信软件新技术重点实验室",
+      "university": "中国科学技术大学苏州高等研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "172",
+      "name": "苏州市医疗传感与器械重点实验室",
+      "university": "中国科学技术大学苏州高等研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "173",
+      "name": "智能医疗器械研究中心",
+      "university": "中国科学技术大学苏州高等研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "1",
+      "name": "东南大学电磁环境效应研究中心",
+      "university": "东南大学苏州校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "seu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "2",
+      "name": "东南大学 - 蒙纳士大学能源与环境联合研究中心",
+      "university": "东南大学苏州校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "seu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "3",
+      "name": "东南大学 - 蒙纳士大学先进材料与制造联合研究中心",
+      "university": "东南大学苏州校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "seu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "4",
+      "name": "东南大学下一代半导体材料研究所",
+      "university": "东南大学苏州校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "seu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "5",
+      "name": "东南大学长三角碳中和战略发展（苏州）研究院",
+      "university": "东南大学苏州校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "seu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "6",
+      "name": "苏州市环境与生物安全重点实验室",
+      "university": "东南大学苏州校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "seu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "7",
+      "name": "苏州市集成电路与系统重点实验室",
+      "university": "东南大学苏州校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "seu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "8",
+      "name": "苏州市金属纳米光电技术重点实验室",
+      "university": "东南大学苏州校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "seu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "9",
+      "name": "苏州市汽车电子与智能交通技术重点实验室",
+      "university": "东南大学苏州校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "seu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "10",
+      "name": "苏州市生物医用材料与技术重点实验室",
+      "university": "东南大学苏州校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "seu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "11",
+      "name": "苏州市智能健康管理与信息工程技术重点实验室",
+      "university": "东南大学苏州校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "seu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "12",
+      "name": "中澳可持续发展研究中心",
+      "university": "东南大学苏州校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "seu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "174",
+      "name": "法国和法语国家研究院",
+      "university": "中国人民大学苏州校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "175",
+      "name": "江苏省外国专家工作室",
+      "university": "中国人民大学苏州校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "176",
+      "name": "金融大数据实验室",
+      "university": "中国人民大学苏州校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "177",
+      "name": "人文经济苏州研究中心",
+      "university": "中国人民大学苏州校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "178",
+      "name": "苏州人工智能实验室",
+      "university": "中国人民大学苏州校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "179",
+      "name": "苏州市人工智能与社会治理技术重点实验室",
+      "university": "中国人民大学苏州校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "180",
+      "name": "中法文明交流互鉴合作研究中心",
+      "university": "中国人民大学苏州校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "181",
+      "name": "中国人民大学金融科技交叉学科平台",
+      "university": "中国人民大学苏州校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "182",
+      "name": "中国人民大学智慧治理战略研究院",
+      "university": "中国人民大学苏州校区",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "122",
+      "name": "江苏省快速制造 3D 打印工程技术研究中心",
+      "university": "西安交通大学苏州研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "123",
+      "name": "密码法治实践创新基地",
+      "university": "西安交通大学苏州研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "124",
+      "name": "苏州工业园区半导体晶圆键合工艺光学精密检测技术联合创新体",
+      "university": "西安交通大学苏州研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "125",
+      "name": "苏州工业园区低碳能源装备压缩机结构力学成果转化平台",
+      "university": "西安交通大学苏州研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "126",
+      "name": "苏州工业园区能源装备与先进制造技术创新平台",
+      "university": "西安交通大学苏州研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "127",
+      "name": "苏州市电动汽车与系统控制技术重点实验室",
+      "university": "西安交通大学苏州研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "128",
+      "name": "苏州市电力设备与电器智能化重点实验室",
+      "university": "西安交通大学苏州研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "129",
+      "name": "苏州市金属激光直接成型 3D 打印重点实验室",
+      "university": "西安交通大学苏州研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "130",
+      "name": "苏州市可再生纳米材料重点实验室",
+      "university": "西安交通大学苏州研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "131",
+      "name": "苏州市轻金属及其复合材料实验室",
+      "university": "西安交通大学苏州研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "132",
+      "name": "苏州市现代生物制药工程重点实验室",
+      "university": "西安交通大学苏州研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "xjtu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "23",
+      "name": "过程微纳技术应用优质创新平台",
+      "university": "山东大学苏州研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "sdu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "24",
+      "name": "纳米材料制备及应用实验室",
+      "university": "山东大学苏州研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "sdu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "25",
+      "name": "山东大学博兴智能厨具研究院",
+      "university": "山东大学苏州研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "sdu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "26",
+      "name": "吸附材料及热物性表征实验室",
+      "university": "山东大学苏州研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "sdu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "27",
+      "name": "新能源与环保技术创新平台",
+      "university": "山东大学苏州研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "sdu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "28",
+      "name": "新一代半导体材料及器件产业化平台",
+      "university": "山东大学苏州研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "sdu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "29",
+      "name": "药物研发与一致性评价协同创新平台",
+      "university": "山东大学苏州研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "sdu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "17",
+      "name": "环境快速监测技术工程中心",
+      "university": "南京大学苏州研究生院、高新技术研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "18",
+      "name": "南智传感产学创新平台\n苏州市基础工程分布式传感监测技术重点实验室",
+      "university": "南京大学苏州研究生院、高新技术研究院",
+      "aliases": [
+        "南智传感产学创新平台",
+        "苏州市基础工程分布式传感监测技术重点实验室"
+      ],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "19",
+      "name": "生态农业感知工程中心",
+      "university": "南京大学苏州研究生院、高新技术研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "120",
+      "name": "数智技术应用与验证中心",
+      "university": "武汉大学苏州研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "121",
+      "name": "苏州市 AI 驱动大型公共建筑节能增效技术创新联合体",
+      "university": "武汉大学苏州研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "13",
+      "name": "环境修复与功能材料实验室",
+      "university": "华北电力大学苏州研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "ncepu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "14",
+      "name": "生物制品制造联合实验室",
+      "university": "华北电力大学苏州研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "ncepu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "15",
+      "name": "碳捕集与碳排放实验室",
+      "university": "华北电力大学苏州研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "ncepu-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "118",
+      "name": "能源与环境纳米科技创新平台",
+      "university": "苏州工业园区新国大研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "nusri-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "119",
+      "name": "生物医疗与健康科技创新平台",
+      "university": "苏州工业园区新国大研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "nusri-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "20",
+      "name": "分子诊断公共服务平台\n分子诊断中试平台",
+      "university": "牛津大学高等研究院（苏州）",
+      "aliases": [
+        "分子诊断公共服务平台",
+        "分子诊断中试平台"
+      ],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "21",
+      "name": "钙钛矿薄膜技术创新中心",
+      "university": "牛津大学高等研究院（苏州）",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "22",
+      "name": "苏州市未来生物材料重点实验室\n苏州市生物材料概念验证中心\n长三角G60科创走廊概念验证中心",
+      "university": "牛津大学高等研究院（苏州）",
+      "aliases": [
+        "苏州市未来生物材料重点实验室",
+        "苏州市生物材料概念验证中心",
+        "长三角G60科创走廊概念验证中心"
+      ],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "111",
+      "name": "国家自然科学基金优秀青年科学基金项目海外",
+      "university": "苏州工业园区蒙纳士科学技术研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "112",
+      "name": "抗微生物药物研发卓越创新中心",
+      "university": "苏州工业园区蒙纳士科学技术研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "113",
+      "name": "颗粒体系仿真与模拟研究中心",
+      "university": "苏州工业园区蒙纳士科学技术研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "114",
+      "name": "生物安全实验室BSL-2",
+      "university": "苏州工业园区蒙纳士科学技术研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "115",
+      "name": "苏州工业园区中澳国际医药与器械创新成果转化平台",
+      "university": "苏州工业园区蒙纳士科学技术研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "116",
+      "name": "苏州市医药与增材制造概念验证中心 (2024 年度苏州市成果转化平台)",
+      "university": "苏州工业园区蒙纳士科学技术研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "117",
+      "name": "智慧能源系统与绿色化工优质创新平台",
+      "university": "苏州工业园区蒙纳士科学技术研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "107",
+      "name": "中德循环经济智慧供应链创新平台",
+      "university": "苏州工业园区卡鲁生产技术研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "108",
+      "name": "基于基因编辑的低免疫原性生物材料开发科研平台",
+      "university": "苏州工业园区洛加大先进技术研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "109",
+      "name": "冷冻电镜和智能分析研发实验室",
+      "university": "苏州工业园区洛加大先进技术研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "110",
+      "name": "洛加大苏研院海外创新孵化中心",
+      "university": "苏州工业园区洛加大先进技术研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "16",
+      "name": "中纽光学概念验证中心",
+      "university": "梅西大学中国教育和创新中心",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    },
+    {
+      "id": "30",
+      "name": "苏州市人工智能与系统集成概念验证中心",
+      "university": "上海交通大学苏州人工智能研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "sjtu-ai-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "31",
+      "name": "智能车载系统研究联合实验室",
+      "university": "上海交通大学苏州人工智能研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "sjtu-ai-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "32",
+      "name": "AI 大数据联合实验室",
+      "university": "上海交通大学苏州人工智能研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [
+        "sjtu-ai-news"
+      ],
+      "verification": null
+    },
+    {
+      "id": "171",
+      "name": "苏州市下一代 WEB 服务计算重点实验室",
+      "university": "中国科学技术大学苏州高等研究院",
+      "aliases": [],
+      "homepage": "",
+      "sourceIds": [],
+      "verification": null
+    }
+  ]
+}
