@@ -4,7 +4,7 @@
 
 ## 项目概述
 
-本项目是一个部署在 GitHub Pages 上的纯静态网页，用于展示“50L100E 高校平台资源清单”及相关政策汇编。页面提供资源查询、多维度筛选、视图切换、统计图表、重点实验室展示、政策浏览和浏览器端 Excel 导入能力。
+本项目是一个部署在 GitHub Pages 上的纯静态网页，现定位为高校平台运行监控工作台。默认展示运行总览、待核查事项、分页监测台账、成果动态与来源检查。资源档案、资源分布、实验室和 Excel 导入保留为辅助功能；2024—2026 政策已下架，不再提供政策模块。
 
 - **仓库名**：`50l100ewebsite`
 - **远程仓库**：`https://github.com/IanYin1127/50l100ewebsite.git`
@@ -41,13 +41,13 @@
 
 ### 关键文件说明
 
-- `index.html`：定义页面骨架，引用 `styles.css`、`data.js`、`app.js`。顶部 `site-header` 包含品牌栏与模块标签页，滚动时始终固定在视口顶部；默认首页为“资源查询”；“数据更新”页需要输入密码才能进入上传区域。
+- `index.html`：定义页面骨架，引用 `styles.css`、`data.js`、`app.js`。`site-header` 在桌面为固定左侧导航，在手机为顶部导航；默认首页为“运行总览” (`updates`)；“数据更新”页需要输入密码才能进入上传区域。
 - `styles.css`：定义设计系统（颜色、间距、阴影、圆角）、布局网格、组件样式、搜索面板、标签导航、数据更新模块、响应式断点（1020px / 700px）。
 - `app.js`：包含全部运行时逻辑：
   - 全局状态 `state`（搜索词、筛选条件、当前视图、折叠状态、当前标签）。
   - 工具函数（HTML 转义、文本规范化、高校排序、资源排序）。
-  - 筛选逻辑 `getFiltered`、`getFilteredLabs`、`getFilteredPolicies`。
-  - 渲染函数（卡片、高校视图、行业视图、紧凑表格、全重资源、图表、政策）。
+  - 筛选逻辑 `getFiltered`、`getFilteredLabs`。
+  - 渲染函数（卡片、高校视图、行业视图、紧凑表格、全重资源、图表与监测台账）。
   - 标签切换 `setActiveSection`、`bindTabs`。
   - Excel 导入与 `data.js` 生成 `initExcelUpload`、`workbookToResources`、`buildDataJs`。
   - 数据更新密码验证 `initUpdateAuth` / `syncUpdateAuth`（默认密码 `330889`）。
@@ -152,8 +152,8 @@ python -m http.server 8080
 
 1. **状态与常量**：`state`、`data`、`universityOrder`、`fields`、`resourceFields` 等。
 2. **工具函数**：`escapeHtml`、`normalizeUniversityName`、`compareResource`、`truncate`、`formatText` 等。
-3. **筛选逻辑**：`getFiltered`、`getFilteredLabs`、`getFilteredPolicies`。
-4. **渲染函数**：`renderCards`、`renderGroups`、`renderTable`、`renderCharts`、`renderLabs`、`renderKeyLabs`、`renderPolicies` 等。
+3. **筛选逻辑**：`getFiltered`、`getFilteredLabs`。
+4. **渲染函数**：`renderCards`、`renderGroups`、`renderTable`、`renderCharts`、`renderLabs`、`renderKeyLabs` 等。
 5. **标签切换**：`getSectionFromHash`、`setActiveSection`、`bindTabs`。
 6. **Excel 导入**：`initExcelUpload`、`readExcelFile`、`workbookToResources`、`validateResources`、`buildDataJs`、`previewResources`。
 7. **事件绑定**：`bindEvents`。
@@ -180,10 +180,10 @@ python -m http.server 8080
 - 当前项目**没有自动化测试**（无 Jest、Vitest、Playwright、Cypress 等配置）。
 - 修改后应进行以下手动验证：
   1. 在本地静态服务器打开页面，确认无控制台报错。
-  2. 页面默认显示“资源查询”标签。
-  3. 滚动页面，确认顶部 `site-header`（品牌栏 + 标签页）始终固定在上方。
-  4. 测试顶部标签切换：资源查询、维度展示、重点实验室、政策汇编、数据更新。
-  5. 测试搜索框输入关键词，观察资源卡片和政策是否正确过滤。
+  2. 页面默认显示“运行总览”标签，旧 `#policies` 链接应回到总览。
+  3. 滚动页面，确认桌面左侧导航和手机顶部导航可正常使用。
+  4. 测试顶部标签切换：运行总览、平台档案、资源分布、重点实验室、数据维护。
+  5. 测试搜索框输入关键词，观察资源卡片和监测台账是否正确过滤。
   6. 切换四种筛选条件（所属高校、一级产业、二级产业、平台等级），确认二级产业下拉随一级产业联动。
   7. 切换五种视图（资源卡片、高校视图、行业视图、紧凑表格、全重资源）。
   8. 在 700px、1020px 及以上宽度下检查响应式布局，确认顶部导航标签可滚动或换行。
@@ -228,3 +228,11 @@ python -m http.server 8080
 修改监测功能前阅读 `monitoring/README.md`。数据 `generatedAt`、来源检查时间只能来自真实采集，不得用代码修改日期伪装成新数据；基础数据不变时无需更改 `data.js` 中的生成日期。未覆盖来源必须如实显示，不得将主页可访问或无动态直接解释为平台在运行／停运。更新资源清单后同步来源注册表的 ID、名称、高校，并核实别名及归属，禁止机械迁移。
 
 验证包括 `python -m unittest discover -s tests -v`、`node --check app.js`、监测模块搜索／高校／状态筛选、平台卡片动态联动、空结果与过期提示。定时任务正式启用需 Pages Source 选择 GitHub Actions，未执行过不能声称监测已上线。
+
+## 监控工作台界面约定
+
+- 默认模块 `updates`，无有效 hash 或历史 `#policies` 均显示运行总览。政策原始数据仅归档，禁止恢复政策入口或渲染。
+- `styles.css` 使用深青绿、灰绿和浅色工作台主题。桌面左侧导航、主台账与右侧动态栏；1020px 以下动态栏移到底部，700px 以下为手机布局。
+- `monitorUI` 管理台账页码、桌面每页 15 条／手机 5 条与动态展开状态。改变筛选需重置页码，空结果时禁用翻页；指标和来源检查不随台账筛选混淆其全局统计范围。
+- 覆盖率是已配置来源的平台占比；近 365 天有动态的平台数依据真实原文发布日期。不得把二者表述为已确认运行的平台数。
+- 页面移除政策模块，`data.js` 与 Excel 导出中的历史归档字段保持不变。
