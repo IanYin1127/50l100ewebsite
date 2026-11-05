@@ -310,7 +310,7 @@
       "allowedHosts": [
         "szai.sjtu.edu.cn"
       ],
-      "articlePattern": "\\?(?:content/|content%2[Ff])\\d+=",
+      "articlePattern": "\\?(?:content/|content%2[Ff])\\d+(?:=|&|$)",
       "platformIds": [
         "30",
         "31",

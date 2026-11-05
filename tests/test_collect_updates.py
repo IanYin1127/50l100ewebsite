@@ -99,6 +99,11 @@ class CollectTests(unittest.TestCase):
     with self.assertRaises(ValueError):
       c.validate_registry(config, valid)
 
+  def test_sjtu_query_links_with_and_without_equals(self):
+    source = {**SOURCE, "url": "https://szai.sjtu.edu.cn/?list/29=", "articlePattern": r"\?(?:content/|content%2[Ff])\d+(?:=|&|$)"}
+    listing = '<li><a href="/?content/460">成果一</a>2026-10-19</li><li><a href="/?content/459=">成果二</a>2026-10-15</li>'
+    self.assertEqual(len(c.extract_entries(listing, source)), 2)
+
   def test_link_allowlist(self):
     for url in ['http://official.example/a', 'https://evil.example/a', 'javascript:alert(1)', 'https://user:pass@official.example/a', 'https://127.0.0.1/a']:
       with self.assertRaises(ValueError):
