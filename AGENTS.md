@@ -219,3 +219,12 @@ python -m http.server 8080
 - [ ] Excel 源文件、更新模板与 `data.js` 一并提交。
 - [ ] 本地无控制台报错且各视图正常。
 - [ ] 数据更新页面的 Excel 导入和下载功能测试通过。
+
+
+## 成果与运行监测扩展
+
+网站新增 `monitoring-data.js` 前端数据和 `updates` 标签页。采集器位于 `scripts/collect_updates.py`，配置、人工条目与快照在 `monitoring/`；每日任务与 Pages 发布在 `.github/workflows/platform-monitor.yml`。网站仍无需构建工具或后端，采集使用 Python 3.12 标准库。
+
+修改监测功能前阅读 `monitoring/README.md`。数据 `generatedAt`、来源检查时间只能来自真实采集，不得用代码修改日期伪装成新数据；基础数据不变时无需更改 `data.js` 中的生成日期。未覆盖来源必须如实显示，不得将主页可访问或无动态直接解释为平台在运行／停运。更新资源清单后同步来源注册表的 ID、名称、高校，并核实别名及归属，禁止机械迁移。
+
+验证包括 `python -m unittest discover -s tests -v`、`node --check app.js`、监测模块搜索／高校／状态筛选、平台卡片动态联动、空结果与过期提示。定时任务正式启用需 Pages Source 选择 GitHub Actions，未执行过不能声称监测已上线。

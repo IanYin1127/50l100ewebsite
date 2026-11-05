@@ -1093,3 +1093,69 @@ footer {
     justify-content: center;
   }
 }
+
+
+/* 查询操作与键盘可达性 */
+:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 3px;
+}
+.skip-link {
+  position: fixed;
+  top: -80px;
+  left: 16px;
+  z-index: 1000;
+  padding: 10px 16px;
+  background: var(--panel);
+  border: 2px solid var(--primary);
+  border-radius: var(--radius-sm);
+}
+.skip-link:focus { top: 12px; }
+.view-tools { flex-wrap: wrap; gap: 10px; }
+.ghost-tab:disabled { opacity: 0.5; cursor: default; }
+.policy-tools {
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 300px);
+  gap: 16px;
+}
+.policy-tools input {
+  width: 100%;
+  min-width: 0;
+  padding: 10px 12px;
+  color: var(--ink);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+}
+.resource-card, .group-card, .lab-card, .policy-card { min-width: 0; overflow-wrap: anywhere; }
+main { scroll-margin-top: 130px; }
+@media (max-width: 700px) {
+  .hero { padding: 24px 16px; }
+  .hero-content { gap: 20px; }
+  .hero-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .kpi-card { padding: 12px 16px; }
+  .filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .policy-tools { grid-template-columns: minmax(0, 1fr); }
+  .view-tabs { flex-wrap: nowrap; }
+  .view-tabs button { flex: 0 0 auto; }
+  input, select, .search-bar input { font-size: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+
+/* 平台成果与运行线索 */
+.monitor-note { color: var(--muted); line-height: 1.8; }
+.monitor-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin: 20px 0; }
+.monitor-stats .kpi-card strong { font-size: clamp(22px, 3vw, 30px); }
+.monitor-controls { display: grid; grid-template-columns: minmax(0, 2fr) repeat(2, minmax(0, 1fr)); gap: 14px; margin: 24px 0; }
+.monitor-controls input { min-width: 0; padding: 10px 12px; border: 1px solid var(--line); border-radius: var(--radius-sm); }
+.platform-updates { display: grid; gap: 8px; padding: 12px 0; border-top: 1px solid var(--line); font-size: 13px; }
+.platform-updates .tag { justify-self: start; }
+.platform-updates small, #monitorFreshness { color: var(--muted); }
+.monitor-heading { margin-top: 32px; }
+#updatesFeed .policy-card { overflow-wrap: anywhere; }
+@media (max-width: 700px) {
+  .monitor-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .monitor-controls { grid-template-columns: minmax(0, 1fr); }
+}

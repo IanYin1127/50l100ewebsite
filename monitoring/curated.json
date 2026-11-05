@@ -1,0 +1,27 @@
+{
+  "items": [
+    {
+      "platformId": "36",
+      "title": "史海斌团队：低剂量射线协同纳米颗粒治疗类风湿关节炎研究进展",
+      "url": "https://sklrmp.suda.edu.cn/9e/4e/c8750a695886/page.htm",
+      "publishedAt": "2026-04-29",
+      "discoveredAt": "2026-11-05T00:00:00+00:00",
+      "sourceId": "radiation-results",
+      "sourceName": "放射医学与辐射防护国家重点实验室官网",
+      "kind": "成果",
+      "matchedBy": "人工核实官方原文"
+    },
+    {
+      "platformId": "36",
+      "title": "放射医学实验室科普基地开展数字科普展览交流",
+      "url": "https://sklrmp.suda.edu.cn/ea/c1/c12792a715457/page.htm",
+      "publishedAt": "2026-10-01",
+      "discoveredAt": "2026-11-05T00:00:00+00:00",
+      "sourceId": "radiation-news",
+      "sourceName": "放射医学与辐射防护国家重点实验室官网",
+      "kind": "动态",
+      "matchedBy": "人工核实官方原文"
+    }
+  ],
+  "rejectedIds": []
+}

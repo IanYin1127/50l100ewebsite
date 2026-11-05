@@ -5,13 +5,14 @@ const state = {
   subIndustry: "全部",
   level: "全部",
   policyDept: "全部",
+  policyQ: "",
   view: "cards",
   resourcesCollapsed: false,
   activeSection: "resources",
   renderedSections: new Set(),
 };
 
-const data = window.HUIHU_DATA || { resources: [], labs: [], taxonomy: {}, policies: {}, meta: {} };
+const data = window.HUIHU_DATA || { resources: [], labs: [], taxonomy: {}, policies: [], meta: {} };
 
 const universityOrder = [
   "苏州大学独墅湖校区",
@@ -142,14 +143,14 @@ function formatText(value) {
 
 function getFiltered() {
   const q = state.q.trim().toLowerCase();
-  return sortResources(resources.filter((item) => {
+  return resources.filter((item) => {
     const matchQ = includes(item, q);
     const matchUni = state.university === "全部" || item["所属高校"] === state.university;
     const matchIndustry = state.industry === "全部" || item["一级产业分类"] === state.industry;
     const matchSub = state.subIndustry === "全部" || item["二级产业分类"] === state.subIndustry;
     const matchLevel = state.level === "全部" || item["平台等级"] === state.level;
     return matchQ && matchUni && matchIndustry && matchSub && matchLevel;
-  }));
+  });
 }
 
 function initFilters() {
@@ -189,6 +190,8 @@ function renderKPIs() {
 function render() {
   const filtered = getFiltered();
   syncSearchMode();
+  el("clearSearch").hidden = !state.q;
+  el("resetFilters").disabled = !state.q && [state.university, state.industry, state.subIndustry, state.level].every((value) => value === "全部");
   syncResourceCollapseButton();
   if (state.resourcesCollapsed) {
     renderCollapsedResourceSummary(filtered);
@@ -224,6 +227,8 @@ function syncResourceCollapseButton() {
   if (!btn) return;
   btn.textContent = state.resourcesCollapsed ? "展开资源列表" : "收起资源列表";
   btn.classList.toggle("active", state.resourcesCollapsed);
+  btn.setAttribute("aria-expanded", String(!state.resourcesCollapsed));
+  btn.setAttribute("aria-controls", "resourceView");
 }
 
 function renderCards(items) {
@@ -241,6 +246,7 @@ function renderCards(items) {
         <span class="tag">${escapeHtml(item["平台等级"] || "未标注等级")}</span>
       </div>
       <h3>${escapeHtml(item["平台名称"])}</h3>
+      ${renderPlatformUpdates(item)}
       <p>${formatText(truncate(item["研究方向"], 260))}</p>
       <details>
         <summary>查看完整信息</summary>
@@ -389,7 +395,8 @@ function renderKeyLabs() {
 }
 
 function getFilteredPolicies() {
-  return policies.filter((item) => state.policyDept === "全部" || item["部门"] === state.policyDept);
+  return policies.filter((item) => (state.policyDept === "全部" || item["部门"] === state.policyDept)
+    && includes(item, state.policyQ.trim().toLowerCase()));
 }
 
 function renderPolicies() {
@@ -408,8 +415,14 @@ function renderPolicies() {
       ${policySection("给谁", conciseText(item["支持对象"] || inferPolicyAudience(item), 70))}
       ${policySection("支持什么", conciseText([item["政策子项"], item["支持类别"], item["申报条件"], item["支持范围"]].filter(Boolean).join("；"), 120))}
       ${policySection("多少钱", conciseText(item["资助标准"] || item["支持方式与额度"] || "按政策条款执行", 90))}
+      <details>
+        <summary>查看完整政策条目</summary>
+        <div class="detail-list">
+          ${Object.entries(item).filter(([, value]) => value).map(([key, value]) => detail(key, value)).join("")}
+        </div>
+      </details>
     </article>
-  `).join("") || `<div class="empty">暂无政策数据。</div>`;
+  `).join("") || `<div class="empty">没有匹配的政策，请调整关键词或政策来源。</div>`;
 }
 
 function renderPolicyInsights(items) {
@@ -448,12 +461,15 @@ function applySearch() {
 }
 
 function syncSearchMode() {
-  document.body.classList.toggle("lab-mode", state.view === "keyLabs");
+  const labMode = state.view === "keyLabs";
+  document.body.classList.toggle("lab-mode", labMode);
+  document.querySelector(".filters").hidden = labMode;
+  el("globalSearch").placeholder = labMode ? "搜索高校、研究院或重点实验室名称" : "搜索平台名称、研究方向、核心技术、服务、设备、联系人等";
 }
 
 function getSectionFromHash() {
   const hash = window.location.hash.replace(/^#/, "");
-  const valid = ["resources", "insights", "labs", "policies", "update"];
+  const valid = ["resources", "insights", "labs", "policies", "updates", "update"];
   return valid.includes(hash) ? hash : "resources";
 }
 
@@ -464,7 +480,10 @@ function setActiveSection(section, { updateHash = true } = {}) {
     element.classList.toggle("section-active", element.dataset.section === section);
   });
   document.querySelectorAll(".main-tabs button").forEach((btn) => {
-    btn.classList.toggle("active", btn.dataset.section === section);
+    const active = btn.dataset.section === section;
+    btn.classList.toggle("active", active);
+    btn.setAttribute("aria-selected", String(active));
+    btn.tabIndex = active ? 0 : -1;
   });
   if (updateHash && window.location.hash !== `#${section}`) {
     history.replaceState(null, "", `#${section}`);
@@ -476,10 +495,30 @@ function setActiveSection(section, { updateHash = true } = {}) {
   if (section === "insights") renderCharts(getFiltered());
   if (section === "labs" && firstRender) renderLabs();
   if (section === "policies" && firstRender) renderPolicies();
+  if (section === "updates") renderMonitoring();
   if (section === "update") syncUpdateAuth();
 }
 
+function bindTabKeyboard(selector) {
+  const buttons = [...document.querySelectorAll(`${selector} button`)];
+  buttons.forEach((button) => {
+    button.setAttribute("role", "tab");
+    button.addEventListener("keydown", (event) => {
+      const index = buttons.indexOf(button);
+      const next = event.key === "ArrowRight" ? (index + 1) % buttons.length
+        : event.key === "ArrowLeft" ? (index - 1 + buttons.length) % buttons.length
+        : event.key === "Home" ? 0 : event.key === "End" ? buttons.length - 1 : -1;
+      if (next < 0) return;
+      event.preventDefault();
+      buttons[next].click();
+      buttons[next].focus();
+    });
+  });
+}
+
 function bindTabs() {
+  bindTabKeyboard(".main-tabs");
+  bindTabKeyboard(".view-tabs");
   document.querySelectorAll(".main-tabs button").forEach((btn) => {
     btn.addEventListener("click", () => {
       setActiveSection(btn.dataset.section);
@@ -496,10 +535,27 @@ function bindTabs() {
 }
 
 function bindEvents() {
-  el("globalSearch").addEventListener("input", (e) => {
-    state.q = e.target.value;
+  let searchTimer;
+  const scheduleSearch = () => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(render, 150);
+  };
+  el("resetFilters").addEventListener("click", () => {
+    clearTimeout(searchTimer);
+    Object.assign(state, { q: "", university: "全部", industry: "全部", subIndustry: "全部", level: "全部", resourcesCollapsed: false });
+    el("globalSearch").value = "";
+    initFilters();
     render();
   });
+  el("policySearch").addEventListener("input", (event) => {
+    state.policyQ = event.target.value;
+    renderPolicies();
+  });
+  el("globalSearch").addEventListener("input", (e) => {
+    state.q = e.target.value;
+    if (!e.isComposing) scheduleSearch();
+  });
+  el("globalSearch").addEventListener("compositionend", scheduleSearch);
   el("globalSearch").addEventListener("keydown", (e) => {
     if (e.key === "Enter") applySearch();
   });
@@ -507,6 +563,7 @@ function bindEvents() {
     state.q = "";
     el("globalSearch").value = "";
     render();
+    el("globalSearch").focus();
   });
   el("universityFilter").addEventListener("change", (e) => {
     state.university = e.target.value;
@@ -536,7 +593,12 @@ function bindEvents() {
   });
   document.querySelectorAll(".view-tabs button").forEach((btn) => {
     btn.addEventListener("click", () => {
-      document.querySelectorAll(".view-tabs button").forEach((item) => item.classList.remove("active"));
+      document.querySelectorAll(".view-tabs button").forEach((item) => {
+        const active = item === btn;
+        item.classList.toggle("active", active);
+        item.setAttribute("aria-selected", String(active));
+        item.tabIndex = active ? 0 : -1;
+      });
       btn.classList.add("active");
       state.view = btn.dataset.view;
       render();
@@ -767,7 +829,13 @@ function syncUpdateAuth() {
 function init() {
   state.activeSection = getSectionFromHash();
   initFilters();
+  document.querySelectorAll(".view-tabs button").forEach((button) => {
+    const active = button.dataset.view === state.view;
+    button.setAttribute("aria-selected", String(active));
+    button.tabIndex = active ? 0 : -1;
+  });
   renderKPIs();
+  initMonitoring();
   bindEvents();
   bindTabs();
   initExcelUpload();
@@ -777,4 +845,92 @@ function init() {
   initBackToTop();
 }
 
+const monitoring = window.HUIHU_MONITORING || { platforms: {}, items: [], sourceChecks: {}, generatedAt: null };
+const monitorLabels = {
+  recent_activity: "近期有公开动态", needs_review: "长期未见动态，待核实",
+  source_error: "来源访问异常，待核实", unknown: "尚无匹配动态",
+  unconfigured: "待补充官方来源", not_checked: "已配置来源，尚未执行监测",
+  verified_operating: "人工确认运行", verified_ceased: "人工确认停运",
+};
+
+function externalLink(url, label) {
+  try {
+    const parsed = new URL(url);
+    if (parsed.protocol !== "https:" || parsed.username || parsed.password) return "";
+    return `<a href="${escapeHtml(parsed.href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`;
+  } catch { return ""; }
+}
+
+function monitorRecord(item) {
+  const record = monitoring.platforms?.[String(item["序号"])];
+  return record && record.name === item["平台名称"] && record.university === item["所属高校"]
+    ? record : { status: "unconfigured", sourceIds: [] };
+}
+
+function monitorNews(item) {
+  if (!monitorRecord(item).name) return [];
+  return (monitoring.items || []).filter((entry) => entry.platformId === String(item["序号"]));
+}
+
+function monitoringStale() {
+  return monitoring.generatedAt && Date.now() - Date.parse(monitoring.generatedAt) > 3 * 86400000;
+}
+
+function renderPlatformUpdates(item) {
+  const record = monitorRecord(item);
+  const news = monitorNews(item).slice(0, 3);
+  return `<div class="platform-updates">
+    <span class="tag monitor-tag">${escapeHtml(monitorLabels[record.status] || "待核实")}</span>
+    ${monitoringStale() ? '<small>监测记录已超过 3 天未刷新</small>' : ""}
+    ${record.lastActivityAt ? `<small>最近公开动态：${escapeHtml(record.lastActivityAt)}</small>` : ""}
+    ${news.length ? `<details><summary>成果与动态（${monitorNews(item).length}）</summary><ul class="mini-list">${news.map((entry) => `<li>${externalLink(entry.url, entry.title)}<br><small>${escapeHtml(entry.publishedAt || "日期待核实")} · ${escapeHtml(entry.sourceName)}</small></li>`).join("")}</ul></details>` : ""}
+    ${record.homepage ? externalLink(record.homepage, "访问平台官方页面 ↗") : ""}
+  </div>`;
+}
+
+function initMonitoring() {
+  setOptions(el("updateUniversity"), uniqByUniversityOrder(resources.map((r) => r["所属高校"])), "全部");
+  ["updateSearch", "updateUniversity", "updateStatusFilter"].forEach((id) => {
+    el(id).addEventListener(id === "updateSearch" ? "input" : "change", renderMonitoring);
+  });
+}
+
+function renderMonitoring() {
+  const q = el("updateSearch").value.trim().toLowerCase();
+  const university = el("updateUniversity").value;
+  const status = el("updateStatusFilter").value;
+  const selected = resources.filter((item) => {
+    const record = monitorRecord(item);
+    return (university === "全部" || item["所属高校"] === university)
+      && (status === "all" || record.status === status)
+      && (!q || includes(item, q) || monitorNews(item).some((entry) => includes(entry, q)));
+  });
+  const ids = new Set(selected.filter((item) => monitorRecord(item).name).map((item) => String(item["序号"])));
+  const feed = (monitoring.items || []).filter((item) => ids.has(item.platformId))
+    .filter((item) => !q || includes(item, q) || selected.some((resource) => String(resource["序号"]) === item.platformId && includes(resource, q)))
+    .sort((a, b) => String(b.publishedAt || "").localeCompare(String(a.publishedAt || "")));
+  const configured = resources.filter((item) => monitorRecord(item).sourceIds?.length).length;
+  const checked = resources.filter((item) => monitorRecord(item).checkedAt).length;
+  const counters = [["已配置官方来源", `${configured} / ${resources.length}`], ["已执行来源检查", checked], ["已收录成果与动态", (monitoring.items || []).length], ["来源访问异常", Object.values(monitoring.sourceChecks || {}).filter((source) => source.state === "error").length]];
+  el("monitorStats").innerHTML = counters.map(([label, value]) => `<article class="kpi-card"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></article>`).join("");
+  el("monitorFreshness").textContent = monitoring.generatedAt
+    ? `最近采集：${new Date(monitoring.generatedAt).toLocaleString("zh-CN")}。${monitoringStale() ? "记录已超过 3 天未刷新，请检查定时任务。" : ""}`
+    : "定时采集尚未首次运行。下列人工核实条目附有原文；来源配置不代表已确认平台正在运行。";
+  el("updatesSummary").textContent = `当前条件下共 ${feed.length} 条成果与动态`;
+  el("updatesFeed").innerHTML = feed.map((entry) => {
+    const resource = resources.find((item) => String(item["序号"]) === entry.platformId);
+    return `<article class="policy-card"><span class="tag">${escapeHtml(entry.kind || "动态")}</span><h3>${externalLink(entry.url, entry.title)}</h3><p>${escapeHtml(resource?.["平台名称"] || "平台待匹配")}</p><small>原文发布：${escapeHtml(entry.publishedAt || "待核实")}<br>来源：${escapeHtml(entry.sourceName)}<br>收录：${escapeHtml(String(entry.discoveredAt || "").slice(0, 10))}</small></article>`;
+  }).join("") || '<div class="empty">尚无符合条件的动态。可通过“分享成果”提交官方链接；未收录不代表没有成果。</div>';
+  el("monitorSummary").textContent = `当前展示 ${selected.length} 个平台；监测状态基于已配置来源，不覆盖全部互联网信息。`;
+  el("monitorView").innerHTML = selected.map((item) => {
+    const record = monitorRecord(item);
+    const sources = (record.sourceIds || []).map((sid) => {
+      const check = monitoring.sourceChecks?.[sid];
+      return check ? `<li>${externalLink(check.url, check.name)}<br><small>${check.state === "error" ? `访问异常，连续 ${Number(check.consecutiveFailures) || 1} 次` : "来源检查完成"} · ${escapeHtml(String(check.checkedAt || "").slice(0, 10))}</small></li>` : `<li>${escapeHtml(sid)}：尚未检查</li>`;
+    }).join("");
+    return `<article class="resource-card"><span class="tag">${escapeHtml(item["所属高校"])}</span><h3>${escapeHtml(item["平台名称"])}</h3>${renderPlatformUpdates(item)}${sources ? `<details><summary>查看监测依据</summary><ul class="mini-list">${sources}</ul><p>来源可访问性与平台实际运行状态分别记录。</p></details>` : ""}${record.verification ? `<p>人工核验：${escapeHtml(record.verification.date)} ${externalLink(record.verification.evidenceUrl, "核验依据")}</p>` : ""}</article>`;
+  }).join("") || '<div class="empty">没有匹配的平台，请调整条件。</div>';
+}
+
 init();
+
