@@ -5,13 +5,14 @@ const state = {
   subIndustry: "全部",
   level: "全部",
   policyDept: "全部",
+  policyQ: "",
   view: "cards",
   resourcesCollapsed: false,
   activeSection: "resources",
   renderedSections: new Set(),
 };
 
-const data = window.HUIHU_DATA || { resources: [], labs: [], taxonomy: {}, policies: {}, meta: {} };
+const data = window.HUIHU_DATA || { resources: [], labs: [], taxonomy: {}, policies: [], meta: {} };
 
 const universityOrder = [
   "苏州大学独墅湖校区",
@@ -142,14 +143,14 @@ function formatText(value) {
 
 function getFiltered() {
   const q = state.q.trim().toLowerCase();
-  return sortResources(resources.filter((item) => {
+  return resources.filter((item) => {
     const matchQ = includes(item, q);
     const matchUni = state.university === "全部" || item["所属高校"] === state.university;
     const matchIndustry = state.industry === "全部" || item["一级产业分类"] === state.industry;
     const matchSub = state.subIndustry === "全部" || item["二级产业分类"] === state.subIndustry;
     const matchLevel = state.level === "全部" || item["平台等级"] === state.level;
     return matchQ && matchUni && matchIndustry && matchSub && matchLevel;
-  }));
+  });
 }
 
 function initFilters() {
@@ -189,6 +190,8 @@ function renderKPIs() {
 function render() {
   const filtered = getFiltered();
   syncSearchMode();
+  el("clearSearch").hidden = !state.q;
+  el("resetFilters").disabled = !state.q && [state.university, state.industry, state.subIndustry, state.level].every((value) => value === "全部");
   syncResourceCollapseButton();
   if (state.resourcesCollapsed) {
     renderCollapsedResourceSummary(filtered);
@@ -224,6 +227,8 @@ function syncResourceCollapseButton() {
   if (!btn) return;
   btn.textContent = state.resourcesCollapsed ? "展开资源列表" : "收起资源列表";
   btn.classList.toggle("active", state.resourcesCollapsed);
+  btn.setAttribute("aria-expanded", String(!state.resourcesCollapsed));
+  btn.setAttribute("aria-controls", "resourceView");
 }
 
 function renderCards(items) {
@@ -389,7 +394,8 @@ function renderKeyLabs() {
 }
 
 function getFilteredPolicies() {
-  return policies.filter((item) => state.policyDept === "全部" || item["部门"] === state.policyDept);
+  return policies.filter((item) => (state.policyDept === "全部" || item["部门"] === state.policyDept)
+    && includes(item, state.policyQ.trim().toLowerCase()));
 }
 
 function renderPolicies() {
@@ -408,8 +414,14 @@ function renderPolicies() {
       ${policySection("给谁", conciseText(item["支持对象"] || inferPolicyAudience(item), 70))}
       ${policySection("支持什么", conciseText([item["政策子项"], item["支持类别"], item["申报条件"], item["支持范围"]].filter(Boolean).join("；"), 120))}
       ${policySection("多少钱", conciseText(item["资助标准"] || item["支持方式与额度"] || "按政策条款执行", 90))}
+      <details>
+        <summary>查看完整政策条目</summary>
+        <div class="detail-list">
+          ${Object.entries(item).filter(([, value]) => value).map(([key, value]) => detail(key, value)).join("")}
+        </div>
+      </details>
     </article>
-  `).join("") || `<div class="empty">暂无政策数据。</div>`;
+  `).join("") || `<div class="empty">没有匹配的政策，请调整关键词或政策来源。</div>`;
 }
 
 function renderPolicyInsights(items) {
@@ -448,7 +460,10 @@ function applySearch() {
 }
 
 function syncSearchMode() {
-  document.body.classList.toggle("lab-mode", state.view === "keyLabs");
+  const labMode = state.view === "keyLabs";
+  document.body.classList.toggle("lab-mode", labMode);
+  document.querySelector(".filters").hidden = labMode;
+  el("globalSearch").placeholder = labMode ? "搜索高校、研究院或重点实验室名称" : "搜索平台名称、研究方向、核心技术、服务、设备、联系人等";
 }
 
 function getSectionFromHash() {
@@ -464,7 +479,10 @@ function setActiveSection(section, { updateHash = true } = {}) {
     element.classList.toggle("section-active", element.dataset.section === section);
   });
   document.querySelectorAll(".main-tabs button").forEach((btn) => {
-    btn.classList.toggle("active", btn.dataset.section === section);
+    const active = btn.dataset.section === section;
+    btn.classList.toggle("active", active);
+    btn.setAttribute("aria-selected", String(active));
+    btn.tabIndex = active ? 0 : -1;
   });
   if (updateHash && window.location.hash !== `#${section}`) {
     history.replaceState(null, "", `#${section}`);
@@ -479,7 +497,26 @@ function setActiveSection(section, { updateHash = true } = {}) {
   if (section === "update") syncUpdateAuth();
 }
 
+function bindTabKeyboard(selector) {
+  const buttons = [...document.querySelectorAll(`${selector} button`)];
+  buttons.forEach((button) => {
+    button.setAttribute("role", "tab");
+    button.addEventListener("keydown", (event) => {
+      const index = buttons.indexOf(button);
+      const next = event.key === "ArrowRight" ? (index + 1) % buttons.length
+        : event.key === "ArrowLeft" ? (index - 1 + buttons.length) % buttons.length
+        : event.key === "Home" ? 0 : event.key === "End" ? buttons.length - 1 : -1;
+      if (next < 0) return;
+      event.preventDefault();
+      buttons[next].click();
+      buttons[next].focus();
+    });
+  });
+}
+
 function bindTabs() {
+  bindTabKeyboard(".main-tabs");
+  bindTabKeyboard(".view-tabs");
   document.querySelectorAll(".main-tabs button").forEach((btn) => {
     btn.addEventListener("click", () => {
       setActiveSection(btn.dataset.section);
@@ -496,10 +533,27 @@ function bindTabs() {
 }
 
 function bindEvents() {
-  el("globalSearch").addEventListener("input", (e) => {
-    state.q = e.target.value;
+  let searchTimer;
+  const scheduleSearch = () => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(render, 150);
+  };
+  el("resetFilters").addEventListener("click", () => {
+    clearTimeout(searchTimer);
+    Object.assign(state, { q: "", university: "全部", industry: "全部", subIndustry: "全部", level: "全部", resourcesCollapsed: false });
+    el("globalSearch").value = "";
+    initFilters();
     render();
   });
+  el("policySearch").addEventListener("input", (event) => {
+    state.policyQ = event.target.value;
+    renderPolicies();
+  });
+  el("globalSearch").addEventListener("input", (e) => {
+    state.q = e.target.value;
+    if (!e.isComposing) scheduleSearch();
+  });
+  el("globalSearch").addEventListener("compositionend", scheduleSearch);
   el("globalSearch").addEventListener("keydown", (e) => {
     if (e.key === "Enter") applySearch();
   });
@@ -507,6 +561,7 @@ function bindEvents() {
     state.q = "";
     el("globalSearch").value = "";
     render();
+    el("globalSearch").focus();
   });
   el("universityFilter").addEventListener("change", (e) => {
     state.university = e.target.value;
@@ -536,7 +591,12 @@ function bindEvents() {
   });
   document.querySelectorAll(".view-tabs button").forEach((btn) => {
     btn.addEventListener("click", () => {
-      document.querySelectorAll(".view-tabs button").forEach((item) => item.classList.remove("active"));
+      document.querySelectorAll(".view-tabs button").forEach((item) => {
+        const active = item === btn;
+        item.classList.toggle("active", active);
+        item.setAttribute("aria-selected", String(active));
+        item.tabIndex = active ? 0 : -1;
+      });
       btn.classList.add("active");
       state.view = btn.dataset.view;
       render();
@@ -767,6 +827,11 @@ function syncUpdateAuth() {
 function init() {
   state.activeSection = getSectionFromHash();
   initFilters();
+  document.querySelectorAll(".view-tabs button").forEach((button) => {
+    const active = button.dataset.view === state.view;
+    button.setAttribute("aria-selected", String(active));
+    button.tabIndex = active ? 0 : -1;
+  });
   renderKPIs();
   bindEvents();
   bindTabs();
@@ -778,3 +843,4 @@ function init() {
 }
 
 init();
+

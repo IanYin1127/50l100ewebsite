@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#mainContent">跳到主要内容</a>
   <header class="site-header">
     <nav class="topbar">
       <div class="brand">
@@ -36,14 +37,14 @@
     </div>
   </section>
 
-  <main>
+  <main id="mainContent">
     <section id="resourcesSection" class="panel" data-section="resources">
       <div class="search-bar">
         <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24">
           <circle cx="10.5" cy="10.5" r="6.5"></circle>
           <path d="M16 16l5 5"></path>
         </svg>
-        <input id="globalSearch" type="search" placeholder="搜索平台名称、研究方向、核心技术、服务、设备、联系人等" />
+        <input id="globalSearch" aria-label="搜索平台资源" type="search" placeholder="搜索平台名称、研究方向、核心技术、服务、设备、联系人等" />
         <button id="clearSearch" class="search-clear" type="button" aria-label="清空搜索">×</button>
       </div>
 
@@ -68,7 +69,7 @@
 
       <div class="section-head">
         <h2>资源查询</h2>
-        <p id="resultSummary">正在加载数据</p>
+        <p id="resultSummary" role="status" aria-live="polite">正在加载数据</p>
       </div>
 
       <div class="view-tabs" role="tablist" aria-label="展示视图">
@@ -80,6 +81,7 @@
       </div>
 
       <div class="view-tools">
+        <button id="resetFilters" class="ghost-tab" type="button" disabled>重置搜索与筛选</button>
         <button id="resourceCollapseToggle" class="ghost-tab" type="button">收起资源列表</button>
       </div>
 
@@ -127,9 +129,12 @@
           <p class="eyebrow">Policy Collection</p>
           <h2>政策汇编</h2>
         </div>
-        <p id="policySummary">汇总 50L-100E 相关政策条目。</p>
+        <p id="policySummary" role="status" aria-live="polite">汇总 50L-100E 相关政策条目。</p>
       </div>
       <div class="policy-tools">
+        <label>搜索政策
+          <input id="policySearch" type="search" placeholder="搜索政策名称、支持对象或资助标准" />
+        </label>
         <label>
           政策来源
           <select id="policyDeptFilter"></select>
@@ -151,7 +156,7 @@
         <h3>需要密码访问</h3>
         <p>请输入更新密码以解锁文件上传功能。</p>
         <div class="update-actions">
-          <input id="updatePassword" class="update-password" type="password" placeholder="请输入密码" />
+          <input id="updatePassword" aria-label="数据更新密码" class="update-password" type="password" placeholder="请输入密码" />
           <button id="updateAuthBtn" class="primary-btn" type="button">进入</button>
         </div>
         <div id="updateAuthStatus" class="update-status" hidden></div>
@@ -168,7 +173,7 @@
             <button id="generateDataJs" class="primary-btn" type="button" disabled>生成 data.js</button>
             <a id="downloadDataJs" class="download-btn" href="#" download="data.js" hidden>下载 data.js</a>
           </div>
-          <div id="updateStatus" class="update-status" hidden></div>
+          <div id="updateStatus" role="status" class="update-status" hidden></div>
         </div>
         <div id="updatePreview" class="update-preview" hidden>
           <h3>数据预览 <small id="previewCount"></small></h3>
@@ -203,7 +208,7 @@
   </main>
 
   <footer>
-    <span>慧湖50L100E · GitHub Pages 静态部署版本</span>
+    <span>慧湖50L100E · 高校科研资源与产业服务</span>
     <span>数据来源：高校平台资源清单</span>
   </footer>
 
@@ -217,3 +222,4 @@
   <script src="./app.js"></script>
 </body>
 </html>
+
