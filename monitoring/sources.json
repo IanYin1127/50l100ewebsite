@@ -198,7 +198,8 @@
         "9",
         "10",
         "11",
-        "12"
+        "12",
+        "approval-45d770dd4859803c"
       ],
       "dedicated": false,
       "kind": "动态",
@@ -2248,6 +2249,29 @@
       "homepage": "",
       "sourceIds": [],
       "verification": null
+    },
+    {
+      "id": "approval-45d770dd4859803c",
+      "name": "苏州市环保节能土木工程材料与技术重点实验室",
+      "university": "东南大学苏州校区",
+      "aliases": [],
+      "homepage": "https://szxq.seu.edu.cn/2019/0604/c24527a276158/page.htm",
+      "sourceIds": [
+        "seu-news"
+      ],
+      "verification": null,
+      "approval": {
+        "name": "苏州市环保节能土木工程材料与技术重点实验室",
+        "university": "东南大学苏州校区",
+        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276158/page.htm",
+        "publishedAt": "2008-08-04",
+        "approvalYear": "2008",
+        "authority": "苏州市政府",
+        "level": "市级重点实验室",
+        "localEvidenceUrl": "https://szxq.seu.edu.cn/24527/list.htm",
+        "approvalEvidence": "学校原文明确记载经苏州市政府批准于2008年建立；该页面列于东南大学苏州校区科研平台目录。",
+        "verifiedAt": "2026-11-05"
+      }
     }
   ]
 }

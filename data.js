@@ -3,13 +3,14 @@ window.HUIHU_DATA = {
     "title": "慧湖50L100E",
     "generatedAt": "2026-06-15",
     "sourceFile": "【最新】50L100E高校平台资源清单.xlsx",
-    "resourceCount": 181,
-    "universityCount": 18,
+    "resourceCount": 182,
+    "universityCount": 17,
     "industryCount": 18,
     "policySourceFile": "涉及50L-100E相关政策0410.xls",
     "policyCount": 44,
     "labGroupCount": 8,
-    "labCount": 78
+    "labCount": 78,
+    "registryUpdatedAt": "2026-11-05T23:58:41.466117+00:00"
   },
   "resources": [
     {
@@ -2907,6 +2908,28 @@ window.HUIHU_DATA = {
       "核心共享设备": "云计算平台、大数据计算平台、Web 服务开发平台、软件测试工具",
       "联系人": "赵功名",
       "联系电话": "0512-62880903"
+    },
+    {
+      "序号": "approval-45d770dd4859803c",
+      "平台名称": "苏州市环保节能土木工程材料与技术重点实验室",
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "所属高校": "东南大学苏州校区",
+      "平台等级": "市级重点实验室",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "认定部门": "苏州市政府",
+      "认定公开日期": "2008-08-04",
+      "认定年份": "2008",
+      "认定依据链接": "https://szxq.seu.edu.cn/2019/0604/c24527a276158/page.htm",
+      "苏州归属依据": "https://szxq.seu.edu.cn/24527/list.htm",
+      "收录日期": "2026-11-05"
     }
   ],
   "labs": [

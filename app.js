@@ -404,13 +404,13 @@ function syncSearchMode() {
 
 function getSectionFromHash() {
   const hash = window.location.hash.replace(/^#/, "");
-  const valid = ["resources", "insights", "labs", "updates", "update"];
+  const valid = ["resources", "insights", "labs", "updates", "registry", "activity", "sources", "update"];
   return valid.includes(hash) ? hash : "updates";
 }
 
 function setActiveSection(section, { updateHash = true } = {}) {
   state.activeSection = section;
-  const pageLabels = { updates: "运行总览", resources: "平台档案", insights: "资源分布", labs: "重点实验室", update: "数据维护" };
+  const pageLabels = { updates: "运行总览", registry: "平台台账", activity: "成果动态", sources: "来源健康", resources: "平台档案", insights: "资源分布", labs: "重点实验室", update: "数据维护" };
   el("currentPageLabel").textContent = pageLabels[section] || "运行总览";
   document.querySelectorAll("[data-section]").forEach((element) => {
     if (element.closest(".main-tabs")) return;
@@ -431,7 +431,7 @@ function setActiveSection(section, { updateHash = true } = {}) {
   if (section === "resources") render();
   if (section === "insights") renderCharts(getFiltered());
   if (section === "labs" && firstRender) renderLabs();
-  if (section === "updates") renderMonitoring();
+  if (["updates", "registry", "activity", "sources"].includes(section)) renderMonitoring();
   if (section === "update") syncUpdateAuth();
 }
 
@@ -834,8 +834,9 @@ function initMonitoring() {
   mobileLayout.addEventListener("change", () => {
     monitorUI.pageSize = mobileLayout.matches ? 5 : 15;
     monitorUI.page = 1;
-    if (state.activeSection === "updates") renderMonitoring();
+    if (["updates", "registry", "activity", "sources"].includes(state.activeSection)) renderMonitoring();
   });
+  setOptions(el("activityUniversity"), uniqByUniversityOrder(resources.map((r) => r["所属高校"])), "全部");
   setOptions(el("updateUniversity"), uniqByUniversityOrder(resources.map((r) => r["所属高校"])), "全部");
   ["updateSearch", "updateUniversity", "updateStatusFilter", "monitorSort"].forEach((id) => {
     el(id).addEventListener(id === "updateSearch" ? "input" : "change", () => {
@@ -843,6 +844,12 @@ function initMonitoring() {
       monitorUI.expandedFeed = false;
       renderMonitoring();
     });
+  });
+  ["activitySearch", "activityUniversity", "activityKind", "sourceSearch", "sourceStatus"].forEach((id) => {
+    el(id).addEventListener(id.endsWith("Search") ? "input" : "change", () => { monitorUI.expandedFeed = false; renderMonitoring(); });
+  });
+  el("discoveryOverview").addEventListener("click", (event) => {
+    if (event.target.closest("[data-show-discovery]")) setActiveSection("registry");
   });
   el("resetMonitorFilters").addEventListener("click", () => applyMonitorFilter("all", false));
   el("attentionQueue").addEventListener("click", (event) => {
@@ -883,7 +890,7 @@ function applyMonitorFilter(status, scroll = true) {
   monitorUI.page = 1;
   monitorUI.expandedFeed = false;
   renderMonitoring();
-  if (scroll) el("registryHeading").scrollIntoView({ block: "start" });
+  if (scroll) { setActiveSection("registry"); el("registryHeading").scrollIntoView({ block: "start" }); }
 }
 
 function changeMonitorPage(direction) {
@@ -893,6 +900,7 @@ function changeMonitorPage(direction) {
 }
 
 function renderMonitoring() {
+  renderDiscovery();
   const q = el("updateSearch").value.trim().toLowerCase();
   const university = el("updateUniversity").value;
   const status = el("updateStatusFilter").value;
@@ -907,11 +915,16 @@ function renderMonitoring() {
     if (sort === "university") return compareResource(a, b);
     return (priority[ra.status] ?? 7) - (priority[rb.status] ?? 7) || String(rb.lastActivityAt || "").localeCompare(String(ra.lastActivityAt || "")) || compareResource(a, b);
   });
-  const ids = new Set(selected.filter((item) => monitorRecord(item).name).map((item) => String(item["序号"])));
   const allNews = (monitoring.items || []).filter((entry) => resources.some((item) => String(item["序号"]) === entry.platformId && monitorRecord(item).name));
-  const feed = allNews.filter((item) => ids.has(item.platformId))
-    .filter((item) => !q || includes(item, q) || selected.some((resource) => String(resource["序号"]) === item.platformId && includes(resource, q)))
-    .sort((a, b) => String(b.publishedAt || "").localeCompare(String(a.publishedAt || "")));
+  const activityQ = el("activitySearch").value.trim().toLowerCase();
+  const activityUniversity = el("activityUniversity").value;
+  const activityKind = el("activityKind").value;
+  const feed = allNews.filter((entry) => {
+    const item = resources.find((resource) => String(resource["序号"]) === entry.platformId);
+    return (activityUniversity === "全部" || item?.["所属高校"] === activityUniversity)
+      && (activityKind === "all" || entry.kind === activityKind)
+      && (!activityQ || includes(entry, activityQ) || includes(item || {}, activityQ));
+  }).sort((a, b) => String(b.publishedAt || "").localeCompare(String(a.publishedAt || "")));
   const records = resources.map(monitorRecord);
   const checks = Object.values(monitoring.sourceChecks || {});
   const errors = checks.filter((source) => source.state === "error").length;
@@ -937,6 +950,7 @@ function renderMonitoring() {
   const queue = [
     ["source_error", "来源访问异常", "检查官方栏目是否可达", "alert", records.filter((r) => r.status === "source_error").length],
     ["needs_review", "长期未见动态", "核实平台近期活动情况", "clock", records.filter((r) => r.status === "needs_review").length],
+    ["unknown", "尚无匹配动态", "补充近期运行依据", "clock", records.filter((r) => r.status === "unknown").length],
     ["unconfigured", "待补充官方来源", "完善平台监测覆盖", "link", records.filter((r) => r.status === "unconfigured").length],
   ];
   el("attentionQueue").innerHTML = queue.map(([value, label, note, type, count]) => `<button class="attention-item attention-${type}" data-monitor-filter="${value}" type="button"><span class="attention-top">${escapeHtml(label)}<span aria-hidden="true">↗</span></span><strong>${count}<small>个平台</small></strong><span class="attention-note">${escapeHtml(note)}</span></button>`).join("");
@@ -956,7 +970,7 @@ function renderMonitoring() {
   el("monitorPrev").disabled = monitorUI.page <= 1;
   el("monitorNext").disabled = monitorUI.page >= pages;
   el("feedCount").textContent = feed.length;
-  el("updatesSummary").textContent = `与当前筛选平台关联 · 按原文日期排序`;
+  el("updatesSummary").textContent = `共 ${feed.length} 条 · 按原文发布日期排序`;
   const shownFeed = monitorUI.expandedFeed ? feed : feed.slice(0, 6);
   el("updatesFeed").innerHTML = shownFeed.map((entry) => {
     const resource = resources.find((item) => String(item["序号"]) === entry.platformId);
@@ -967,7 +981,18 @@ function renderMonitoring() {
   el("toggleUpdatesFeed").textContent = monitorUI.expandedFeed ? "收起动态 ↑" : `查看全部 ${feed.length} 条动态 ↓`;
   const healthy = checks.filter((source) => source.state === "ok").length;
   el("sourceHealthSummary").textContent = `${healthy} / ${checks.length} 正常`;
-  el("sourceHealth").innerHTML = checks.map((check) => `<div class="source-item"><span class="source-dot ${check.state === "error" ? "is-warning" : ""}"></span><div>${externalLink(check.url, check.name)}<small>${check.state === "error" ? "访问异常，待核查" : "已完成来源检查"}</small></div></div>`).join("") || '<p class="muted">暂无来源检查记录。</p>';
+  const sourceQ = el("sourceSearch").value.trim().toLowerCase();
+  const sourceState = el("sourceStatus").value;
+  el("sourceHealth").innerHTML = checks.filter((check) => (!sourceQ || includes(check, sourceQ)) && (sourceState === "all" || check.state === sourceState)).map((check) => `<div class="source-item"><span class="source-dot ${check.state === "error" ? "is-warning" : ""}"></span><div>${externalLink(check.url, check.name)}<small>${check.state === "error" ? "访问异常，待核查" : "已完成来源检查"} · ${escapeHtml(dateLabel(check.checkedAt))}<br>上次成功：${escapeHtml(dateLabel(check.lastSuccessAt))}${check.state === "error" ? `<br>${escapeHtml(check.error || "原因待核实")}` : ""}</small></div></div>`).join("") || '<p class="muted">暂无来源检查记录。</p>';
+}
+
+function renderDiscovery() {
+  const discovery = monitoring.discovery || { generatedAt: null, candidates: [], added: [] };
+  const candidates = discovery.candidates || [];
+  const added = discovery.added || [];
+  el("discoveryOverview").innerHTML = `<div><h2>新平台认定</h2><p>${discovery.generatedAt ? `最近核查：${escapeHtml(dateLabel(discovery.generatedAt))}` : "新增认定监测尚未执行"} · ${added.length} 个已自动收录，${candidates.length} 个待核实</p></div><button class="text-button" data-show-discovery type="button">查看认定记录 →</button>`;
+  const records = [...added.map((item) => ({ ...item, added: true })), ...candidates];
+  el("discoveryCandidates").innerHTML = records.length ? records.map((item) => `<article class="discovery-item"><div><span class="tag">${item.added ? "已收录" : "待核实"}</span><h3>${escapeHtml(item.name || item.title || "认定信息待提取")}</h3><p>${escapeHtml(item.university || item.unit || "归属待核实")} · ${escapeHtml(item.reason || "正式认定且苏州机构归属明确")}</p>${externalLink(item.url, "查看学校原文 ↗")}</div><small>${escapeHtml(item.publishedAt || "日期待核实")}</small></article>`).join("") : '<div class="empty">尚无新增平台认定记录。仅采集清单内苏州机构公开的信息，不自动导入校本部名单。</div>';
 }
 
 init();

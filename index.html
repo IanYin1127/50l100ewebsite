@@ -13,6 +13,10 @@
     <a class="brand" href="#updates" aria-label="慧湖平台运行监控首页"><span class="brand-mark">慧</span><span>慧湖50L100E<small>平台运行监控</small></span></a>
     <p class="nav-caption">工作空间</p>
     <nav class="main-tabs" role="tablist" aria-label="工作台导航"><button data-section="updates" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span>运行总览</span></button>
+<button data-section="registry" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9h16M9 9v11"/></svg><span>平台台账</span></button>
+<button data-section="activity" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span>成果动态</span></button>
+<button data-section="sources" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg><span>来源健康</span></button>
+<p class="nav-divider" aria-hidden="true">资料与维护</p>
 <button data-section="resources" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9h16M9 9v11"/></svg><span>平台档案</span></button>
 <button data-section="insights" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h17M7 16v-5M12 16V5M17 16V8"/></svg><span>资源分布</span></button>
 <button data-section="labs" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6M10 3v6l-6 10a1 1 0 0 0 1 2h14a1 1 0 0 0 1-2L14 9V3M8 14h8"/></svg><span>重点实验室</span></button>
@@ -116,11 +120,13 @@
       </div>
       <div class="collection-strip"><span id="collectionState" class="collection-state">读取监测记录</span><span id="monitorFreshness" role="status"></span></div>
       <div id="monitorStats" class="monitor-stats"></div>
-      <div class="dashboard-layout">
-        <div class="dashboard-primary">
-          <section class="surface attention-surface" aria-labelledby="attentionHeading"><div class="surface-heading"><div><span class="section-index">01 /</span><h2 id="attentionHeading">优先核查</h2></div><span class="quiet-label">点击进入对应平台</span></div><div id="attentionQueue" class="attention-grid"></div></section>
-          <section class="surface registry-surface" aria-labelledby="registryHeading">
-            <div class="surface-heading"><div><span class="section-index">02 /</span><h2 id="registryHeading">平台监测台账</h2></div><button id="resetMonitorFilters" class="text-button" type="button">重置筛选</button></div>
+<section class="surface attention-surface" aria-labelledby="attentionHeading"><div class="surface-heading"><div><span class="section-index">01 /</span><h2 id="attentionHeading">优先核查</h2></div><span class="quiet-label">点击进入对应平台</span></div><div id="attentionQueue" class="attention-grid"></div></section>
+      <div id="discoveryOverview" class="surface discovery-overview"></div>
+      <p class="monitor-note">判读说明：无动态或来源不可访问不直接代表停运。只监测清单内苏州校区、苏州研究院等本地机构，不混入异地校本部的平台名单。</p>
+    </section>
+
+<section id="registrySection" class="panel dashboard monitor-page" data-section="registry"><div class="page-heading"><div><p class="eyebrow">HUIHU · PLATFORM OBSERVATORY</p><h1>平台台账</h1><p>查看平台状态与监测依据，核查新增认定和机构归属。</p></div></div><section class="surface"><div class="surface-heading"><h2>新增平台认定</h2></div><div id="discoveryCandidates"></div></section><section class="surface registry-surface" aria-labelledby="registryHeading">
+            <div class="surface-heading"><div><h2 id="registryHeading">平台监测台账</h2></div><button id="resetMonitorFilters" class="text-button" type="button">重置筛选</button></div>
             <div class="monitor-controls">
               <label class="monitor-search"><span class="sr-only">搜索平台或成果</span><input id="updateSearch" type="search" placeholder="搜索平台、高校或成果…" /></label>
               <label><span class="sr-only">高校</span><select id="updateUniversity" aria-label="筛选所属高校"></select></label>
@@ -130,16 +136,9 @@
             <div class="registry-columns" aria-hidden="true"><span>平台 / 所属高校</span><span>公开运行线索</span><span>最近动态</span><span>来源</span><span></span></div>
             <div id="monitorView" class="monitor-register"></div>
             <div class="pagination"><span id="monitorPageInfo" aria-live="polite"></span><div><button id="monitorPrev" type="button" aria-label="上一页平台">← 上一页</button><button id="monitorNext" type="button" aria-label="下一页平台">下一页 →</button></div></div>
-          </section>
-          <p class="monitor-note">判读说明：近期动态代表公开活动线索。长期无动态或来源访问失败，均不直接认定平台停运；运行与停运结论需有依据的人工核验。</p>
-        </div>
-        <aside class="dashboard-secondary" aria-label="动态与采集来源">
-          <section class="surface feed-surface" aria-labelledby="feedHeading"><div class="surface-heading"><div><span class="section-index">03 /</span><h2 id="feedHeading">成果与动态</h2></div><span id="feedCount" class="count-pill"></span></div><p id="updatesSummary" class="feed-summary" role="status" aria-live="polite"></p><div id="updatesFeed" class="activity-feed"></div><button id="toggleUpdatesFeed" class="feed-more" type="button" hidden>查看全部动态</button></section>
-          <section class="surface source-surface" aria-labelledby="sourceHeading"><div class="surface-heading"><div><span class="section-index">04 /</span><h2 id="sourceHeading">采集来源</h2></div><span id="sourceHealthSummary" class="quiet-label"></span></div><div id="sourceHealth" class="source-list"></div></section>
-        </aside>
-      </div>
-    </section>
-
+          </section></section>
+<section id="activitySection" class="panel dashboard monitor-page" data-section="activity"><div class="page-heading"><div><p class="eyebrow">HUIHU · PLATFORM OBSERVATORY</p><h1>成果动态</h1><p>独立检索平台成果与活动，不受台账筛选影响。</p></div></div><section class="surface feed-surface" aria-labelledby="feedHeading"><div class="surface-heading"><div><h2 id="feedHeading">已收录动态</h2></div><span id="feedCount" class="count-pill"></span></div><div class="activity-controls"><label>搜索动态<input id="activitySearch" type="search" placeholder="成果标题或平台名称" /></label><label>所属机构<select id="activityUniversity"></select></label><label>动态类别<select id="activityKind"><option value="all">全部类别</option><option value="成果">成果</option><option value="动态">动态</option></select></label></div><p id="updatesSummary" class="feed-summary" role="status" aria-live="polite"></p><div id="updatesFeed" class="activity-feed"></div><button id="toggleUpdatesFeed" class="feed-more" type="button" hidden>查看全部动态</button></section></section>
+<section id="sourcesSection" class="panel dashboard monitor-page" data-section="sources"><div class="page-heading"><div><p class="eyebrow">HUIHU · PLATFORM OBSERVATORY</p><h1>来源健康</h1><p>查看官方栏目可达性、采集时间与异常记录。</p></div></div><section class="surface source-surface" aria-labelledby="sourceHeading"><div class="surface-heading"><div><h2 id="sourceHeading">官方来源检查</h2></div><span id="sourceHealthSummary" class="quiet-label"></span></div><div class="activity-controls"><label>搜索来源<input id="sourceSearch" type="search" placeholder="机构或栏目名称" /></label><label>检查结果<select id="sourceStatus"><option value="all">全部结果</option><option value="ok">检查正常</option><option value="error">访问异常</option></select></label></div><div id="sourceHealth" class="source-list"></div></section></section>
     <section id="updateSection" class="panel" data-section="update">
       <div class="section-head">
         <div>

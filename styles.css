@@ -358,3 +358,33 @@ footer { margin: 0 0 0 216px; padding: 28px 36px; display: flex; justify-content
   .metric-card > div:first-child { font-size: 11px; }
   .metric-card p { font-size: 9px; }
 }
+/* Monitoring areas are separate pages, with independent filters. */
+.monitor-page .registry-surface { margin-top: 0; }
+.monitor-page .activity-controls { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 14px; padding: 10px 20px 20px; }
+.activity-controls label { display: grid; gap: 6px; font-size: 11px; color: var(--muted); }
+.activity-controls input, .activity-controls select { width: 100%; padding: 9px 12px; border: 1px solid var(--line); border-radius: 7px; background: white; }
+.monitor-page .activity-feed { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); padding: 0 20px; gap: 0 24px; }
+.monitor-page .activity-item { margin: 0; padding: 24px 0; }
+.monitor-page .activity-item h3 { font-size: 14px; }
+.monitor-page .activity-item > p { font-size: 11px; }
+.monitor-page .source-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 30px; padding: 0 20px 20px; }
+.monitor-page .source-item { padding: 18px 0; font-size: 13px; }
+.monitor-page .source-item small { font-size: 11px; line-height: 1.9; }
+.discovery-overview { display: flex; justify-content: space-between; align-items: center; padding: 22px; gap: 18px; }
+.discovery-overview p { color: var(--muted); font-size: 12px; margin: 10px 0 0; }
+.discovery-item { display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line); padding: 20px; }
+.discovery-item h3 { margin-top: 10px; }
+.discovery-item p, .discovery-item small { color: var(--muted); font-size: 12px; }
+@media(max-width:700px) {
+  .monitor-page .activity-controls { grid-template-columns: 1fr; }
+  .activity-controls input, .activity-controls select { font-size: 16px; }
+  .monitor-page .activity-feed, .monitor-page .source-list { grid-template-columns: 1fr; }
+  .discovery-overview { align-items: flex-start; flex-direction: column; }
+  .discovery-item { flex-direction: column; gap: 6px; }
+}
+
+.nav-divider { margin: 21px 12px 5px; color: #93a092; font-size: 10px; letter-spacing: .1em; }
+@media(max-width:700px) { .nav-divider { display: none; } }
+
+.attention-grid { grid-template-columns: repeat(4,minmax(0,1fr)); }
+@media(max-width:700px) { .attention-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
