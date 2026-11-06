@@ -1,0 +1,207 @@
+{
+  "version": 1,
+  "autoAddCompleteApprovals": true,
+  "policy": "只采集本清单苏州校区及苏州研究院自己的公开信息；校本部目录不导入；拟认定、申报和归属不明留待核实。",
+  "institutions": [
+    {
+      "name": "苏州大学独墅湖校区",
+      "scope": "Suzhou local institution only",
+      "sources": [
+        {
+          "url": "https://sklrmp.suda.edu.cn/",
+          "kind": "平台官网",
+          "localUnitVerified": true,
+          "verifiedAt": "2026-11-05"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "name": "西交利物浦大学",
+      "scope": "Suzhou local institution only",
+      "sources": [
+        {
+          "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+          "kind": "directory",
+          "localUnitVerified": true,
+          "verifiedAt": "2026-11-05"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "name": "中国科学技术大学苏州高等研究院",
+      "scope": "Suzhou local institution only",
+      "sources": [
+        {
+          "url": "https://sz.ustc.edu.cn/kxyj_list/index.html",
+          "kind": "directory",
+          "localUnitVerified": true,
+          "verifiedAt": "2026-11-05"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "name": "东南大学苏州校区",
+      "scope": "Suzhou local institution only",
+      "sources": [
+        {
+          "url": "https://szxq.seu.edu.cn/24527/list.htm",
+          "kind": "directory",
+          "localUnitVerified": true,
+          "verifiedAt": "2026-11-05"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "name": "中国人民大学苏州校区",
+      "scope": "Suzhou local institution only",
+      "sources": [
+        {
+          "url": "https://sc.ruc.edu.cn/research/index.htm",
+          "kind": "directory",
+          "localUnitVerified": true,
+          "verifiedAt": "2026-11-05"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "name": "西安交通大学苏州研究院",
+      "scope": "Suzhou local institution only",
+      "sources": [
+        {
+          "url": "https://www.xjtusz.cn/xinwendongtai.html",
+          "kind": "news",
+          "localUnitVerified": true,
+          "verifiedAt": "2026-11-05"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "name": "山东大学苏州研究院",
+      "scope": "Suzhou local institution only",
+      "sources": [
+        {
+          "url": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
+          "kind": "directory",
+          "localUnitVerified": true,
+          "verifiedAt": "2026-11-05"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "name": "南京大学苏州研究生院、高新技术研究院",
+      "scope": "Suzhou local institution only",
+      "sources": [],
+      "aliases": []
+    },
+    {
+      "name": "武汉大学苏州研究院",
+      "scope": "Suzhou local institution only",
+      "sources": [],
+      "aliases": []
+    },
+    {
+      "name": "华北电力大学苏州研究院",
+      "scope": "Suzhou local institution only",
+      "sources": [
+        {
+          "url": "https://szyjy.ncepu.edu.cn/xwdt/index.htm",
+          "kind": "news",
+          "localUnitVerified": true,
+          "verifiedAt": "2026-11-05"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "name": "苏州工业园区新国大研究院",
+      "scope": "Suzhou local institution only",
+      "sources": [
+        {
+          "url": "https://www.nusri.cn/news/nusrinews/",
+          "kind": "news",
+          "localUnitVerified": true,
+          "verifiedAt": "2026-11-05"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "name": "牛津大学高等研究院（苏州）",
+      "scope": "Suzhou local institution only",
+      "sources": [
+        {
+          "url": "https://oscar.site.ox.ac.uk/home",
+          "kind": "news",
+          "localUnitVerified": true,
+          "verifiedAt": "2026-11-05"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "name": "苏州工业园区蒙纳士科学技术研究院",
+      "scope": "Suzhou local institution only",
+      "sources": [
+        {
+          "url": "https://www.monash.edu/suzhou/news-and-events",
+          "kind": "news",
+          "localUnitVerified": true,
+          "verifiedAt": "2026-11-05"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "name": "苏州工业园区卡鲁生产技术研究院",
+      "scope": "Suzhou local institution only",
+      "sources": [],
+      "aliases": []
+    },
+    {
+      "name": "苏州工业园区洛加大先进技术研究院",
+      "scope": "Suzhou local institution only",
+      "sources": [],
+      "aliases": []
+    },
+    {
+      "name": "梅西大学中国教育和创新中心",
+      "scope": "Suzhou local institution only",
+      "sources": [],
+      "aliases": []
+    },
+    {
+      "name": "上海交通大学苏州人工智能研究院",
+      "scope": "Suzhou local institution only",
+      "sources": [
+        {
+          "url": "https://szai.sjtu.edu.cn/?list/29=",
+          "kind": "news",
+          "localUnitVerified": true,
+          "verifiedAt": "2026-11-05"
+        }
+      ],
+      "aliases": []
+    }
+  ],
+  "verifiedApprovals": [
+    {
+      "name": "苏州市环保节能土木工程材料与技术重点实验室",
+      "university": "东南大学苏州校区",
+      "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276158/page.htm",
+      "publishedAt": "2008-08-04",
+      "approvalYear": "2008",
+      "authority": "苏州市政府",
+      "level": "市级重点实验室",
+      "localEvidenceUrl": "https://szxq.seu.edu.cn/24527/list.htm",
+      "approvalEvidence": "学校原文明确记载经苏州市政府批准于2008年建立；该页面列于东南大学苏州校区科研平台目录。",
+      "verifiedAt": "2026-11-05"
+    }
+  ]
+}

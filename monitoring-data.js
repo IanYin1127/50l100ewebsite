@@ -2185,6 +2185,30 @@ window.HUIHU_MONITORING = {
       "sourceIds": [],
       "homepage": "",
       "verification": null
+    },
+    "approval-45d770dd4859803c": {
+      "status": "not_checked",
+      "lastActivityAt": null,
+      "checkedAt": null,
+      "name": "苏州市环保节能土木工程材料与技术重点实验室",
+      "university": "东南大学苏州校区",
+      "sourceIds": [
+        "seu-news"
+      ],
+      "homepage": "https://szxq.seu.edu.cn/2019/0604/c24527a276158/page.htm",
+      "verification": null,
+      "approval": {
+        "name": "苏州市环保节能土木工程材料与技术重点实验室",
+        "university": "东南大学苏州校区",
+        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276158/page.htm",
+        "publishedAt": "2008-08-04",
+        "approvalYear": "2008",
+        "authority": "苏州市政府",
+        "level": "市级重点实验室",
+        "localEvidenceUrl": "https://szxq.seu.edu.cn/24527/list.htm",
+        "approvalEvidence": "学校原文明确记载经苏州市政府批准于2008年建立；该页面列于东南大学苏州校区科研平台目录。",
+        "verifiedAt": "2026-11-05"
+      }
     }
   },
   "items": [
@@ -2732,5 +2756,175 @@ window.HUIHU_MONITORING = {
       "matchedBy": "独立官方栏目",
       "reviewReason": null
     }
-  ]
+  ],
+  "discovery": {
+    "generatedAt": "2026-11-05T23:58:41.466117+00:00",
+    "candidates": [
+      {
+        "name": "医学影像智能与机器人研究中心",
+        "university": "中国科学技术大学苏州高等研究院",
+        "url": "https://sz.ustc.edu.cn/kxyj_show/115.html",
+        "directoryUrl": "https://sz.ustc.edu.cn/kxyj_list/index.html",
+        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
+      },
+      {
+        "name": "苏州大数据与人工智能研究工程中心",
+        "university": "中国科学技术大学苏州高等研究院",
+        "url": "https://sz.ustc.edu.cn/kxyj_show/171.html",
+        "directoryUrl": "https://sz.ustc.edu.cn/kxyj_list/index.html",
+        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
+      },
+      {
+        "name": "山东大学技术转移转化分中心（苏州）",
+        "university": "山东大学苏州研究院",
+        "url": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
+        "directoryUrl": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
+        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
+      },
+      {
+        "name": "生物医药技术联合实验室",
+        "university": "山东大学苏州研究院",
+        "url": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
+        "directoryUrl": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
+        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
+      },
+      {
+        "name": "生物医药研发与药物评价创新中心",
+        "university": "山东大学苏州研究院",
+        "url": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
+        "directoryUrl": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
+        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
+      },
+      {
+        "name": "中药煎制人工智能联合实验室",
+        "university": "山东大学苏州研究院",
+        "url": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
+        "directoryUrl": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
+        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
+      },
+      {
+        "name": "智能制造技术联合实验室",
+        "university": "山东大学苏州研究院",
+        "url": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
+        "directoryUrl": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
+        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
+      },
+      {
+        "name": "智能检测技术联合实验室",
+        "university": "山东大学苏州研究院",
+        "url": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
+        "directoryUrl": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
+        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
+      },
+      {
+        "name": "物联网技术联合实验室",
+        "university": "山东大学苏州研究院",
+        "url": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
+        "directoryUrl": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
+        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
+      },
+      {
+        "name": "智能环保技术联合实验室",
+        "university": "山东大学苏州研究院",
+        "url": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
+        "directoryUrl": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
+        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
+      },
+      {
+        "name": "苏州纳米科技协同创新中心-东南大学纳米生物医药中心",
+        "university": "东南大学苏州校区",
+        "url": "https://szxq.seu.edu.cn/24527/list.htm",
+        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
+        "reason": "苏州校区官方目录列有，但最新运行情况及完整认定字段待核实；目录含2008—2009年历史资料，不当作近期新获批"
+      },
+      {
+        "name": "苏州东南动漫公共技术服务平台",
+        "university": "东南大学苏州校区",
+        "url": "https://szxq.seu.edu.cn/24527/list.htm",
+        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
+        "reason": "苏州校区官方目录列有，但最新运行情况及完整认定字段待核实；目录含2008—2009年历史资料，不当作近期新获批"
+      },
+      {
+        "name": "苏州市高频高功率器件与集成技术研究中心",
+        "university": "东南大学苏州校区",
+        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276168/page.htm",
+        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
+        "reason": "苏州校区官方目录列有，但最新运行情况及完整认定字段待核实；目录含2008—2009年历史资料，不当作近期新获批"
+      },
+      {
+        "name": "苏州供应链金融研究中心",
+        "university": "东南大学苏州校区",
+        "url": "https://szxq.seu.edu.cn/24527/list.htm",
+        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
+        "reason": "苏州校区官方目录列有，但最新运行情况及完整认定字段待核实；目录含2008—2009年历史资料，不当作近期新获批"
+      },
+      {
+        "name": "苏州物流研究中心",
+        "university": "东南大学苏州校区",
+        "url": "https://szxq.seu.edu.cn/24527/list.htm",
+        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
+        "reason": "苏州校区官方目录列有，但最新运行情况及完整认定字段待核实；目录含2008—2009年历史资料，不当作近期新获批"
+      },
+      {
+        "name": "苏州市卫星定位技术与应用重点实验室",
+        "university": "东南大学苏州校区",
+        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276157/page.htm",
+        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
+        "reason": "苏州校区官方目录列有，但最新运行情况及完整认定字段待核实；目录含2008—2009年历史资料，不当作近期新获批"
+      },
+      {
+        "name": "苏州市微纳生物医疗器械设计与制造重点实验室",
+        "university": "东南大学苏州校区",
+        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276156/page.htm",
+        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
+        "reason": "苏州校区官方目录列有，但最新运行情况及完整认定字段待核实；目录含2008—2009年历史资料，不当作近期新获批"
+      },
+      {
+        "name": "苏州市儿童发展与学习科学媒体技术实验室",
+        "university": "东南大学苏州校区",
+        "url": "https://szxq.seu.edu.cn/24527/list.htm",
+        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
+        "reason": "苏州校区官方目录列有，但最新运行情况及完整认定字段待核实；目录含2008—2009年历史资料，不当作近期新获批"
+      },
+      {
+        "name": "苏州市电气设备与自动化重点实验室",
+        "university": "东南大学苏州校区",
+        "url": "https://szxq.seu.edu.cn/24527/list.htm",
+        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
+        "reason": "苏州校区官方目录列有，但最新运行情况及完整认定字段待核实；目录含2008—2009年历史资料，不当作近期新获批"
+      },
+      {
+        "name": "苏州市无线网络与信息安全重点实验室",
+        "university": "东南大学苏州校区",
+        "url": "https://szxq.seu.edu.cn/24527/list.htm",
+        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
+        "reason": "苏州校区官方目录列有，但最新运行情况及完整认定字段待核实；目录含2008—2009年历史资料，不当作近期新获批"
+      },
+      {
+        "name": "苏州工业园区情感计算与互动健康交叉创新（科研）平台",
+        "university": "西交利物浦大学",
+        "url": "https://www.xjtlu.edu.cn/zh/research/scholars/smart-technology-for-aging",
+        "reason": "学校公开文章明确提及获批；认定部门、时间等字段还需核实，暂不自动收录"
+      }
+    ],
+    "added": [
+      {
+        "name": "苏州市环保节能土木工程材料与技术重点实验室",
+        "university": "东南大学苏州校区",
+        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276158/page.htm",
+        "publishedAt": "2008-08-04",
+        "approvalYear": "2008",
+        "authority": "苏州市政府",
+        "level": "市级重点实验室",
+        "localEvidenceUrl": "https://szxq.seu.edu.cn/24527/list.htm",
+        "approvalEvidence": "学校原文明确记载经苏州市政府批准于2008年建立；该页面列于东南大学苏州校区科研平台目录。",
+        "verifiedAt": "2026-11-05",
+        "platformId": "approval-45d770dd4859803c",
+        "addedAt": "2026-11-05T23:58:41.466117+00:00",
+        "reason": "学校正式认定依据齐全，苏州校区归属已确认；历史平台补录，不代表近期新获批或确认仍在运行"
+      }
+    ],
+    "confirmedClosures": [],
+    "closureSignals": []
+  }
 };

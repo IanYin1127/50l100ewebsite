@@ -146,7 +146,7 @@ class Page(HTMLParser):
       self.meta[attrs.get("property", attrs.get("name", ""))] = attrs.get("content", "")
     if tag in {"meta", "img", "input", "br", "hr", "link", "source", "wbr", "area", "base", "embed"}:
       return
-    scoped = tag in {"main", "article"} or any(x in attrs.get("class", "").split() for x in ["wp_articlecontent", "article-content", "entry-content"])
+    scoped = tag in {"main", "article"} or any(x in attrs.get("class", "").split() for x in ["wp_articlecontent", "article-content", "entry-content", "v_news_content"])
     self.stack.append((tag, scoped))
     if tag == "a":
       self.anchor = {"url": attrs.get("href", ""), "parts": [], "title": attrs.get("title", "")}
@@ -309,6 +309,12 @@ def collect(config, previous, curated, fetch, now):
 def write_snapshot(root, snapshot):
   (root / "monitoring/snapshot.json").write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
   # Pending records remain in the repository but are excluded from website rendering.
+  audit_path = root / "monitoring/audit.json"
+  if audit_path.exists():
+    audit = json.loads(audit_path.read_text())
+    snapshot["discovery"] = {key: audit.get(key, [] if key != "generatedAt" else None) for key in ["generatedAt", "candidates", "added", "confirmedClosures", "closureSignals"]}
+    # Save the exact discovery summary along with the persisted monitoring snapshot.
+    (root / "monitoring/snapshot.json").write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
   public = {key: value for key, value in snapshot.items() if key != "pending"}
   (root / "monitoring-data.js").write_text("window.HUIHU_MONITORING = " + json.dumps(public, ensure_ascii=False, indent=2) + ";\n", encoding="utf-8")
 

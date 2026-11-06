@@ -28,13 +28,15 @@ jobs:
           python-version: "3.12"
       - name: 校验采集与状态规则
         run: python -m unittest discover -s tests -v
+      - name: 核查苏州机构目录与新增正式认定
+        run: python scripts/audit_platforms.py
       - name: 采集已确认官方来源
         run: python scripts/collect_updates.py
       - name: 保存动态与监测记录
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add monitoring/snapshot.json monitoring-data.js
+          git add data.js monitoring/sources.json monitoring/snapshot.json monitoring/audit.json monitoring/audit-report.md monitoring/audit.csv monitoring-data.js
           if ! git diff --cached --quiet; then
             git commit -m "更新平台公开动态与来源检查记录"
             git push origin HEAD:main
