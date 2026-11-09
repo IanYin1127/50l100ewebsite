@@ -1,85 +1,85 @@
 window.HUIHU_MONITORING = {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T06:08:52.789182+00:00",
+  "generatedAt": "2026-11-09T06:42:20.379632+00:00",
   "sourceChecks": {
     "suda-research": {
       "name": "苏州大学科学技术研究院·科研进展",
       "url": "https://scit.suda.edu.cn/kydt/list.htm",
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "state": "ok",
       "consecutiveFailures": 0,
-      "lastSuccessAt": "2026-11-08T06:08:52.789182+00:00",
+      "lastSuccessAt": "2026-11-09T06:42:20.379632+00:00",
       "entriesFound": 2
     },
     "xjtlu-news": {
       "name": "西交利物浦大学官方新闻",
       "url": "https://www.xjtlu.edu.cn/zh/news",
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "state": "ok",
       "consecutiveFailures": 0,
-      "lastSuccessAt": "2026-11-08T06:08:52.789182+00:00",
+      "lastSuccessAt": "2026-11-09T06:42:20.379632+00:00",
       "entriesFound": 0
     },
     "radiation-results": {
       "name": "放射医学实验室·科研成果",
       "url": "https://sklrmp.suda.edu.cn/8750/list.htm",
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "state": "ok",
       "consecutiveFailures": 0,
-      "lastSuccessAt": "2026-11-08T06:08:52.789182+00:00",
+      "lastSuccessAt": "2026-11-09T06:42:20.379632+00:00",
       "entriesFound": 20
     },
     "radiation-news": {
       "name": "放射医学实验室·综合新闻",
       "url": "https://sklrmp.suda.edu.cn/12792/list.htm",
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "state": "ok",
       "consecutiveFailures": 0,
-      "lastSuccessAt": "2026-11-08T06:08:52.789182+00:00",
+      "lastSuccessAt": "2026-11-09T06:42:20.379632+00:00",
       "entriesFound": 20
     },
     "seu-news": {
       "name": "东南大学苏州校区官方动态",
       "url": "https://szxq.seu.edu.cn/xqxw/list.htm",
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "state": "ok",
       "consecutiveFailures": 0,
-      "lastSuccessAt": "2026-11-08T06:08:52.789182+00:00",
+      "lastSuccessAt": "2026-11-09T06:42:20.379632+00:00",
       "entriesFound": 0
     },
     "sdu-news": {
       "name": "山东大学苏州研究院官方动态",
       "url": "https://suz.sdu.edu.cn/index/yjyyw.htm",
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "state": "ok",
       "consecutiveFailures": 0,
-      "lastSuccessAt": "2026-11-08T06:08:52.789182+00:00",
+      "lastSuccessAt": "2026-11-09T06:42:20.379632+00:00",
       "entriesFound": 0
     },
     "ncepu-news": {
       "name": "华北电力大学苏州研究院官方动态",
       "url": "https://szyjy.ncepu.edu.cn/xwdt/index.htm",
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "state": "ok",
       "consecutiveFailures": 0,
-      "lastSuccessAt": "2026-11-08T06:08:52.789182+00:00",
+      "lastSuccessAt": "2026-11-09T06:42:20.379632+00:00",
       "entriesFound": 0
     },
     "xjtu-news": {
       "name": "西安交通大学苏州研究院官方动态",
       "url": "https://www.xjtusz.cn/xinwendongtai.html",
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "state": "ok",
       "consecutiveFailures": 0,
-      "lastSuccessAt": "2026-11-08T06:08:52.789182+00:00",
+      "lastSuccessAt": "2026-11-09T06:42:20.379632+00:00",
       "entriesFound": 0
     },
     "nusri-news": {
       "name": "苏州工业园区新国大研究院官方动态",
       "url": "https://www.nusri.cn/news/nusrinews/",
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "state": "error",
-      "consecutiveFailures": 4,
+      "consecutiveFailures": 5,
       "lastSuccessAt": "2026-11-05T12:08:58.908229+00:00",
       "entriesFound": 0,
       "error": "未找到可解析的文章链接，需检查栏目结构"
@@ -87,10 +87,10 @@ window.HUIHU_MONITORING = {
     "sjtu-ai-news": {
       "name": "上海交通大学苏州人工智能研究院官方动态",
       "url": "https://szai.sjtu.edu.cn/?list/29=",
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "state": "ok",
       "consecutiveFailures": 0,
-      "lastSuccessAt": "2026-11-08T06:08:52.789182+00:00",
+      "lastSuccessAt": "2026-11-09T06:42:20.379632+00:00",
       "entriesFound": 0
     }
   },
@@ -98,7 +98,7 @@ window.HUIHU_MONITORING = {
     "33": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "儿童血液与肿瘤省高校重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -110,7 +110,7 @@ window.HUIHU_MONITORING = {
     "34": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "纺织行业纺织材料阻燃整理重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -122,7 +122,7 @@ window.HUIHU_MONITORING = {
     "35": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "纺织行业丝绸功能材料与技术重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -134,7 +134,7 @@ window.HUIHU_MONITORING = {
     "36": {
       "status": "recent_activity",
       "lastActivityAt": "2026-10-01",
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "放射医学与辐射防护国家重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -148,7 +148,7 @@ window.HUIHU_MONITORING = {
     "37": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "工业废水重金属离子污染物深度处理及资源化利用 - 公共技术服务平台",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -160,7 +160,7 @@ window.HUIHU_MONITORING = {
     "38": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "纺织行业医疗健康用蚕丝制品重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -172,7 +172,7 @@ window.HUIHU_MONITORING = {
     "39": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "纺织行业智能纺织服装柔性器件重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -184,7 +184,7 @@ window.HUIHU_MONITORING = {
     "40": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "江苏省碳基功能材料与器件高技术研究重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -196,7 +196,7 @@ window.HUIHU_MONITORING = {
     "41": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "感染与免疫省高校重点实验室（苏州大学）",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -208,7 +208,7 @@ window.HUIHU_MONITORING = {
     "42": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "环保功能吸附材料制备技术国家地方联合工程研究中心（江苏）",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -220,7 +220,7 @@ window.HUIHU_MONITORING = {
     "43": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "机能评定与体能训练实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -232,7 +232,7 @@ window.HUIHU_MONITORING = {
     "44": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "基因组资源国际联合研究中心",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -244,7 +244,7 @@ window.HUIHU_MONITORING = {
     "45": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "江苏省纺织印染业节能减排与清洁生产工程中心",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -256,7 +256,7 @@ window.HUIHU_MONITORING = {
     "46": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "江苏省化工吸附分离新材料与环境治理工程研究中心",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -268,7 +268,7 @@ window.HUIHU_MONITORING = {
     "47": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "江苏省节能环保材料测试与技术服务中心",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -280,7 +280,7 @@ window.HUIHU_MONITORING = {
     "48": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "江苏省精准诊疗药物创制工程研究中心",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -292,7 +292,7 @@ window.HUIHU_MONITORING = {
     "49": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "江苏省泥鳅遗传与育种重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -304,7 +304,7 @@ window.HUIHU_MONITORING = {
     "50": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "江苏省水产动物营养重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -316,7 +316,7 @@ window.HUIHU_MONITORING = {
     "51": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "江苏省苏州丝绸技术服务中心",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -328,7 +328,7 @@ window.HUIHU_MONITORING = {
     "52": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "江苏省苏州医疗器械临床前研究与评价公共技术服务中心",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -340,7 +340,7 @@ window.HUIHU_MONITORING = {
     "53": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "江苏省碳基功能材料与器件高技术研究重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -352,7 +352,7 @@ window.HUIHU_MONITORING = {
     "54": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "江苏省先进功能高分子材料设计及应用重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -364,7 +364,7 @@ window.HUIHU_MONITORING = {
     "55": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "江苏省新型高分子功能材料工程研究中心",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -376,7 +376,7 @@ window.HUIHU_MONITORING = {
     "56": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "江苏省中小企业环保产业公共技术服务平台",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -388,7 +388,7 @@ window.HUIHU_MONITORING = {
     "57": {
       "status": "recent_activity",
       "lastActivityAt": "2026-10-28",
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "江苏省重大脑疾病创新药物研发及转化重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -400,7 +400,7 @@ window.HUIHU_MONITORING = {
     "58": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "教育部“碳基功能材料与器件国际合作联合实验室”",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -412,7 +412,7 @@ window.HUIHU_MONITORING = {
     "59": {
       "status": "recent_activity",
       "lastActivityAt": "2026-10-28",
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "老年病与免疫教育部重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -424,7 +424,7 @@ window.HUIHU_MONITORING = {
     "60": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "石油和化工行业导向生物医用功能的高分子材料设计与合成重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -436,7 +436,7 @@ window.HUIHU_MONITORING = {
     "61": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "石油和化工行业颗粒技术工程实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -448,7 +448,7 @@ window.HUIHU_MONITORING = {
     "62": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "石油和化工行业有机废水吸附治理及其资源化重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -460,7 +460,7 @@ window.HUIHU_MONITORING = {
     "63": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "丝绸工程省高校重点实验室（苏州大学）",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -472,7 +472,7 @@ window.HUIHU_MONITORING = {
     "64": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市癌症分子遗传学重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -484,7 +484,7 @@ window.HUIHU_MONITORING = {
     "65": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市表界面智能材料重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -496,7 +496,7 @@ window.HUIHU_MONITORING = {
     "66": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市病原生物科学与抗感染医药重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -508,7 +508,7 @@ window.HUIHU_MONITORING = {
     "67": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市蚕丝生物技术重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -520,7 +520,7 @@ window.HUIHU_MONITORING = {
     "68": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市大分子设计与精密合成重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -532,7 +532,7 @@ window.HUIHU_MONITORING = {
     "69": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市电磁辐射防护重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -544,7 +544,7 @@ window.HUIHU_MONITORING = {
     "70": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市动物实验研究重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -556,7 +556,7 @@ window.HUIHU_MONITORING = {
     "71": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市儿科转化医学重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -568,7 +568,7 @@ window.HUIHU_MONITORING = {
     "72": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市防治高脂性疾病药物研究重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -580,7 +580,7 @@ window.HUIHU_MONITORING = {
     "73": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市功能纳米与软物质材料重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -592,7 +592,7 @@ window.HUIHU_MONITORING = {
     "74": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市环保吸附材料与技术重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -604,7 +604,7 @@ window.HUIHU_MONITORING = {
     "75": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市健康化学与分子诊断重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -616,7 +616,7 @@ window.HUIHU_MONITORING = {
     "76": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市健康人居科学及前沿技术重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -628,7 +628,7 @@ window.HUIHU_MONITORING = {
     "77": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市精准催化技术重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -640,7 +640,7 @@ window.HUIHU_MONITORING = {
     "78": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市抗肿瘤生物技术药物重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -652,7 +652,7 @@ window.HUIHU_MONITORING = {
     "79": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市粒子辐射效应及应用研究国际联合实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -664,7 +664,7 @@ window.HUIHU_MONITORING = {
     "80": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市绿色化工重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -676,7 +676,7 @@ window.HUIHU_MONITORING = {
     "81": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市纳米技术与生物医药重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -688,7 +688,7 @@ window.HUIHU_MONITORING = {
     "82": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市脑病诊疗国际联合实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -700,7 +700,7 @@ window.HUIHU_MONITORING = {
     "83": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市软物质材料与新能源重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -712,7 +712,7 @@ window.HUIHU_MONITORING = {
     "84": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市生物组织工程材料与技术重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -724,7 +724,7 @@ window.HUIHU_MONITORING = {
     "85": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市衰老与神经疾病重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -736,7 +736,7 @@ window.HUIHU_MONITORING = {
     "86": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市丝绸文物测试与复制保护技术重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -748,7 +748,7 @@ window.HUIHU_MONITORING = {
     "87": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市疼痛基础研究与临床治疗重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -760,7 +760,7 @@ window.HUIHU_MONITORING = {
     "88": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市系统生物医学重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -772,7 +772,7 @@ window.HUIHU_MONITORING = {
     "89": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市先进光子学材料重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -784,7 +784,7 @@ window.HUIHU_MONITORING = {
     "90": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市新型半导体光电材料与器件重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -796,7 +796,7 @@ window.HUIHU_MONITORING = {
     "91": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市血栓与血管性疾病重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -808,7 +808,7 @@ window.HUIHU_MONITORING = {
     "92": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市治疗性抗体及其关键技术重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -820,7 +820,7 @@ window.HUIHU_MONITORING = {
     "93": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市智能医学与装备重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -832,7 +832,7 @@ window.HUIHU_MONITORING = {
     "94": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市肿瘤放射生物学重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -844,7 +844,7 @@ window.HUIHU_MONITORING = {
     "95": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市肿瘤精准医学重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -856,7 +856,7 @@ window.HUIHU_MONITORING = {
     "96": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市肿瘤微环境病理学重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -868,7 +868,7 @@ window.HUIHU_MONITORING = {
     "97": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市资源分子精准转化重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -880,7 +880,7 @@ window.HUIHU_MONITORING = {
     "98": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏作技艺数智化技术江苏省文化和旅游重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -892,7 +892,7 @@ window.HUIHU_MONITORING = {
     "99": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "未来媒体与国际传播力建设大数据实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -904,7 +904,7 @@ window.HUIHU_MONITORING = {
     "100": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "现代丝绸国家工程技术研究中心",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -916,7 +916,7 @@ window.HUIHU_MONITORING = {
     "101": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "新型功能高分子材料国家地方联合工程研究中心 (江苏)",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -928,7 +928,7 @@ window.HUIHU_MONITORING = {
     "102": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "血液和血管疾病诊疗药物技术教育部工程中心",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -940,7 +940,7 @@ window.HUIHU_MONITORING = {
     "103": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "有机合成国家级重点实验室培育建设点苏州大学）",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -952,7 +952,7 @@ window.HUIHU_MONITORING = {
     "104": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "智能环境与能源新材料国际联合研究中心",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -964,7 +964,7 @@ window.HUIHU_MONITORING = {
     "105": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "中国 - 葡萄牙文化遗产保护科学 \"一带一路\" 联合实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -976,7 +976,7 @@ window.HUIHU_MONITORING = {
     "106": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "重大慢性病预防与转化医学省高校重点实验室(苏州大学)",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
@@ -988,7 +988,7 @@ window.HUIHU_MONITORING = {
     "133": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "低空创新研究院",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1000,7 +1000,7 @@ window.HUIHU_MONITORING = {
     "134": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "第三代半导体电力电子器件与功率集成国际创新研究院",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1012,7 +1012,7 @@ window.HUIHU_MONITORING = {
     "135": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "功能分子材料和器件优质创新平台",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1024,7 +1024,7 @@ window.HUIHU_MONITORING = {
     "136": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "江苏省数据科学与认知计算工程研究中心",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1036,7 +1036,7 @@ window.HUIHU_MONITORING = {
     "137": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "江苏省细胞治疗纳米制剂重点建设实验室",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1048,7 +1048,7 @@ window.HUIHU_MONITORING = {
     "138": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "人工智能产业研究院",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1060,7 +1060,7 @@ window.HUIHU_MONITORING = {
     "139": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "人工智能应用优质创新提升平台",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1072,7 +1072,7 @@ window.HUIHU_MONITORING = {
     "140": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州多模态大数据创新应用实验室",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1084,7 +1084,7 @@ window.HUIHU_MONITORING = {
     "141": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州工业园区 MEMS 先进高性能传感器芯片成果转化平台",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1096,7 +1096,7 @@ window.HUIHU_MONITORING = {
     "142": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州工业园区单分子单细胞成像分析创新科研平台",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1108,7 +1108,7 @@ window.HUIHU_MONITORING = {
     "143": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州工业园区泛能源大数据与智能计算创新科研平台",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1120,7 +1120,7 @@ window.HUIHU_MONITORING = {
     "144": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市 AI 驱动生物创新药概念验证中心",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1132,7 +1132,7 @@ window.HUIHU_MONITORING = {
     "145": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市代谢综合症新药研究重点实验室",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1144,7 +1144,7 @@ window.HUIHU_MONITORING = {
     "146": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市泛能源大数据创新应用实验室",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1156,7 +1156,7 @@ window.HUIHU_MONITORING = {
     "147": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市供应链技术重点实验室",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1168,7 +1168,7 @@ window.HUIHU_MONITORING = {
     "148": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市具身智能未来教育概念验证中心",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1180,7 +1180,7 @@ window.HUIHU_MONITORING = {
     "149": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市宽带无线接入技术重点实验室",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1192,7 +1192,7 @@ window.HUIHU_MONITORING = {
     "150": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市认知计算应用技术重点实验室",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1204,7 +1204,7 @@ window.HUIHU_MONITORING = {
     "151": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市新能源技术重点实验室",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1216,7 +1216,7 @@ window.HUIHU_MONITORING = {
     "152": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市虚拟现实技术重点实验室",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1228,7 +1228,7 @@ window.HUIHU_MONITORING = {
     "153": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市智能虚拟工程重点实验室",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1240,7 +1240,7 @@ window.HUIHU_MONITORING = {
     "154": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "退行性疾病药物研究创新平台",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1252,7 +1252,7 @@ window.HUIHU_MONITORING = {
     "155": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "西交利物浦大学后量子迁移交叉学科实验室",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1264,7 +1264,7 @@ window.HUIHU_MONITORING = {
     "156": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "西浦慧湖生物大分子表征分析中心",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1276,7 +1276,7 @@ window.HUIHU_MONITORING = {
     "157": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "西浦文化、传播与社会研究中心",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1288,7 +1288,7 @@ window.HUIHU_MONITORING = {
     "158": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "西浦先进半导体研究中心",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1300,7 +1300,7 @@ window.HUIHU_MONITORING = {
     "159": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "西浦智库",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1312,7 +1312,7 @@ window.HUIHU_MONITORING = {
     "160": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "先进材料研究中心",
       "university": "西交利物浦大学",
       "sourceIds": [
@@ -1434,7 +1434,7 @@ window.HUIHU_MONITORING = {
     "1": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "东南大学电磁环境效应研究中心",
       "university": "东南大学苏州校区",
       "sourceIds": [
@@ -1446,7 +1446,7 @@ window.HUIHU_MONITORING = {
     "2": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "东南大学 - 蒙纳士大学能源与环境联合研究中心",
       "university": "东南大学苏州校区",
       "sourceIds": [
@@ -1458,7 +1458,7 @@ window.HUIHU_MONITORING = {
     "3": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "东南大学 - 蒙纳士大学先进材料与制造联合研究中心",
       "university": "东南大学苏州校区",
       "sourceIds": [
@@ -1470,7 +1470,7 @@ window.HUIHU_MONITORING = {
     "4": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "东南大学下一代半导体材料研究所",
       "university": "东南大学苏州校区",
       "sourceIds": [
@@ -1482,7 +1482,7 @@ window.HUIHU_MONITORING = {
     "5": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "东南大学长三角碳中和战略发展（苏州）研究院",
       "university": "东南大学苏州校区",
       "sourceIds": [
@@ -1494,7 +1494,7 @@ window.HUIHU_MONITORING = {
     "6": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市环境与生物安全重点实验室",
       "university": "东南大学苏州校区",
       "sourceIds": [
@@ -1506,7 +1506,7 @@ window.HUIHU_MONITORING = {
     "7": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市集成电路与系统重点实验室",
       "university": "东南大学苏州校区",
       "sourceIds": [
@@ -1518,7 +1518,7 @@ window.HUIHU_MONITORING = {
     "8": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市金属纳米光电技术重点实验室",
       "university": "东南大学苏州校区",
       "sourceIds": [
@@ -1530,7 +1530,7 @@ window.HUIHU_MONITORING = {
     "9": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市汽车电子与智能交通技术重点实验室",
       "university": "东南大学苏州校区",
       "sourceIds": [
@@ -1542,7 +1542,7 @@ window.HUIHU_MONITORING = {
     "10": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市生物医用材料与技术重点实验室",
       "university": "东南大学苏州校区",
       "sourceIds": [
@@ -1554,7 +1554,7 @@ window.HUIHU_MONITORING = {
     "11": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市智能健康管理与信息工程技术重点实验室",
       "university": "东南大学苏州校区",
       "sourceIds": [
@@ -1566,7 +1566,7 @@ window.HUIHU_MONITORING = {
     "12": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "中澳可持续发展研究中心",
       "university": "东南大学苏州校区",
       "sourceIds": [
@@ -1668,7 +1668,7 @@ window.HUIHU_MONITORING = {
     "122": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "江苏省快速制造 3D 打印工程技术研究中心",
       "university": "西安交通大学苏州研究院",
       "sourceIds": [
@@ -1680,7 +1680,7 @@ window.HUIHU_MONITORING = {
     "123": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "密码法治实践创新基地",
       "university": "西安交通大学苏州研究院",
       "sourceIds": [
@@ -1692,7 +1692,7 @@ window.HUIHU_MONITORING = {
     "124": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州工业园区半导体晶圆键合工艺光学精密检测技术联合创新体",
       "university": "西安交通大学苏州研究院",
       "sourceIds": [
@@ -1704,7 +1704,7 @@ window.HUIHU_MONITORING = {
     "125": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州工业园区低碳能源装备压缩机结构力学成果转化平台",
       "university": "西安交通大学苏州研究院",
       "sourceIds": [
@@ -1716,7 +1716,7 @@ window.HUIHU_MONITORING = {
     "126": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州工业园区能源装备与先进制造技术创新平台",
       "university": "西安交通大学苏州研究院",
       "sourceIds": [
@@ -1728,7 +1728,7 @@ window.HUIHU_MONITORING = {
     "127": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市电动汽车与系统控制技术重点实验室",
       "university": "西安交通大学苏州研究院",
       "sourceIds": [
@@ -1740,7 +1740,7 @@ window.HUIHU_MONITORING = {
     "128": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市电力设备与电器智能化重点实验室",
       "university": "西安交通大学苏州研究院",
       "sourceIds": [
@@ -1752,7 +1752,7 @@ window.HUIHU_MONITORING = {
     "129": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市金属激光直接成型 3D 打印重点实验室",
       "university": "西安交通大学苏州研究院",
       "sourceIds": [
@@ -1764,7 +1764,7 @@ window.HUIHU_MONITORING = {
     "130": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市可再生纳米材料重点实验室",
       "university": "西安交通大学苏州研究院",
       "sourceIds": [
@@ -1776,7 +1776,7 @@ window.HUIHU_MONITORING = {
     "131": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市轻金属及其复合材料实验室",
       "university": "西安交通大学苏州研究院",
       "sourceIds": [
@@ -1788,7 +1788,7 @@ window.HUIHU_MONITORING = {
     "132": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市现代生物制药工程重点实验室",
       "university": "西安交通大学苏州研究院",
       "sourceIds": [
@@ -1800,7 +1800,7 @@ window.HUIHU_MONITORING = {
     "23": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "过程微纳技术应用优质创新平台",
       "university": "山东大学苏州研究院",
       "sourceIds": [
@@ -1812,7 +1812,7 @@ window.HUIHU_MONITORING = {
     "24": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "纳米材料制备及应用实验室",
       "university": "山东大学苏州研究院",
       "sourceIds": [
@@ -1824,7 +1824,7 @@ window.HUIHU_MONITORING = {
     "25": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "山东大学博兴智能厨具研究院",
       "university": "山东大学苏州研究院",
       "sourceIds": [
@@ -1836,7 +1836,7 @@ window.HUIHU_MONITORING = {
     "26": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "吸附材料及热物性表征实验室",
       "university": "山东大学苏州研究院",
       "sourceIds": [
@@ -1848,7 +1848,7 @@ window.HUIHU_MONITORING = {
     "27": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "新能源与环保技术创新平台",
       "university": "山东大学苏州研究院",
       "sourceIds": [
@@ -1860,7 +1860,7 @@ window.HUIHU_MONITORING = {
     "28": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "新一代半导体材料及器件产业化平台",
       "university": "山东大学苏州研究院",
       "sourceIds": [
@@ -1872,7 +1872,7 @@ window.HUIHU_MONITORING = {
     "29": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "药物研发与一致性评价协同创新平台",
       "university": "山东大学苏州研究院",
       "sourceIds": [
@@ -1934,7 +1934,7 @@ window.HUIHU_MONITORING = {
     "13": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "环境修复与功能材料实验室",
       "university": "华北电力大学苏州研究院",
       "sourceIds": [
@@ -1946,7 +1946,7 @@ window.HUIHU_MONITORING = {
     "14": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "生物制品制造联合实验室",
       "university": "华北电力大学苏州研究院",
       "sourceIds": [
@@ -1958,7 +1958,7 @@ window.HUIHU_MONITORING = {
     "15": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "碳捕集与碳排放实验室",
       "university": "华北电力大学苏州研究院",
       "sourceIds": [
@@ -1970,7 +1970,7 @@ window.HUIHU_MONITORING = {
     "118": {
       "status": "source_error",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "能源与环境纳米科技创新平台",
       "university": "苏州工业园区新国大研究院",
       "sourceIds": [
@@ -1982,7 +1982,7 @@ window.HUIHU_MONITORING = {
     "119": {
       "status": "source_error",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "生物医疗与健康科技创新平台",
       "university": "苏州工业园区新国大研究院",
       "sourceIds": [
@@ -2144,7 +2144,7 @@ window.HUIHU_MONITORING = {
     "30": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市人工智能与系统集成概念验证中心",
       "university": "上海交通大学苏州人工智能研究院",
       "sourceIds": [
@@ -2156,7 +2156,7 @@ window.HUIHU_MONITORING = {
     "31": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "智能车载系统研究联合实验室",
       "university": "上海交通大学苏州人工智能研究院",
       "sourceIds": [
@@ -2168,7 +2168,7 @@ window.HUIHU_MONITORING = {
     "32": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "AI 大数据联合实验室",
       "university": "上海交通大学苏州人工智能研究院",
       "sourceIds": [
@@ -2190,7 +2190,7 @@ window.HUIHU_MONITORING = {
     "approval-45d770dd4859803c": {
       "status": "unknown",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-08T06:08:52.789182+00:00",
+      "checkedAt": "2026-11-09T06:42:20.379632+00:00",
       "name": "苏州市环保节能土木工程材料与技术重点实验室",
       "university": "东南大学苏州校区",
       "sourceIds": [
@@ -2747,8 +2747,85 @@ window.HUIHU_MONITORING = {
     }
   ],
   "discovery": {
-    "generatedAt": "2026-11-08T06:08:18.058952+00:00",
+    "generatedAt": "2026-11-09T06:41:55.999399+00:00",
     "candidates": [
+      {
+        "name": "苏州东南动漫公共技术服务平台",
+        "university": "东南大学苏州校区",
+        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276173/page.htm",
+        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
+        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
+      },
+      {
+        "name": "苏州市高频高功率器件与集成技术研究中心",
+        "university": "东南大学苏州校区",
+        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276168/page.htm",
+        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
+        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
+      },
+      {
+        "name": "苏州供应链金融研究中心",
+        "university": "东南大学苏州校区",
+        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276172/page.htm",
+        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
+        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
+      },
+      {
+        "name": "苏州物流研究中心",
+        "university": "东南大学苏州校区",
+        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276170/page.htm",
+        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
+        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
+      },
+      {
+        "name": "苏州市卫星定位技术与应用重点实验室",
+        "university": "东南大学苏州校区",
+        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276157/page.htm",
+        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
+        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
+      },
+      {
+        "name": "苏州市微纳生物医疗器械设计与制造重点实验室",
+        "university": "东南大学苏州校区",
+        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276156/page.htm",
+        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
+        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
+      },
+      {
+        "name": "苏州市儿童发展与学习科学媒体技术实验室",
+        "university": "东南大学苏州校区",
+        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276155/page.htm",
+        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
+        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
+      },
+      {
+        "name": "苏州市电气设备与自动化重点实验室",
+        "university": "东南大学苏州校区",
+        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276148/page.htm",
+        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
+        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
+      },
+      {
+        "name": "苏州市无线网络与信息安全重点实验室",
+        "university": "东南大学苏州校区",
+        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276134/page.htm",
+        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
+        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
+      },
+      {
+        "name": "医学影像智能与机器人研究中心",
+        "university": "中国科学技术大学苏州高等研究院",
+        "url": "https://sz.ustc.edu.cn/kxyj_show/115.html",
+        "directoryUrl": "https://sz.ustc.edu.cn/kxyj_list/index.html",
+        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
+      },
+      {
+        "name": "苏州大数据与人工智能研究工程中心",
+        "university": "中国科学技术大学苏州高等研究院",
+        "url": "https://sz.ustc.edu.cn/kxyj_show/171.html",
+        "directoryUrl": "https://sz.ustc.edu.cn/kxyj_list/index.html",
+        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
+      },
       {
         "name": "退行性疾病药物研究平台",
         "university": "西交利物浦大学",
@@ -2859,83 +2936,6 @@ window.HUIHU_MONITORING = {
         "university": "西交利物浦大学",
         "url": "https://www.xjtlu.edu.cn/zh/professional-services/huaxin-advanced-semiconductor-collaborative-research-institute",
         "directoryUrl": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
-        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-      },
-      {
-        "name": "苏州东南动漫公共技术服务平台",
-        "university": "东南大学苏州校区",
-        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276173/page.htm",
-        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
-        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-      },
-      {
-        "name": "苏州市高频高功率器件与集成技术研究中心",
-        "university": "东南大学苏州校区",
-        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276168/page.htm",
-        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
-        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-      },
-      {
-        "name": "苏州供应链金融研究中心",
-        "university": "东南大学苏州校区",
-        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276172/page.htm",
-        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
-        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-      },
-      {
-        "name": "苏州物流研究中心",
-        "university": "东南大学苏州校区",
-        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276170/page.htm",
-        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
-        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-      },
-      {
-        "name": "苏州市卫星定位技术与应用重点实验室",
-        "university": "东南大学苏州校区",
-        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276157/page.htm",
-        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
-        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-      },
-      {
-        "name": "苏州市微纳生物医疗器械设计与制造重点实验室",
-        "university": "东南大学苏州校区",
-        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276156/page.htm",
-        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
-        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-      },
-      {
-        "name": "苏州市儿童发展与学习科学媒体技术实验室",
-        "university": "东南大学苏州校区",
-        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276155/page.htm",
-        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
-        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-      },
-      {
-        "name": "苏州市电气设备与自动化重点实验室",
-        "university": "东南大学苏州校区",
-        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276148/page.htm",
-        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
-        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-      },
-      {
-        "name": "苏州市无线网络与信息安全重点实验室",
-        "university": "东南大学苏州校区",
-        "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276134/page.htm",
-        "directoryUrl": "https://szxq.seu.edu.cn/24527/list.htm",
-        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-      },
-      {
-        "name": "医学影像智能与机器人研究中心",
-        "university": "中国科学技术大学苏州高等研究院",
-        "url": "https://sz.ustc.edu.cn/kxyj_show/115.html",
-        "directoryUrl": "https://sz.ustc.edu.cn/kxyj_list/index.html",
-        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-      },
-      {
-        "name": "苏州大数据与人工智能研究工程中心",
-        "university": "中国科学技术大学苏州高等研究院",
-        "url": "https://sz.ustc.edu.cn/kxyj_show/171.html",
-        "directoryUrl": "https://sz.ustc.edu.cn/kxyj_list/index.html",
         "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
       },
       {
