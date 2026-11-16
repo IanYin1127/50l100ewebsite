@@ -6,7 +6,7 @@ const state = {
   level: "全部",
   view: "cards",
   resourcesCollapsed: false,
-  activeSection: "updates",
+  activeSection: "resources",
   renderedSections: new Set(),
 };
 
@@ -242,7 +242,6 @@ function renderCards(items) {
         <span class="tag">${escapeHtml(item["平台等级"] || "未标注等级")}</span>
       </div>
       <h3>${escapeHtml(item["平台名称"])}</h3>
-      ${renderPlatformUpdates(item)}
       <p>${formatText(truncate(item["研究方向"], 260))}</p>
       <details>
         <summary>查看完整信息</summary>
@@ -255,6 +254,10 @@ function renderCards(items) {
           ${detail("核心共享设备", item["核心共享设备"])}
           ${detail("联系人", `${item["联系人"] || ""} ${item["联系电话"] || ""}`.trim())}
         </div>
+      </details>
+      <details class="resource-verification">
+        <summary>平台核验</summary>
+        ${renderPlatformUpdates(item)}
       </details>
     </article>
   `).join("");
@@ -404,14 +407,15 @@ function syncSearchMode() {
 
 function getSectionFromHash() {
   const hash = window.location.hash.replace(/^#/, "");
+  if (hash === "policies") return "updates";
   const valid = ["resources", "insights", "labs", "updates", "registry", "activity", "sources", "update"];
-  return valid.includes(hash) ? hash : "updates";
+  return valid.includes(hash) ? hash : "resources";
 }
 
 function setActiveSection(section, { updateHash = true } = {}) {
   state.activeSection = section;
-  const pageLabels = { updates: "运行总览", registry: "平台台账", activity: "成果动态", sources: "来源健康", resources: "平台档案", insights: "资源分布", labs: "重点实验室", update: "数据维护" };
-  el("currentPageLabel").textContent = pageLabels[section] || "运行总览";
+  const pageLabels = { resources: "平台档案", insights: "资源分布", labs: "重点实验室", updates: "平台核验", registry: "平台台账", activity: "成果动态", sources: "来源健康", update: "数据维护" };
+  el("currentPageLabel").textContent = pageLabels[section];
   document.querySelectorAll("[data-section]").forEach((element) => {
     if (element.closest(".main-tabs")) return;
     element.classList.toggle("section-active", element.dataset.section === section);
@@ -806,12 +810,12 @@ function monitoringStale() {
 
 function renderPlatformUpdates(item) {
   const record = monitorRecord(item);
-  const news = monitorNews(item).slice(0, 3);
+  const news = monitorNews(item);
   return `<div class="platform-updates">
-    <span class="status-badge status-${escapeHtml(record.status)}">${escapeHtml(monitorLabels[record.status] || "待核实")}</span>
+    ${monitorBadge(record)}
     ${monitoringStale() ? '<small>监测记录已超过 3 天未刷新</small>' : ""}
     ${record.lastActivityAt ? `<small>最近公开动态：${escapeHtml(record.lastActivityAt)}</small>` : ""}
-    ${news.length ? `<details><summary>成果与动态（${monitorNews(item).length}）</summary><ul class="mini-list">${news.map((entry) => `<li>${externalLink(entry.url, entry.title)}<br><small>${escapeHtml(entry.publishedAt || "日期待核实")} · ${escapeHtml(entry.sourceName)}</small></li>`).join("")}</ul></details>` : ""}
+    ${news.length ? `<details><summary>成果与动态（${news.length}）</summary><ul class="mini-list">${news.slice(0, 3).map((entry) => `<li>${externalLink(entry.url, entry.title)}<br><small>${escapeHtml(entry.publishedAt || "日期待核实")} · ${escapeHtml(entry.sourceName)}</small></li>`).join("")}</ul></details>` : ""}
     ${record.homepage ? externalLink(record.homepage, "访问平台官方页面 ↗") : ""}
   </div>`;
 }
