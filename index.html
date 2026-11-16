@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>慧湖50L100E · 高校平台资源</title>
-  <meta name="description" content="查阅慧湖50L100E高校平台的研究方向、技术服务、共享设备和联系信息，查看平台核验记录与公开动态。" />
-  <link rel="stylesheet" href="./styles.css" />
+  <meta name="description" content="按平台类别、认定级别和建设方式查找慧湖50L100E高校科研平台，查阅技术服务、共享设备、公开动态和核验记录。" />
+  <link rel="stylesheet" href="./styles.css?v=directory-2" />
 </head>
 <body>
   <a class="skip-link" href="#mainContent">跳到主要内容</a>
@@ -32,55 +32,74 @@
   <div class="workspace-bar"><span>高校平台资源 <b>/</b> <strong id="currentPageLabel">平台档案</strong></span><span class="workspace-caption">苏州独墅湖科教创新区</span></div>
 
   <main id="mainContent" tabindex="-1">
-    <section id="resourcesSection" class="panel" data-section="resources">
-      <div class="page-heading"><div><p class="eyebrow">PLATFORM DIRECTORY</p><h1>平台档案</h1><p>查阅平台能力、共享设备与联系信息。</p></div><div id="heroKpis" class="directory-kpis"></div></div>
-      <div class="search-bar">
-        <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24">
-          <circle cx="10.5" cy="10.5" r="6.5"></circle>
-          <path d="M16 16l5 5"></path>
-        </svg>
-        <input id="globalSearch" aria-label="搜索平台资源" type="search" placeholder="搜索平台名称、研究方向、核心技术、服务、设备、联系人等" />
-        <button id="clearSearch" class="search-clear" type="button" aria-label="清空搜索">×</button>
+    <section id="resourcesSection" class="panel resource-directory" data-section="resources">
+      <div class="directory-hero">
+        <div>
+          <p class="directory-region">苏州独墅湖科教创新区</p>
+          <h1>高校科研平台</h1>
+          <p class="directory-description">查找科研平台、技术服务和共享设备</p>
+        </div>
+        <dl id="heroKpis" class="directory-kpis"></dl>
       </div>
 
-      <div class="filters">
-        <label>
-          所属高校
-          <select id="universityFilter"></select>
-        </label>
-        <label>
-          一级产业分类
-          <select id="industryFilter"></select>
-        </label>
-        <label>
-          二级产业分类
-          <select id="subIndustryFilter"></select>
-        </label>
-        <label>
-          平台等级
-          <select id="levelFilter"></select>
-        </label>
+      <section id="resourceBrowse" class="directory-browse" aria-labelledby="browseHeading">
+        <h2 id="browseHeading">分类浏览</h2>
+        <div id="resourceShortcuts" class="directory-shortcuts"></div>
+      </section>
+
+      <div class="directory-search">
+        <div class="search-bar">
+          <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24">
+            <circle cx="10.5" cy="10.5" r="6.5"></circle>
+            <path d="M16 16l5 5"></path>
+          </svg>
+          <input id="globalSearch" aria-label="搜索平台资源" type="search" placeholder="搜索平台、技术服务、共享设备或标签" />
+          <button id="clearSearch" class="search-clear" type="button" aria-label="清空搜索" hidden>×</button>
+        </div>
+        <div id="directoryFilters">
+          <div class="filters">
+            <label>平台类别<select id="categoryFilter"></select></label>
+            <label>认定级别<select id="levelFilter"></select></label>
+            <label>建设方式<select id="modeFilter"></select></label>
+            <label>所属机构<select id="universityFilter"></select></label>
+          </div>
+          <details class="directory-industry">
+            <summary>按产业筛选 <span id="industrySelection"></span></summary>
+            <div class="filters industry-filters">
+              <label>一级产业分类<select id="industryFilter"></select></label>
+              <label>二级产业分类<select id="subIndustryFilter"></select></label>
+            </div>
+          </details>
+        </div>
       </div>
 
-      <div class="section-head">
-        <h2>资源查询</h2>
-        <p id="resultSummary" role="status" aria-live="polite">正在加载数据</p>
+      <div id="resourceResults" class="directory-results" tabindex="-1">
+        <div class="directory-results-overview">
+          <h2>平台档案</h2>
+          <p id="resultSummary" role="status" aria-live="polite">正在加载数据</p>
+        </div>
+        <div class="view-tabs" role="tablist" aria-label="展示视图">
+          <button class="active" data-view="cards" type="button">卡片</button>
+          <button data-view="universities" type="button">按高校</button>
+          <button data-view="industries" type="button">按行业</button>
+          <button data-view="table" type="button">表格</button>
+          <button data-view="keyLabs" type="button">全重资源</button>
+        </div>
       </div>
-
-      <div class="view-tabs" role="tablist" aria-label="展示视图">
-        <button class="active" data-view="cards" type="button">资源卡片</button>
-        <button data-view="universities" type="button">高校视图</button>
-        <button data-view="industries" type="button">行业视图</button>
-        <button data-view="table" type="button">紧凑表格</button>
-        <button data-view="keyLabs" type="button">全重资源</button>
-      </div>
-
       <div class="view-tools">
-        <button id="resetFilters" class="ghost-tab" type="button" disabled>重置搜索与筛选</button>
+        <button id="resetFilters" class="ghost-tab" type="button" disabled>重置筛选</button>
         <button id="resourceCollapseToggle" class="ghost-tab" type="button">收起资源列表</button>
       </div>
 
       <div id="resourceView" class="resource-grid"></div>
+      <div id="resourcePagination" class="directory-pagination" role="group" aria-label="平台档案分页" hidden>
+        <span id="resourcePageInfo" aria-live="polite"></span>
+        <div>
+          <button id="resourcePrev" class="ghost-tab" type="button" aria-controls="resourceView">上一页</button>
+          <button id="resourceNext" class="ghost-tab" type="button" aria-controls="resourceView">下一页</button>
+        </div>
+      </div>
+
     </section>
 
     <section id="insightsSection" class="panel" data-section="insights">
@@ -89,7 +108,7 @@
           <p class="eyebrow">Dimension Insights</p>
           <h2>资源分布</h2>
         </div>
-        <p>按高校、行业大类、平台等级查看资源分布。</p>
+        <p>按高校、行业大类、认定级别查看资源分布。</p>
       </div>
       <div class="charts">
         <article>
@@ -101,7 +120,7 @@
           <div id="industryChart" class="bar-chart"></div>
         </article>
         <article>
-          <h3>平台等级分布</h3>
+          <h3>认定级别分布</h3>
           <div id="levelChart" class="bar-chart"></div>
         </article>
       </div>
@@ -217,9 +236,9 @@
     </svg>
   </button>
 
-  <script src="./data.js"></script>
+  <script src="./data.js?v=directory-2"></script>
   <script src="./monitoring-data.js"></script>
-  <script src="./app.js"></script>
+  <script src="./app.js?v=directory-2"></script>
 </body>
 </html>
 

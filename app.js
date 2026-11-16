@@ -1,10 +1,17 @@
-const state = {
+const directoryDefaults = {
   q: "",
   university: "全部",
   industry: "全部",
   subIndustry: "全部",
+  category: "全部",
   level: "全部",
+  mode: "全部",
+};
+
+const state = {
+  ...directoryDefaults,
   view: "cards",
+  resourcePage: 1,
   resourcesCollapsed: false,
   activeSection: "resources",
   renderedSections: new Set(),
@@ -65,6 +72,19 @@ const fields = [
 ];
 
 const resourceFields = fields.map(([name]) => name);
+const resourceSearchFields = resourceFields.filter((name) => name !== "平台等级");
+const directoryLevels = ["国家级", "省部级", "市级", "区级", "校（院）级", "级别待核"];
+const directoryFilterFields = [
+  ["category", "categoryFilter", "全部类别"],
+  ["level", "levelFilter", "全部级别"],
+  ["mode", "modeFilter", "全部建设方式"],
+];
+const directoryShortcuts = [
+  ["category", "全国重点实验室"], ["category", "江苏省重点实验室"], ["category", "苏州市重点实验室"],
+  ["mode", "校企共建实验室"], ["mode", "自建实验室"], ["category", "创新联合体"],
+];
+const directoryMobile = window.matchMedia("(max-width: 700px)");
+const pendingClassifications = { category: "类别待核", level: "级别待核", mode: "建设方式待核" };
 
 const el = (id) => document.getElementById(id);
 const uniq = (arr) => [...new Set(arr.filter(Boolean))].sort((a, b) => a.localeCompare(b, "zh-CN"));
@@ -83,9 +103,9 @@ const includes = (item, q) => {
   return Object.values(item).some((value) => String(value || "").toLowerCase().includes(q));
 };
 
-function setOptions(select, values, current) {
+function setOptions(select, values, current, allLabel = "全部") {
   const options = ["全部", ...values];
-  select.innerHTML = options.map((v) => `<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`).join("");
+  select.innerHTML = options.map((v) => `<option value="${escapeHtml(v)}">${escapeHtml(v === "全部" ? allLabel : v)}</option>`).join("");
   select.value = options.includes(current) ? current : "全部";
 }
 
@@ -138,57 +158,112 @@ function formatText(value) {
   return escapeHtml(normalizeNumberedText(value || "暂无")).replace(/\n/g, "<br>");
 }
 
+function resourceClassifications(item) {
+  if (item["分类标签"]?.length) return item["分类标签"];
+  if (!item["认定依据链接"] || !item["认定部门"]) return [pendingClassifications];
+  const label = String(item["平台等级"] || "");
+  const levelRules = [
+    [/全国|国家(?:级|重点)/, "国家级"], [/江苏省|省级|部级/, "省部级"], [/苏州市|市级/, "市级"],
+    [/区级|园区级/, "区级"], [/校级|院级|校（院）级/, "校（院）级"],
+  ];
+  const level = levelRules.find(([pattern]) => pattern.test(label))?.[1] || pendingClassifications.level;
+  const name = String(item["平台名称"] || "");
+  const categoryRules = [
+    ["国家级", /(?:全国|国家)重点实验室/, "全国重点实验室"],
+    ["省部级", /江苏省.*高校重点实验室/, "省高校重点实验室"],
+    ["省部级", /江苏省.*重点实验室/, "江苏省重点实验室"],
+    ["省部级", /(?:教育部|部级)重点实验室/, "部委重点实验室"],
+    ["市级", /苏州市.*重点实验室/, "苏州市重点实验室"],
+  ];
+  const category = !/培育|筹建|基地|建设平台/.test(name)
+    && categoryRules.find(([rank, pattern]) => rank === level && pattern.test(name))?.[2];
+  return [{ category: category || pendingClassifications.category, level,
+    authority: item["认定部门"], year: item["认定年份"], url: item["认定依据链接"] }];
+}
+
+function classificationValue(tag, key) {
+  return tag[key] || pendingClassifications[key];
+}
+
+function classificationCounts(items, key) {
+  const counts = {};
+  for (const item of items) {
+    const values = new Set(resourceClassifications(item).map((tag) => classificationValue(tag, key)));
+    for (const value of values) counts[value] = (counts[value] || 0) + 1;
+  }
+  return counts;
+}
+
 function getFiltered() {
   const q = state.q.trim().toLowerCase();
   return resources.filter((item) => {
-    const matchQ = includes(item, q);
+    const tags = resourceClassifications(item);
+    const matchQ = !q || resourceSearchFields.some((field) => String(item[field] || "").toLowerCase().includes(q))
+      || tags.some((tag) => includes(tag, q));
     const matchUni = state.university === "全部" || item["所属高校"] === state.university;
     const matchIndustry = state.industry === "全部" || item["一级产业分类"] === state.industry;
     const matchSub = state.subIndustry === "全部" || item["二级产业分类"] === state.subIndustry;
-    const matchLevel = state.level === "全部" || item["平台等级"] === state.level;
-    return matchQ && matchUni && matchIndustry && matchSub && matchLevel;
+    const matchTags = tags.some((tag) => directoryFilterFields.every(([key]) =>
+      state[key] === "全部" || classificationValue(tag, key) === state[key]));
+    return matchQ && matchUni && matchIndustry && matchSub && matchTags;
   });
 }
 
 function initFilters() {
-  setOptions(el("universityFilter"), uniqByUniversityOrder(resources.map((r) => r["所属高校"])), state.university);
-  setOptions(el("industryFilter"), uniq(resources.map((r) => r["一级产业分类"])), state.industry);
-  setOptions(el("subIndustryFilter"), uniq(resources.map((r) => r["二级产业分类"])), state.subIndustry);
-  setOptions(el("levelFilter"), uniq(resources.map((r) => r["平台等级"])), state.level);
+  setOptions(el("universityFilter"), uniqByUniversityOrder(resources.map((r) => r["所属高校"])), state.university, "全部机构");
+  setOptions(el("industryFilter"), uniq(resources.map((r) => r["一级产业分类"])), state.industry, "全部一级产业");
+  refreshSubIndustryOptions();
+  for (const [key, id, allLabel] of directoryFilterFields) {
+    const choices = Object.keys(classificationCounts(resources, key));
+    const ordered = key === "level"
+      ? directoryLevels.filter((level) => choices.includes(level))
+      : uniq(choices).sort((a, b) => Number(a.endsWith("待核")) - Number(b.endsWith("待核")));
+    setOptions(el(id), ordered, state[key], allLabel);
+    state[key] = el(id).value;
+  }
 }
 
 function refreshSubIndustryOptions() {
   const pool = state.industry === "全部"
     ? resources
     : resources.filter((r) => r["一级产业分类"] === state.industry);
-  setOptions(el("subIndustryFilter"), uniq(pool.map((r) => r["二级产业分类"])), state.subIndustry);
+  setOptions(el("subIndustryFilter"), uniq(pool.map((r) => r["二级产业分类"])), state.subIndustry, "全部二级产业");
   state.subIndustry = el("subIndustryFilter").value;
 }
 
 function renderKPIs() {
-  const meta = data.meta || {};
   const items = [
-    ["平台", meta.resourceCount || resources.length],
-    ["高校", meta.universityCount || uniq(resources.map((r) => r["所属高校"])).length],
-    ["产业分类", meta.industryCount || uniq(resources.map((r) => r["一级产业分类"])).length],
-    ["重点实验室", (data.labs || []).reduce((sum, g) => sum + (g.labs || []).length, 0)],
+    ["平台档案", resources.length],
+    ["高校及院所", uniq(resources.map((r) => r["所属高校"])).length],
+    ["平台类别", Object.keys(classificationCounts(resources, "category")).filter((label) => label !== pendingClassifications.category).length],
   ];
-  const kpis = el("heroKpis");
-  if (!kpis) return;
-  kpis.innerHTML = items.map(([label, value]) => `
-    <article class="kpi-card">
-      <span>${escapeHtml(label)}</span>
-      <strong>${escapeHtml(String(value))}</strong>
-    </article>
-  `).join("");
+  el("heroKpis").innerHTML = items.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${value}</dd></div>`).join("");
 }
 
-function render() {
+function initDirectoryShortcuts() {
+  const counts = { category: classificationCounts(resources, "category"), mode: classificationCounts(resources, "mode") };
+  el("resourceShortcuts").innerHTML = directoryShortcuts.map(([key, label]) => {
+    const count = counts[key][label] || 0;
+    return `<button class="directory-shortcut" type="button" data-filter-key="${key}" data-filter-value="${escapeHtml(label)}" aria-pressed="false"${count ? "" : " disabled"}>
+      <span class="shortcut-name">${escapeHtml(label)}</span>
+      <span class="shortcut-count"><strong>${count}</strong> 份档案</span>
+      <span class="shortcut-arrow" aria-hidden="true">›</span>
+    </button>`;
+  }).join("");
+}
+
+function render({ keepPage = false } = {}) {
+  if (!keepPage) state.resourcePage = 1;
   const filtered = getFiltered();
   syncSearchMode();
   el("clearSearch").hidden = !state.q;
-  el("resetFilters").disabled = !state.q && [state.university, state.industry, state.subIndustry, state.level].every((value) => value === "全部");
+  el("resetFilters").disabled = Object.entries(directoryDefaults).every(([key, value]) => state[key] === value);
+  el("industrySelection").textContent = [state.industry, state.subIndustry].filter((value) => value !== "全部").join(" / ");
+  el("resourceShortcuts").querySelectorAll("button").forEach((button) => {
+    button.setAttribute("aria-pressed", String(state[button.dataset.filterKey] === button.dataset.filterValue));
+  });
   syncResourceCollapseButton();
+  el("resourcePagination").hidden = true;
   if (state.resourcesCollapsed) {
     renderCollapsedResourceSummary(filtered);
     return;
@@ -197,11 +272,22 @@ function render() {
     renderKeyLabs();
     return;
   }
-  el("resultSummary").textContent = `当前筛选出 ${filtered.length} 条资源，共 ${uniq(filtered.map((r) => r["所属高校"])).length} 所高校、${uniq(filtered.map((r) => r["一级产业分类"])).length} 个一级产业分类`;
-  if (state.view === "cards") renderCards(filtered);
+  el("resultSummary").textContent = `共 ${filtered.length} 份档案 · ${uniq(filtered.map((r) => r["所属高校"])).length} 家高校及院所`;
+  if (state.view === "cards" || state.view === "table") {
+    const pageSize = directoryMobile.matches ? 6 : 12;
+    const lastPage = Math.max(1, Math.ceil(filtered.length / pageSize));
+    state.resourcePage = Math.min(state.resourcePage, lastPage);
+    const start = (state.resourcePage - 1) * pageSize;
+    const page = filtered.slice(start, start + pageSize);
+    el("resourcePagination").hidden = lastPage === 1;
+    el("resourcePageInfo").textContent = page.length ? `第 ${state.resourcePage} / ${lastPage} 页 · ${start + 1}–${start + page.length} 份档案` : "";
+    el("resourcePrev").disabled = state.resourcePage === 1;
+    el("resourceNext").disabled = state.resourcePage === lastPage;
+    if (state.view === "cards") renderCards(page);
+    else renderTable(page);
+  }
   if (state.view === "universities") renderGroups(filtered, "所属高校", "高校");
   if (state.view === "industries") renderGroups(filtered, "一级产业分类", "行业");
-  if (state.view === "table") renderTable(filtered);
 }
 
 function renderCollapsedResourceSummary(items) {
@@ -234,20 +320,23 @@ function renderCards(items) {
     return;
   }
   el("resourceView").className = "resource-grid";
-  el("resourceView").innerHTML = items.map((item) => `
+  el("resourceView").innerHTML = items.map((item) => {
+    const service = item["可对外提供的核心服务"];
+    const excerpt = truncate(service || item["研究方向"], 155);
+    return `
     <article class="resource-card">
-      <div class="tags">
-        <span class="tag">${escapeHtml(item["所属高校"])}</span>
-        <span class="tag">${escapeHtml(item["一级产业分类"] || "未标注行业")}</span>
-        <span class="tag">${escapeHtml(item["平台等级"] || "未标注等级")}</span>
-      </div>
-      <h3>${escapeHtml(item["平台名称"])}</h3>
-      <p>${formatText(truncate(item["研究方向"], 260))}</p>
+      <p class="resource-institution">${escapeHtml(item["所属高校"])}</p>
+      <h3>${escapeHtml(item["平台名称"]).replace(/\r?\n/g, "<br>")}</h3>
+      ${renderClassificationLabels(item)}
+      ${excerpt ? `<div class="resource-excerpt"><h4>${service ? "可对外提供的服务" : "研究方向"}</h4><p>${formatText(excerpt)}</p></div>` : ""}
       <details>
-        <summary>查看完整信息</summary>
+        <summary>平台详情</summary>
         <div class="detail-list">
+          ${renderClassificationEvidence(item)}
+          ${detail("一级产业分类", item["一级产业分类"])}
           ${detail("二级产业分类", item["二级产业分类"])}
           ${detail("细分产业领域", item["细分产业领域"])}
+          ${detail("研究方向", item["研究方向"])}
           ${detail("核心技术能力", item["核心技术能力"])}
           ${detail("可对外提供的核心服务", item["可对外提供的核心服务"])}
           ${detail("标杆转化案例", item["标杆转化案例"])}
@@ -260,7 +349,35 @@ function renderCards(items) {
         ${renderPlatformUpdates(item)}
       </details>
     </article>
-  `).join("");
+  `;
+  }).join("");
+}
+
+function renderClassificationLabels(item) {
+  return `<div class="resource-classifications">${resourceClassifications(item).map((tag) => `
+    <div>
+      ${tag.name ? `<span class="classification-name">${escapeHtml(tag.name)}</span>` : ""}
+      <div class="tags">
+        <span class="tag tag-category">${escapeHtml(classificationValue(tag, "category"))}</span>
+        <span class="tag tag-level">${escapeHtml(classificationValue(tag, "level"))}</span>
+        ${tag.mode && tag.mode !== pendingClassifications.mode ? `<span class="tag tag-mode">${escapeHtml(tag.mode)}</span>` : ""}
+      </div>
+    </div>
+  `).join("")}</div>`;
+}
+
+function renderClassificationEvidence(item) {
+  const tags = resourceClassifications(item);
+  return tags.map((tag) => {
+    const facts = [
+      tag.authority ? `立项或认定单位 ${tag.authority}` : "",
+      tag.year ? `设立或认定年份 ${tag.year}` : "",
+      tag.source,
+    ].filter(Boolean);
+    const basis = tag.url ? externalLink(tag.url, "查看公开依据 ↗") : "";
+    const details = [...facts.map(escapeHtml), basis, tag.note ? escapeHtml(tag.note) : ""].filter(Boolean);
+    return details.length ? `<div><b>${escapeHtml(tag.name || "分类依据")}</b><span>${details.join("<br>")}</span></div>` : "";
+  }).join("");
 }
 
 function detail(label, value) {
@@ -308,7 +425,7 @@ function renderTable(items) {
           <th>所属高校</th>
           <th>一级产业</th>
           <th>二级产业</th>
-          <th>平台等级</th>
+          <th>平台分类</th>
           <th>核心服务</th>
           <th>联系人</th>
         </tr>
@@ -320,7 +437,7 @@ function renderTable(items) {
             <td>${escapeHtml(item["所属高校"])}</td>
             <td>${escapeHtml(item["一级产业分类"])}</td>
             <td>${escapeHtml(item["二级产业分类"])}</td>
-            <td>${escapeHtml(item["平台等级"])}</td>
+            <td>${renderClassificationLabels(item)}</td>
             <td>${formatText(truncate(item["可对外提供的核心服务"], 160))}</td>
             <td>${escapeHtml([item["联系人"], item["联系电话"]].filter(Boolean).join(" "))}</td>
           </tr>
@@ -333,7 +450,7 @@ function renderTable(items) {
 function renderCharts(items) {
   renderBarChart("universityChart", countBy(items, "所属高校"), 10, "university");
   renderBarChart("industryChart", countBy(items, "一级产业分类"), 12);
-  renderBarChart("levelChart", countBy(items, "平台等级"), 10);
+  renderBarChart("levelChart", classificationCounts(items, "level"), 10);
 }
 
 function renderBarChart(id, counts, limit, sortMode = "count") {
@@ -400,9 +517,26 @@ function applySearch() {
 
 function syncSearchMode() {
   const labMode = state.view === "keyLabs";
-  document.body.classList.toggle("lab-mode", labMode);
-  document.querySelector(".filters").hidden = labMode;
-  el("globalSearch").placeholder = labMode ? "搜索高校、研究院或重点实验室名称" : "搜索平台名称、研究方向、核心技术、服务、设备、联系人等";
+  el("directoryFilters").hidden = labMode;
+  el("resourceBrowse").hidden = labMode;
+  el("globalSearch").placeholder = labMode ? "搜索高校、研究院或重点实验室名称" : "搜索平台、技术服务、共享设备或标签";
+}
+
+function setDirectoryView(view) {
+  state.view = view;
+  state.resourcesCollapsed = false;
+  document.querySelectorAll(".view-tabs button").forEach((button) => {
+    const active = button.dataset.view === view;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-selected", String(active));
+    button.tabIndex = active ? 0 : -1;
+  });
+}
+
+function resetDirectoryFilters(selections = {}) {
+  Object.assign(state, directoryDefaults, { resourcesCollapsed: false }, selections);
+  el("globalSearch").value = state.q;
+  initFilters();
 }
 
 function getSectionFromHash() {
@@ -482,10 +616,20 @@ function bindEvents() {
   };
   el("resetFilters").addEventListener("click", () => {
     clearTimeout(searchTimer);
-    Object.assign(state, { q: "", university: "全部", industry: "全部", subIndustry: "全部", level: "全部", resourcesCollapsed: false });
-    el("globalSearch").value = "";
-    initFilters();
+    resetDirectoryFilters();
     render();
+  });
+  el("resourceShortcuts").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-filter-key]");
+    if (!button) return;
+    clearTimeout(searchTimer);
+    const { filterKey, filterValue } = button.dataset;
+    const active = button.getAttribute("aria-pressed") === "true";
+    resetDirectoryFilters(active ? {} : { [filterKey]: filterValue });
+    setDirectoryView("cards");
+    render();
+    el("resourceResults").focus({ preventScroll: true });
+    el("resourceResults").scrollIntoView({ block: "start" });
   });
   el("globalSearch").addEventListener("input", (e) => {
     state.q = e.target.value;
@@ -515,26 +659,32 @@ function bindEvents() {
     state.subIndustry = e.target.value;
     render();
   });
-  el("levelFilter").addEventListener("change", (e) => {
-    state.level = e.target.value;
-    render();
-  });
+  for (const [key, id] of directoryFilterFields) {
+    el(id).addEventListener("change", (e) => {
+      state[key] = e.target.value;
+      render();
+    });
+  }
   el("resourceCollapseToggle").addEventListener("click", () => {
     state.resourcesCollapsed = !state.resourcesCollapsed;
     render();
   });
   document.querySelectorAll(".view-tabs button").forEach((btn) => {
     btn.addEventListener("click", () => {
-      document.querySelectorAll(".view-tabs button").forEach((item) => {
-        const active = item === btn;
-        item.classList.toggle("active", active);
-        item.setAttribute("aria-selected", String(active));
-        item.tabIndex = active ? 0 : -1;
-      });
-      btn.classList.add("active");
-      state.view = btn.dataset.view;
+      setDirectoryView(btn.dataset.view);
       render();
     });
+  });
+  for (const [id, step] of [["resourcePrev", -1], ["resourceNext", 1]]) {
+    el(id).addEventListener("click", () => {
+      state.resourcePage += step;
+      render({ keepPage: true });
+      el("resourceResults").focus({ preventScroll: true });
+      el("resourceResults").scrollIntoView({ block: "start" });
+    });
+  }
+  directoryMobile.addEventListener("change", () => {
+    if (state.activeSection === "resources") render();
   });
 }
 
@@ -679,6 +829,13 @@ function validateResources(items) {
 function buildDataJs(newResources) {
   const labsCount = (data.labs || []).reduce((sum, group) => sum + (group.labs || []).length, 0);
   const today = new Date().toISOString().slice(0, 10);
+  const previousById = new Map(resources.map((item) => [String(item["序号"]), item]));
+  const updatedResources = newResources.map((item) => {
+    const prior = previousById.get(String(item["序号"]));
+    // A reused sequence number must not inherit another platform's classifications or sources.
+    if (!prior || prior["平台名称"] !== item["平台名称"] || prior["所属高校"] !== item["所属高校"]) return item;
+    return { ...prior, ...item };
+  });
   const newData = {
     meta: {
       ...(data.meta || {}),
@@ -689,7 +846,7 @@ function buildDataJs(newResources) {
       labGroupCount: (data.labs || []).length,
       labCount: labsCount,
     },
-    resources: newResources,
+    resources: updatedResources,
     taxonomy: data.taxonomy || {},
     labs: data.labs || [],
     policies: data.policies || [],
@@ -761,12 +918,9 @@ function syncUpdateAuth() {
 function init() {
   state.activeSection = getSectionFromHash();
   initFilters();
-  document.querySelectorAll(".view-tabs button").forEach((button) => {
-    const active = button.dataset.view === state.view;
-    button.setAttribute("aria-selected", String(active));
-    button.tabIndex = active ? 0 : -1;
-  });
+  setDirectoryView(state.view);
   renderKPIs();
+  initDirectoryShortcuts();
   initMonitoring();
   bindEvents();
   bindTabs();
@@ -871,15 +1025,8 @@ function initMonitoring() {
     if (!button) return;
     const item = resources.find((resource) => String(resource["序号"]) === button.dataset.openResource);
     if (!item) return;
-    Object.assign(state, { q: item["平台名称"], university: item["所属高校"], industry: "全部", subIndustry: "全部", level: "全部", view: "cards", resourcesCollapsed: false });
-    initFilters();
-    el("globalSearch").value = state.q;
-    document.querySelectorAll(".view-tabs button").forEach((tab) => {
-      const active = tab.dataset.view === "cards";
-      tab.classList.toggle("active", active);
-      tab.setAttribute("aria-selected", String(active));
-      tab.tabIndex = active ? 0 : -1;
-    });
+    resetDirectoryFilters({ q: item["平台名称"], university: item["所属高校"] });
+    setDirectoryView("cards");
     setActiveSection("resources");
     window.scrollTo({ top: 0 });
     el("globalSearch").focus({ preventScroll: true });
