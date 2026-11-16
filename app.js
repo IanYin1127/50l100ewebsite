@@ -6,6 +6,7 @@ const directoryDefaults = {
   category: "全部",
   level: "全部",
   mode: "全部",
+  cooperation: false,
 };
 
 const state = {
@@ -53,6 +54,10 @@ const universityOrder = [
 
 const universityRank = new Map(universityOrder.map((name, index) => [normalizeUniversityName(name), index]));
 const resources = sortResources(data.resources || []);
+const cooperationProjects = data.cooperationProjects || [];
+const cooperationEntries = [...resources, ...cooperationProjects]
+  .filter((item) => item["50L清单"]?.code)
+  .sort((a, b) => a["50L清单"].code.localeCompare(b["50L清单"].code));
 
 const fields = [
   ["平台名称", "平台或中心名称"],
@@ -73,7 +78,7 @@ const fields = [
 
 const resourceFields = fields.map(([name]) => name);
 const resourceSearchFields = resourceFields.filter((name) => name !== "平台等级");
-const directoryLevels = ["国家级", "省部级", "市级", "区级", "校（院）级", "级别待核"];
+const directoryLevels = ["国家级", "省部级", "市级", "区级", "校（院）级", "级别待核", "不适用"];
 const directoryFilterFields = [
   ["category", "categoryFilter", "全部类别"],
   ["level", "levelFilter", "全部级别"],
@@ -194,12 +199,16 @@ function classificationCounts(items, key) {
   return counts;
 }
 
+function directoryResources() {
+  return state.cooperation ? cooperationEntries : resources;
+}
+
 function getFiltered() {
   const q = state.q.trim().toLowerCase();
-  return resources.filter((item) => {
+  return directoryResources().filter((item) => {
     const tags = resourceClassifications(item);
     const matchQ = !q || resourceSearchFields.some((field) => String(item[field] || "").toLowerCase().includes(q))
-      || tags.some((tag) => includes(tag, q));
+      || tags.some((tag) => includes(tag, q)) || includes(item["50L清单"] || {}, q);
     const matchUni = state.university === "全部" || item["所属高校"] === state.university;
     const matchIndustry = state.industry === "全部" || item["一级产业分类"] === state.industry;
     const matchSub = state.subIndustry === "全部" || item["二级产业分类"] === state.subIndustry;
@@ -210,11 +219,12 @@ function getFiltered() {
 }
 
 function initFilters() {
-  setOptions(el("universityFilter"), uniqByUniversityOrder(resources.map((r) => r["所属高校"])), state.university, "全部机构");
-  setOptions(el("industryFilter"), uniq(resources.map((r) => r["一级产业分类"])), state.industry, "全部一级产业");
+  const pool = directoryResources();
+  setOptions(el("universityFilter"), uniqByUniversityOrder(pool.map((r) => r["所属高校"])), state.university, "全部机构");
+  setOptions(el("industryFilter"), uniq(pool.map((r) => r["一级产业分类"])), state.industry, "全部一级产业");
   refreshSubIndustryOptions();
   for (const [key, id, allLabel] of directoryFilterFields) {
-    const choices = Object.keys(classificationCounts(resources, key));
+    const choices = Object.keys(classificationCounts(pool, key));
     const ordered = key === "level"
       ? directoryLevels.filter((level) => choices.includes(level))
       : uniq(choices).sort((a, b) => Number(a.endsWith("待核")) - Number(b.endsWith("待核")));
@@ -224,9 +234,7 @@ function initFilters() {
 }
 
 function refreshSubIndustryOptions() {
-  const pool = state.industry === "全部"
-    ? resources
-    : resources.filter((r) => r["一级产业分类"] === state.industry);
+  const pool = directoryResources().filter((r) => state.industry === "全部" || r["一级产业分类"] === state.industry);
   setOptions(el("subIndustryFilter"), uniq(pool.map((r) => r["二级产业分类"])), state.subIndustry, "全部二级产业");
   state.subIndustry = el("subIndustryFilter").value;
 }
@@ -234,13 +242,15 @@ function refreshSubIndustryOptions() {
 function renderKPIs() {
   const items = [
     ["平台档案", resources.length],
-    ["高校及院所", uniq(resources.map((r) => r["所属高校"])).length],
+    ["所属机构", uniq(resources.map((r) => r["所属高校"])).length],
     ["平台类别", Object.keys(classificationCounts(resources, "category")).filter((label) => label !== pendingClassifications.category).length],
   ];
   el("heroKpis").innerHTML = items.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${value}</dd></div>`).join("");
 }
 
 function initDirectoryShortcuts() {
+  el("cooperationCount").textContent = cooperationEntries.length;
+  el("cooperationFilter").hidden = !cooperationEntries.length;
   const counts = { category: classificationCounts(resources, "category"), mode: classificationCounts(resources, "mode") };
   el("resourceShortcuts").innerHTML = directoryShortcuts.map(([key, label]) => {
     const count = counts[key][label] || 0;
@@ -258,9 +268,12 @@ function render({ keepPage = false } = {}) {
   syncSearchMode();
   el("clearSearch").hidden = !state.q;
   el("resetFilters").disabled = Object.entries(directoryDefaults).every(([key, value]) => state[key] === value);
+  el("cooperationFilter").setAttribute("aria-pressed", String(state.cooperation));
+  el("resourceResultsHeading").textContent = state.cooperation && state.view !== "keyLabs"
+    ? "慧湖50L100E共建清单" : "平台档案";
   el("industrySelection").textContent = [state.industry, state.subIndustry].filter((value) => value !== "全部").join(" / ");
   el("resourceShortcuts").querySelectorAll("button").forEach((button) => {
-    button.setAttribute("aria-pressed", String(state[button.dataset.filterKey] === button.dataset.filterValue));
+    button.setAttribute("aria-pressed", String(!state.cooperation && state[button.dataset.filterKey] === button.dataset.filterValue));
   });
   syncResourceCollapseButton();
   el("resourcePagination").hidden = true;
@@ -272,7 +285,8 @@ function render({ keepPage = false } = {}) {
     renderKeyLabs();
     return;
   }
-  el("resultSummary").textContent = `共 ${filtered.length} 份档案 · ${uniq(filtered.map((r) => r["所属高校"])).length} 家高校及院所`;
+  const unit = state.cooperation ? "项合作记录" : "份档案";
+  el("resultSummary").textContent = `共 ${filtered.length} ${unit} · ${uniq(filtered.map((r) => r["所属高校"])).length} 个所属机构`;
   if (state.view === "cards" || state.view === "table") {
     const pageSize = directoryMobile.matches ? 6 : 12;
     const lastPage = Math.max(1, Math.ceil(filtered.length / pageSize));
@@ -280,7 +294,7 @@ function render({ keepPage = false } = {}) {
     const start = (state.resourcePage - 1) * pageSize;
     const page = filtered.slice(start, start + pageSize);
     el("resourcePagination").hidden = lastPage === 1;
-    el("resourcePageInfo").textContent = page.length ? `第 ${state.resourcePage} / ${lastPage} 页 · ${start + 1}–${start + page.length} 份档案` : "";
+    el("resourcePageInfo").textContent = page.length ? `第 ${state.resourcePage} / ${lastPage} 页 · ${start + 1}–${start + page.length} ${unit}` : "";
     el("resourcePrev").disabled = state.resourcePage === 1;
     el("resourceNext").disabled = state.resourcePage === lastPage;
     if (state.view === "cards") renderCards(page);
@@ -323,6 +337,7 @@ function renderCards(items) {
   el("resourceView").innerHTML = items.map((item) => {
     const service = item["可对外提供的核心服务"];
     const excerpt = truncate(service || item["研究方向"], 155);
+    const isProject = cooperationProjects.includes(item);
     return `
     <article class="resource-card">
       <p class="resource-institution">${escapeHtml(item["所属高校"])}</p>
@@ -330,8 +345,9 @@ function renderCards(items) {
       ${renderClassificationLabels(item)}
       ${excerpt ? `<div class="resource-excerpt"><h4>${service ? "可对外提供的服务" : "研究方向"}</h4><p>${formatText(excerpt)}</p></div>` : ""}
       <details>
-        <summary>平台详情</summary>
+        <summary>${isProject ? "项目详情" : "平台详情"}</summary>
         <div class="detail-list">
+          ${renderCooperationDetails(item)}
           ${renderClassificationEvidence(item)}
           ${detail("一级产业分类", item["一级产业分类"])}
           ${detail("二级产业分类", item["二级产业分类"])}
@@ -344,26 +360,29 @@ function renderCards(items) {
           ${detail("联系人", `${item["联系人"] || ""} ${item["联系电话"] || ""}`.trim())}
         </div>
       </details>
-      <details class="resource-verification">
+      ${isProject ? "" : `<details class="resource-verification">
         <summary>平台核验</summary>
         ${renderPlatformUpdates(item)}
-      </details>
+      </details>`}
     </article>
   `;
   }).join("");
 }
 
 function renderClassificationLabels(item) {
+  const cooperation = item["50L清单"];
+  const stageLabels = cooperation
+    ? `<div class="tags"><span class="tag tag-cooperation">慧湖50L100E</span><span class="tag tag-stage">${escapeHtml(cooperation.stage)}</span></div>` : "";
   return `<div class="resource-classifications">${resourceClassifications(item).map((tag) => `
     <div>
       ${tag.name ? `<span class="classification-name">${escapeHtml(tag.name)}</span>` : ""}
       <div class="tags">
         <span class="tag tag-category">${escapeHtml(classificationValue(tag, "category"))}</span>
-        <span class="tag tag-level">${escapeHtml(classificationValue(tag, "level"))}</span>
+        ${tag.level !== "不适用" ? `<span class="tag tag-level">${escapeHtml(classificationValue(tag, "level"))}</span>` : ""}
         ${tag.mode && tag.mode !== pendingClassifications.mode ? `<span class="tag tag-mode">${escapeHtml(tag.mode)}</span>` : ""}
       </div>
     </div>
-  `).join("")}</div>`;
+  `).join("")}${stageLabels}</div>`;
 }
 
 function renderClassificationEvidence(item) {
@@ -381,7 +400,23 @@ function renderClassificationEvidence(item) {
 }
 
 function detail(label, value) {
-  return `<div><b>${escapeHtml(label)}</b><span>${formatText(value || "暂无")}</span></div>`;
+  return value ? `<div><b>${escapeHtml(label)}</b><span>${formatText(value)}</span></div>` : "";
+}
+
+function renderCooperationDetails(item) {
+  const entry = item["50L清单"];
+  if (!entry) return "";
+  const facts = [
+    `清单编号 ${entry.code}`,
+    `共建进展 ${entry.stage}`,
+    entry.name ? `清单列示名称 ${entry.name}` : "",
+    entry.industry && entry.industry !== item["一级产业分类"] ? `清单产业分类 ${entry.industry}` : "",
+    entry.partner ? `合作单位 ${entry.partner}` : "",
+    entry.date ? `签约或揭牌日期 ${entry.date}` : "",
+    entry.note,
+  ].filter(Boolean).map(escapeHtml);
+  if (entry.url) facts.push(externalLink(entry.url, "查看共建公开依据 ↗"));
+  return `<div><b>慧湖50L100E共建清单</b><span>${facts.join("<br>")}</span></div>`;
 }
 
 function renderGroups(items, key, title) {
@@ -447,22 +482,24 @@ function renderTable(items) {
   `;
 }
 
-function renderCharts(items) {
-  renderBarChart("universityChart", countBy(items, "所属高校"), 10, "university");
-  renderBarChart("industryChart", countBy(items, "一级产业分类"), 12);
-  renderBarChart("levelChart", classificationCounts(items, "level"), 10);
+function renderCharts() {
+  const universities = countBy(resources, "所属高校");
+  const industries = countBy(resources, "一级产业分类");
+  const universityCount = uniq(resources.map((item) => item["所属高校"])).length;
+  const industryCount = uniq(resources.map((item) => item["一级产业分类"])).length;
+  el("insightsScope").textContent = `全站 ${resources.length} 份平台档案 · ${universityCount} 个所属机构 · ${industryCount} 个一级产业`;
+  renderBarChart("universityChart", universities);
+  renderBarChart("industryChart", industries);
+  renderBarChart("levelChart", classificationCounts(resources, "level"));
 }
 
-function renderBarChart(id, counts, limit, sortMode = "count") {
-  const entries = Object.entries(counts).sort((a, b) => {
-    if (sortMode === "university") return compareUniversityName(a[0], b[0]);
-    return b[1] - a[1] || a[0].localeCompare(b[0], "zh-CN");
-  }).slice(0, limit);
+function renderBarChart(id, counts) {
+  const entries = Object.entries(counts).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "zh-CN"));
   const max = Math.max(...entries.map(([, v]) => v), 1);
   el(id).innerHTML = entries.map(([name, value]) => `
     <div class="bar-row" title="${escapeHtml(name)}：${value}">
       <span class="bar-label">${escapeHtml(name)}</span>
-      <span class="bar-track"><span class="bar-fill" style="width:${Math.max((value / max) * 100, 4)}%"></span></span>
+      <span class="bar-track" aria-hidden="true"><span class="bar-fill" style="width:${(value / max) * 100}%"></span></span>
       <span class="bar-value">${value}</span>
     </div>
   `).join("") || `<div class="empty">暂无数据</div>`;
@@ -567,7 +604,7 @@ function setActiveSection(section, { updateHash = true } = {}) {
   const firstRender = !state.renderedSections.has(section);
   if (firstRender) state.renderedSections.add(section);
   if (section === "resources") render();
-  if (section === "insights") renderCharts(getFiltered());
+  if (section === "insights" && firstRender) renderCharts();
   if (section === "labs" && firstRender) renderLabs();
   if (["updates", "registry", "activity", "sources"].includes(section)) renderMonitoring();
   if (section === "update") syncUpdateAuth();
@@ -614,6 +651,14 @@ function bindEvents() {
     clearTimeout(searchTimer);
     searchTimer = setTimeout(render, 150);
   };
+  const openDirectoryResults = (filters) => {
+    clearTimeout(searchTimer);
+    resetDirectoryFilters(filters);
+    setDirectoryView("cards");
+    render();
+    el("resourceResults").focus({ preventScroll: true });
+    el("resourceResults").scrollIntoView({ block: "start" });
+  };
   el("resetFilters").addEventListener("click", () => {
     clearTimeout(searchTimer);
     resetDirectoryFilters();
@@ -622,14 +667,12 @@ function bindEvents() {
   el("resourceShortcuts").addEventListener("click", (event) => {
     const button = event.target.closest("[data-filter-key]");
     if (!button) return;
-    clearTimeout(searchTimer);
     const { filterKey, filterValue } = button.dataset;
     const active = button.getAttribute("aria-pressed") === "true";
-    resetDirectoryFilters(active ? {} : { [filterKey]: filterValue });
-    setDirectoryView("cards");
-    render();
-    el("resourceResults").focus({ preventScroll: true });
-    el("resourceResults").scrollIntoView({ block: "start" });
+    openDirectoryResults(active ? {} : { [filterKey]: filterValue });
+  });
+  el("cooperationFilter").addEventListener("click", () => {
+    openDirectoryResults({ cooperation: !state.cooperation });
   });
   el("globalSearch").addEventListener("input", (e) => {
     state.q = e.target.value;
@@ -836,13 +879,17 @@ function buildDataJs(newResources) {
     if (!prior || prior["平台名称"] !== item["平台名称"] || prior["所属高校"] !== item["所属高校"]) return item;
     return { ...prior, ...item };
   });
+  const importedIds = new Set(updatedResources.map((item) => String(item["序号"])));
+  // The base Excel template can predate the cooperation list.
+  updatedResources.push(...resources.filter((item) => item["50L清单"] && !importedIds.has(String(item["序号"]))));
   const newData = {
+    ...data,
     meta: {
       ...(data.meta || {}),
       generatedAt: today,
-      resourceCount: newResources.length,
-      universityCount: uniq(newResources.map((r) => r["所属高校"])).length,
-      industryCount: uniq(newResources.map((r) => r["一级产业分类"])).length,
+      resourceCount: updatedResources.length,
+      universityCount: uniq(updatedResources.map((r) => r["所属高校"])).length,
+      industryCount: uniq(updatedResources.map((r) => r["一级产业分类"])).length,
       labGroupCount: (data.labs || []).length,
       labCount: labsCount,
     },
