@@ -278,6 +278,42 @@ main > [data-section]:not(.section-active) { display: none; }
 .resource-excerpt { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
 .resource-excerpt h4 { margin: 0 0 4px; color: #405c4e; font-size: 12px; font-weight: 650; }
 .resource-excerpt p { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; margin: 0; color: #5d7064; font-size: 13px; line-height: 1.65; }
+.resource-detail-link { padding: 4px 0; border: 0; background: transparent; color: var(--primary-dark); text-align: left; }
+.resource-detail-link:hover { text-decoration: underline; }
+.resource-card > .resource-detail-link { margin-top: 9px; font-size: 13px; font-weight: 650; }
+.resource-detail {
+  width: min(790px, calc(100% - 32px));
+  max-height: calc(100dvh - 42px);
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #cbdcd2;
+  border-radius: 16px;
+  background: var(--panel);
+  color: var(--ink);
+  box-shadow: 0 24px 70px #172b2b4d;
+}
+.resource-detail[open] { display: flex; flex-direction: column; }
+.resource-detail::backdrop { background: #13292385; }
+.resource-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 22px 26px 18px;
+  border-bottom: 1px solid var(--line);
+  background: #f2f8f4;
+}
+.resource-detail-header p { margin: 0 0 5px; color: #4c6b5c; font-size: 12px; overflow-wrap: anywhere; }
+.resource-detail-header h2 { font-size: clamp(19px, 3vw, 26px); line-height: 1.4; white-space: pre-line; overflow-wrap: anywhere; }
+.resource-detail-header button { min-height: 36px; color: var(--primary-dark); white-space: nowrap; }
+.resource-detail-body { min-height: 0; overflow: auto; overscroll-behavior: contain; padding: 20px 26px 26px; }
+.resource-keywords { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(125px, 100%), 1fr)); gap: 9px; margin: 18px 0 20px; }
+.resource-keyword { padding: 12px; border: 1px solid #d9e7df; border-radius: 8px; background: #f3f8f4; overflow-wrap: anywhere; }
+.resource-keyword h3 { margin: 0 0 6px; color: #375f4e; font-size: 12px; font-weight: 650; }
+.resource-keyword ul { display: grid; gap: 5px; margin: 0; padding: 0; list-style: none; }
+.resource-keyword li { color: #263f35; font-size: 13px; line-height: 1.5; }
+.resource-detail-section { padding-top: 16px; margin-top: 16px; border-top: 1px solid var(--line); }
+.resource-detail-section > h3 { margin: 0; font-size: 16px; }
 .platform-updates { display: grid; gap: 7px; padding: 12px 0; border-top: 1px solid var(--line); font-size: 11px; }
 .platform-updates > .status-badge { justify-self: start; }
 .platform-updates small { color: #8e9c8b; font-size: 10px; }
@@ -287,10 +323,10 @@ main > [data-section]:not(.section-active) { display: none; }
 .resource-card .resource-verification > summary { color: #65776e; }
 .resource-verification > .platform-updates { border-top: 0; padding: 9px 0 0; }
 summary { color: #678168; }
-.detail-list { margin-top: 12px; display: grid; gap: 10px; }
-.detail-list > div { display: grid; gap: 5px; padding-bottom: 10px; border-bottom: 1px solid #edf1e9; }
-.detail-list b { font-size: 11px; color: #54715b; }
-.detail-list span { font-size: 11px; color: var(--muted); line-height: 1.8; }
+.detail-list { margin-top: 11px; display: grid; gap: 13px; }
+.detail-list > div { display: grid; gap: 4px; min-width: 0; overflow-wrap: anywhere; }
+.detail-list b { font-size: 12px; color: #365748; }
+.detail-list span { font-size: 13px; color: #485f53; line-height: 1.75; }
 .mini-list { list-style: none; padding: 0; margin: 9px 0; display: grid; gap: 6px; }
 .mini-list li { font-size: 11px; background: #f7f9f5; border-radius: 5px; padding: 8px; color: #7e8f79; }
 .insights-scope, .chart-note { margin: 5px 0 0; color: #587065; font-size: 12px; }
@@ -456,6 +492,10 @@ footer { margin: 0 0 0 216px; padding: 28px 36px; display: flex; justify-content
   .directory-results .view-tabs button, .resource-directory .ghost-tab { min-height: 36px; padding: 5px 8px; }
   .directory-pagination { flex-wrap: wrap; }
   .resource-card { padding: 16px; }
+  .resource-detail { width: calc(100% - 20px); max-height: calc(100dvh - 20px); border-radius: 12px; }
+  .resource-detail-header { padding: 14px 14px 12px; gap: 10px; }
+  .resource-detail-body { padding: 14px; }
+  .resource-keyword { padding: 9px; }
   .charts article { padding: 13px; }
   .section-head { flex-direction: column; align-items: flex-start; gap: 8px; }
   .view-tabs { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 5px; }

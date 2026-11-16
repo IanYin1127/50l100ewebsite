@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>慧湖50L100E · 高校平台资源</title>
-  <meta name="description" content="按平台类别、认定级别和建设方式查找慧湖50L100E高校科研平台，查阅技术服务、共享设备、公开动态和核验记录。" />
-  <link rel="stylesheet" href="./styles.css?v=cooperation-1" />
+  <meta name="description" content="按平台类别、平台级别和建设方式查找慧湖50L100E高校科研平台，查阅技术服务、共享设备、公开动态和核验记录。" />
+  <link rel="stylesheet" href="./styles.css?v=detail-1" />
 </head>
 <body>
   <a class="skip-link" href="#mainContent">跳到主要内容</a>
@@ -63,7 +63,7 @@
         <div id="directoryFilters">
           <div class="filters">
             <label>平台类别<select id="categoryFilter"></select></label>
-            <label>认定级别<select id="levelFilter"></select></label>
+            <label>平台级别<select id="levelFilter"></select></label>
             <label>建设方式<select id="modeFilter"></select></label>
             <label>所属机构<select id="universityFilter"></select></label>
           </div>
@@ -123,9 +123,10 @@
           <div id="industryChart" class="bar-chart"></div>
         </article>
         <article>
-          <h3>认定级别分布</h3>
+          <h3>平台级别分布</h3>
           <div id="levelChart" class="bar-chart"></div>
-          <p class="chart-note">一份档案涵盖多个认定级别时，可在对应级别各计一次。</p>
+          <p id="levelCoverage" class="chart-note"></p>
+          <p class="chart-note">一份档案涵盖多个级别时，可在对应级别各计一次。</p>
         </article>
       </div>
     </section>
@@ -230,6 +231,19 @@
     </section>
   </main>
 
+  <dialog id="resourceDetail" class="resource-detail" aria-labelledby="resourceDetailTitle">
+    <header class="resource-detail-header">
+      <div>
+        <p id="resourceDetailInstitution"></p>
+        <h2 id="resourceDetailTitle"></h2>
+      </div>
+      <form method="dialog">
+        <button type="submit" class="ghost-tab" autofocus aria-label="关闭档案详情">关闭</button>
+      </form>
+    </header>
+    <div id="resourceDetailBody" class="resource-detail-body"></div>
+  </dialog>
+
   <footer>
     <span>慧湖50L100E · 高校平台资源</span>
   </footer>
@@ -240,9 +254,9 @@
     </svg>
   </button>
 
-  <script src="./data.js?v=cooperation-1"></script>
+  <script src="./data.js?v=detail-1"></script>
   <script src="./monitoring-data.js"></script>
-  <script src="./app.js?v=cooperation-1"></script>
+  <script src="./app.js?v=detail-1"></script>
 </body>
 </html>
 
