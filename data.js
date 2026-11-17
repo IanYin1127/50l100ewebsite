@@ -1,16 +1,19 @@
 window.HUIHU_DATA = {
   "meta": {
     "title": "慧湖50L100E",
-    "generatedAt": "2026-06-15",
+    "generatedAt": "2026-11-17",
     "sourceFile": "【最新】50L100E高校平台资源清单.xlsx",
-    "resourceCount": 234,
-    "universityCount": 24,
+    "resourceCount": 508,
+    "universityCount": 36,
     "industryCount": 19,
     "policySourceFile": "涉及50L-100E相关政策0410.xls",
     "policyCount": 44,
     "labGroupCount": 8,
     "labCount": 78,
-    "registryUpdatedAt": "2026-11-05T23:58:41.466117+00:00"
+    "registryUpdatedAt": "2026-11-17T03:17:54.738404+00:00",
+    "consolidatedArchives": {
+      "53": "40"
+    }
   },
   "resources": [
     {
@@ -36,7 +39,30 @@ window.HUIHU_DATA = {
           "year": 2024,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "34",
@@ -61,7 +87,31 @@ window.HUIHU_DATA = {
           "year": 2020,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "35",
@@ -86,7 +136,31 @@ window.HUIHU_DATA = {
           "year": 2019,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "36",
@@ -114,7 +188,31 @@ window.HUIHU_DATA = {
           "url": "https://www.suda.edu.cn/suda_news/sdyw/201809/ce27b6de-0df6-4e12-a81c-270fad8095e5.html",
           "note": "保留原国家重点实验室名称，重组结果待核。"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "37",
@@ -139,7 +237,31 @@ window.HUIHU_DATA = {
           "year": 2014,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "38",
@@ -164,7 +286,31 @@ window.HUIHU_DATA = {
           "year": 2020,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "39",
@@ -189,7 +335,31 @@ window.HUIHU_DATA = {
           "year": 2020,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "40",
@@ -214,7 +384,31 @@ window.HUIHU_DATA = {
           "year": 2009,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "41",
@@ -235,7 +429,26 @@ window.HUIHU_DATA = {
         {
           "category": "省高校重点实验室"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "42",
@@ -260,7 +473,31 @@ window.HUIHU_DATA = {
           "year": 2016,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "43",
@@ -285,7 +522,27 @@ window.HUIHU_DATA = {
           "year": 2008,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ],
+        "scopeNote": "春季梳理标注该实验室在园区外。"
+      }
     },
     {
       "序号": "44",
@@ -310,7 +567,31 @@ window.HUIHU_DATA = {
           "year": 2018,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "45",
@@ -335,7 +616,31 @@ window.HUIHU_DATA = {
           "year": 2008,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "46",
@@ -356,7 +661,26 @@ window.HUIHU_DATA = {
         {
           "category": "工程研究中心"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "47",
@@ -381,7 +705,31 @@ window.HUIHU_DATA = {
           "year": 2011,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "48",
@@ -406,7 +754,31 @@ window.HUIHU_DATA = {
           "year": 2021,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "49",
@@ -431,7 +803,31 @@ window.HUIHU_DATA = {
           "year": 2011,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "50",
@@ -456,7 +852,31 @@ window.HUIHU_DATA = {
           "year": 2009,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "51",
@@ -481,7 +901,31 @@ window.HUIHU_DATA = {
           "year": 2008,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "52",
@@ -506,32 +950,31 @@ window.HUIHU_DATA = {
           "year": 2008,
           "source": "高校年报"
         }
-      ]
-    },
-    {
-      "序号": "53",
-      "平台名称": "江苏省碳基功能材料与器件高技术研究重点实验室",
-      "一级产业分类": "新材料产业",
-      "二级产业分类": "碳基功能材料",
-      "细分产业领域": "有机光电材料与器件",
-      "所属高校": "苏州大学独墅湖校区",
-      "平台等级": "省级重点实验室",
-      "研究方向": "1. 有机发光功能材料和器件2. 有机光伏电池及相关材料3. 有机薄膜场效应管及相关材料4. 新型碳基功能材料制备与应用",
-      "核心技术能力": "1. 有机光电材料分子设计与合成2. 器件制备与表征技术3. 界面调控技术4. 光电性能测试分析技术",
-      "可对外提供的核心服务": "1. 碳基功能材料定制开发2. 器件设计与制备技术服务3. 材料性能测试与分析4. 技术转让与产业化咨询",
-      "标杆转化案例": "1、文震教授“基于压力传感器的疲劳监测控制方法和控制系统”等2项成果已完成向苏州某公司累计10万元成果转让；\n2、汪超教授“红细胞在制备光热转换材料中的应用”等2项成果已完成向苏州市某公司累计10万元成果转让项目，转化金额未公开",
-      "核心共享设备": "1、高分辨场发射透射电镜\n2、软X射线能源材料原位分析线站光束线系统\n3、有机真空镀膜机",
-      "联系人": "郭佳",
-      "联系电话": "15150683253",
-      "分类标签": [
-        {
-          "category": "江苏省重点实验室",
-          "level": "省部级",
-          "authority": "科技厅",
-          "year": 2009,
-          "source": "高校年报"
-        }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "54",
@@ -556,7 +999,31 @@ window.HUIHU_DATA = {
           "year": 2010,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "55",
@@ -577,7 +1044,21 @@ window.HUIHU_DATA = {
         {
           "category": "工程研究中心"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "56",
@@ -602,7 +1083,31 @@ window.HUIHU_DATA = {
           "year": 2013,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "57",
@@ -627,7 +1132,34 @@ window.HUIHU_DATA = {
           "source": "校方或主管部门公开材料",
           "url": "https://jskeylab.suda.edu.cn/2c/ad/c35303a666797/page.htm"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "aliases": [
+          "江苏省重大神经精神疾病研究重点实验室"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "58",
@@ -653,7 +1185,31 @@ window.HUIHU_DATA = {
           "year": 2016,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "59",
@@ -678,7 +1234,31 @@ window.HUIHU_DATA = {
           "year": 2023,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "60",
@@ -703,7 +1283,31 @@ window.HUIHU_DATA = {
           "year": 2014,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "61",
@@ -728,7 +1332,31 @@ window.HUIHU_DATA = {
           "year": 2016,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "62",
@@ -753,7 +1381,31 @@ window.HUIHU_DATA = {
           "year": 2012,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "63",
@@ -774,7 +1426,26 @@ window.HUIHU_DATA = {
         {
           "category": "省高校重点实验室"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "64",
@@ -799,7 +1470,31 @@ window.HUIHU_DATA = {
           "year": 2012,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "65",
@@ -824,7 +1519,31 @@ window.HUIHU_DATA = {
           "year": 2022,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "66",
@@ -849,7 +1568,31 @@ window.HUIHU_DATA = {
           "year": 2022,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "67",
@@ -874,7 +1617,31 @@ window.HUIHU_DATA = {
           "year": 2008,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "68",
@@ -899,7 +1666,31 @@ window.HUIHU_DATA = {
           "year": 2014,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "69",
@@ -924,7 +1715,31 @@ window.HUIHU_DATA = {
           "year": 2009,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "70",
@@ -949,7 +1764,31 @@ window.HUIHU_DATA = {
           "year": 2007,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "71",
@@ -974,7 +1813,31 @@ window.HUIHU_DATA = {
           "year": 2013,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "72",
@@ -999,7 +1862,31 @@ window.HUIHU_DATA = {
           "year": 2009,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "73",
@@ -1024,7 +1911,31 @@ window.HUIHU_DATA = {
           "year": 2008,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "74",
@@ -1049,7 +1960,31 @@ window.HUIHU_DATA = {
           "year": 2008,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "75",
@@ -1074,7 +2009,31 @@ window.HUIHU_DATA = {
           "year": 2012,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "76",
@@ -1095,7 +2054,26 @@ window.HUIHU_DATA = {
         {
           "category": "苏州市重点实验室"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "77",
@@ -1120,7 +2098,31 @@ window.HUIHU_DATA = {
           "year": 2017,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "78",
@@ -1145,7 +2147,31 @@ window.HUIHU_DATA = {
           "year": 2009,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "79",
@@ -1171,7 +2197,31 @@ window.HUIHU_DATA = {
           "year": 2023,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "80",
@@ -1196,7 +2246,31 @@ window.HUIHU_DATA = {
           "year": 2014,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "81",
@@ -1221,7 +2295,31 @@ window.HUIHU_DATA = {
           "year": 2021,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "82",
@@ -1247,7 +2345,31 @@ window.HUIHU_DATA = {
           "year": 2023,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "83",
@@ -1272,7 +2394,31 @@ window.HUIHU_DATA = {
           "year": 2022,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "84",
@@ -1297,7 +2443,31 @@ window.HUIHU_DATA = {
           "year": 2007,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "85",
@@ -1322,7 +2492,31 @@ window.HUIHU_DATA = {
           "year": 2007,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "86",
@@ -1347,7 +2541,31 @@ window.HUIHU_DATA = {
           "year": 2009,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "87",
@@ -1372,7 +2590,31 @@ window.HUIHU_DATA = {
           "year": 2010,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "88",
@@ -1397,7 +2639,31 @@ window.HUIHU_DATA = {
           "year": 2017,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "89",
@@ -1422,7 +2688,31 @@ window.HUIHU_DATA = {
           "year": 2023,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "90",
@@ -1447,7 +2737,31 @@ window.HUIHU_DATA = {
           "year": 2021,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "91",
@@ -1472,7 +2786,31 @@ window.HUIHU_DATA = {
           "year": 2018,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "92",
@@ -1497,7 +2835,31 @@ window.HUIHU_DATA = {
           "year": 2011,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "93",
@@ -1522,7 +2884,31 @@ window.HUIHU_DATA = {
           "year": 2020,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "94",
@@ -1547,7 +2933,31 @@ window.HUIHU_DATA = {
           "year": 2008,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "95",
@@ -1572,7 +2982,30 @@ window.HUIHU_DATA = {
           "year": 2024,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "96",
@@ -1597,7 +3030,31 @@ window.HUIHU_DATA = {
           "year": 2016,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "97",
@@ -1622,7 +3079,31 @@ window.HUIHU_DATA = {
           "year": 2019,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "98",
@@ -1647,7 +3128,25 @@ window.HUIHU_DATA = {
           "year": 2024,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "99",
@@ -1672,7 +3171,25 @@ window.HUIHU_DATA = {
           "year": 2024,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "100",
@@ -1697,7 +3214,31 @@ window.HUIHU_DATA = {
           "year": 2008,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "101",
@@ -1722,7 +3263,31 @@ window.HUIHU_DATA = {
           "year": 2015,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "102",
@@ -1747,7 +3312,31 @@ window.HUIHU_DATA = {
           "year": 2009,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "103",
@@ -1768,7 +3357,26 @@ window.HUIHU_DATA = {
         {
           "category": "重点实验室培育建设点"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "104",
@@ -1789,7 +3397,26 @@ window.HUIHU_DATA = {
         {
           "category": "科研中心/服务平台"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "105",
@@ -1816,7 +3443,31 @@ window.HUIHU_DATA = {
           "source": "校方或主管部门公开材料",
           "url": "https://jlbri.suda.edu.cn/sysgk/list.htm"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "106",
@@ -1837,7 +3488,26 @@ window.HUIHU_DATA = {
         {
           "category": "省高校重点实验室"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "133",
@@ -1862,7 +3532,24 @@ window.HUIHU_DATA = {
           "year": 2025,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "134",
@@ -1887,7 +3574,26 @@ window.HUIHU_DATA = {
           "year": 2021,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "135",
@@ -1913,7 +3619,25 @@ window.HUIHU_DATA = {
           "year": 2023,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "136",
@@ -1938,7 +3662,26 @@ window.HUIHU_DATA = {
           "year": 2020,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "137",
@@ -1964,7 +3707,25 @@ window.HUIHU_DATA = {
           "year": 2024,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "138",
@@ -1989,7 +3750,24 @@ window.HUIHU_DATA = {
           "year": 2017,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "139",
@@ -2010,7 +3788,21 @@ window.HUIHU_DATA = {
         {
           "category": "科研中心/服务平台"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "140",
@@ -2035,7 +3827,26 @@ window.HUIHU_DATA = {
           "year": 2023,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "141",
@@ -2060,7 +3871,30 @@ window.HUIHU_DATA = {
           "year": 2025,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案",
+          "高能级创新平台台账"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "142",
@@ -2085,7 +3919,25 @@ window.HUIHU_DATA = {
           "year": 2024,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案",
+          "高能级创新平台台账"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "143",
@@ -2111,7 +3963,25 @@ window.HUIHU_DATA = {
           "year": 2024,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案",
+          "高能级创新平台台账"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "144",
@@ -2136,7 +4006,24 @@ window.HUIHU_DATA = {
           "year": 2025,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "145",
@@ -2161,7 +4048,26 @@ window.HUIHU_DATA = {
           "year": 2010,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "146",
@@ -2186,7 +4092,24 @@ window.HUIHU_DATA = {
           "year": 2025,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "147",
@@ -2211,7 +4134,26 @@ window.HUIHU_DATA = {
           "year": 2008,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "148",
@@ -2236,7 +4178,24 @@ window.HUIHU_DATA = {
           "year": 2025,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "149",
@@ -2261,7 +4220,26 @@ window.HUIHU_DATA = {
           "year": 2008,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "150",
@@ -2286,7 +4264,26 @@ window.HUIHU_DATA = {
           "year": 2016,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "151",
@@ -2311,7 +4308,26 @@ window.HUIHU_DATA = {
           "year": 2008,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "152",
@@ -2338,7 +4354,26 @@ window.HUIHU_DATA = {
           "url": "https://www.xjtlu.edu.cn/zh/research/institutes-centres-and-labs/the-platform-for-suzhou-municipal-key-lab-of-virtual-reality-technology",
           "note": "西浦承担区级建设项目，后续市级立项名称为苏州市智能虚拟工程重点实验室。"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "153",
@@ -2363,7 +4398,26 @@ window.HUIHU_DATA = {
           "year": 2022,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "154",
@@ -2389,7 +4443,31 @@ window.HUIHU_DATA = {
           "year": 2022,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案",
+          "高校或园区官网"
+        ],
+        "aliases": [
+          "退行性疾病药物研究平台"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ],
+        "officialListing": "https://www.xjtlu.edu.cn/zh/research/institutes-centres-and-labs/innovation-platform-for-chronic-disease-study"
+      }
     },
     {
       "序号": "155",
@@ -2415,7 +4493,24 @@ window.HUIHU_DATA = {
           "year": 2025,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "156",
@@ -2440,7 +4535,26 @@ window.HUIHU_DATA = {
           "year": 2020,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "157",
@@ -2465,7 +4579,17 @@ window.HUIHU_DATA = {
           "year": 2022,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ]
+      }
     },
     {
       "序号": "158",
@@ -2490,7 +4614,24 @@ window.HUIHU_DATA = {
           "year": 2025,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "159",
@@ -2515,7 +4656,16 @@ window.HUIHU_DATA = {
           "year": 2021,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "高校平台资源档案"
+        ]
+      }
     },
     {
       "序号": "160",
@@ -2540,7 +4690,24 @@ window.HUIHU_DATA = {
           "year": 2024,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "161",
@@ -2578,7 +4745,35 @@ window.HUIHU_DATA = {
           "url": "https://sz.ustc.edu.cn/kxyj_show/117.html",
           "note": "市级新型研发机构为年报填报类别。院方介绍列明与苏州市人民政府合作共建。"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "aliases": [
+          "苏州仿生材料科学与工程中心",
+          "仿生界面材料科学全国重点实验室"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "162",
@@ -2603,7 +4798,26 @@ window.HUIHU_DATA = {
           "year": 2021,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "163",
@@ -2630,7 +4844,29 @@ window.HUIHU_DATA = {
           "source": "校方或主管部门公开材料",
           "url": "https://www.sipac.gov.cn/szgyyqtzyq/tzdt/202505/50784deb5a06419394a90584d15fa9be.shtml"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "165",
@@ -2655,7 +4891,26 @@ window.HUIHU_DATA = {
           "year": 2007,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "166",
@@ -2680,7 +4935,25 @@ window.HUIHU_DATA = {
           "year": 2024,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "167",
@@ -2705,7 +4978,26 @@ window.HUIHU_DATA = {
           "year": 2008,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "168",
@@ -2726,7 +5018,21 @@ window.HUIHU_DATA = {
         {
           "category": "创新应用实验室"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "169",
@@ -2751,7 +5057,26 @@ window.HUIHU_DATA = {
           "year": 2008,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "170",
@@ -2776,7 +5101,26 @@ window.HUIHU_DATA = {
           "year": 2009,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "172",
@@ -2801,7 +5145,26 @@ window.HUIHU_DATA = {
           "year": 2023,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "173",
@@ -2826,7 +5189,26 @@ window.HUIHU_DATA = {
           "year": 2021,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "1",
@@ -2851,7 +5233,26 @@ window.HUIHU_DATA = {
           "year": 2020,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "2",
@@ -2872,7 +5273,23 @@ window.HUIHU_DATA = {
         {
           "category": "科研中心/服务平台"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "高校平台资源档案",
+          "高校或园区官网"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ],
+        "officialListing": "https://szxq.seu.edu.cn/xqgk/mainm.htm"
+      }
     },
     {
       "序号": "3",
@@ -2897,7 +5314,26 @@ window.HUIHU_DATA = {
           "year": 2015,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "4",
@@ -2922,7 +5358,26 @@ window.HUIHU_DATA = {
           "year": 2018,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "5",
@@ -2947,7 +5402,26 @@ window.HUIHU_DATA = {
           "year": 2021,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "6",
@@ -2972,7 +5446,26 @@ window.HUIHU_DATA = {
           "year": 2007,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "7",
@@ -2997,7 +5490,26 @@ window.HUIHU_DATA = {
           "year": 2007,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "8",
@@ -3022,7 +5534,26 @@ window.HUIHU_DATA = {
           "year": 2011,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "9",
@@ -3047,7 +5578,26 @@ window.HUIHU_DATA = {
           "year": 2007,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "10",
@@ -3072,7 +5622,26 @@ window.HUIHU_DATA = {
           "year": 2006,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "11",
@@ -3097,7 +5666,26 @@ window.HUIHU_DATA = {
           "year": 2014,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "12",
@@ -3122,7 +5710,26 @@ window.HUIHU_DATA = {
           "year": 2023,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "174",
@@ -3147,7 +5754,31 @@ window.HUIHU_DATA = {
           "year": 2019,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "175",
@@ -3172,7 +5803,31 @@ window.HUIHU_DATA = {
           "year": 2016,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "176",
@@ -3199,7 +5854,31 @@ window.HUIHU_DATA = {
           "url": "https://sj.ruc.edu.cn/sysglyaq/index.htm",
           "note": "历年高校年报的级别与立项单位填报有差异，按校企合作实验室分级口径归为校（院）级。"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "177",
@@ -3224,7 +5903,30 @@ window.HUIHU_DATA = {
           "year": 2023,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "178",
@@ -3250,7 +5952,33 @@ window.HUIHU_DATA = {
           "year": 2024,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "aliases": [
+          "苏州人工智能学院（苏州人工智能实验室）"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "179",
@@ -3275,7 +6003,31 @@ window.HUIHU_DATA = {
           "year": 2023,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "180",
@@ -3300,7 +6052,30 @@ window.HUIHU_DATA = {
           "year": 2024,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "181",
@@ -3325,7 +6100,31 @@ window.HUIHU_DATA = {
           "year": 2020,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "182",
@@ -3350,7 +6149,29 @@ window.HUIHU_DATA = {
           "year": 2025,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "122",
@@ -3375,7 +6196,19 @@ window.HUIHU_DATA = {
           "year": 2014,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ]
+      }
     },
     {
       "序号": "123",
@@ -3400,7 +6233,19 @@ window.HUIHU_DATA = {
           "year": 2021,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ]
+      }
     },
     {
       "序号": "124",
@@ -3425,7 +6270,17 @@ window.HUIHU_DATA = {
           "year": 2025,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ]
+      }
     },
     {
       "序号": "125",
@@ -3450,7 +6305,18 @@ window.HUIHU_DATA = {
           "year": 2025,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案",
+          "高能级创新平台台账"
+        ]
+      }
     },
     {
       "序号": "126",
@@ -3475,7 +6341,21 @@ window.HUIHU_DATA = {
           "year": 2025,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案",
+          "高能级创新平台台账"
+        ],
+        "aliases": [
+          "苏州工业园区能源装备与先进制造技术创新科研平台"
+        ]
+      }
     },
     {
       "序号": "127",
@@ -3500,7 +6380,19 @@ window.HUIHU_DATA = {
           "year": 2008,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ]
+      }
     },
     {
       "序号": "128",
@@ -3525,7 +6417,19 @@ window.HUIHU_DATA = {
           "year": 2007,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ]
+      }
     },
     {
       "序号": "129",
@@ -3552,7 +6456,19 @@ window.HUIHU_DATA = {
           "source": "高校年报、院方科研平台介绍",
           "url": "https://www.xjtusz.cn/ziyoukeyanpingtai/2765.html"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ]
+      }
     },
     {
       "序号": "130",
@@ -3577,7 +6493,19 @@ window.HUIHU_DATA = {
           "year": 2015,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ]
+      }
     },
     {
       "序号": "131",
@@ -3602,7 +6530,19 @@ window.HUIHU_DATA = {
           "year": 2010,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ]
+      }
     },
     {
       "序号": "132",
@@ -3627,7 +6567,19 @@ window.HUIHU_DATA = {
           "year": 2007,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ]
+      }
     },
     {
       "序号": "23",
@@ -3652,7 +6604,36 @@ window.HUIHU_DATA = {
           "year": 2023,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "24",
@@ -3677,7 +6658,36 @@ window.HUIHU_DATA = {
           "year": 2021,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ]
+      }
     },
     {
       "序号": "25",
@@ -3699,7 +6709,35 @@ window.HUIHU_DATA = {
           "category": "研究院所",
           "mode": "有企业参与，共建待核"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ]
+      }
     },
     {
       "序号": "26",
@@ -3724,7 +6762,36 @@ window.HUIHU_DATA = {
           "year": 2017,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ]
+      }
     },
     {
       "序号": "27",
@@ -3745,7 +6812,36 @@ window.HUIHU_DATA = {
         {
           "category": "科研中心/服务平台"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "conflicting"
+          }
+        ]
+      }
     },
     {
       "序号": "28",
@@ -3767,7 +6863,35 @@ window.HUIHU_DATA = {
           "category": "科研中心/服务平台",
           "mode": "有企业参与，共建待核"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "29",
@@ -3792,7 +6916,36 @@ window.HUIHU_DATA = {
           "year": 2020,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "17",
@@ -3813,7 +6966,14 @@ window.HUIHU_DATA = {
         {
           "category": "工程研究中心"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "高校平台资源档案"
+        ]
+      }
     },
     {
       "序号": "18",
@@ -3843,7 +7003,23 @@ window.HUIHU_DATA = {
           "year": 2010,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "aliases": [
+          "南智传感产学创新平台",
+          "苏州市基础工程分布式传感监测技术重点实验室"
+        ]
+      }
     },
     {
       "序号": "19",
@@ -3864,7 +7040,19 @@ window.HUIHU_DATA = {
         {
           "category": "工程研究中心"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ]
+      }
     },
     {
       "序号": "120",
@@ -3886,7 +7074,24 @@ window.HUIHU_DATA = {
           "category": "科研中心/服务平台",
           "mode": "有企业参与，共建待核"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "121",
@@ -3917,6 +7122,24 @@ window.HUIHU_DATA = {
         "code": "L46",
         "stage": "已有市级认定",
         "industry": "新能源及绿色产业"
+      },
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "慧湖50L100E共建记录",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
       }
     },
     {
@@ -3938,7 +7161,19 @@ window.HUIHU_DATA = {
         {
           "category": "科研实验室"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ]
+      }
     },
     {
       "序号": "14",
@@ -3960,7 +7195,19 @@ window.HUIHU_DATA = {
           "category": "联合实验室",
           "mode": "共建方待核"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ]
+      }
     },
     {
       "序号": "15",
@@ -3981,7 +7228,19 @@ window.HUIHU_DATA = {
         {
           "category": "科研实验室"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ]
+      }
     },
     {
       "序号": "118",
@@ -4002,7 +7261,30 @@ window.HUIHU_DATA = {
         {
           "category": "科研中心/服务平台"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "119",
@@ -4023,7 +7305,30 @@ window.HUIHU_DATA = {
         {
           "category": "科研中心/服务平台"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "20",
@@ -4053,7 +7358,35 @@ window.HUIHU_DATA = {
           "name": "分子诊断中试平台",
           "category": "中试平台"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "aliases": [
+          "分子诊断中试平台",
+          "分子诊断公共服务平台"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "21",
@@ -4074,7 +7407,31 @@ window.HUIHU_DATA = {
         {
           "category": "技术创新中心"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "22",
@@ -4112,7 +7469,41 @@ window.HUIHU_DATA = {
           "name": "长三角G60科创走廊概念验证中心",
           "category": "概念验证中心"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "aliases": [
+          "苏州市生物材料概念验证中心",
+          "苏州市未来生物材料重点实验室",
+          "长三角G60科创走廊概念验证中心"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "111",
@@ -4137,7 +7528,26 @@ window.HUIHU_DATA = {
           "year": 2021,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "112",
@@ -4162,7 +7572,31 @@ window.HUIHU_DATA = {
           "year": 2023,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "113",
@@ -4187,7 +7621,31 @@ window.HUIHU_DATA = {
           "year": 2016,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "not_continued"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "not_continued"
+          }
+        ]
+      }
     },
     {
       "序号": "114",
@@ -4212,7 +7670,24 @@ window.HUIHU_DATA = {
           "year": 2025,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "115",
@@ -4237,7 +7712,31 @@ window.HUIHU_DATA = {
           "year": 2024,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案",
+          "高能级创新平台台账"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "116",
@@ -4262,7 +7761,30 @@ window.HUIHU_DATA = {
           "year": 2024,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "117",
@@ -4287,7 +7809,31 @@ window.HUIHU_DATA = {
           "year": 2022,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "not_continued"
+          }
+        ]
+      }
     },
     {
       "序号": "107",
@@ -4308,7 +7854,31 @@ window.HUIHU_DATA = {
         {
           "category": "科研中心/服务平台"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "108",
@@ -4340,6 +7910,33 @@ window.HUIHU_DATA = {
         "stage": "已设立",
         "industry": "生物医药及大健康",
         "name": "苏州工业园区基于基因编辑的低免疫原性生物材料开发创新科研平台"
+      },
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "慧湖50L100E共建记录",
+          "早期高校平台概览",
+          "高校平台资源档案",
+          "高能级创新平台台账"
+        ],
+        "aliases": [
+          "苏州工业园区基于基因编辑的低免疫原性生物材料开发创新科研平台"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
       }
     },
     {
@@ -4366,7 +7963,30 @@ window.HUIHU_DATA = {
           "year": 2023,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "110",
@@ -4391,7 +8011,26 @@ window.HUIHU_DATA = {
           "year": 2021,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "16",
@@ -4412,7 +8051,25 @@ window.HUIHU_DATA = {
         {
           "category": "概念验证中心"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "30",
@@ -4437,7 +8094,24 @@ window.HUIHU_DATA = {
           "year": 2025,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "31",
@@ -4462,7 +8136,16 @@ window.HUIHU_DATA = {
           "url": "https://www.sipac.gov.cn/szgyyq/dthg202508/202508/c37d08f928e048118e26185dc6a8d77d.shtml",
           "note": "按校企合作实验室分级口径归为校（院）级。"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "aliases": [
+          "耀腾光电—上交苏州智研院联合实验室（正式全称待核）"
+        ]
+      }
     },
     {
       "序号": "32",
@@ -4486,7 +8169,13 @@ window.HUIHU_DATA = {
           "mode": "校企联合实验室",
           "note": "按校企合作实验室分级口径归为校（院）级。"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ]
+      }
     },
     {
       "序号": "171",
@@ -4511,7 +8200,26 @@ window.HUIHU_DATA = {
           "year": 2006,
           "source": "高校年报"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ]
+      }
     },
     {
       "序号": "approval-45d770dd4859803c",
@@ -4543,7 +8251,13 @@ window.HUIHU_DATA = {
           "source": "校方或主管部门公开材料",
           "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276158/page.htm"
         }
-      ]
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ]
+      }
     },
     {
       "序号": "L01",
@@ -4572,6 +8286,17 @@ window.HUIHU_DATA = {
         "code": "L01",
         "stage": "进展待核",
         "industry": "高端装备制造"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "慧湖50L100E阶段成果",
+          "高校平台资源档案"
+        ],
+        "aliases": [
+          "3D打印砂轮联合实验室"
+        ]
       }
     },
     {
@@ -4601,6 +8326,13 @@ window.HUIHU_DATA = {
         "code": "L03",
         "stage": "清单载有签约时间",
         "industry": "高端装备制造"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ]
       }
     },
     {
@@ -4630,6 +8362,13 @@ window.HUIHU_DATA = {
         "code": "L04",
         "stage": "清单载有签约时间",
         "industry": "高端装备制造"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ]
       }
     },
     {
@@ -4659,6 +8398,13 @@ window.HUIHU_DATA = {
         "code": "L05",
         "stage": "清单载有签约时间",
         "industry": "高端装备制造"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ]
       }
     },
     {
@@ -4686,6 +8432,14 @@ window.HUIHU_DATA = {
         "code": "L06",
         "stage": "申报或筹建",
         "industry": "人工智能及数字产业"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -4713,6 +8467,14 @@ window.HUIHU_DATA = {
         "code": "L07",
         "stage": "申报或筹建",
         "industry": "人工智能及数字产业"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -4740,6 +8502,14 @@ window.HUIHU_DATA = {
         "code": "L08",
         "stage": "申报或筹建",
         "industry": "生物医药及大健康"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -4767,6 +8537,13 @@ window.HUIHU_DATA = {
         "code": "L09",
         "stage": "进展待核",
         "industry": "生物医药及大健康"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ]
       }
     },
     {
@@ -4800,6 +8577,18 @@ window.HUIHU_DATA = {
         "date": "2026-04-22",
         "partner": "上海拜谱生物科技有限公司",
         "url": "https://www.xjtlu.edu.cn/zh/news/2026/05/xjtlu-bioprofile-jointlab"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "慧湖50L100E阶段成果",
+          "高校平台资源档案"
+        ],
+        "aliases": [
+          "多组学质谱联合实验室",
+          "西浦-拜谱生物多组学质谱 联合实验室合作协议"
+        ]
       }
     },
     {
@@ -4832,6 +8621,17 @@ window.HUIHU_DATA = {
         "partner": "上海武创大智高新技术集团有限公司",
         "url": "https://www.xjtlu.edu.cn/zh/school_post/academy-of-artificial-intelligence-and-advanced-technology/research-centres/intelligent-mediamatics-and-data-science-research-centre/representative-projects",
         "note": "校方公开名称为“西浦-WCHT 国产算力协同研究中心”。"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "慧湖50L100E阶段成果",
+          "高校平台资源档案"
+        ],
+        "aliases": [
+          "国产算力联合研究中心"
+        ]
       }
     },
     {
@@ -4861,6 +8661,18 @@ window.HUIHU_DATA = {
         "code": "L12",
         "stage": "校方报送成立",
         "industry": "人工智能及数字产业"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "慧湖50L100E阶段成果",
+          "高校平台资源档案"
+        ],
+        "aliases": [
+          "半导体联合研究中心",
+          "半导体校企联合研究中心"
+        ]
       }
     },
     {
@@ -4888,6 +8700,14 @@ window.HUIHU_DATA = {
         "code": "L13",
         "stage": "筹建",
         "industry": "新一代信息技术"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ],
+        "stage": "筹建"
       }
     },
     {
@@ -4915,6 +8735,14 @@ window.HUIHU_DATA = {
         "code": "L14",
         "stage": "申报或筹建",
         "industry": "人工智能及数字产业"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -4942,6 +8770,14 @@ window.HUIHU_DATA = {
         "code": "L15",
         "stage": "申报或筹建",
         "industry": "生物医药及大健康"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -4969,6 +8805,14 @@ window.HUIHU_DATA = {
         "code": "L16",
         "stage": "申报或筹建",
         "industry": "新能源及绿色产业"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -4996,6 +8840,14 @@ window.HUIHU_DATA = {
         "code": "L17",
         "stage": "申报或筹建",
         "industry": "新能源及绿色产业"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -5023,6 +8875,14 @@ window.HUIHU_DATA = {
         "code": "L18",
         "stage": "申报或筹建",
         "industry": "生物医药及大健康"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -5050,6 +8910,14 @@ window.HUIHU_DATA = {
         "code": "L19",
         "stage": "申报或筹建",
         "industry": "生物医药及大健康"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -5077,6 +8945,14 @@ window.HUIHU_DATA = {
         "code": "L20",
         "stage": "申报或筹建",
         "industry": "人工智能及数字产业"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -5104,6 +8980,14 @@ window.HUIHU_DATA = {
         "code": "L21",
         "stage": "申报或筹建",
         "industry": "生物医药及大健康"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -5131,6 +9015,14 @@ window.HUIHU_DATA = {
         "code": "L22",
         "stage": "申报或筹建",
         "industry": "人工智能及数字产业"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -5158,6 +9050,14 @@ window.HUIHU_DATA = {
         "code": "L23",
         "stage": "申报或筹建",
         "industry": "人工智能及数字产业"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -5185,6 +9085,19 @@ window.HUIHU_DATA = {
         "code": "L24",
         "stage": "申报或筹建",
         "industry": "人工智能及数字产业"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "慧湖50L100E阶段成果",
+          "高校平台资源档案"
+        ],
+        "aliases": [
+          "AI数据协同产业创新联合体",
+          "智造AI数据协同创新联合体"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -5212,6 +9125,18 @@ window.HUIHU_DATA = {
         "code": "L25",
         "stage": "申报或筹建",
         "industry": "新一代信息技术"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "慧湖50L100E阶段成果",
+          "高校平台资源档案"
+        ],
+        "aliases": [
+          "AI+AR智能眼镜创新联合体"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -5241,6 +9166,13 @@ window.HUIHU_DATA = {
         "code": "L26",
         "stage": "进展待核",
         "industry": "人工智能及数字产业"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ]
       }
     },
     {
@@ -5268,6 +9200,14 @@ window.HUIHU_DATA = {
         "code": "L27",
         "stage": "申报或筹建",
         "industry": "新能源及绿色产业"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -5295,6 +9235,14 @@ window.HUIHU_DATA = {
         "code": "L28",
         "stage": "清单载有签约时间",
         "industry": "高端装备制造"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案",
+          "高能级创新平台台账"
+        ]
       }
     },
     {
@@ -5322,6 +9270,14 @@ window.HUIHU_DATA = {
         "code": "L29",
         "stage": "清单载有签约时间",
         "industry": "人工智能及数字产业"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案",
+          "高能级创新平台台账"
+        ]
       }
     },
     {
@@ -5351,6 +9307,13 @@ window.HUIHU_DATA = {
         "code": "L30",
         "stage": "清单载有签约时间",
         "industry": "高端装备制造"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ]
       }
     },
     {
@@ -5380,6 +9343,13 @@ window.HUIHU_DATA = {
         "code": "L31",
         "stage": "清单载有签约时间",
         "industry": "高端装备制造"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ]
       }
     },
     {
@@ -5409,6 +9379,13 @@ window.HUIHU_DATA = {
         "code": "L32",
         "stage": "清单载有签约时间",
         "industry": "生物医药及大健康"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ]
       }
     },
     {
@@ -5436,6 +9413,13 @@ window.HUIHU_DATA = {
         "code": "L33",
         "stage": "清单载有签约时间",
         "industry": "高端装备制造"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ]
       }
     },
     {
@@ -5463,6 +9447,18 @@ window.HUIHU_DATA = {
         "code": "L34",
         "stage": "申报或筹建",
         "industry": "人工智能及数字产业"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "慧湖50L100E阶段成果",
+          "高校平台资源档案"
+        ],
+        "aliases": [
+          "OPC创新联合体"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -5490,6 +9486,13 @@ window.HUIHU_DATA = {
         "code": "L35",
         "stage": "清单载有签约时间",
         "industry": "人工智能及数字产业"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ]
       }
     },
     {
@@ -5517,6 +9520,18 @@ window.HUIHU_DATA = {
         "code": "L37",
         "stage": "申报或筹建",
         "industry": "人工智能及数字产业"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "慧湖50L100E阶段成果",
+          "高校平台资源档案"
+        ],
+        "aliases": [
+          "低空智能边缘计算创新联合体"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -5544,6 +9559,14 @@ window.HUIHU_DATA = {
         "code": "L38",
         "stage": "申报或筹建",
         "industry": "新一代信息技术"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -5571,6 +9594,14 @@ window.HUIHU_DATA = {
         "code": "L39",
         "stage": "申报或筹建",
         "industry": "纳米技术应用及新材料"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -5598,6 +9629,14 @@ window.HUIHU_DATA = {
         "code": "L40",
         "stage": "申报或筹建",
         "industry": "人工智能及数字产业"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -5625,6 +9664,14 @@ window.HUIHU_DATA = {
         "code": "L41",
         "stage": "申报或筹建",
         "industry": "人工智能及数字产业"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -5652,6 +9699,14 @@ window.HUIHU_DATA = {
         "code": "L42",
         "stage": "申报或筹建",
         "industry": "人工智能及数字产业"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -5679,6 +9734,14 @@ window.HUIHU_DATA = {
         "code": "L43",
         "stage": "申报或筹建",
         "industry": "纳米技术应用及新材料"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -5708,6 +9771,17 @@ window.HUIHU_DATA = {
         "code": "L44",
         "stage": "进展待核",
         "industry": "新一代信息技术"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "慧湖50L100E阶段成果",
+          "高校平台资源档案"
+        ],
+        "aliases": [
+          "飞秒联合实验室"
+        ]
       }
     },
     {
@@ -5735,6 +9809,15 @@ window.HUIHU_DATA = {
         "code": "L45",
         "stage": "申报或筹建",
         "industry": "人工智能及数字产业"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案",
+          "高能级创新平台台账"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -5762,6 +9845,14 @@ window.HUIHU_DATA = {
         "code": "L47",
         "stage": "申报或筹建",
         "industry": "生物医药及大健康"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ],
+        "stage": "申报或筹建"
       }
     },
     {
@@ -5789,6 +9880,13 @@ window.HUIHU_DATA = {
         "code": "L48",
         "stage": "进展待核",
         "industry": "人工智能及数字产业"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ]
       }
     },
     {
@@ -5818,6 +9916,14 @@ window.HUIHU_DATA = {
         "industry": "纳米技术应用及新材料",
         "date": "2026-07-28",
         "url": "https://www.sipac.gov.cn/szgyyq/dthg202607/202607/e2d55b6605ac4ebd84f7ffea8a28f652.shtml"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "慧湖50L100E阶段成果",
+          "高校平台资源档案"
+        ]
       }
     },
     {
@@ -5845,6 +9951,13 @@ window.HUIHU_DATA = {
         "code": "L51",
         "stage": "进展待核",
         "industry": "生物医药及大健康"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ]
       }
     },
     {
@@ -5874,6 +9987,13 @@ window.HUIHU_DATA = {
         "code": "L52",
         "stage": "进展待核",
         "industry": "人工智能及数字产业"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ]
       }
     },
     {
@@ -5910,6 +10030,18 @@ window.HUIHU_DATA = {
         "partner": "知行机器人科技（苏州）有限公司",
         "url": "https://www.xjtlu.edu.cn/zh/news/2026/02/xipuyuzhixingjiqirenchenglixiaoqilianheshiyanshi",
         "note": "揭牌地点为西浦创业家学院（太仓）。"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "慧湖50L100E阶段成果",
+          "高校平台资源档案"
+        ],
+        "aliases": [
+          "校企联合实验室",
+          "机器人校企联合实验室"
+        ]
       }
     },
     {
@@ -5942,6 +10074,17 @@ window.HUIHU_DATA = {
         "date": "2025-08-06",
         "partner": "九识智能科技有限公司",
         "url": "https://news.sjtu.edu.cn/zhxw/20250820/213732.html"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "慧湖50L100E阶段成果",
+          "高校平台资源档案"
+        ],
+        "aliases": [
+          "自动驾驶联合实验室"
+        ]
       }
     },
     {
@@ -5971,6 +10114,14 @@ window.HUIHU_DATA = {
         "industry": "人工智能及数字产业",
         "date": "2026-07-28",
         "url": "https://www.sipac.gov.cn/szgyyq/dthg202607/202607/e2d55b6605ac4ebd84f7ffea8a28f652.shtml"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "慧湖50L100E阶段成果",
+          "高校平台资源档案"
+        ]
       }
     },
     {
@@ -6000,6 +10151,9698 @@ window.HUIHU_DATA = {
         "industry": "生物医药及大健康",
         "date": "2026-07-28",
         "url": "https://www.sipac.gov.cn/szgyyq/dthg202607/202607/e2d55b6605ac4ebd84f7ffea8a28f652.shtml"
+      },
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E共建记录",
+          "高校平台资源档案"
+        ]
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT002",
+      "平台名称": "增强现实技术（AR）融合出版重点实验室",
+      "所属高校": "苏州工业园区服务外包职业学院",
+      "分类标签": [
+        {
+          "category": "部委重点实验室",
+          "level": "省部级",
+          "mode": "校企联合实验室",
+          "authority": "国家新闻出版署",
+          "year": 2021,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT005",
+      "平台名称": "东南大学苏州研究院-安捷伦无线传感器网络联合实验室",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "联合实验室",
+          "level": "校（院）级",
+          "mode": "校企联合实验室",
+          "authority": "东南大学",
+          "year": 2011,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT006",
+      "平台名称": "东南大学苏州研究院-江苏米塔环境联合实验室",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "联合实验室",
+          "level": "校（院）级",
+          "mode": "校企联合实验室",
+          "authority": "东南大学",
+          "year": 2014,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT007",
+      "平台名称": "东大-哈曼车联网技术联合实验室",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "联合实验室",
+          "level": "校（院）级",
+          "mode": "校企联合实验室",
+          "authority": "东南大学",
+          "year": 2011,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT008",
+      "平台名称": "东大-香山衡器物联网技术联合实验室",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "联合实验室",
+          "level": "校（院）级",
+          "mode": "校企联合实验室",
+          "authority": "东南大学",
+          "year": 2011,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT009",
+      "平台名称": "长安与哈曼-东大车联网技术联合实验室",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "联合实验室",
+          "level": "校（院）级",
+          "mode": "校企联合实验室",
+          "authority": "东南大学",
+          "year": 2013,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT017",
+      "平台名称": "纳米柔性智能电子材料联合实验室",
+      "所属高校": "中国科学院苏州纳米技术与纳米仿生研究所",
+      "分类标签": [
+        {
+          "category": "联合实验室",
+          "level": "校（院）级",
+          "mode": "校企联合实验室",
+          "source": "高校平台资料"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E阶段成果"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT018",
+      "平台名称": "高速全光通信联合实验室",
+      "所属高校": "北京航空航天大学",
+      "分类标签": [
+        {
+          "category": "联合实验室",
+          "level": "校（院）级",
+          "mode": "校企联合实验室",
+          "source": "高校平台资料"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT020",
+      "平台名称": "ALE刻蚀设备联合实验室",
+      "所属高校": "国家第三代半导体技术创新中心（苏州）",
+      "分类标签": [
+        {
+          "category": "联合实验室",
+          "level": "校（院）级",
+          "mode": "校企联合实验室",
+          "source": "高校平台资料"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E阶段成果"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT021",
+      "平台名称": "碳化硅晶锭切割联合实验室",
+      "所属高校": "国家第三代半导体技术创新中心（苏州）",
+      "分类标签": [
+        {
+          "category": "联合实验室",
+          "level": "校（院）级",
+          "mode": "校企联合实验室",
+          "source": "高校平台资料"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E阶段成果"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT023",
+      "平台名称": "贸易大数据与人工智能联合实验室",
+      "所属高校": "材料科学姑苏实验室",
+      "分类标签": [
+        {
+          "category": "联合实验室",
+          "level": "校（院）级",
+          "mode": "校企联合实验室",
+          "source": "高校平台资料"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E阶段成果"
+        ],
+        "aliases": [
+          "贸易大数据与AI联合实验室"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT024",
+      "平台名称": "武汉大学神海智慧航运联合实验室",
+      "所属高校": "武汉大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "联合实验室",
+          "level": "校（院）级",
+          "mode": "校企联合实验室",
+          "source": "高校平台资料"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT026",
+      "平台名称": "中鑫-西浦智慧能源联合实验室",
+      "所属高校": "西交利物浦大学",
+      "分类标签": [
+        {
+          "category": "联合实验室",
+          "level": "校（院）级",
+          "mode": "校企联合实验室",
+          "source": "高校平台资料"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT027",
+      "平台名称": "西交利物浦大学—Deepleaper即时知识引擎联合实验室",
+      "所属高校": "西交利物浦大学",
+      "分类标签": [
+        {
+          "category": "联合实验室",
+          "level": "校（院）级",
+          "mode": "校企联合实验室",
+          "source": "高校平台资料"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT028",
+      "平台名称": "西交利物浦大学—深圳无芯科技有限公司联合实验室",
+      "所属高校": "西交利物浦大学",
+      "分类标签": [
+        {
+          "category": "联合实验室",
+          "level": "校（院）级",
+          "mode": "校企联合实验室",
+          "source": "高校平台资料"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT029",
+      "平台名称": "西浦慧湖药学院-海狸生物联合科学实验室",
+      "所属高校": "西交利物浦大学",
+      "分类标签": [
+        {
+          "category": "科研实验室",
+          "level": "校（院）级",
+          "mode": "校企联合实验室",
+          "source": "高校平台资料"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT036",
+      "平台名称": "东南大学苏州研究院电磁环境效应实验室",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研实验室",
+          "level": "校（院）级",
+          "mode": "自建实验室",
+          "authority": "东南大学",
+          "year": 2022,
+          "source": "高校平台资料"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT038",
+      "平台名称": "苏州市高功率半导体激光创新联合体",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "创新联合体",
+          "level": "市级",
+          "mode": "联合组建",
+          "authority": "苏州市科技局",
+          "year": 2022,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT039",
+      "平台名称": "苏州市先进微球材料开发及应用创新联合体",
+      "所属高校": "中国科学院苏州纳米技术与纳米仿生研究所",
+      "分类标签": [
+        {
+          "category": "创新联合体",
+          "level": "市级",
+          "mode": "联合组建",
+          "authority": "苏州市科学技术局",
+          "source": "已核认定或设立资料"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT041",
+      "平台名称": "苏州市数智融媒创新联合体",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "创新联合体",
+          "level": "市级",
+          "mode": "联合组建",
+          "authority": "苏州市科技局",
+          "year": 2025,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT042",
+      "平台名称": "苏州市新能源汽车空调压缩机创新联合体",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "创新联合体",
+          "level": "市级",
+          "mode": "联合组建",
+          "authority": "苏州市科技局",
+          "year": 2024,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT043",
+      "平台名称": "苏州市钙钛矿叠层光伏技术与装备集成创新联合体",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "创新联合体",
+          "level": "市级",
+          "mode": "联合组建",
+          "authority": "苏州市科技局",
+          "year": 2025,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT044",
+      "平台名称": "苏州市高强韧高温合金材料与紧固件产业技术创新联合体",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "创新联合体",
+          "level": "市级",
+          "mode": "联合组建",
+          "authority": "苏州市科技局",
+          "year": 2025,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT045",
+      "平台名称": "苏州市高效光伏网版及关键技术创新联合体",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "创新联合体",
+          "level": "市级",
+          "mode": "联合组建",
+          "authority": "苏州市科技局",
+          "year": 2025,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT046",
+      "平台名称": "低功耗物联网智能终端创新联合体",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "创新联合体",
+          "mode": "联合组建"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E阶段成果"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT047",
+      "平台名称": "侵入式脑机接口创新联合体",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "创新联合体",
+          "mode": "联合组建"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E阶段成果"
+        ],
+        "aliases": [
+          "侵入式脑机接口与神经调控创新联合体"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT048",
+      "平台名称": "超高场磁共振线圈创新联合体",
+      "所属高校": "清华大学",
+      "分类标签": [
+        {
+          "category": "创新联合体",
+          "mode": "联合组建"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E阶段成果"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT049",
+      "平台名称": "聚变能高能重频驱动器创新联合体",
+      "所属高校": "苏州大学、材料科学姑苏实验室",
+      "分类标签": [
+        {
+          "category": "创新联合体",
+          "mode": "联合组建"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E阶段成果"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT050",
+      "平台名称": "半导体晶圆键合工艺创新联合体",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "创新联合体",
+          "mode": "联合组建"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E阶段成果"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "国家级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT080",
+      "平台名称": "国家自然科学基金依托单位",
+      "所属高校": "苏州工业园区蒙纳士科学技术研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "国家级",
+          "authority": "国家自然科学基金委员会",
+          "year": 2023,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT082",
+      "平台名称": "东南大学苏州医疗器械研究院",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "研究院所",
+          "level": "省部级",
+          "authority": "江苏省产研院",
+          "year": 2017,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT083",
+      "平台名称": "江苏省产业技术研究院工业过程模拟与优化研究所",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "研究院所",
+          "level": "省部级",
+          "authority": "江苏省产研院",
+          "year": 2015,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT084",
+      "平台名称": "江苏省产业技术研究院未来城市应用技术研究所",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "研究院所",
+          "level": "省部级",
+          "authority": "江苏省产研院",
+          "year": 2019,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT085",
+      "平台名称": "苏州纳米科技协同创新中心-东南大学纳米生物医药中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "教育部",
+          "year": 2011,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT087",
+      "平台名称": "江苏省高精度自动化智能装备工程技术研究中心",
+      "所属高校": "山东大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "工程研究中心",
+          "level": "省部级",
+          "authority": "江苏省科技厅",
+          "year": 2014,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT089",
+      "平台名称": "重大科技开放合作平台建设项目",
+      "所属高校": "牛津大学高等研究院(苏州)",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "江苏省科技厅",
+          "year": 2023,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT090",
+      "平台名称": "“传播与社会治理研究”创新团队",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "江苏省教育厅",
+          "year": 2017,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT091",
+      "平台名称": "东吴智库",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站",
+          "level": "省部级",
+          "authority": "江苏省教育厅",
+          "year": 2015,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT092",
+      "平台名称": "中国文化翻译与传播研究基地",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站",
+          "level": "省部级",
+          "authority": "江苏省教育厅",
+          "year": 2020,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT093",
+      "平台名称": "中国昆曲与戏曲研究中心 （培育）",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "江苏省教育厅",
+          "year": 2009,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT094",
+      "平台名称": "中国特色城镇化研究中心",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "教育部",
+          "year": 2004,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT095",
+      "平台名称": "体育社会科学研究中心",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站",
+          "level": "省部级",
+          "authority": "国家体育总局",
+          "year": 2003,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT097",
+      "平台名称": "国家体育总局体育产业研究基地",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站",
+          "level": "省部级",
+          "authority": "国家体育总局",
+          "year": 2018,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT098",
+      "平台名称": "国家纺织产业创新支撑平台",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "科技部",
+          "year": 2009,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT099",
+      "平台名称": "国际能源法研究中心（培育）",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "江苏省教育厅",
+          "year": 2013,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT100",
+      "平台名称": "地方政府与社会治理优秀创新团队",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "江苏省教育厅",
+          "year": 2015,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT102",
+      "平台名称": "大运河文化带建设研究院苏州分院",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "研究院所",
+          "level": "省部级",
+          "authority": "\"江苏省委宣传部 江苏省社科院\"",
+          "year": 2018,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT106",
+      "平台名称": "智慧供应链创新团队",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "江苏省教育厅",
+          "year": 2020,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT107",
+      "平台名称": "智能纳米环保新材料及检测技术国际联合研究中心",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "科技部",
+          "year": 2016,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT110",
+      "平台名称": "江苏体育产业协同创新中心（培育）",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "江苏省教育厅",
+          "year": 2018,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT111",
+      "平台名称": "江苏哲学社会科学协同创新研究基地",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站",
+          "level": "省部级",
+          "authority": "江苏省哲社界联合会",
+          "year": 2023,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT112",
+      "平台名称": "江苏学校美育研究中心",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "江苏省教育厅",
+          "year": 2021,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT113",
+      "平台名称": "江苏当代作家研究基地",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站",
+          "level": "省部级",
+          "authority": "江苏省哲社规划领导小组",
+          "year": 2013,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT114",
+      "平台名称": "江苏现代金融研究基地",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站",
+          "level": "省部级",
+          "authority": "江苏省哲社界联合会",
+          "year": 2019,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT115",
+      "平台名称": "江苏省丝绸工程重点实验室",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "江苏省重点实验室",
+          "level": "省部级",
+          "authority": "教育厅",
+          "year": 1997,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT116",
+      "平台名称": "江苏省中国特色社会主义理论体系研究基地",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站",
+          "level": "省部级",
+          "authority": "江苏省委宣传部",
+          "year": 2015,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT119",
+      "平台名称": "江苏省先进负碳技术重点实验室",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "江苏省重点实验室",
+          "level": "校（院）级",
+          "mode": "校企联合实验室",
+          "source": "高校平台资料"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT120",
+      "平台名称": "江苏省吴文化研究基地",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站",
+          "level": "省部级",
+          "authority": "江苏省哲社规划领导小组",
+          "year": 2008,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ],
+        "scopeNote": "春季梳理标注该基地在园区外。",
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT121",
+      "平台名称": "江苏省感染与免疫重点实验室",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "江苏省重点实验室",
+          "level": "省部级",
+          "authority": "教育厅",
+          "year": 2010,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT122",
+      "平台名称": "江苏省放射医学与防护重点实验室",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "江苏省重点实验室",
+          "level": "省部级",
+          "authority": "教育厅",
+          "year": 2000,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT123",
+      "平台名称": "江苏省新型高分子功能材料工程实验室",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "工程实验室",
+          "level": "省部级",
+          "authority": "省发改委",
+          "year": 2010,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高校或园区官网"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ],
+        "supplemented": true,
+        "officialListing": "https://www.suda.edu.cn/science_research/kyjg.jsp"
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT124",
+      "平台名称": "江苏省有机合成重点实验室",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "江苏省重点实验室",
+          "level": "省部级",
+          "authority": "教育厅",
+          "year": 1993,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT126",
+      "平台名称": "江苏省水处理新材料与污水资源化工程实验室",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "工程实验室",
+          "level": "省部级",
+          "authority": "省发改委",
+          "year": 2012,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT131",
+      "平台名称": "江苏省老年病预防与转化医学重点实验室",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "江苏省重点实验室",
+          "level": "省部级",
+          "authority": "教育厅",
+          "year": 2014,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT136",
+      "平台名称": "江苏省铸牢中华民族共同体意识研究基地（苏州大学）",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站",
+          "level": "省部级",
+          "authority": "省委宣传部、省委统战部、省教育厅、省民宗委",
+          "year": 2022,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT138",
+      "平台名称": "江苏苏南治理现代化研究基地",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站",
+          "level": "省部级",
+          "authority": "江苏省社科联",
+          "year": 2013,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览",
+          "高校或园区官网"
+        ],
+        "aliases": [
+          "江苏苏南治理现代化研究"
+        ],
+        "supplemented": true,
+        "officialListing": "https://www.suda.edu.cn/science_research/kyjg.jsp"
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT143",
+      "平台名称": "红十字运动与慈善文化研究中心（培育）",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "江苏省教育厅",
+          "year": 2009,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT146",
+      "平台名称": "纺织行业天然染料重点实验室",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "行业重点实验室",
+          "level": "省部级",
+          "authority": "中国纺织工业联合会",
+          "year": 2018,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT150",
+      "平台名称": "老挝——大湄公河次区域国家研究中心",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "江苏省教育厅",
+          "year": 2013,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT152",
+      "平台名称": "苏南发展研究院（培育）",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "研究院所",
+          "level": "省部级",
+          "authority": "江苏省哲社规划领导小组",
+          "year": 2009,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT153",
+      "平台名称": "苏州基层党建研究所",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "研究院所",
+          "level": "省部级",
+          "authority": "江苏省教育厅",
+          "year": 2012,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT154",
+      "平台名称": "苏州大学",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "国家体育总局",
+          "year": 2018,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT155",
+      "平台名称": "苏州大学东吴体育智库",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站",
+          "level": "省部级",
+          "authority": "国家体育总局",
+          "year": 2023,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT156",
+      "平台名称": "苏州大学体育科技与健康科普基地",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站",
+          "level": "省部级",
+          "authority": "国家体育总局",
+          "year": 2022,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT157",
+      "平台名称": "苏州大学公法研究中心",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "江苏省教育厅",
+          "year": 2010,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "aliases": [
+          "苏州大学独墅湖校区公法研究中心"
+        ],
+        "scopeNote": "春季梳理确认苏州大学公法研究中心，标注该中心在园区外。",
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT158",
+      "平台名称": "苏州大学非物质文化遗产研究基地",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站",
+          "level": "省部级",
+          "authority": "江苏省文化厅",
+          "year": 2014,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "aliases": [
+          "苏州大学独墅湖校区非物质文化遗产研究基地"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT160",
+      "平台名称": "辐射损伤与救治省高校重点实验室",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "省高校重点实验室",
+          "level": "省部级",
+          "authority": "教育厅",
+          "year": 2024,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT161",
+      "平台名称": "高校社科传播与应用基地",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "江苏省哲社界联合会",
+          "year": 2022,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT162",
+      "平台名称": "慧湖智库",
+      "所属高校": "苏州工业园区服务外包职业学院",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站",
+          "level": "省部级",
+          "authority": "江苏省科学技术协会",
+          "year": 2021,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT163",
+      "平台名称": "江苏服务外包研究中心",
+      "所属高校": "苏州工业园区服务外包职业学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "江苏省教育厅",
+          "year": 2017,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT164",
+      "平台名称": "科技创新服务中心",
+      "所属高校": "苏州工业园区服务外包职业学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "江苏省科学技术协会",
+          "year": 2023,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT165",
+      "平台名称": "自驱动微纳机器人工程技术研发中心",
+      "所属高校": "苏州工业园区服务外包职业学院",
+      "分类标签": [
+        {
+          "category": "工程研究中心",
+          "level": "省部级",
+          "authority": "江苏省教育厅",
+          "year": 2023,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT166",
+      "平台名称": "高通量基因测序工程技术研发中心",
+      "所属高校": "苏州工业园区服务外包职业学院",
+      "分类标签": [
+        {
+          "category": "工程研究中心",
+          "level": "省部级",
+          "authority": "江苏省教育厅",
+          "year": 2018,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT167",
+      "平台名称": "江苏省博士后创新实践基地",
+      "所属高校": "苏州工业园区洛加大先进技术研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "江苏省人力资源和社会保障厅",
+          "year": 2016,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT168",
+      "平台名称": "苏州市外国专家工作室",
+      "所属高校": "苏州工业园区洛加大先进技术研究院",
+      "分类标签": [
+        {
+          "category": "新型研发机构",
+          "level": "省部级",
+          "authority": "江苏省人力资源和社会保障厅",
+          "year": 2016,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT169",
+      "平台名称": "江苏省微电子工程技术研究开发中心",
+      "所属高校": "苏州工业园区职业技术学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "教育厅",
+          "year": 2007,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT170",
+      "平台名称": "江苏省高等职业教育产教深度融合实训平台——微电子技术实训平台",
+      "所属高校": "苏州工业园区职业技术学院",
+      "分类标签": [
+        {
+          "category": "教学科研/实训平台",
+          "level": "省部级",
+          "authority": "教育厅",
+          "year": 2016,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT171",
+      "平台名称": "2024年度新设江苏省博士后创新实践基地",
+      "所属高校": "苏州工业园区蒙纳士科学技术研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "江苏省人力资源和社会保障厅",
+          "year": 2024,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT172",
+      "平台名称": "苏州百年职业学院AIII工业互联网实训基地",
+      "所属高校": "苏州百年职业学院",
+      "分类标签": [
+        {
+          "category": "教学科研/实训平台",
+          "level": "省部级",
+          "mode": "有企业参与，共建待核",
+          "authority": "工业互联网联盟",
+          "year": 2021,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT175",
+      "平台名称": "信息安全实践创新基地",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "国家网信办",
+          "year": 2021,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT177",
+      "平台名称": "氢燃料电池核心零部件及氢能核心装备山东省工程研究中心",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "工程研究中心",
+          "level": "省部级",
+          "mode": "有企业参与，共建待核",
+          "authority": "山东省科技厅",
+          "year": 2024,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT178",
+      "平台名称": "江苏省外国专家工作室",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站",
+          "level": "省部级",
+          "authority": "江苏省科技厅",
+          "year": 2019,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT180",
+      "平台名称": "江苏省技术经理人事务所",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "省部级",
+          "authority": "江苏省科技资源统筹服务中心、江苏省技术产权交易市场",
+          "year": 2022,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT181",
+      "平台名称": "江苏省新型研发机构",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "新型研发机构",
+          "level": "省部级",
+          "authority": "江苏省科技厅",
+          "year": 2017,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT182",
+      "平台名称": "苏州工业园区国家博士后工作站分站",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站",
+          "level": "省部级",
+          "authority": "江苏省人力资源和社会保障厅",
+          "year": 2018,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT184",
+      "平台名称": "苏州市儿童发展与学习科学媒体技术重点实验室",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "苏州市重点实验室",
+          "level": "市级",
+          "authority": "苏州市科技局",
+          "year": 2007,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT191",
+      "平台名称": "苏州物流研究中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "市级",
+          "authority": "苏州市科技局",
+          "year": 2009,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT192",
+      "平台名称": "高频高功率器件与集成技术研究中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "市级",
+          "authority": "苏州市科技局",
+          "year": 2009,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT194",
+      "平台名称": "苏州市外国专家工作室",
+      "所属高校": "中国人民大学苏州校区",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站",
+          "level": "市级",
+          "authority": "苏州市科技局",
+          "year": 2020,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT200",
+      "平台名称": "苏州市外籍院士工作站",
+      "所属高校": "中国科学技术大学苏州高等研究院",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站",
+          "level": "市级",
+          "authority": "苏州市科技局",
+          "year": 2022,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT205",
+      "平台名称": "苏州市晶硅太阳能电池工程技术研究中心",
+      "所属高校": "山东大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "工程研究中心",
+          "level": "市级",
+          "authority": "苏州市科技局",
+          "year": 2019,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT206",
+      "平台名称": "苏州市外国专家工作室",
+      "所属高校": "牛津大学高等研究院(苏州)",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站",
+          "level": "市级",
+          "authority": "苏州市科学技术局",
+          "year": 2020,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT207",
+      "平台名称": "苏州市外资开放式创新平台",
+      "所属高校": "牛津大学高等研究院(苏州)",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "市级",
+          "authority": "苏州市商务局、苏州市科技局",
+          "year": 2023,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT220",
+      "平台名称": "苏州市建筑与城市环境重点实验室",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "苏州市重点实验室",
+          "level": "市级",
+          "authority": "苏州市科技局",
+          "year": 2012,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT247",
+      "平台名称": "苏州慧湖科技产业智库",
+      "所属高校": "苏州工业园区服务外包职业学院",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站",
+          "level": "市级",
+          "authority": "苏州市新型智库建设办公室",
+          "year": 2025,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT263",
+      "平台名称": "苏州市外国专家工作室",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站",
+          "level": "市级",
+          "authority": "苏州市人力资源和社会保障局",
+          "year": 2016,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT264",
+      "平台名称": "苏州市引进内资研发机构",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "市级",
+          "authority": "苏州市科技局",
+          "year": 2006,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT265",
+      "平台名称": "苏州市新型研发机构",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "新型研发机构",
+          "level": "市级",
+          "authority": "苏州市科技局",
+          "year": 2018,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT269",
+      "平台名称": "苏州市电动汽车工程技术研究中心",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "工程研究中心",
+          "level": "市级",
+          "authority": "苏州市科技局",
+          "year": 2009,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT270",
+      "平台名称": "苏州市网络安全教育实训基地",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "教学科研/实训平台",
+          "level": "市级",
+          "authority": "苏州市委网信办",
+          "year": 2022,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT272",
+      "平台名称": "苏州快速成型工程技术研究中心",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "工程研究中心",
+          "level": "市级",
+          "authority": "苏州市科技局",
+          "year": 2009,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "区级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT273",
+      "平台名称": "苏州工业园区5G创新中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "区级",
+          "authority": "苏州工业园区",
+          "year": 2019,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "区级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT274",
+      "平台名称": "苏州工业园区具身智能感知成果转化平台",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "技术转移/成果转化平台",
+          "level": "区级",
+          "authority": "苏州独墅湖科教创新区管理委员会",
+          "year": 2025,
+          "source": "已核认定或设立资料"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高能级创新平台台账"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "区级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT275",
+      "平台名称": "苏州工业园区电磁环境效应创新提升平台",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "区级",
+          "authority": "苏州独墅湖科教创新区管理委员会",
+          "year": 2024,
+          "source": "已核认定或设立资料"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高能级创新平台台账"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "区级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT277",
+      "平台名称": "生物医学微系统优质创新平台",
+      "所属高校": "中国科学技术大学苏州高等研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "区级",
+          "authority": "独墅湖科教创新区",
+          "year": 2023,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024
+        ],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "区级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT278",
+      "平台名称": "苏州工业园区新能源器件与储能技术成果转化平台",
+      "所属高校": "华北电力大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "技术转移/成果转化平台",
+          "level": "区级",
+          "authority": "苏州独墅湖科教创新区管理委员会",
+          "year": 2025,
+          "source": "已核认定或设立资料"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高能级创新平台台账"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "区级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT282",
+      "平台名称": "智能感知与计算优质创新平台",
+      "所属高校": "苏州工业园区工业技术学校",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "区级",
+          "mode": "有企业参与，共建待核",
+          "authority": "苏州独墅湖科教创新区管委会",
+          "year": 2025,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "区级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT283",
+      "平台名称": "孤独症患者情绪识别AI技术创新平台",
+      "所属高校": "苏州工业园区服务外包职业学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "区级",
+          "authority": "独墅湖科教创新区",
+          "year": 2022,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "区级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT284",
+      "平台名称": "新视界机器视觉科普教育基地",
+      "所属高校": "苏州工业园区服务外包职业学院",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站",
+          "level": "区级",
+          "authority": "苏州工业园区科协",
+          "year": 2020,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "区级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT285",
+      "平台名称": "智能遥感技术研发创新平台",
+      "所属高校": "苏州工业园区服务外包职业学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "区级",
+          "authority": "独墅湖科教创新区",
+          "year": 2022,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "区级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT286",
+      "平台名称": "科技创新服务平台",
+      "所属高校": "苏州工业园区服务外包职业学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "区级",
+          "authority": "独墅湖科教创新区",
+          "year": 2022,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "区级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT287",
+      "平台名称": "药物精准递送自驱动微纳机器人创新平台（重点平台）",
+      "所属高校": "苏州工业园区服务外包职业学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "区级",
+          "authority": "独墅湖科教创新区",
+          "year": 2023,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "区级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT288",
+      "平台名称": "苏州工业园区人工智能技术创新应用教学科研平台",
+      "所属高校": "苏州工业园区职业技术学院",
+      "分类标签": [
+        {
+          "category": "教学科研/实训平台",
+          "level": "区级",
+          "authority": "苏州独墅湖科教创新区管理委员会",
+          "year": 2024,
+          "source": "已核认定或设立资料"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高能级创新平台台账"
+        ],
+        "aliases": [
+          "人工智能技术创新应用教学科研平台"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "区级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT289",
+      "平台名称": "苏州工业园区智能制造创新应用教学科研平台",
+      "所属高校": "苏州工业园区职业技术学院",
+      "分类标签": [
+        {
+          "category": "教学科研/实训平台",
+          "level": "区级",
+          "authority": "苏州独墅湖科教创新区管理委员会",
+          "year": 2025,
+          "source": "已核认定或设立资料"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览",
+          "高能级创新平台台账"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "区级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT298",
+      "平台名称": "苏州工业园区情感计算与互动健康交叉创新科研平台",
+      "所属高校": "西交利物浦大学",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "区级",
+          "authority": "苏州独墅湖科教创新区管理委员会",
+          "year": 2025,
+          "source": "已核认定或设立资料"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高能级创新平台台账"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "区级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT306",
+      "平台名称": "苏州工业园区网信普法基地",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "区级",
+          "authority": "中共苏州工业园区网信部门",
+          "year": 2021,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT308",
+      "平台名称": "东南大学-蒙纳士大学智能健康管理系统工程技术联合研究中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2015,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT309",
+      "平台名称": "东南大学-蒙纳士大学水敏型城市联合研究中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2015,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT310",
+      "平台名称": "东南大学-蒙纳士大学生物信息与系统生物学联合研究中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2015,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT311",
+      "平台名称": "东南大学-蒙纳士大学纳米生物技术联合研究中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2015,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT312",
+      "平台名称": "东南大学-蒙纳士大学能源清洁利用联合研究中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2015,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT313",
+      "平台名称": "东南大学-蒙纳士大学颗粒系统仿真联合研究中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2015,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT314",
+      "平台名称": "东南大学中国区域发展战略研究中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2013,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT315",
+      "平台名称": "东南大学可持续发展研究院（苏州校区）",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "研究院所",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2022,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT316",
+      "平台名称": "东南大学国家技术转移（苏州）中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "技术转移/成果转化平台",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2013,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT317",
+      "平台名称": "东南大学流程工业智能化研究中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2021,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT319",
+      "平台名称": "东南大学苏州人工智能与大数据产业研究院",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "研究院所",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2021,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT320",
+      "平台名称": "东南大学苏州国有资本运营高等研究院",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "研究院所",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2024,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT321",
+      "平台名称": "东南大学苏州校区人工智能应用研究中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2022,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT322",
+      "平台名称": "东南大学苏州研究院比由众创空间",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "研究院所",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2016,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT323",
+      "平台名称": "东南大学苏州研究院知识产权研究中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "研究院所",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2017,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT325",
+      "平台名称": "东大-中储智能微电网新能源联合研发中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2019,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT326",
+      "平台名称": "东大-云城物联网联合研发中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2015,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT327",
+      "平台名称": "东大-建屋智电科技联合研发中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2015,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT328",
+      "平台名称": "东大-微易智慧工程联合研发中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2016,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT329",
+      "平台名称": "东大-恒健妇幼健康微纳医疗技术联合研发中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2015,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT330",
+      "平台名称": "东大-恒健智能健康联合研发中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2015,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT331",
+      "平台名称": "东大-永鼎智在云BIM技术建设应用联合研发中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2017,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT332",
+      "平台名称": "东大-米谷大数据联合研发中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2014,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT333",
+      "平台名称": "东大-腾讯创意专利孵化中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "创业孵化载体",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2014,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT334",
+      "平台名称": "东大-苏州康宁杰瑞治疗性抗体联合研发中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2014,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT335",
+      "平台名称": "东工大东南大苏州资源化学研究所",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "研究院所",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2013,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT336",
+      "平台名称": "中国现代健康科学协同创新中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2014,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT338",
+      "平台名称": "互动多媒体创新中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2013,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT339",
+      "平台名称": "未来机器人协同创新中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2024,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT340",
+      "平台名称": "苏州供应链金融研究中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "东南大学",
+          "year": 2009,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT344",
+      "平台名称": "全球化经济研究中心",
+      "所属高校": "中国人民大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "中国人民大学",
+          "year": 2011,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT345",
+      "平台名称": "新时代高质量发展研究院",
+      "所属高校": "中国人民大学苏州校区",
+      "分类标签": [
+        {
+          "category": "研究院所",
+          "level": "校（院）级",
+          "authority": "中国人民大学",
+          "year": 2023,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024
+        ],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT346",
+      "平台名称": "气候变化与低碳经济研究所",
+      "所属高校": "中国人民大学苏州校区",
+      "分类标签": [
+        {
+          "category": "研究院所",
+          "level": "校（院）级",
+          "authority": "中国人民大学",
+          "year": 2009,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT349",
+      "平台名称": "苏州数字经济研究中心",
+      "所属高校": "中国人民大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "中国人民大学",
+          "year": 2024,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT350",
+      "平台名称": "苏州新质生产力研究中心",
+      "所属高校": "中国人民大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "中国人民大学",
+          "year": 2024,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT351",
+      "平台名称": "仿生界面科学研究中心",
+      "所属高校": "中国科学技术大学苏州高等研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "中国科学技术大学苏州高等研究院",
+          "year": 2023,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024
+        ],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT352",
+      "平台名称": "医学影像智能与机器人研究中心",
+      "所属高校": "中国科学技术大学苏州高等研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "中国科学技术大学苏州高等研究院",
+          "year": 2021,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT355",
+      "平台名称": "新加坡红杉控股有限公司",
+      "所属高校": "南洋高科技创新中心",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "江苏省商务厅",
+          "year": 2023,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT357",
+      "平台名称": "AR/VR数字创意中心",
+      "所属高校": "苏州工业园区服务外包职业学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "苏州工业园区服务外包职业学院",
+          "year": 2020,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT358",
+      "平台名称": "创新基因检测技术及核心原料酶研发平台",
+      "所属高校": "苏州工业园区服务外包职业学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "苏州工业园区服务外包职业学院",
+          "year": 2023,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT359",
+      "平台名称": "原料酶生产与表征分析平台",
+      "所属高校": "苏州工业园区服务外包职业学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "苏州工业园区服务外包职业学院",
+          "year": 2023,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT360",
+      "平台名称": "大数据分析与应用研究中心",
+      "所属高校": "苏州工业园区服务外包职业学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "苏州工业园区服务外包职业学院",
+          "year": 2019,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT361",
+      "平台名称": "数据中心网络容错性能研究与应用平台",
+      "所属高校": "苏州工业园区服务外包职业学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "苏州工业园区服务外包职业学院",
+          "year": 2023,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT362",
+      "平台名称": "新发展理念研究院",
+      "所属高校": "苏州工业园区服务外包职业学院",
+      "分类标签": [
+        {
+          "category": "研究院所",
+          "level": "校（院）级",
+          "authority": "苏州工业园区服务外包职业学院",
+          "year": 2023,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT363",
+      "平台名称": "智能机器人研发平台",
+      "所属高校": "苏州工业园区服务外包职业学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "苏州工业园区服务外包职业学院",
+          "year": 2019,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT364",
+      "平台名称": "环境技术修复研究中心",
+      "所属高校": "苏州工业园区服务外包职业学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "苏州工业园区服务外包职业学院",
+          "year": 2018,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT365",
+      "平台名称": "网络空间安全研究中心",
+      "所属高校": "苏州工业园区服务外包职业学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "苏州工业园区服务外包职业学院",
+          "year": 2020,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT366",
+      "平台名称": "自驱动纳米药物研究平台",
+      "所属高校": "苏州工业园区服务外包职业学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "苏州工业园区服务外包职业学院",
+          "year": 2023,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT367",
+      "平台名称": "视觉智能检测与分析工程应用中心",
+      "所属高校": "苏州工业园区服务外包职业学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "苏州工业园区服务外包职业学院",
+          "year": 2023,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT368",
+      "平台名称": "人群健康与分子诊断实验室",
+      "所属高校": "苏州工业园区洛加大先进技术研究院",
+      "分类标签": [
+        {
+          "category": "科研实验室",
+          "level": "校（院）级",
+          "mode": "自建关系待核",
+          "year": 2021,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT369",
+      "平台名称": "再生能源与环境工程研究中心",
+      "所属高校": "苏州工业园区洛加大先进技术研究院",
+      "分类标签": [
+        {
+          "category": "工程研究中心",
+          "level": "校（院）级",
+          "year": 2020,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT371",
+      "平台名称": "北理工-洛加大苏研院联合研究中心",
+      "所属高校": "苏州工业园区洛加大先进技术研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "year": 2019,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT372",
+      "平台名称": "智能半导体材料实验室",
+      "所属高校": "苏州工业园区洛加大先进技术研究院",
+      "分类标签": [
+        {
+          "category": "科研实验室",
+          "level": "校（院）级",
+          "mode": "自建关系待核",
+          "year": 2017,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT373",
+      "平台名称": "智能多媒体大数据实验室",
+      "所属高校": "苏州工业园区洛加大先进技术研究院",
+      "分类标签": [
+        {
+          "category": "科研实验室",
+          "level": "校（院）级",
+          "mode": "自建关系待核",
+          "year": 2017,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT374",
+      "平台名称": "智能控制与物联网研究中心",
+      "所属高校": "苏州工业园区洛加大先进技术研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "苏州工业园区洛加大先进技术研究院",
+          "year": 2014,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT375",
+      "平台名称": "移动医疗与生物信息研究中心",
+      "所属高校": "苏州工业园区洛加大先进技术研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "苏州工业园区洛加大先进技术研究院",
+          "year": 2014,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT376",
+      "平台名称": "绿色智能建筑与城市规划设计中心",
+      "所属高校": "苏州工业园区洛加大先进技术研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "苏州工业园区洛加大先进技术研究院",
+          "year": 2016,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT378",
+      "平台名称": "CDIO中新人工智能创新中心",
+      "所属高校": "苏州工业园区职业技术学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "苏州工业园区职业技术学院",
+          "year": 2025,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT379",
+      "平台名称": "SIPIVT融创中心",
+      "所属高校": "苏州工业园区职业技术学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "苏州工业园区职业技术学院",
+          "year": 2024,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT380",
+      "平台名称": "“立德树人”一体化创新育人中心",
+      "所属高校": "苏州工业园区职业技术学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "苏州工业园区职业技术学院",
+          "year": 2024,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT381",
+      "平台名称": "人工智能学生创新工程中心",
+      "所属高校": "苏州工业园区职业技术学院",
+      "分类标签": [
+        {
+          "category": "工程研究中心",
+          "level": "校（院）级",
+          "authority": "苏州工业园区职业技术学院",
+          "year": 2024,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT382",
+      "平台名称": "数智文创中心",
+      "所属高校": "苏州工业园区职业技术学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "苏州工业园区职业技术学院",
+          "year": 2025,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT383",
+      "平台名称": "智造创新中心",
+      "所属高校": "苏州工业园区职业技术学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "苏州工业园区职业技术学院",
+          "year": 2025,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT384",
+      "平台名称": "中加职业教育比较研究中心",
+      "所属高校": "苏州百年职业学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "authority": "苏州百年职业学院",
+          "year": 2023,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT385",
+      "平台名称": "课程思政教学研究中心",
+      "所属高校": "苏州百年职业学院",
+      "分类标签": [
+        {
+          "category": "教学科研/实训平台",
+          "level": "校（院）级",
+          "authority": "苏州百年职业学院",
+          "year": 2023,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT393",
+      "平台名称": "生成式人工智能（AIGC）联合创新中心",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "level": "校（院）级",
+          "mode": "有企业参与，共建待核",
+          "authority": "西安交通大学苏州研究院",
+          "year": 2024,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT395",
+      "平台名称": "西交大-洛加大微纳制造与材料国际联合实验室",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "国际联合实验室",
+          "level": "校（院）级",
+          "mode": "校际/国际共建",
+          "year": 2017,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "aliases": [
+          "西交大-洛加大苏州微纳制造与材料国际联合实验室",
+          "西交大-洛加大苏州微纳制造技术与材料国际联合实验室"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT396",
+      "平台名称": "西交大苏州研究院CAE仿真平台研发中心",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "研究院所",
+          "level": "校（院）级",
+          "mode": "有企业参与，共建待核",
+          "authority": "西安交通大学苏州研究院",
+          "year": 2024,
+          "source": "高校年报"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT397",
+      "平台名称": "东南大学苏州文化产业高等研究院",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "研究院所"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT398",
+      "平台名称": "智慧治理产教融合创新体",
+      "所属高校": "中国人民大学苏州校区",
+      "分类标签": [
+        {
+          "category": "产教融合创新体"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT405",
+      "平台名称": "中药煎制人工智能联合实验室",
+      "所属高校": "山东大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "联合实验室",
+          "mode": "共建方待核"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT409",
+      "平台名称": "新能源与环保技术研究所",
+      "所属高校": "山东大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "研究院所"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT410",
+      "平台名称": "智能制造联合实验室",
+      "所属高校": "山东大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "联合实验室",
+          "mode": "共建方待核"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT411",
+      "平台名称": "智能检测技术联合实验室",
+      "所属高校": "山东大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "联合实验室",
+          "mode": "共建方待核"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT412",
+      "平台名称": "智能环保技术联合实验室",
+      "所属高校": "山东大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "联合实验室",
+          "mode": "共建方待核"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT413",
+      "平台名称": "物联网技术联合实验室",
+      "所属高校": "山东大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "联合实验室",
+          "mode": "共建方待核"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT415",
+      "平台名称": "新中纽科创中心",
+      "所属高校": "梅西大学中国教育和创新中心",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT418",
+      "平台名称": "国际联合研究中心",
+      "所属高校": "牛津大学高等研究院(苏州)",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-04",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT419",
+      "平台名称": "苏州市国际研发机构",
+      "所属高校": "牛津大学高等研究院(苏州)",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT420",
+      "平台名称": "苏州市外籍院士工作站",
+      "所属高校": "牛津大学高等研究院(苏州)",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-03-27",
+            "source": "2026年3–5月平台梳理",
+            "state": "operating"
+          },
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "operating"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT423",
+      "平台名称": "儿童药物临床转化与产业创新中心",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E阶段成果"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT426",
+      "平台名称": "中德人工智能创新工场",
+      "所属高校": "苏州工业园区卡鲁生产技术研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT427",
+      "平台名称": "中德使能技术与生产力研究中心",
+      "所属高校": "苏州工业园区卡鲁生产技术研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT428",
+      "平台名称": "中德工业4.0技术展示创新中心",
+      "所属高校": "苏州工业园区卡鲁生产技术研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT430",
+      "平台名称": "大健康生物与食品工程卓越研究中心",
+      "所属高校": "苏州工业园区新国大研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT431",
+      "平台名称": "智慧医疗技术卓越研究中心",
+      "所属高校": "苏州工业园区新国大研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT432",
+      "平台名称": "环境与能源纳米科技卓越研究中心",
+      "所属高校": "苏州工业园区新国大研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT433",
+      "平台名称": "生物医学工程研究中心",
+      "所属高校": "苏州工业园区新国大研究院",
+      "分类标签": [
+        {
+          "category": "工程研究中心"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT436",
+      "平台名称": "苏州工业园区新国大研究院",
+      "所属高校": "苏州工业园区新国大研究院",
+      "分类标签": [
+        {
+          "category": "新型研发机构"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ],
+        "note": "2026年2月旧清单填报为未继续运行。新国大苏研院官网在同年10月发布了研究院的新动态。",
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT438",
+      "平台名称": "虚拟混合现实技术互动多媒体实验室",
+      "所属高校": "苏州工业园区新国大研究院",
+      "分类标签": [
+        {
+          "category": "科研实验室"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "operatingReports": [
+          {
+            "period": "2026-02",
+            "source": "早期高校平台概览",
+            "state": "not_continued"
+          }
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT439",
+      "平台名称": "Howmet创客中心",
+      "所属高校": "苏州工业园区职业技术学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT440",
+      "平台名称": "IVT—哈工海度工业机器人研发中心",
+      "所属高校": "苏州工业园区职业技术学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT441",
+      "平台名称": "Styker测量实训室",
+      "所属高校": "苏州工业园区职业技术学院",
+      "分类标签": [
+        {
+          "category": "教学科研/实训平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT442",
+      "平台名称": "三星半导体尖端设备维修中心",
+      "所属高校": "苏州工业园区职业技术学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT443",
+      "平台名称": "三星工科大学",
+      "所属高校": "苏州工业园区职业技术学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT444",
+      "平台名称": "德造电商学院",
+      "所属高校": "苏州工业园区职业技术学院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT445",
+      "平台名称": "新能源汽车技能大师工作室",
+      "所属高校": "苏州工业园区职业技术学院",
+      "分类标签": [
+        {
+          "category": "研究基地/智库/工作站"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT446",
+      "平台名称": "红蚂蚁构造工艺实训室",
+      "所属高校": "苏州工业园区职业技术学院",
+      "分类标签": [
+        {
+          "category": "教学科研/实训平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT447",
+      "平台名称": "苏州工业园区工业自动化技术人才公共实训基地",
+      "所属高校": "苏州工业园区职业技术学院",
+      "分类标签": [
+        {
+          "category": "教学科研/实训平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT448",
+      "平台名称": "轨道交通运营实训室",
+      "所属高校": "苏州工业园区职业技术学院",
+      "分类标签": [
+        {
+          "category": "教学科研/实训平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT449",
+      "平台名称": "生命科学楼五大卓越中心",
+      "所属高校": "西交利物浦大学",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E阶段成果"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT450",
+      "平台名称": "西交利物浦大学-华芯先进半导体校企联合研究院",
+      "所属高校": "西交利物浦大学",
+      "分类标签": [
+        {
+          "category": "研究院所",
+          "mode": "校企共建中心/平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT451",
+      "平台名称": "西交利物浦大学-友达光电校企联合研究中心",
+      "所属高校": "西交利物浦大学",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "mode": "校企共建中心/平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT452",
+      "平台名称": "西交利物浦大学-红与蓝微电子校企联合研究中心",
+      "所属高校": "西交利物浦大学",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "mode": "校企共建中心/平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT453",
+      "平台名称": "西交利物浦大学悦丰岛生态站",
+      "所属高校": "西交利物浦大学",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "mode": "校企共建中心/平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT454",
+      "平台名称": "西浦-派光智慧联合研究中心",
+      "所属高校": "西交利物浦大学",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "mode": "校企共建中心/平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT455",
+      "平台名称": "西浦-派格慢病研究院",
+      "所属高校": "西交利物浦大学",
+      "分类标签": [
+        {
+          "category": "研究院所",
+          "mode": "校企共建中心/平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT456",
+      "平台名称": "西浦-益航机器人联合研究中心",
+      "所属高校": "西交利物浦大学",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "mode": "校企共建中心/平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT457",
+      "平台名称": "西浦-联盛经皮给药技术研究院",
+      "所属高校": "西交利物浦大学",
+      "分类标签": [
+        {
+          "category": "研究院所",
+          "mode": "校企共建中心/平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT458",
+      "平台名称": "西浦集萃学院-快可光伏院企联合研究中心",
+      "所属高校": "西交利物浦大学",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "mode": "校企共建中心/平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT459",
+      "平台名称": "产教融合基地",
+      "所属高校": "西交大国际教育学院",
+      "分类标签": [
+        {
+          "category": "教学科研/实训平台",
+          "mode": "有企业参与，共建待核"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E阶段成果"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT460",
+      "平台名称": "DR. Streit院士实验室",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "科研实验室"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT463",
+      "平台名称": "苏州纳米科技协同创新中心微纳机电制造专业中心",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT464",
+      "平台名称": "西交大-斯旺西国际生物医学研究中心",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT465",
+      "平台名称": "西交大-新国大纳米技术联合实验室",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "联合实验室",
+          "mode": "校际/国际共建"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览",
+          "高校平台资源档案"
+        ],
+        "aliases": [
+          "纳米技术联合实验室及公共服务平台"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT466",
+      "平台名称": "西交大-苏州纳米城微纳机电技术产学研合作中心",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "sources": [
+          "早期高校平台概览"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT468",
+      "平台名称": "东南大学-蒙纳士大学苏州联合研究院",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "研究院所"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT469",
+      "平台名称": "东南大学国家大学科技园（苏州）",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "创业孵化载体"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT470",
+      "平台名称": "东南大学苏州校区知识产权研究中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案",
+          "高校或园区官网"
+        ],
+        "supplemented": true,
+        "officialListing": "https://szxq.seu.edu.cn/2021/0521/c24434a372055/page.htm"
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT471",
+      "平台名称": "苏州市卫星定位技术与应用重点实验室",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "苏州市重点实验室",
+          "level": "校（院）级",
+          "mode": "校企联合实验室",
+          "source": "高校平台资料"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT472",
+      "平台名称": "苏州市微纳生物医疗器械设计与制造重点实验室",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "苏州市重点实验室",
+          "level": "市级",
+          "mode": "校企医联合依托",
+          "source": "已核认定或设立资料"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT475",
+      "平台名称": "中国科协-中国人民大学智能社会治理研究中心（苏州）",
+      "所属高校": "中国人民大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT476",
+      "平台名称": "低空经济和太空经济国际联合研究中心",
+      "所属高校": "中国人民大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT477",
+      "平台名称": "数据工程与知识工程教育部重点实验室（苏州）",
+      "所属高校": "中国人民大学苏州校区",
+      "分类标签": [
+        {
+          "category": "部委重点实验室"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT478",
+      "平台名称": "数据库与商务智能教育部工程研究中心（苏州）",
+      "所属高校": "中国人民大学苏州校区",
+      "分类标签": [
+        {
+          "category": "工程研究中心"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT479",
+      "平台名称": "新一代智能搜索与推荐教育部工程研究中心（苏州）",
+      "所属高校": "中国人民大学苏州校区",
+      "分类标签": [
+        {
+          "category": "工程研究中心"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT480",
+      "平台名称": "苏州独墅湖科教创新区智能社会治理技术与创新应用平台",
+      "所属高校": "中国人民大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "国家级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT481",
+      "平台名称": "精准智能化学全国重点实验室",
+      "所属高校": "中国科学技术大学苏州高等研究院",
+      "分类标签": [
+        {
+          "category": "全国重点实验室",
+          "level": "国家级",
+          "authority": "科技部",
+          "year": 2024,
+          "source": "已核认定或设立资料"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT483",
+      "平台名称": "量子信息与量子科技创新研究院（苏州）",
+      "所属高校": "中国科学技术大学苏州高等研究院",
+      "分类标签": [
+        {
+          "category": "研究院所"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT484",
+      "平台名称": "京东方-华北电力大学能源物联网研究院",
+      "所属高校": "华北电力大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "研究院所"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT486",
+      "平台名称": "先进键合技术研发中心",
+      "所属高校": "国家第三代半导体技术创新中心（苏州）",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E阶段成果"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT487",
+      "平台名称": "山东大学苏州生殖医学协同创新中心",
+      "所属高校": "山东大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT488",
+      "平台名称": "微生物技术国家重点实验室苏州合作基地",
+      "所属高校": "山东大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "重点实验室合作基地"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT489",
+      "平台名称": "梅西大学中国教育和创新中心",
+      "所属高校": "梅西大学中国教育和创新中心",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT491",
+      "平台名称": "OSCAR-Prenetics分子诊断技术创新中心（ITC）",
+      "所属高校": "牛津大学高等研究院(苏州)",
+      "分类标签": [
+        {
+          "category": "技术创新中心"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT492",
+      "平台名称": "OSCAR-泰源共生健康技术创新中心（ITC）",
+      "所属高校": "牛津大学高等研究院(苏州)",
+      "分类标签": [
+        {
+          "category": "技术创新中心"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT493",
+      "平台名称": "OSCAR-鸿大钙钛矿薄膜技术创新中心（ITC）",
+      "所属高校": "牛津大学高等研究院(苏州)",
+      "分类标签": [
+        {
+          "category": "技术创新中心"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT494",
+      "平台名称": "国家国际科技合作基地（OSCAR）",
+      "所属高校": "牛津大学高等研究院(苏州)",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT495",
+      "平台名称": "江苏省博士后创新实践基地（OSCAR）",
+      "所属高校": "牛津大学高等研究院(苏州)",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT509",
+      "平台名称": "西安交通大学苏州研究院—纳米学院联合中心",
+      "所属高校": "西安交通大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "研究院所"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校平台资源档案"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT510",
+      "平台名称": "苏州工业园区电驱系统与智能控制创新科研平台",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高能级创新平台台账"
+        ],
+        "stage": "申报或筹建",
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT511",
+      "平台名称": "量子精密测量集成光源省重点实验室（筹）",
+      "所属高校": "中国科学院苏州纳米技术与纳米仿生研究所",
+      "分类标签": [
+        {
+          "category": "省重点实验室（筹建）"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "慧湖50L100E阶段成果"
+        ],
+        "stage": "筹建",
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "PT513",
+      "平台名称": "苏州工业园区人工智能与生物医药概念验证成果转化平台",
+      "所属高校": "武汉大学苏州研究院",
+      "分类标签": [
+        {
+          "category": "技术转移/成果转化平台",
+          "mode": "有企业参与，共建待核"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高能级创新平台台账"
+        ],
+        "stage": "申报或筹建",
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "S1dd10de419",
+      "平台名称": "东南大学-蒙纳士大学智慧城市联合研究中心",
+      "所属高校": "东南大学苏州校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "mode": "校际/国际共建"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "2026年3–5月平台梳理",
+          "高校或园区官网"
+        ],
+        "supplemented": true,
+        "officialListing": "https://szxq.seu.edu.cn/xqgk/mainm.htm",
+        "note": "东南大学苏州校区官网列为双方联合研究院下设中心，旧表所填认定级别待补依据。"
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "校（院）级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "V01",
+      "平台名称": "苏州大学分析测试中心",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "科研中心/服务平台",
+          "source": "高校或园区官网",
+          "url": "https://www.sipac.gov.cn/szdshkjcxq/gzdt/202607/32f46ce4315e4b7884c4f1b174b0027f.shtml",
+          "level": "校（院）级"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校或园区官网"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "V02",
+      "平台名称": "现代丝绸国家工程实验室评价检测中心",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "检验检测平台",
+          "source": "高校或园区官网",
+          "url": "https://www.sipac.gov.cn/szdshkjcxq/gzdt/202607/32f46ce4315e4b7884c4f1b174b0027f.shtml"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校或园区官网"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "V03",
+      "平台名称": "苏州大学功能纳米与软物质研究院",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "研究院所",
+          "source": "高校或园区官网",
+          "url": "https://www.sipac.gov.cn/szdshkjcxq/gzdt/202607/32f46ce4315e4b7884c4f1b174b0027f.shtml"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校或园区官网"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "市级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "V04",
+      "平台名称": "苏州市废旧锂电资源化利用重点实验室",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "苏州市重点实验室",
+          "source": "高校或园区官网",
+          "url": "https://fzb.suda.edu.cn/de/c6/c8539a712390/page.htm",
+          "level": "市级",
+          "mode": "校地共建",
+          "year": 2026,
+          "note": "校方报道载2026年7月28日揭牌。"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校或园区官网"
+        ],
+        "supplemented": true
+      }
+    },
+    {
+      "一级产业分类": "",
+      "二级产业分类": "",
+      "细分产业领域": "",
+      "平台等级": "省部级",
+      "研究方向": "",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "序号": "V05",
+      "平台名称": "纳米光电材料省高校重点实验室",
+      "所属高校": "苏州大学独墅湖校区",
+      "分类标签": [
+        {
+          "category": "省高校重点实验室",
+          "source": "高校或园区官网",
+          "url": "https://fzb.suda.edu.cn/de/c6/c8539a712390/page.htm",
+          "level": "省部级",
+          "mode": "校地共建",
+          "year": 2026,
+          "note": "校方报道载2026年7月28日揭牌。"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校或园区官网"
+        ],
+        "supplemented": true
       }
     }
   ],
