@@ -187,26 +187,6 @@ main > [data-section]:not(.section-active) { display: none; }
 .directory-kpis dd { margin: 0; font-size: clamp(26px, 2.9vw, 42px); font-weight: 650; line-height: 1; font-variant-numeric: tabular-nums; }
 .directory-browse { margin: 25px 0 18px; }
 .directory-browse h2 { margin-bottom: 11px; }
-.directory-collection {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 9px 16px;
-  border: 1px solid #9ebfae;
-  border-radius: 9px;
-  background: #e7f2ea;
-  color: #17483b;
-  text-align: left;
-  font-size: 14px;
-  font-weight: 650;
-}
-.directory-collection:hover, .directory-collection[aria-pressed="true"] { border-color: var(--primary); background: #d5e8dd; }
-.collection-entry-count { white-space: nowrap; font-size: 12px; font-weight: 500; }
-.collection-entry-count strong { font-size: 19px; font-variant-numeric: tabular-nums; }
-.collection-entry-count > span { margin-left: 5px; font-size: 16px; }
 .directory-shortcuts { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; }
 .directory-shortcut {
   position: relative;
@@ -475,7 +455,6 @@ footer { margin: 0 0 0 216px; padding: 28px 36px; display: flex; justify-content
   .directory-kpis dt { font-size: 11px; }
   .directory-browse { margin: 17px 0 12px; }
   .directory-browse h2 { margin-bottom: 7px; font-size: 15px; }
-  .directory-collection { margin-bottom: 7px; padding: 6px 10px; font-size: 13px; }
   .directory-shortcuts { gap: 6px; }
   .directory-shortcut { gap: 5px; padding: 8px; }
   .shortcut-name, .shortcut-count { font-size: 11px; }

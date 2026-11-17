@@ -6,7 +6,6 @@ const directoryDefaults = {
   category: "全部",
   level: "全部",
   mode: "全部",
-  cooperation: false,
 };
 
 const state = {
@@ -54,10 +53,6 @@ const universityOrder = [
 
 const universityRank = new Map(universityOrder.map((name, index) => [normalizeUniversityName(name), index]));
 const resources = sortResources(data.resources || []);
-const cooperationProjects = data.cooperationProjects || [];
-const cooperationEntries = [...resources, ...cooperationProjects]
-  .filter((item) => item["50L清单"]?.code)
-  .sort((a, b) => a["50L清单"].code.localeCompare(b["50L清单"].code));
 
 const fields = [
   ["平台名称", "平台或中心名称"],
@@ -79,7 +74,7 @@ const fields = [
 const resourceFields = fields.map(([name]) => name);
 const resourceSearchFields = resourceFields.filter((name) => name !== "平台等级");
 const schoolLevel = "校（院）级";
-const cooperationLabMode = "校企共建实验室";
+const cooperationLabMode = "校企联合实验室";
 const directoryLevels = ["国家级", "省部级", "市级", "区级", schoolLevel, "不适用"];
 const directoryFilterFields = [
   ["category", "categoryFilter", "全部类别"],
@@ -209,13 +204,9 @@ function classificationCounts(items, key) {
   return counts;
 }
 
-function directoryResources() {
-  return state.cooperation ? cooperationEntries : resources;
-}
-
 function getFiltered() {
-  const q = state.q.trim().toLowerCase();
-  return directoryResources().filter((item) => {
+  const q = state.q.trim().toLowerCase().replace(/校企(?:合作|共建)实验室/g, cooperationLabMode);
+  return resources.filter((item) => {
     const tags = resourceClassifications(item);
     const matchQ = !q || resourceSearchFields.some((field) => String(item[field] || "").toLowerCase().includes(q))
       || tags.some((tag) => includes(tag, q)) || includes(item["50L清单"] || {}, q);
@@ -229,12 +220,11 @@ function getFiltered() {
 }
 
 function initFilters() {
-  const pool = directoryResources();
-  setOptions(el("universityFilter"), uniqByUniversityOrder(pool.map((r) => r["所属高校"])), state.university, "全部机构");
-  setOptions(el("industryFilter"), uniq(pool.map((r) => r["一级产业分类"])), state.industry, "全部一级产业");
+  setOptions(el("universityFilter"), uniqByUniversityOrder(resources.map((r) => r["所属高校"])), state.university, "全部机构");
+  setOptions(el("industryFilter"), uniq(resources.map((r) => r["一级产业分类"])), state.industry, "全部一级产业");
   refreshSubIndustryOptions();
   for (const [key, id, allLabel] of directoryFilterFields) {
-    const choices = Object.keys(classificationCounts(pool, key));
+    const choices = Object.keys(classificationCounts(resources, key));
     const ordered = key === "level"
       ? directoryLevels.filter((level) => choices.includes(level))
       : uniq(choices).sort((a, b) => Number(a.endsWith("待核")) - Number(b.endsWith("待核")));
@@ -244,7 +234,7 @@ function initFilters() {
 }
 
 function refreshSubIndustryOptions() {
-  const pool = directoryResources().filter((r) => state.industry === "全部" || r["一级产业分类"] === state.industry);
+  const pool = resources.filter((r) => state.industry === "全部" || r["一级产业分类"] === state.industry);
   setOptions(el("subIndustryFilter"), uniq(pool.map((r) => r["二级产业分类"])), state.subIndustry, "全部二级产业");
   state.subIndustry = el("subIndustryFilter").value;
 }
@@ -259,8 +249,6 @@ function renderKPIs() {
 }
 
 function initDirectoryShortcuts() {
-  el("cooperationCount").textContent = cooperationEntries.length;
-  el("cooperationFilter").hidden = !cooperationEntries.length;
   const counts = { category: classificationCounts(resources, "category"), mode: classificationCounts(resources, "mode") };
   el("resourceShortcuts").innerHTML = directoryShortcuts.map(([key, label]) => {
     const count = counts[key][label] || 0;
@@ -278,12 +266,11 @@ function render({ keepPage = false } = {}) {
   syncSearchMode();
   el("clearSearch").hidden = !state.q;
   el("resetFilters").disabled = Object.entries(directoryDefaults).every(([key, value]) => state[key] === value);
-  el("cooperationFilter").setAttribute("aria-pressed", String(state.cooperation));
-  el("resourceResultsHeading").textContent = state.cooperation && state.view !== "keyLabs"
-    ? "慧湖50L100E共建清单" : "平台档案";
+  const activeShortcut = directoryShortcuts.find(([key, label]) => state[key] === label);
+  el("resourceResultsHeading").textContent = state.view !== "keyLabs" && activeShortcut ? activeShortcut[1] : "平台档案";
   el("industrySelection").textContent = [state.industry, state.subIndustry].filter((value) => value !== "全部").join(" / ");
   el("resourceShortcuts").querySelectorAll("button").forEach((button) => {
-    button.setAttribute("aria-pressed", String(!state.cooperation && state[button.dataset.filterKey] === button.dataset.filterValue));
+    button.setAttribute("aria-pressed", String(state[button.dataset.filterKey] === button.dataset.filterValue));
   });
   syncResourceCollapseButton();
   el("resourcePagination").hidden = true;
@@ -295,8 +282,7 @@ function render({ keepPage = false } = {}) {
     renderKeyLabs();
     return;
   }
-  const unit = state.cooperation ? "项合作记录" : "份档案";
-  el("resultSummary").textContent = `共 ${filtered.length} ${unit} · ${uniq(filtered.map((r) => r["所属高校"])).length} 个所属机构`;
+  el("resultSummary").textContent = `共 ${filtered.length} 份档案 · ${uniq(filtered.map((r) => r["所属高校"])).length} 个所属机构`;
   if (state.view === "cards" || state.view === "table") {
     const pageSize = directoryMobile.matches ? 6 : 12;
     const lastPage = Math.max(1, Math.ceil(filtered.length / pageSize));
@@ -304,7 +290,7 @@ function render({ keepPage = false } = {}) {
     const start = (state.resourcePage - 1) * pageSize;
     const page = filtered.slice(start, start + pageSize);
     el("resourcePagination").hidden = lastPage === 1;
-    el("resourcePageInfo").textContent = page.length ? `第 ${state.resourcePage} / ${lastPage} 页 · ${start + 1}–${start + page.length} ${unit}` : "";
+    el("resourcePageInfo").textContent = page.length ? `第 ${state.resourcePage} / ${lastPage} 页 · ${start + 1}–${start + page.length} 份档案` : "";
     el("resourcePrev").disabled = state.resourcePage === 1;
     el("resourceNext").disabled = state.resourcePage === lastPage;
     if (state.view === "cards") renderCards(page);
@@ -347,18 +333,17 @@ function renderCards(items) {
   el("resourceView").innerHTML = items.map((item) => {
     const service = item["可对外提供的核心服务"];
     const excerpt = truncate(service || item["研究方向"], 155);
-    const isProject = cooperationProjects.includes(item);
     return `
     <article class="resource-card">
       <p class="resource-institution">${escapeHtml(item["所属高校"])}</p>
       <h3>${escapeHtml(item["平台名称"]).replace(/\r?\n/g, "<br>")}</h3>
       ${renderClassificationLabels(item)}
       ${excerpt ? `<div class="resource-excerpt"><h4>${service ? "可对外提供的服务" : "研究方向"}</h4><p>${formatText(excerpt)}</p></div>` : ""}
-      ${resourceDetailButton(item, isProject ? "项目详情" : "平台详情")}
-      ${isProject ? "" : `<details class="resource-verification">
+      ${resourceDetailButton(item, "平台详情")}
+      <details class="resource-verification">
         <summary>平台核验</summary>
         ${renderPlatformUpdates(item)}
-      </details>`}
+      </details>
     </article>
   `;
   }).join("");
@@ -414,7 +399,7 @@ function titleKeywords(name) {
   return String(name || "").split(/\r?\n/).flatMap((part) => {
     const topic = part.trim().replace(/^(?:共同建设|共建)\s*[“"]?/, "").replace(/[”"]$/, "")
       .replace(/（筹(?:建)?）$/, "")
-      .replace(/(?:校企(?:合作|共建|联合)?实验室|联合实验室|重点实验室|实验室|创新联合体|研究中心|创新中心|成果转化平台|科研平台|服务平台|商业化生产建设项目|项目合作)$/, "")
+      .replace(/(?:校企(?:合作|共建|联合)?实验室|联合实验室|重点实验室|实验室|创新联合体|研究中心|创新中心|成果转化平台|科研平台|服务平台)$/, "")
       .replace(/^(?:苏州工业园区|苏州市|江苏省)\s*/, "").trim();
     return topic && topic !== part.trim() && !/待补/.test(topic) ? [topic] : [];
   });
@@ -486,7 +471,7 @@ function renderCooperationDetails(item) {
     entry.note,
   ].filter(Boolean).map(escapeHtml);
   if (entry.url) facts.push(externalLink(entry.url, "查看共建公开依据 ↗"));
-  return `<div><b>慧湖50L100E共建清单</b><span>${facts.join("<br>")}</span></div>`;
+  return `<div><b>慧湖50L100E共建记录</b><span>${facts.join("<br>")}</span></div>`;
 }
 
 function renderGroups(items, key, title) {
@@ -744,13 +729,10 @@ function bindEvents() {
     const active = button.getAttribute("aria-pressed") === "true";
     openDirectoryResults(active ? {} : { [filterKey]: filterValue });
   });
-  el("cooperationFilter").addEventListener("click", () => {
-    openDirectoryResults({ cooperation: !state.cooperation });
-  });
   el("resourceView").addEventListener("click", (event) => {
     const button = event.target.closest("[data-resource-detail]");
     if (!button) return;
-    const item = directoryResources().find((entry) => String(entry["序号"]) === button.dataset.resourceDetail);
+    const item = resources.find((entry) => String(entry["序号"]) === button.dataset.resourceDetail);
     if (item) showResourceDetail(item);
   });
   el("globalSearch").addEventListener("input", (e) => {
