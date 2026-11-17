@@ -3,8 +3,8 @@ window.HUIHU_DATA = {
     "title": "慧湖50L100E",
     "generatedAt": "2026-11-17",
     "sourceFile": "【最新】50L100E高校平台资源清单.xlsx",
-    "resourceCount": 502,
-    "universityCount": 37,
+    "resourceCount": 503,
+    "universityCount": 38,
     "industryCount": 19,
     "policySourceFile": "涉及50L-100E相关政策0410.xls",
     "policyCount": 44,
@@ -24934,6 +24934,80 @@ window.HUIHU_DATA = {
           }
         ],
         "note": "校方报道明确于2026年7月28日揭牌。正式依托单位以批复为准。"
+      }
+    },
+    {
+      "序号": "V06",
+      "平台名称": "国家血液系统疾病临床医学研究中心",
+      "所属高校": "苏州大学附属第一医院",
+      "一级产业分类": "生物医药与大健康",
+      "二级产业分类": "",
+      "细分产业领域": "血液系统疾病临床研究",
+      "平台等级": "国家级",
+      "平台介绍": "2019年获批，依托苏州大学附属第一医院建设。中心面向血液系统疾病开展临床研究和协同创新，推动研究成果转化与推广应用。",
+      "研究方向": "血液系统疾病临床研究与转化",
+      "核心技术能力": "",
+      "可对外提供的核心服务": "",
+      "标杆转化案例": "",
+      "核心共享设备": "",
+      "联系人": "",
+      "联系电话": "",
+      "分类标签": [
+        {
+          "category": "国家临床医学研究中心",
+          "level": "国家级",
+          "authority": "科技部、国家卫生健康委、中央军委后勤保障部、国家药监局",
+          "year": 2019,
+          "source": "第四批国家临床医学研究中心正式认定名单",
+          "url": "https://www.nhc.gov.cn/qjjys/c100016/201905/998fc2f6690d44bbafff5b75722b8b7b.shtml"
+        }
+      ],
+      "存量梳理": {
+        "reportYears": [],
+        "sources": [
+          "高校或园区官网"
+        ],
+        "aliases": [
+          "血液系统疾病国家临床医学研究中心"
+        ],
+        "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "依托单位",
+            "units": [
+              "苏州大学附属第一医院"
+            ]
+          },
+          {
+            "role": "参与单位",
+            "units": [
+              "苏州大学唐仲英医学研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.nhc.gov.cn/qjjys/c100016/201905/998fc2f6690d44bbafff5b75722b8b7b.shtml",
+            "label": "四部门正式认定通知（国科发社〔2019〕177号）"
+          },
+          {
+            "url": "https://hospital-admin.suda.edu.cn/e5/7d/c7767a320893/page.psp",
+            "label": "苏州大学获批报道"
+          },
+          {
+            "url": "https://medical.suda.edu.cn/cc/61/c31878a380001/page.htm",
+            "label": "苏州大学唐仲英医学研究院参与单位挂牌"
+          },
+          {
+            "url": "https://scit.suda.edu.cn/32734/list.htm",
+            "label": "苏州大学国家级平台目录"
+          }
+        ],
+        "scope": "苏州市",
+        "note": "2019年正式认定，苏州大学唐仲英医学研究院作为参与单位于2020年在独墅湖校区挂牌。"
       }
     }
   ],
