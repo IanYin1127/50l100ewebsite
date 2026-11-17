@@ -223,7 +223,7 @@ main > [data-section]:not(.section-active) { display: none; }
 .filters label { color: var(--muted); display: grid; gap: 6px; font-size: 11px; }
 .filters select, .update-password { padding: 9px; background: white; border: 1px solid var(--line); border-radius: 7px; width: 100%; }
 .directory-search .filters { margin: 12px 0 0; }
-.directory-primary-filters { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.directory-primary-filters { grid-template-columns: repeat(6, minmax(0, 1fr)); }
 .directory-search .filters label { color: #4b6357; font-size: 12px; }
 .directory-search .filters select { min-height: 40px; padding: 6px 9px; }
 .directory-industry { margin-top: 10px; }

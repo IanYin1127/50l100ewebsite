@@ -4,7 +4,7 @@
 
 清单内苏州机构官网，仅检查列明页面；未查到不等于停运
 
-逐条核查 508 个平台；学校目录中新发现 24 条待核实；本轮补录 1 个；已确认撤销 0 个。
+逐条核查 500 个平台；学校目录中新发现 23 条待核实；本轮补录 1 个；已确认撤销 0 个。
 
 ## 来源检查
 
@@ -26,7 +26,6 @@
 ## 学校目录中新发现，待核实
 
 - **退行性疾病药物研究平台** · 西交利物浦大学 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://www.xjtlu.edu.cn/zh/research/institutes-centres-and-labs/innovation-platform-for-chronic-disease-study)
-- **苏州市虚拟现实技术重点实验室建设平台** · 西交利物浦大学 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://www.xjtlu.edu.cn/zh/research/institutes-centres-and-labs/the-platform-for-suzhou-municipal-key-lab-of-virtual-reality-technology)
 - **苏州工业园区情感计算与互动健康交叉创新（科研）平台** · 西交利物浦大学 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://www.xjtlu.edu.cn/zh/research/research-institutes/suzhou-industrial-park-affective-computing-interactive-health-interdisciplinary-innovation-research-platform)
 - **西浦人工智能产业研究院** · 西交利物浦大学 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://www.xjtlu.edu.cn/zh/research/research-centre/ai-university-research-centre)
 - **西浦文化传播与社会研究中心** · 西交利物浦大学 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://www.xjtlu.edu.cn/zh/research/research-centre/cccs)
@@ -60,11 +59,10 @@
 
 ## 苏州归属需进一步核实
 
-- **山东大学博兴智能厨具研究院** · 山东大学苏州研究院 · 名称涉及非苏州地区，需核实实体所在地；不据此认定停运
 
 ## 本轮逐条对照结果
 
-未在本轮列明页面找到：307个；官方页面查到平台名称：57个；本轮自动来源访问受限：31个；尚缺已确认本地机构来源：113个
+未在本轮列明页面找到：303个；官方页面查到平台名称：55个；本轮自动来源访问受限：29个；尚缺已确认本地机构来源：113个
 
 其中“未在本轮页面找到”仅限列明的目录／新闻页面，不代表全面搜索无结果，也不是长期停运结论。历史静态目录中发现的平台应继续核查近期运行情况。
 

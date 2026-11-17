@@ -108,7 +108,7 @@ window.HUIHU_MONITORING = {
       "status": "unknown",
       "lastActivityAt": null,
       "checkedAt": "2026-11-17T03:25:44.254705+00:00",
-      "name": "儿童血液与肿瘤省高校重点实验室",
+      "name": "江苏省儿童血液与肿瘤高校重点实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
         "suda-research"
@@ -905,7 +905,7 @@ window.HUIHU_MONITORING = {
       "status": "unknown",
       "lastActivityAt": null,
       "checkedAt": "2026-11-17T03:25:44.254705+00:00",
-      "name": "现代丝绸国家工程技术研究中心",
+      "name": "现代丝绸国家工程实验室",
       "university": "苏州大学独墅湖校区",
       "sourceIds": [
         "suda-research"
@@ -1250,7 +1250,7 @@ window.HUIHU_MONITORING = {
       "status": "unknown",
       "lastActivityAt": null,
       "checkedAt": "2026-11-17T03:25:44.254705+00:00",
-      "name": "苏州市虚拟现实技术重点实验室",
+      "name": "苏州市虚拟现实技术重点实验室建设平台",
       "university": "西交利物浦大学",
       "sourceIds": [
         "xjtlu-news"
@@ -1942,21 +1942,6 @@ window.HUIHU_MONITORING = {
         "https://suz.sdu.edu.cn/kxyj/kypt.htm"
       ]
     },
-    "25": {
-      "status": "unknown",
-      "lastActivityAt": null,
-      "checkedAt": "2026-11-17T03:25:44.254705+00:00",
-      "name": "山东大学博兴智能厨具研究院",
-      "university": "山东大学苏州研究院",
-      "sourceIds": [
-        "sdu-news"
-      ],
-      "homepage": "",
-      "verification": null,
-      "officialMentions": [
-        "https://suz.sdu.edu.cn/kxyj/kypt.htm"
-      ]
-    },
     "26": {
       "status": "unknown",
       "lastActivityAt": null,
@@ -2153,16 +2138,6 @@ window.HUIHU_MONITORING = {
       "checkedAt": null,
       "name": "苏州市未来生物材料重点实验室\n苏州市生物材料概念验证中心\n长三角G60科创走廊概念验证中心",
       "university": "牛津大学高等研究院（苏州）",
-      "sourceIds": [],
-      "homepage": "",
-      "verification": null
-    },
-    "111": {
-      "status": "unconfigured",
-      "lastActivityAt": null,
-      "checkedAt": null,
-      "name": "国家自然科学基金优秀青年科学基金项目海外",
-      "university": "苏州工业园区蒙纳士科学技术研究院",
       "sourceIds": [],
       "homepage": "",
       "verification": null
@@ -3251,21 +3226,11 @@ window.HUIHU_MONITORING = {
       "status": "unknown",
       "lastActivityAt": null,
       "checkedAt": "2026-11-17T03:25:44.254705+00:00",
-      "name": "半导体晶圆键合工艺创新联合体",
+      "name": "苏州工业园区半导体晶圆键合工艺光学精密检测技术创新联合体",
       "university": "西安交通大学苏州研究院",
       "sourceIds": [
         "xjtu-news"
       ],
-      "homepage": "",
-      "verification": null
-    },
-    "PT080": {
-      "status": "unconfigured",
-      "lastActivityAt": null,
-      "checkedAt": null,
-      "name": "国家自然科学基金依托单位",
-      "university": "苏州工业园区蒙纳士科学技术研究院",
-      "sourceIds": [],
       "homepage": "",
       "verification": null
     },
@@ -3282,28 +3247,26 @@ window.HUIHU_MONITORING = {
       "verification": null
     },
     "PT083": {
-      "status": "unknown",
+      "status": "unconfigured",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-17T03:25:44.254705+00:00",
+      "checkedAt": null,
       "name": "江苏省产业技术研究院工业过程模拟与优化研究所",
-      "university": "东南大学苏州校区",
-      "sourceIds": [
-        "seu-news"
-      ],
+      "university": "江苏省产业技术研究院",
+      "sourceIds": [],
       "homepage": "",
-      "verification": null
+      "verification": null,
+      "officialMentions": []
     },
     "PT084": {
-      "status": "unknown",
+      "status": "unconfigured",
       "lastActivityAt": null,
-      "checkedAt": "2026-11-17T03:25:44.254705+00:00",
+      "checkedAt": null,
       "name": "江苏省产业技术研究院未来城市应用技术研究所",
-      "university": "东南大学苏州校区",
-      "sourceIds": [
-        "seu-news"
-      ],
+      "university": "江苏省产业技术研究院",
+      "sourceIds": [],
       "homepage": "",
-      "verification": null
+      "verification": null,
+      "officialMentions": []
     },
     "PT085": {
       "status": "unknown",
@@ -3960,18 +3923,6 @@ window.HUIHU_MONITORING = {
       "lastActivityAt": null,
       "checkedAt": "2026-11-17T03:25:44.254705+00:00",
       "name": "信息安全实践创新基地",
-      "university": "西安交通大学苏州研究院",
-      "sourceIds": [
-        "xjtu-news"
-      ],
-      "homepage": "",
-      "verification": null
-    },
-    "PT177": {
-      "status": "unknown",
-      "lastActivityAt": null,
-      "checkedAt": "2026-11-17T03:25:44.254705+00:00",
-      "name": "氢燃料电池核心零部件及氢能核心装备山东省工程研究中心",
       "university": "西安交通大学苏州研究院",
       "sourceIds": [
         "xjtu-news"
@@ -5822,33 +5773,6 @@ window.HUIHU_MONITORING = {
       "homepage": "",
       "verification": null
     },
-    "PT481": {
-      "status": "unknown",
-      "lastActivityAt": null,
-      "checkedAt": "2026-11-17T03:25:44.254705+00:00",
-      "name": "精准智能化学全国重点实验室",
-      "university": "中国科学技术大学苏州高等研究院",
-      "sourceIds": [
-        "ustc-suzhou-news"
-      ],
-      "homepage": "",
-      "verification": null,
-      "officialMentions": [
-        "https://sz.ustc.edu.cn/kxyj_list/index.html"
-      ]
-    },
-    "PT483": {
-      "status": "unknown",
-      "lastActivityAt": null,
-      "checkedAt": "2026-11-17T03:25:44.254705+00:00",
-      "name": "量子信息与量子科技创新研究院（苏州）",
-      "university": "中国科学技术大学苏州高等研究院",
-      "sourceIds": [
-        "ustc-suzhou-news"
-      ],
-      "homepage": "",
-      "verification": null
-    },
     "PT484": {
       "status": "unknown",
       "lastActivityAt": null,
@@ -6922,13 +6846,6 @@ window.HUIHU_MONITORING = {
         "name": "退行性疾病药物研究平台",
         "university": "西交利物浦大学",
         "url": "https://www.xjtlu.edu.cn/zh/research/institutes-centres-and-labs/innovation-platform-for-chronic-disease-study",
-        "directoryUrl": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
-        "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-      },
-      {
-        "name": "苏州市虚拟现实技术重点实验室建设平台",
-        "university": "西交利物浦大学",
-        "url": "https://www.xjtlu.edu.cn/zh/research/institutes-centres-and-labs/the-platform-for-suzhou-municipal-key-lab-of-virtual-reality-technology",
         "directoryUrl": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
         "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
       },

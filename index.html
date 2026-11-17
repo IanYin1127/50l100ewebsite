@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>慧湖50L100E · 高校平台资源</title>
-  <meta name="description" content="按平台类别、平台级别和建设方式查找慧湖50L100E高校科研平台，查阅技术服务、共享设备、公开动态和核验记录。" />
-  <link rel="stylesheet" href="./styles.css?v=inventory-1" />
+  <meta name="description" content="查找慧湖50L100E高校科研平台，查阅平台介绍、公开的建设与依托单位、共享设备和核验记录。" />
+  <link rel="stylesheet" href="./styles.css?v=builders-1" />
 </head>
 <body>
   <a class="skip-link" href="#mainContent">跳到主要内容</a>
@@ -37,7 +37,7 @@
         <div>
           <p class="directory-region">苏州独墅湖科教创新区</p>
           <h1>高校科研平台</h1>
-          <p class="directory-description">查找科研平台、技术服务和共享设备</p>
+          <p class="directory-description">查找科研平台、建设单位和共享设备</p>
         </div>
         <dl id="heroKpis" class="directory-kpis"></dl>
       </div>
@@ -53,7 +53,7 @@
             <circle cx="10.5" cy="10.5" r="6.5"></circle>
             <path d="M16 16l5 5"></path>
           </svg>
-          <input id="globalSearch" aria-label="搜索平台资源" type="search" placeholder="搜索平台、技术服务、共享设备或标签" />
+          <input id="globalSearch" aria-label="搜索平台资源" type="search" placeholder="搜索平台、建设单位、研究方向或设备" />
           <button id="clearSearch" class="search-clear" type="button" aria-label="清空搜索" hidden>×</button>
         </div>
         <div id="directoryFilters">
@@ -61,8 +61,9 @@
             <label>平台类别<select id="categoryFilter"></select></label>
             <label>平台级别<select id="levelFilter"></select></label>
             <label>建设方式<select id="modeFilter"></select></label>
-            <label>所属机构<select id="universityFilter"></select></label>
+            <label>收录机构<select id="universityFilter"></select></label>
             <label>收录来源<select id="inventorySourceFilter"></select></label>
+            <label>建设单位核对<select id="ownershipFilter"></select></label>
           </div>
           <details class="directory-industry">
             <summary>按产业筛选 <span id="industrySelection"></span></summary>
@@ -84,7 +85,7 @@
           <button data-view="universities" type="button">按高校</button>
           <button data-view="industries" type="button">按行业</button>
           <button data-view="table" type="button">表格</button>
-          <button data-view="keyLabs" type="button">全重资源</button>
+          <button data-view="keyLabs" type="button">可链接实验室</button>
         </div>
       </div>
       <div class="view-tools">
@@ -112,7 +113,7 @@
       </div>
       <div class="charts">
         <article>
-          <h3>所属机构分布</h3>
+          <h3>收录机构分布</h3>
           <div id="universityChart" class="bar-chart"></div>
         </article>
         <article>
@@ -134,7 +135,7 @@
           <p class="eyebrow">Linked Labs</p>
           <h2>可链接重点实验室</h2>
         </div>
-        <p>按高校归集可链接重点实验室资源。</p>
+        <p>展示可链接的高校实验室名录及本地对接机构。苏州平台见「平台档案」。</p>
       </div>
       <div id="labView" class="lab-grid"></div>
     </section>
@@ -164,7 +165,7 @@
               <label><span class="sr-only">历史运行填报</span><select id="operatingReportFilter" aria-label="筛选历史运行填报"><option value="all">全部填报情况</option><option value="operating">填报为继续运行</option><option value="not_continued">填报为未继续运行</option><option value="conflicting">同批填报有差异</option><option value="none">未见运行填报</option></select></label>
             </div>
             <div class="registry-toolbar"><p id="monitorSummary" role="status" aria-live="polite"></p><label class="sort-label">排序<select id="monitorSort"><option value="attention">核查优先</option><option value="latest">最近动态</option><option value="university">所属高校</option></select></label></div>
-            <div class="registry-columns" aria-hidden="true"><span>平台 / 所属高校</span><span>运行记录</span><span>最近动态</span><span>来源</span><span></span></div>
+            <div class="registry-columns" aria-hidden="true"><span>平台 / 收录机构</span><span>运行记录</span><span>最近动态</span><span>来源</span><span></span></div>
             <div id="monitorView" class="monitor-register"></div>
             <div class="pagination"><span id="monitorPageInfo" aria-live="polite"></span><div><button id="monitorPrev" type="button" aria-label="上一页平台">← 上一页</button><button id="monitorNext" type="button" aria-label="下一页平台">下一页 →</button></div></div>
           </section></section>
@@ -256,9 +257,9 @@
     </svg>
   </button>
 
-  <script src="./data.js?v=inventory-1"></script>
-  <script src="./monitoring-data.js?v=inventory-1"></script>
-  <script src="./app.js?v=inventory-1"></script>
+  <script src="./data.js?v=builders-1"></script>
+  <script src="./monitoring-data.js?v=builders-1"></script>
+  <script src="./app.js?v=builders-1"></script>
 </body>
 </html>
 

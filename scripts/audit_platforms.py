@@ -106,9 +106,16 @@ def evaluate_approval(record, config, now):
 def read_data(root):
   return json.loads((root/'data.js').read_text().split('=',1)[1].strip().rstrip(';'))
 
+def suppressed_identities(data):
+  meta = data.get('meta', {})
+  excluded = meta.get('excludedPlatformNames', [])
+  corrected = (item['name'] for item in meta.get('correctedIdentities', {}).values())
+  return {identity(name) for name in [*excluded, *corrected]}
+
 
 def apply_verified_approvals(root, config, data, registry, now):
   added=[];pending=[]
+  suppressed = suppressed_identities(data)
   existing={identity(r['平台名称']):r for r in data['resources']}
   # Match each separately named component of a composite legacy entry too.
   for r in data['resources']:
@@ -116,7 +123,7 @@ def apply_verified_approvals(root, config, data, registry, now):
   for evidence in config.get('verifiedApprovals',[]):
     reason=evaluate_approval(evidence,config,now)
     name=identity(evidence.get('name',''))
-    if name in existing:continue
+    if name in existing or name in suppressed:continue
     if reason or not config.get('autoAddCompleteApprovals'):
       pending.append({**evidence,'reason':reason or '自动新增未启用'});continue
     pid='approval-'+hashlib.sha256((name+'|'+evidence['university']).encode()).hexdigest()[:16]
@@ -203,6 +210,7 @@ def run_audit(root, config, data, fetch, now):
           closures.append({'platformId':str(r['序号']),'name':r['平台名称'],'university':unit['name'],'url':source['url'],'reason':'发现可能涉及撤销或更名的句子，需逐条人工核实，不自动删除'})
   existing={identity(r['平台名称']) for r in data['resources']}
   for r in data['resources']:existing.update(identity(name) for name in r['平台名称'].splitlines())
+  existing.update(suppressed_identities(data))
   unique={}
   for item in candidates:
     key=normalize(item['name'])+'|'+item['university']
