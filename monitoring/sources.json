@@ -5799,6 +5799,17 @@
       "sourceIds": [
         "suda-research"
       ]
+    },
+    {
+      "id": "V06",
+      "name": "国家血液系统疾病临床医学研究中心",
+      "university": "苏州大学附属第一医院",
+      "aliases": [
+        "血液系统疾病国家临床医学研究中心"
+      ],
+      "sourceIds": [],
+      "homepage": "",
+      "verification": null
     }
   ]
 }
