@@ -102,7 +102,7 @@
   "records": [
     {
       "platformId": "33",
-      "name": "儿童血液与肿瘤省高校重点实验室",
+      "name": "江苏省儿童血液与肿瘤高校重点实验室",
       "university": "苏州大学独墅湖校区",
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
@@ -698,7 +698,7 @@
     },
     {
       "platformId": "100",
-      "name": "现代丝绸国家工程技术研究中心",
+      "name": "现代丝绸国家工程实验室",
       "university": "苏州大学独墅湖校区",
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
@@ -954,7 +954,7 @@
     },
     {
       "platformId": "152",
-      "name": "苏州市虚拟现实技术重点实验室",
+      "name": "苏州市虚拟现实技术重点实验室建设平台",
       "university": "西交利物浦大学",
       "status": "found_in_official_source",
       "evidenceUrls": [
@@ -1483,17 +1483,6 @@
       "checkedAt": "2026-11-17T03:25:18.165835+00:00"
     },
     {
-      "platformId": "25",
-      "name": "山东大学博兴智能厨具研究院",
-      "university": "山东大学苏州研究院",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://suz.sdu.edu.cn/kxyj/kypt.htm"
-      ],
-      "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T03:25:18.165835+00:00"
-    },
-    {
       "platformId": "26",
       "name": "吸附材料及热物性表征实验室",
       "university": "山东大学苏州研究院",
@@ -1650,15 +1639,6 @@
       "name": "苏州市未来生物材料重点实验室\n苏州市生物材料概念验证中心\n长三角G60科创走廊概念验证中心",
       "university": "牛津大学高等研究院（苏州）",
       "status": "not_found_in_checked_pages",
-      "evidenceUrls": [],
-      "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T03:25:18.165835+00:00"
-    },
-    {
-      "platformId": "111",
-      "name": "国家自然科学基金优秀青年科学基金项目海外",
-      "university": "苏州工业园区蒙纳士科学技术研究院",
-      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
       "checkedAt": "2026-11-17T03:25:18.165835+00:00"
@@ -2533,7 +2513,7 @@
     },
     {
       "platformId": "PT050",
-      "name": "半导体晶圆键合工艺创新联合体",
+      "name": "苏州工业园区半导体晶圆键合工艺光学精密检测技术创新联合体",
       "university": "西安交通大学苏州研究院",
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
@@ -2541,35 +2521,8 @@
       "checkedAt": "2026-11-17T03:25:18.165835+00:00"
     },
     {
-      "platformId": "PT080",
-      "name": "国家自然科学基金依托单位",
-      "university": "苏州工业园区蒙纳士科学技术研究院",
-      "status": "source_unavailable",
-      "evidenceUrls": [],
-      "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T03:25:18.165835+00:00"
-    },
-    {
       "platformId": "PT082",
       "name": "东南大学苏州医疗器械研究院",
-      "university": "东南大学苏州校区",
-      "status": "not_found_in_checked_pages",
-      "evidenceUrls": [],
-      "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T03:25:18.165835+00:00"
-    },
-    {
-      "platformId": "PT083",
-      "name": "江苏省产业技术研究院工业过程模拟与优化研究所",
-      "university": "东南大学苏州校区",
-      "status": "not_found_in_checked_pages",
-      "evidenceUrls": [],
-      "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T03:25:18.165835+00:00"
-    },
-    {
-      "platformId": "PT084",
-      "name": "江苏省产业技术研究院未来城市应用技术研究所",
       "university": "东南大学苏州校区",
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
@@ -3087,15 +3040,6 @@
     {
       "platformId": "PT175",
       "name": "信息安全实践创新基地",
-      "university": "西安交通大学苏州研究院",
-      "status": "not_found_in_checked_pages",
-      "evidenceUrls": [],
-      "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T03:25:18.165835+00:00"
-    },
-    {
-      "platformId": "PT177",
-      "name": "氢燃料电池核心零部件及氢能核心装备山东省工程研究中心",
       "university": "西安交通大学苏州研究院",
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
@@ -4587,26 +4531,6 @@
       "checkedAt": "2026-11-17T03:25:18.165835+00:00"
     },
     {
-      "platformId": "PT481",
-      "name": "精准智能化学全国重点实验室",
-      "university": "中国科学技术大学苏州高等研究院",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://sz.ustc.edu.cn/kxyj_list/index.html"
-      ],
-      "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T03:25:18.165835+00:00"
-    },
-    {
-      "platformId": "PT483",
-      "name": "量子信息与量子科技创新研究院（苏州）",
-      "university": "中国科学技术大学苏州高等研究院",
-      "status": "not_found_in_checked_pages",
-      "evidenceUrls": [],
-      "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T03:25:18.165835+00:00"
-    },
-    {
       "platformId": "PT484",
       "name": "京东方-华北电力大学能源物联网研究院",
       "university": "华北电力大学苏州研究院",
@@ -4796,13 +4720,6 @@
       "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
     },
     {
-      "name": "苏州市虚拟现实技术重点实验室建设平台",
-      "university": "西交利物浦大学",
-      "url": "https://www.xjtlu.edu.cn/zh/research/institutes-centres-and-labs/the-platform-for-suzhou-municipal-key-lab-of-virtual-reality-technology",
-      "directoryUrl": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
-      "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-    },
-    {
       "name": "苏州工业园区情感计算与互动健康交叉创新（科研）平台",
       "university": "西交利物浦大学",
       "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes/suzhou-industrial-park-affective-computing-interactive-health-interdisciplinary-innovation-research-platform",
@@ -4977,12 +4894,5 @@
     }
   ],
   "completeApprovals": [],
-  "scopeReview": [
-    {
-      "platformId": "25",
-      "name": "山东大学博兴智能厨具研究院",
-      "university": "山东大学苏州研究院",
-      "reason": "名称涉及非苏州地区，需核实实体所在地；不据此认定停运"
-    }
-  ]
+  "scopeReview": []
 }

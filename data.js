@@ -3,22 +3,56 @@ window.HUIHU_DATA = {
     "title": "慧湖50L100E",
     "generatedAt": "2026-11-17",
     "sourceFile": "【最新】50L100E高校平台资源清单.xlsx",
-    "resourceCount": 508,
-    "universityCount": 36,
+    "resourceCount": 502,
+    "universityCount": 37,
     "industryCount": 19,
     "policySourceFile": "涉及50L-100E相关政策0410.xls",
     "policyCount": 44,
     "labGroupCount": 8,
-    "labCount": 78,
+    "labCount": 77,
     "registryUpdatedAt": "2026-11-17T03:17:54.738404+00:00",
     "consolidatedArchives": {
       "53": "40"
+    },
+    "excludedPlatformNames": [
+      "精准智能化学全国重点实验室",
+      "量子信息与量子科技创新研究院（苏州）",
+      "山东大学博兴智能厨具研究院",
+      "氢燃料电池核心零部件及氢能核心装备山东省工程研究中心",
+      "国家自然科学基金优秀青年科学基金项目海外",
+      "国家自然科学基金依托单位"
+    ],
+    "correctedIdentities": {
+      "33": {
+        "name": "儿童血液与肿瘤省高校重点实验室",
+        "university": "苏州大学独墅湖校区"
+      },
+      "100": {
+        "name": "现代丝绸国家工程技术研究中心",
+        "university": "苏州大学独墅湖校区"
+      },
+      "152": {
+        "name": "苏州市虚拟现实技术重点实验室",
+        "university": "西交利物浦大学"
+      },
+      "PT050": {
+        "name": "半导体晶圆键合工艺创新联合体",
+        "university": "西安交通大学苏州研究院"
+      },
+      "PT083": {
+        "name": "江苏省产业技术研究院工业过程模拟与优化研究所",
+        "university": "东南大学苏州校区"
+      },
+      "PT084": {
+        "name": "江苏省产业技术研究院未来城市应用技术研究所",
+        "university": "东南大学苏州校区"
+      }
     }
   },
   "resources": [
     {
       "序号": "33",
-      "平台名称": "儿童血液与肿瘤省高校重点实验室",
+      "平台名称": "江苏省儿童血液与肿瘤高校重点实验室",
       "一级产业分类": "生物医药与大健康",
       "二级产业分类": "临床医学",
       "细分产业领域": "儿童血液肿瘤诊疗",
@@ -61,7 +95,43 @@ window.HUIHU_DATA = {
             "source": "2026年3–5月平台梳理",
             "state": "operating"
           }
+        ],
+        "aliases": [
+          "儿童血液与肿瘤省高校重点实验室"
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "获批建设单位",
+            "units": [
+              "苏州大学附属儿童医院"
+            ]
+          },
+          {
+            "role": "获批单位",
+            "units": [
+              "苏州大学附属儿童医院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://cps.suda.edu.cn/c0/8d/c11521a704653/page.htm",
+            "label": "苏州医学院儿科临床学院公布的医院获批平台"
+          },
+          {
+            "url": "https://www.suda.edu.cn/suda_news/mtjj/202508/3f7bb1d8-b327-4602-b091-af35a3b34242.html",
+            "label": "苏州大学官网转载附属儿童医院获批报道"
+          },
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
+          }
+        ],
+        "scope": "苏州大学附属儿童医院",
+        "note": "医院获批的省高校重点实验室，由儿科临床学院对外列示。 苏大儿科临床学院和校官网均明确是附属儿童医院获批。"
       }
     },
     {
@@ -109,6 +179,15 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
           }
         ]
       }
@@ -160,6 +239,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
+          }
+        ]
       }
     },
     {
@@ -169,7 +257,7 @@ window.HUIHU_DATA = {
       "二级产业分类": "放射医学",
       "细分产业领域": "辐射防护与损伤救治",
       "所属高校": "苏州大学独墅湖校区",
-      "平台等级": "国家重点实验室",
+      "平台等级": "国家级",
       "研究方向": "1. 电离辐射损伤机制研究2. 辐射防护材料与装备研发3. 辐射损伤临床救治技术",
       "核心技术能力": "1. 辐射剂量精准检测技术2. 抗辐射药物筛选与合成技术3. 辐射防护涂层制备技术",
       "可对外提供的核心服务": "1. 医疗机构辐射防护方案设计2. 辐射损伤检测与评估服务3. 抗辐射产品技术转让",
@@ -179,12 +267,12 @@ window.HUIHU_DATA = {
       "联系电话": "18036098698",
       "分类标签": [
         {
-          "category": "全国重点实验室",
+          "category": "国家重点实验室（省部共建）",
           "level": "国家级",
           "mode": "省部共建",
           "authority": "科技部、江苏省人民政府",
           "year": 2018,
-          "source": "苏州大学获批公告",
+          "source": "高校或主管部门公开依据",
           "url": "https://www.suda.edu.cn/suda_news/sdyw/201809/ce27b6de-0df6-4e12-a81c-270fad8095e5.html",
           "note": "保留原国家重点实验室名称，重组结果待核。"
         }
@@ -212,6 +300,59 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "依托单位",
+            "units": [
+              "苏州大学"
+            ]
+          },
+          {
+            "role": "建设院系",
+            "units": [
+              "苏州大学苏州医学院放射医学与防护学院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.suda.edu.cn/suda_news/sdyw/201809/ce27b6de-0df6-4e12-a81c-270fad8095e5.html",
+            "label": "苏州大学2018年获批建设公告"
+          },
+          {
+            "url": "https://sklrmp.suda.edu.cn/9021/list.htm",
+            "label": "实验室官网介绍"
+          },
+          {
+            "url": "https://rsc.suda.edu.cn/0b/c2/c276a723906/pagem.htm",
+            "label": "苏州大学2026年11月学院招聘公告"
+          },
+          {
+            "url": "https://www.suda.edu.cn/suda_news/sdyw/201810/5368078f-cce8-48b0-8729-f2da5fcebdc2.html",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          },
+          {
+            "url": "https://sklrmp.suda.edu.cn/0c/77/c12792a724087/page.htm",
+            "label": "官方资料提及"
+          },
+          {
+            "url": "https://sklrmp.suda.edu.cn/0c/71/c12792a724081/page.htm",
+            "label": "官方资料提及"
+          },
+          {
+            "url": "https://sklrmp.suda.edu.cn/c0/a8/c12792a704680/page.htm",
+            "label": "官方资料提及"
+          }
+        ],
+        "scope": "苏州独墅湖校区",
+        "note": "苏州大学2026年11月公开材料继续使用获批名称「放射医学与辐射防护国家重点实验室」。校方2025年报道记录的是重组推进情况。 位于苏州大学独墅湖校区。2018年科技部和江苏省人民政府批准省部共建；2024年召开重组专家论证会。"
       }
     },
     {
@@ -259,6 +400,19 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
+          },
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
           }
         ]
       }
@@ -310,6 +464,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
+          }
+        ]
       }
     },
     {
@@ -357,6 +520,15 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
           }
         ]
       }
@@ -408,6 +580,47 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "依托单位",
+            "units": [
+              "苏州大学"
+            ]
+          },
+          {
+            "role": "主要建设机构",
+            "units": [
+              "苏州大学功能纳米与软物质研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.rudong.gov.cn/kjj/upload/f4b41074-e850-4414-9978-a04050a4ca9a.pdf",
+            "label": "政府发布全省学科重点实验室名单第65项"
+          },
+          {
+            "url": "https://funsom.suda.edu.cn/53/06/c15688a414470/pagem.htm",
+            "label": "苏州大学直属建设院所公告"
+          },
+          {
+            "url": "https://www.suda.edu.cn/suda_news/sdyw/200908/CE4875BF-E49B-42FC-800C-00A61CB7D850.html",
+            "label": "校方建设论证报道"
+          },
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
+          },
+          {
+            "url": "https://nanocic.suda.edu.cn/kypt/list.htm",
+            "label": "苏州纳米科技协同创新中心科研平台目录"
+          }
+        ],
+        "scope": "苏州",
+        "note": "校方2009年建设论证报道记载彩虹集团汇报共建事项，省级目录所列依托单位为苏州大学。"
       }
     },
     {
@@ -448,6 +661,33 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "建设单位",
+            "units": [
+              "苏州大学生物医学研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://ibms.suda.edu.cn/szdsys/list.htm",
+            "label": "实验室直属建设机构官网"
+          },
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg/grymy.jsp",
+            "label": "苏州大学科研机构原名与建设介绍"
+          },
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
+          }
+        ],
+        "scope": "苏州工业园区独墅湖高等教育区",
+        "note": "院方现行页面使用「感染与免疫省高校重点实验室（苏州大学）」。同一建设单位另有早期资料使用「江苏省感染与免疫重点实验室」。 依托苏州大学基础医学和生物学一级学科博士点。"
       }
     },
     {
@@ -497,6 +737,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -542,6 +785,9 @@ window.HUIHU_DATA = {
           }
         ],
         "scopeNote": "春季梳理标注该实验室在园区外。"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -589,6 +835,19 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/gjjpt/list.htm",
+            "label": "苏州大学科学技术研究院国家级平台目录"
+          },
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
           }
         ]
       }
@@ -640,6 +899,19 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
+          },
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ]
       }
     },
     {
@@ -678,6 +950,15 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
           }
         ]
       }
@@ -729,6 +1010,32 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "依托单位",
+            "units": [
+              "苏州大学"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://kxjst.jiangsu.gov.cn/module/download/downfile.jsp?classid=0&filename=0b810ea2e0f04ca491e6a5064d2ec35b.pdf",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
+          },
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ],
+        "note": "江苏省科技厅优化整合清单（苏科机发〔2023〕142号）第146项；主管部门为苏州市科技局。"
       }
     },
     {
@@ -776,6 +1083,15 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
           }
         ]
       }
@@ -827,6 +1143,23 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
+          },
+          {
+            "url": "https://life.suda.edu.cn/33621/list.htm",
+            "label": "苏州大学生命科学学院平台建设目录"
+          },
+          {
+            "url": "https://life.suda.edu.cn/xyjs/list.htm",
+            "label": "苏州大学生命科学学院简介列示的科研平台"
+          }
+        ]
       }
     },
     {
@@ -874,6 +1207,23 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
+          },
+          {
+            "url": "https://life.suda.edu.cn/33621/list.htm",
+            "label": "苏州大学生命科学学院平台建设目录"
+          },
+          {
+            "url": "https://life.suda.edu.cn/xyjs/list.htm",
+            "label": "苏州大学生命科学学院简介列示的科研平台"
           }
         ]
       }
@@ -925,6 +1275,35 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "依托单位",
+            "units": [
+              "苏州大学",
+              "江苏省纺织机械工程技术研究中心",
+              "国家毛纺新材料工程技术研究中心",
+              "江苏省纺织研究所"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://kxjst.jiangsu.gov.cn/module/download/downfile.jsp?classid=0&filename=0b810ea2e0f04ca491e6a5064d2ec35b.pdf",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
+          },
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ],
+        "note": "江苏省科技厅优化整合清单第142项，在该清单中括注“国家纺织产业创新支撑平台”。"
       }
     },
     {
@@ -972,6 +1351,19 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
+          },
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
           }
         ]
       }
@@ -1023,6 +1415,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ]
       }
     },
     {
@@ -1056,6 +1457,15 @@ window.HUIHU_DATA = {
             "period": "2026-04",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
           }
         ]
       }
@@ -1105,6 +1515,23 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
+          },
+          {
+            "url": "https://nanocic.suda.edu.cn/kypt/list.htm",
+            "label": "苏州纳米科技协同创新中心科研平台目录"
+          },
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
           }
         ]
       }
@@ -1159,6 +1586,33 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州大学",
+              "南京绿叶制药"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://jskeylab.suda.edu.cn/2c/ad/c35303a666797/page.htm",
+            "label": "实验室第一届学术委员会报道明确共建双方"
+          },
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
+          },
+          {
+            "url": "https://scit.suda.edu.cn/07/00/c32730a722688/page.htm",
+            "label": "官方资料提及"
+          }
+        ],
+        "scope": "苏州"
       }
     },
     {
@@ -1209,6 +1663,43 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "中方依托单位",
+            "units": [
+              "苏州大学"
+            ]
+          },
+          {
+            "role": "外方依托机构",
+            "units": [
+              "加拿大滑铁卢大学",
+              "加拿大西安大略大学",
+              "加拿大魁北克联合研究院",
+              "加拿大多伦多大学",
+              "爱尔兰都柏林圣三一学院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://nanocic.suda.edu.cn/55/b9/c32139a546233/page.htm",
+            "label": "苏州大学科研平台官网列明境内外依托机构"
+          },
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
+          },
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ],
+        "scope": "苏州与境外联合",
+        "note": "教育部于2016年立项。苏州大学校内的省碳基材料重点实验室属于其依托平台之一。"
       }
     },
     {
@@ -1256,6 +1747,27 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
+          },
+          {
+            "url": "https://life.suda.edu.cn/33621/list.htm",
+            "label": "苏州大学生命科学学院平台建设目录"
+          },
+          {
+            "url": "https://life.suda.edu.cn/xyjs/list.htm",
+            "label": "苏州大学生命科学学院简介列示的科研平台"
+          },
+          {
+            "url": "https://scit.suda.edu.cn/07/00/c32730a722688/page.htm",
+            "label": "官方资料提及"
           }
         ]
       }
@@ -1307,6 +1819,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
+          }
+        ]
       }
     },
     {
@@ -1354,6 +1875,15 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
           }
         ]
       }
@@ -1405,6 +1935,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
+          }
+        ]
       }
     },
     {
@@ -1443,6 +1982,15 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
           }
         ]
       }
@@ -1494,6 +2042,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          }
+        ]
       }
     },
     {
@@ -1541,6 +2098,19 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          },
+          {
+            "url": "https://nanocic.suda.edu.cn/kypt/list.htm",
+            "label": "苏州纳米科技协同创新中心科研平台目录"
           }
         ]
       }
@@ -1592,6 +2162,19 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          },
+          {
+            "url": "https://life.suda.edu.cn/xyjs/list.htm",
+            "label": "苏州大学生命科学学院简介列示的科研平台"
+          }
+        ]
       }
     },
     {
@@ -1639,6 +2222,23 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          },
+          {
+            "url": "https://life.suda.edu.cn/33621/list.htm",
+            "label": "苏州大学生命科学学院平台建设目录"
+          },
+          {
+            "url": "https://life.suda.edu.cn/xyjs/list.htm",
+            "label": "苏州大学生命科学学院简介列示的科研平台"
           }
         ]
       }
@@ -1690,6 +2290,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          }
+        ]
       }
     },
     {
@@ -1737,6 +2346,15 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
           }
         ]
       }
@@ -1788,6 +2406,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          }
+        ]
       }
     },
     {
@@ -1835,6 +2462,15 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
           }
         ]
       }
@@ -1886,6 +2522,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          }
+        ]
       }
     },
     {
@@ -1933,6 +2578,15 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
           }
         ]
       }
@@ -1984,6 +2638,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          }
+        ]
       }
     },
     {
@@ -2033,6 +2696,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          }
+        ]
       }
     },
     {
@@ -2073,6 +2745,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -2120,6 +2795,15 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
           }
         ]
       }
@@ -2171,6 +2855,34 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "roles": [
+          {
+            "role": "申报获批单位",
+            "units": [
+              "苏州大学生物医学研究院"
+            ]
+          },
+          {
+            "role": "申建单位",
+            "units": [
+              "苏州大学生物医学研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://ibms.suda.edu.cn/yjyjj/list.htm",
+            "label": "苏州大学生物医学研究院官网"
+          },
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          }
+        ],
+        "scope": "苏州工业园区独墅湖高等教育区"
       }
     },
     {
@@ -2221,6 +2933,29 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州大学放射医学与辐射防护国家重点实验室",
+              "美国哥伦比亚大学"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://sklrmp.suda.edu.cn/9021/list.htm",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          }
+        ],
+        "note": "苏大实验室官网介绍明确合作组建本市级国际联合实验室。"
       }
     },
     {
@@ -2270,6 +3005,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          }
+        ]
       }
     },
     {
@@ -2317,6 +3061,19 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          },
+          {
+            "url": "https://nanocic.suda.edu.cn/kypt/list.htm",
+            "label": "苏州纳米科技协同创新中心科研平台目录"
           }
         ]
       }
@@ -2369,6 +3126,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          }
+        ]
       }
     },
     {
@@ -2416,6 +3182,15 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
           }
         ]
       }
@@ -2467,6 +3242,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          }
+        ]
       }
     },
     {
@@ -2514,6 +3298,15 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
           }
         ]
       }
@@ -2565,6 +3358,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          }
+        ]
       }
     },
     {
@@ -2614,6 +3416,32 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "roles": [
+          {
+            "role": "校内依托机构",
+            "units": [
+              "苏州大学神经科学研究所"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://neuroscience.suda.edu.cn/gywm/list.htm",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://rsc.suda.edu.cn/0b/cb/c276a723915/pagem.htm",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          }
+        ],
+        "note": "苏州大学神经科学研究所机构简介与苏州大学人事处招聘公告均列本实验室，明确该研究所是实验室的依托平台。"
       }
     },
     {
@@ -2661,6 +3489,23 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          },
+          {
+            "url": "https://life.suda.edu.cn/33621/list.htm",
+            "label": "苏州大学生命科学学院平台建设目录"
+          },
+          {
+            "url": "https://life.suda.edu.cn/xyjs/list.htm",
+            "label": "苏州大学生命科学学院简介列示的科研平台"
           }
         ]
       }
@@ -2712,6 +3557,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          }
+        ]
       }
     },
     {
@@ -2759,6 +3613,15 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
           }
         ]
       }
@@ -2810,6 +3673,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          }
+        ]
       }
     },
     {
@@ -2859,6 +3731,34 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "roles": [
+          {
+            "role": "申报获批单位",
+            "units": [
+              "苏州大学生物医学研究院"
+            ]
+          },
+          {
+            "role": "申建单位",
+            "units": [
+              "苏州大学生物医学研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://ibms.suda.edu.cn/yjyjj/list.htm",
+            "label": "苏州大学生物医学研究院官网"
+          },
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          }
+        ],
+        "scope": "苏州工业园区独墅湖高等教育区"
       }
     },
     {
@@ -2908,6 +3808,32 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "roles": [
+          {
+            "role": "校内依托机构",
+            "units": [
+              "苏州大学神经科学研究所"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://neuroscience.suda.edu.cn/gywm/list.htm",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://jdxy.suda.edu.cn/11484/list.htm",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          }
+        ],
+        "note": "研究所官网明确该所是实验室依托平台，苏州大学机电工程学院亦列本实验室。现有官网说明不足以确认正式批复所列的全部建设单位。"
       }
     },
     {
@@ -2955,6 +3881,15 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
           }
         ]
       }
@@ -3005,6 +3940,28 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "牵头团队",
+            "units": [
+              "苏州大学苏州医学院詹启敏院士团队"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.sipac.gov.cn/szdshkjcxq/gzdt/202506/1e754e6e062a4a4fb1692973aefec0db.shtml",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "校方或主管部门原文"
+          }
+        ],
+        "note": "独墅湖科创区确认实验室由詹启敏院士团队牵头获批，苏州大学官网录有实验室正式名称。"
       }
     },
     {
@@ -3052,6 +4009,15 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
           }
         ]
       }
@@ -3103,6 +4069,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          }
+        ]
       }
     },
     {
@@ -3146,6 +4121,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -3189,16 +4167,19 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
       "序号": "100",
-      "平台名称": "现代丝绸国家工程技术研究中心",
+      "平台名称": "现代丝绸国家工程实验室",
       "一级产业分类": "新材料产业",
       "二级产业分类": "纺织新材料",
       "细分产业领域": "现代丝绸技术",
       "所属高校": "苏州大学独墅湖校区",
-      "平台等级": "国家工程实验室",
+      "平台等级": "国家级",
       "研究方向": "1. 丝绸材料科学与工程2. 功能性丝绸材料研发3. 丝绸生物技术应用4. 丝绸产业技术升级",
       "核心技术能力": "1. 丝绸材料结构设计技术2. 功能化改性技术3. 生物技术应用技术4. 产业技术集成技术",
       "可对外提供的核心服务": "1. 现代丝绸技术研发服务2. 功能性丝绸产品开发3. 技术转让与产业化服务4. 产业技术升级咨询",
@@ -3208,11 +4189,12 @@ window.HUIHU_DATA = {
       "联系电话": "13812667426",
       "分类标签": [
         {
-          "category": "工程研究中心",
-          "level": "省部级",
+          "category": "国家工程实验室",
+          "level": "国家级",
           "authority": "国家发改委",
           "year": 2008,
-          "source": "高校年报"
+          "source": "高校或主管部门公开依据",
+          "url": "https://scit.suda.edu.cn/gjjpt/list.htm"
         }
       ],
       "存量梳理": {
@@ -3237,7 +4219,36 @@ window.HUIHU_DATA = {
             "source": "2026年3–5月平台梳理",
             "state": "operating"
           }
+        ],
+        "aliases": [
+          "现代丝绸国家工程技术研究中心"
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "建设单位",
+            "units": [
+              "苏州大学"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/gjjpt/list.htm",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://www.wujiang.gov.cn/zgwj/kjcs/202207/cb0552652ba94e408ddad17fb8b0d79a.shtml",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://neser.suda.edu.cn/",
+            "label": "校方或主管部门原文"
+          }
+        ],
+        "note": "苏大国家级目录列为国家工程实验室；吴江区科技局实地参观的是独墅湖校区实验室。校方实验室网页另称工程研究中心（筹），应保留与工程实验室的区别。"
       }
     },
     {
@@ -3287,6 +4298,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -3336,6 +4350,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -3376,6 +4393,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学省部级科研平台目录"
+          }
+        ]
       }
     },
     {
@@ -3414,6 +4440,15 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/gjjpt/list.htm",
+            "label": "苏州大学科学技术研究院国家级平台目录"
           }
         ]
       }
@@ -3467,6 +4502,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/gjjpt/list.htm",
+            "label": "苏州大学国家级科研平台目录"
+          }
+        ]
       }
     },
     {
@@ -3505,6 +4549,15 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
           }
         ]
       }
@@ -3547,6 +4600,15 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
           }
         ]
       }
@@ -3593,6 +4655,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
+          }
+        ]
       }
     },
     {
@@ -3635,6 +4706,15 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
           }
         ]
       }
@@ -3681,6 +4761,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
+          }
+        ]
       }
     },
     {
@@ -3725,6 +4814,19 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/study/departments/academy-of-life-and-natural-sciences/aolns-research/research-platforms",
+            "label": "西交利物浦大学生命与自然科学学院科研平台"
+          },
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
+          }
+        ]
       }
     },
     {
@@ -3767,6 +4869,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
+          }
+        ]
       }
     },
     {
@@ -3802,6 +4913,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -3846,6 +4960,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -3894,6 +5011,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -3937,6 +5057,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -3981,6 +5104,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -4023,6 +5149,25 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "国家生物药技术创新中心",
+              "西交利物浦大学慧湖药学院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/study/departments/academy-of-life-and-natural-sciences/aolns-research/research-platforms",
+            "label": "校方或主管部门原文"
+          }
+        ],
+        "note": "院方正式介绍明确为2024年联合共建。"
       }
     },
     {
@@ -4067,6 +5212,19 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/study/departments/academy-of-life-and-natural-sciences/aolns-research/research-platforms",
+            "label": "西交利物浦大学生命与自然科学学院科研平台"
+          },
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
+          }
+        ]
       }
     },
     {
@@ -4109,6 +5267,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -4153,6 +5314,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
+          }
+        ]
       }
     },
     {
@@ -4195,6 +5365,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -4237,6 +5410,15 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
           }
         ]
       }
@@ -4283,6 +5465,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
+          }
+        ]
       }
     },
     {
@@ -4327,11 +5518,20 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
+          }
+        ]
       }
     },
     {
       "序号": "152",
-      "平台名称": "苏州市虚拟现实技术重点实验室",
+      "平台名称": "苏州市虚拟现实技术重点实验室建设平台",
       "一级产业分类": "电子信息",
       "二级产业分类": "数字创意",
       "细分产业领域": "虚拟现实、增强现实、混合现实、数字孪生",
@@ -4372,7 +5572,32 @@ window.HUIHU_DATA = {
             "source": "2026年3–5月平台梳理",
             "state": "operating"
           }
+        ],
+        "aliases": [
+          "苏州市虚拟现实技术重点实验室"
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "建设实施单位",
+            "units": [
+              "西交利物浦大学"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/institutes-centres-and-labs/the-platform-for-suzhou-municipal-key-lab-of-virtual-reality-technology",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西浦科研机构目录"
+          }
+        ],
+        "note": "2017年起，西浦承担科教创新区重点平台建设项目。2022年正式立项的另一个市级实验室名称为苏州市智能虚拟工程重点实验室。"
       }
     },
     {
@@ -4417,6 +5642,24 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "建设单位",
+            "units": [
+              "西交利物浦大学"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/institutes-centres-and-labs/the-platform-for-suzhou-municipal-key-lab-of-virtual-reality-technology",
+            "label": "校方或主管部门原文"
+          }
+        ],
+        "note": "校方介绍注明该市级重点实验室于2022年下半年正式立项。与利物浦大学的合作描述具体指另列国际联合研究中心，不能据此将利物浦大学列为该市级实验室正式建设单位。"
       }
     },
     {
@@ -4467,6 +5710,23 @@ window.HUIHU_DATA = {
           }
         ],
         "officialListing": "https://www.xjtlu.edu.cn/zh/research/institutes-centres-and-labs/innovation-platform-for-chronic-disease-study"
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/study/departments/academy-of-life-and-natural-sciences/aolns-research/research-platforms",
+            "label": "西交利物浦大学生命与自然科学学院科研平台"
+          },
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
+          },
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/institutes-centres-and-labs/innovation-platform-for-chronic-disease-study",
+            "label": "官方资料提及"
+          }
+        ]
       }
     },
     {
@@ -4508,6 +5768,15 @@ window.HUIHU_DATA = {
             "period": "2026-03-27",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
           }
         ]
       }
@@ -4554,6 +5823,19 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/study/departments/academy-of-life-and-natural-sciences/aolns-research/research-platforms",
+            "label": "西交利物浦大学生命与自然科学学院科研平台"
+          },
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
+          }
+        ]
       }
     },
     {
@@ -4588,6 +5870,15 @@ window.HUIHU_DATA = {
           "2026年3–5月平台梳理",
           "早期高校平台概览",
           "高校平台资源档案"
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
+          }
         ]
       }
     },
@@ -4631,6 +5922,29 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "西交利物浦大学",
+              "国家第三代半导体技术创新中心（苏州）",
+              "第三代半导体产业技术创新战略联盟（北京，CASA）"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/professional-services/advanced-semiconductor-research-center",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
+          }
+        ]
       }
     },
     {
@@ -4664,6 +5978,15 @@ window.HUIHU_DATA = {
         ],
         "sources": [
           "高校平台资源档案"
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
+          }
         ]
       }
     },
@@ -4707,6 +6030,29 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "roles": [
+          {
+            "role": "依托校区",
+            "units": [
+              "西交利物浦大学苏州工业园区校区",
+              "西交利物浦大学创业家学院（太仓）"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/study/departments/academy-of-life-and-natural-sciences/aolns-research/research-platforms",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
+          }
+        ],
+        "note": "院方明确跨校区依托。"
       }
     },
     {
@@ -4773,6 +6119,65 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "牵头单位",
+            "units": [
+              "中国科学技术大学苏州高等研究院"
+            ],
+            "platform": "仿生界面材料科学全国重点实验室"
+          },
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州大学",
+              "北京航空航天大学"
+            ],
+            "platform": "仿生界面材料科学全国重点实验室"
+          },
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州市人民政府",
+              "中国科学技术大学苏州高等研究院"
+            ],
+            "platform": "苏州仿生材料科学与工程中心"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_show/284.html",
+            "label": "中国科大苏州高研院国家级科研机构介绍"
+          },
+          {
+            "url": "https://www.sipac.gov.cn/szgyyq/mtjj/202505/118e6293202b4054be9be9216cb8b745.shtml",
+            "label": "园区官网列出实验室牵头和联合申报单位"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_show/117.html",
+            "label": "苏州仿生材料科学与工程中心官网介绍"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/xyjs_content_single/index.html",
+            "label": "中国科大苏州高研院科研机构目录"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_list/index.html",
+            "label": "中科大苏州高研院科研平台"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/cn_mobile/kxyj_list/2353-1.html",
+            "label": "中科大苏州高研院国家级机构"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/xwgg_show/2507.html",
+            "label": "官方资料提及"
+          }
+        ],
+        "scope": "苏州工业园区"
       }
     },
     {
@@ -4817,6 +6222,33 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "roles": [
+          {
+            "role": "筹建单位",
+            "units": [
+              "中国科学技术大学苏州高等研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_show/62.html",
+            "label": "极端条件量子电子学研究中心官网介绍"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/xyjs_content_single/index.html",
+            "label": "中国科大苏州高研院科研机构目录"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_list/index.html",
+            "label": "中科大苏州高研院科研平台"
+          }
+        ],
+        "scope": "苏州工业园区",
+        "note": "中心筹建工作自2021年开始，由中科院量子信息重点实验室硅基量子计算研究室提供技术和团队基础。"
       }
     },
     {
@@ -4866,6 +6298,42 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "牵头单位",
+            "units": [
+              "中国科学技术大学苏州高等研究院"
+            ]
+          },
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州海赛人工智能有限公司"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_show/285.html",
+            "label": "苏州高研院牵头组建说明"
+          },
+          {
+            "url": "https://www.sipac.gov.cn/szgyyq/mtjj/202505/118e6293202b4054be9be9216cb8b745.shtml",
+            "label": "园区官网列出共建企业"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/xyjs_content_single/index.html",
+            "label": "中国科大苏州高研院科研机构目录"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_list/index.html",
+            "label": "中科大苏州高研院科研平台"
+          }
+        ],
+        "scope": "苏州工业园区"
       }
     },
     {
@@ -4910,6 +6378,23 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_show/20.html",
+            "label": "城市公共安全重点实验室官网介绍"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/xyjs_content_single/index.html",
+            "label": "中国科大苏州高研院科研机构目录"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_list/index.html",
+            "label": "中科大苏州高研院科研平台"
+          }
+        ]
       }
     },
     {
@@ -4951,6 +6436,23 @@ window.HUIHU_DATA = {
             "period": "2026-02",
             "source": "早期高校平台概览",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_show/187.html",
+            "label": "仿生界面科学重点实验室官网介绍"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/xyjs_content_single/index.html",
+            "label": "中国科大苏州高研院科研机构目录"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_list/index.html",
+            "label": "中科大苏州高研院科研平台"
           }
         ]
       }
@@ -4997,6 +6499,23 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_show/63.html",
+            "label": "嵌入式系统软件重点实验室官网介绍"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/xyjs_content_single/index.html",
+            "label": "中国科大苏州高研院科研机构目录"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_list/index.html",
+            "label": "中科大苏州高研院科研平台"
+          }
+        ]
       }
     },
     {
@@ -5032,6 +6551,32 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "牵头单位",
+            "units": [
+              "中国科学技术大学苏州高等研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_show/283.html",
+            "label": "智慧医疗影像实验室官网介绍"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/xyjs_content_single/index.html",
+            "label": "中国科大苏州高研院科研机构目录"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_list/index.html",
+            "label": "中科大苏州高研院科研平台"
+          }
+        ],
+        "scope": "苏州工业园区"
       }
     },
     {
@@ -5076,6 +6621,34 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州市人民政府",
+              "中国科学技术大学",
+              "香港城市大学"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_show/22.html",
+            "label": "水环境科学重点实验室官网列出三方组建单位"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/xyjs_content_single/index.html",
+            "label": "中国科大苏州高研院科研机构目录"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_list/index.html",
+            "label": "中科大苏州高研院科研平台"
+          }
+        ],
+        "scope": "苏州工业园区"
       }
     },
     {
@@ -5120,6 +6693,33 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "牵头单位",
+            "units": [
+              "中国科学技术大学苏州研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_show/58.html",
+            "label": "通信软件实验室官网说明牵头设立单位"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/xyjs_content_single/index.html",
+            "label": "中国科大苏州高研院科研机构目录"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_list/index.html",
+            "label": "中科大苏州高研院科研平台"
+          }
+        ],
+        "scope": "苏州工业园区",
+        "note": "2009年设立时使用中国科学技术大学苏州研究院名称。"
       }
     },
     {
@@ -5164,6 +6764,32 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "依托单位",
+            "units": [
+              "中国科学技术大学苏州高等研究院智能医疗器械研究中心"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_show/116.html",
+            "label": "医疗传感与器械实验室官网列出主要建设主体"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/xyjs_content_single/index.html",
+            "label": "中国科大苏州高研院科研机构目录"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_list/index.html",
+            "label": "中科大苏州高研院科研平台"
+          }
+        ],
+        "scope": "苏州工业园区"
       }
     },
     {
@@ -5208,6 +6834,29 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "设立单位",
+            "units": [
+              "中国科学技术大学苏州高等研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://sz.ustc.edu.cn/xwgg_show/1820.html",
+            "label": "苏州高研院关于中心创设的报道"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/cn_mobile/xwgg_show/1095.html",
+            "label": "苏州高研院智能医疗器械研究中心官网活动报道"
+          }
+        ],
+        "scope": "苏州工业园区",
+        "note": "智能医疗器械研究中心是苏州市医疗传感与器械重点实验室建设主体，也是生物医学微系统优质创新平台所在研究中心。"
       }
     },
     {
@@ -5252,6 +6901,28 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "挂靠单位",
+            "units": [
+              "东南大学机械工程学院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://szxq.seu.edu.cn/2020/0927/c24527a348033/page.htm",
+            "label": "东南大学科研平台介绍"
+          },
+          {
+            "url": "https://szxq.seu.edu.cn/24527/list.htm",
+            "label": "东南大学苏州校区科研平台"
+          }
+        ],
+        "note": "东南大学在九龙湖校区和苏州校区两地建设该中心。"
       }
     },
     {
@@ -5289,6 +6960,23 @@ window.HUIHU_DATA = {
           }
         ],
         "officialListing": "https://szxq.seu.edu.cn/xqgk/mainm.htm"
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "设置单位",
+            "units": [
+              "东南大学—蒙纳士大学苏州联合研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://szxq.seu.edu.cn/xqgk/mainm.htm",
+            "label": "东南大学苏州校区简介"
+          }
+        ]
       }
     },
     {
@@ -5333,6 +7021,29 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "东南大学",
+              "澳大利亚蒙纳士大学"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://news.seu.edu.cn/2023/1219/c5541a476160/page.htm",
+            "label": "东南大学新闻网合作办学回顾"
+          },
+          {
+            "url": "https://szxq.seu.edu.cn/xqgk/mainm.htm",
+            "label": "东南大学苏州校区简介"
+          }
+        ],
+        "note": "东南大学公布的东蒙合作科研方向包括先进材料与制造。"
       }
     },
     {
@@ -5377,6 +7088,30 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "江苏省产业技术研究院",
+              "苏州工业园区",
+              "东南大学"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://szxq.seu.edu.cn/2020/0918/c24527a346801/page.htm",
+            "label": "东南大学苏州校区研究所概况"
+          },
+          {
+            "url": "https://szxq.seu.edu.cn/24527/list.htm",
+            "label": "东南大学苏州校区科研平台"
+          }
+        ],
+        "note": "研究所2018年11月成立，坐落于东南大学苏州校区。"
       }
     },
     {
@@ -5421,6 +7156,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -5463,6 +7201,15 @@ window.HUIHU_DATA = {
             "period": "2026-04",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://szxq.seu.edu.cn/24527/list.htm",
+            "label": "东南大学苏州校区科研平台"
           }
         ]
       }
@@ -5509,6 +7256,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -5551,6 +7301,28 @@ window.HUIHU_DATA = {
             "period": "2026-04",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "依托单位",
+            "units": [
+              "东南大学苏州校区",
+              "东南大学电子科学与工程学院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://szxq.seu.edu.cn/suzhou_en/2026/0515/c68459a567803/page.psp",
+            "label": "东南大学苏州校区实验室英文介绍"
+          },
+          {
+            "url": "https://szxq.seu.edu.cn/24527/list.htm",
+            "label": "东南大学苏州校区科研平台"
           }
         ]
       }
@@ -5597,6 +7369,15 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://szxq.seu.edu.cn/24527/list.htm",
+            "label": "东南大学苏州校区科研平台"
+          }
+        ]
       }
     },
     {
@@ -5639,6 +7420,15 @@ window.HUIHU_DATA = {
             "period": "2026-04",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://szxq.seu.edu.cn/24527/list.htm",
+            "label": "东南大学苏州校区科研平台"
           }
         ]
       }
@@ -5685,6 +7475,33 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "依托单位",
+            "units": [
+              "东南大学苏州研究院"
+            ]
+          },
+          {
+            "role": "共建单位",
+            "units": [
+              "上海张江普汇转化医学研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276160/page.htm",
+            "label": "东南大学苏州校区实验室介绍"
+          },
+          {
+            "url": "https://szxq.seu.edu.cn/24527/list.htm",
+            "label": "东南大学苏州校区科研平台"
+          }
+        ]
       }
     },
     {
@@ -5727,6 +7544,28 @@ window.HUIHU_DATA = {
             "period": "2026-04",
             "source": "2026年3–5月平台梳理",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "东南大学",
+              "澳大利亚蒙纳士大学"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://news.seu.edu.cn/2023/1219/c5541a476160/page.htm",
+            "label": "东南大学新闻网联合共建披露"
+          },
+          {
+            "url": "https://szxq.seu.edu.cn/xqgk/mainm.htm",
+            "label": "东南大学苏州校区简介"
           }
         ]
       }
@@ -5778,6 +7617,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -5827,6 +7669,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -5878,6 +7723,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -5924,6 +7772,28 @@ window.HUIHU_DATA = {
             "period": "2026-02",
             "source": "早期高校平台概览",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "中国人民大学苏州校区",
+              "中共苏州市委宣传部"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://news.ruc.edu.cn/687456933586374.html",
+            "label": "中国人民大学共建协议签署报道"
+          },
+          {
+            "url": "https://www.suzhou.gov.cn/szsrmzf/szyw/202601/60fb7aeb703f463e963dd237b88446e3.shtml",
+            "label": "苏州市人民政府合作共建报道"
           }
         ]
       }
@@ -5978,6 +7848,28 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "中国人民大学",
+              "苏州市人民政府"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://news.ruc.edu.cn/687456934360518.html",
+            "label": "中国人民大学与苏州市人民政府合作材料"
+          },
+          {
+            "url": "https://www.suzhou.gov.cn/szsrmzf/szyw/202502/4a6019efe58b4a17a4c1e99fa0c10246.shtml",
+            "label": "苏州市人民政府合作协议和揭牌公告"
+          }
+        ]
       }
     },
     {
@@ -6025,6 +7917,34 @@ window.HUIHU_DATA = {
             "period": "2026-02",
             "source": "早期高校平台概览",
             "state": "operating"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "中国人民大学",
+              "苏州市人民政府"
+            ]
+          },
+          {
+            "role": "申报单位",
+            "units": [
+              "中国人民大学苏州校区"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://news.ruc.edu.cn/687456954754502.html",
+            "label": "中国人民大学苏州校区科研机构揭牌公告"
+          },
+          {
+            "url": "https://news.ruc.edu.cn/687456934360518.html",
+            "label": "中国人民大学与苏州市人民政府合作材料"
           }
         ]
       }
@@ -6075,6 +7995,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -6124,6 +8047,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -6171,6 +8097,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -6208,6 +8137,24 @@ window.HUIHU_DATA = {
           "早期高校平台概览",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "依托单位",
+            "units": [
+              "西安交通大学苏州研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.xjtusz.cn/ziyoukeyanpingtai/2765.html",
+            "label": "西安交通大学苏州研究院自有科研平台目录"
+          }
+        ],
+        "note": "研究院以同一页面介绍省工程中心、苏州市重点实验室及国家工程研究中心苏州中心，三个名称对应不同层次的平台牌子。"
       }
     },
     {
@@ -6245,6 +8192,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -6280,6 +8230,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -6316,6 +8269,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案",
           "高能级创新平台台账"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -6355,6 +8311,9 @@ window.HUIHU_DATA = {
         "aliases": [
           "苏州工业园区能源装备与先进制造技术创新科研平台"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -6392,6 +8351,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -6429,6 +8391,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -6468,6 +8433,28 @@ window.HUIHU_DATA = {
           "早期高校平台概览",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "依托单位",
+            "units": [
+              "西安交通大学苏州研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.xjtusz.cn/ziyoukeyanpingtai/2765.html",
+            "label": "西安交通大学苏州研究院自有科研平台目录"
+          },
+          {
+            "url": "https://www.xjtusz.cn/hezuokeyanpingtai/3549.html",
+            "label": "院方介绍相关的金属激光直接成型3D打印技术研究中心"
+          }
+        ],
+        "note": "院方明确把市级重点实验室列为自有平台。另一份共建说明指向名称不同的技术研究中心，涉及苏州中瑞智创，不外推该企业在重点实验室立项中的角色。"
       }
     },
     {
@@ -6505,6 +8492,24 @@ window.HUIHU_DATA = {
           "早期高校平台概览",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "承担单位",
+            "units": [
+              "西安交通大学苏州研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.suzhou.gov.cn/szdoc/uploadfile/xxgk/kjww/kjzccsjssqk/201803/P020180305579341989047.pdf",
+            "label": "苏州市科技发展计划名单，项目 SZS201513"
+          }
+        ],
+        "note": "市科技部门公布西安交通大学苏州研究院为2015年该项目承担单位。该存档为历史应结未结清单，无法据此判断目前状态。"
       }
     },
     {
@@ -6542,6 +8547,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -6579,6 +8587,10 @@ window.HUIHU_DATA = {
           "早期高校平台概览",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending",
+        "note": "企业公开材料与原档案的建设归属存在差异，市级认定名单中的依托单位待核。"
       }
     },
     {
@@ -6633,6 +8645,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -6687,54 +8702,13 @@ window.HUIHU_DATA = {
             "state": "not_continued"
           }
         ]
-      }
-    },
-    {
-      "序号": "25",
-      "平台名称": "山东大学博兴智能厨具研究院",
-      "一级产业分类": "轻工纺织",
-      "二级产业分类": "轻工",
-      "细分产业领域": "厨具研发",
-      "所属高校": "山东大学苏州研究院",
-      "平台等级": "校级",
-      "研究方向": "1.餐饮智能装备研发",
-      "核心技术能力": "1. 智能控制技术2. 物联网技术3. 人机交互技术4. 食品加工工艺优化技术",
-      "可对外提供的核心服务": "1. 产品设计2. 技术咨询3. 联合研发4. 技术转让5. 人才培训",
-      "标杆转化案例": "与博兴县厨具企业合作，开发出多款智能厨具产品",
-      "核心共享设备": "自研整合冷链装备、芯片式复合传感器、智能控制器等",
-      "联系人": "王琼",
-      "联系电话": "17798657812",
-      "分类标签": [
-        {
-          "category": "研究院所",
-          "mode": "有企业参与，共建待核"
-        }
-      ],
-      "存量梳理": {
-        "reportYears": [
-          2024,
-          2025
-        ],
+      },
+      "建设单位核对": {
+        "status": "listed",
         "sources": [
-          "2026年3–5月平台梳理",
-          "早期高校平台概览",
-          "高校平台资源档案"
-        ],
-        "operatingReports": [
           {
-            "period": "2026-04",
-            "source": "2026年3–5月平台梳理",
-            "state": "operating"
-          },
-          {
-            "period": "2026-03-27",
-            "source": "2026年3–5月平台梳理",
-            "state": "operating"
-          },
-          {
-            "period": "2026-02",
-            "source": "早期高校平台概览",
-            "state": "not_continued"
+            "url": "https://www.suz.sdu.edu.cn/kxyj/kypt.htm",
+            "label": "山东大学苏州研究院科研与项目平台名录"
           }
         ]
       }
@@ -6791,6 +8765,15 @@ window.HUIHU_DATA = {
             "state": "not_continued"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.suz.sdu.edu.cn/kxyj/kypt.htm",
+            "label": "山东大学苏州研究院科研与项目平台名录"
+          }
+        ]
       }
     },
     {
@@ -6839,6 +8822,15 @@ window.HUIHU_DATA = {
             "period": "2026-02",
             "source": "早期高校平台概览",
             "state": "conflicting"
+          }
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.suz.sdu.edu.cn/kxyj/kypt.htm",
+            "label": "山东大学苏州研究院科研与项目平台名录"
           }
         ]
       }
@@ -6891,6 +8883,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -6945,6 +8940,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -6973,6 +8971,9 @@ window.HUIHU_DATA = {
           "2026年3–5月平台梳理",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -7019,6 +9020,26 @@ window.HUIHU_DATA = {
           "南智传感产学创新平台",
           "苏州市基础工程分布式传感监测技术重点实验室"
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州南智传感科技有限公司",
+              "南京大学（苏州）高新技术研究院",
+              "独墅湖高教区"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://es.nju.edu.cn/zhu/32585/list.psp",
+            "label": "南京大学发布苏州市基础工程分布式传感监测技术重点实验室简介"
+          }
+        ],
+        "note": "上述三方由学校官网明确列为这一记录中市重点实验室的共建单位，2010年在南京大学（苏州）高新技术研究院成立，2013年通过验收。"
       }
     },
     {
@@ -7052,6 +9073,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -7091,6 +9115,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -7140,6 +9167,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -7173,6 +9203,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -7207,6 +9240,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -7240,6 +9276,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -7284,6 +9323,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -7328,6 +9370,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -7386,6 +9431,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -7431,6 +9479,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -7503,50 +9554,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
-      }
-    },
-    {
-      "序号": "111",
-      "平台名称": "国家自然科学基金优秀青年科学基金项目海外",
-      "一级产业分类": "生物医药与大健康",
-      "二级产业分类": "数字医疗",
-      "细分产业领域": "",
-      "所属高校": "苏州工业园区蒙纳士科学技术研究院",
-      "平台等级": "国家级",
-      "研究方向": "",
-      "核心技术能力": "",
-      "可对外提供的核心服务": "",
-      "标杆转化案例": "",
-      "核心共享设备": "",
-      "联系人": "",
-      "联系电话": "",
-      "分类标签": [
-        {
-          "category": "科研中心/服务平台",
-          "level": "国家级",
-          "authority": "国家自然科学基金委员会",
-          "year": 2021,
-          "source": "高校年报"
-        }
-      ],
-      "存量梳理": {
-        "reportYears": [
-          2023,
-          2024,
-          2025
-        ],
-        "sources": [
-          "2026年3–5月平台梳理",
-          "早期高校平台概览",
-          "高校平台资源档案"
-        ],
-        "operatingReports": [
-          {
-            "period": "2026-03-27",
-            "source": "2026年3–5月平台梳理",
-            "state": "operating"
-          }
-        ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -7596,6 +9606,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -7645,6 +9658,9 @@ window.HUIHU_DATA = {
             "state": "not_continued"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -7687,6 +9703,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -7736,6 +9755,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -7784,6 +9806,34 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "承担单位",
+            "units": [
+              "苏州工业园区蒙纳士科学技术研究院"
+            ]
+          },
+          {
+            "role": "承建单位",
+            "units": [
+              "苏州工业园区蒙纳士科学技术研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.sipac.gov.cn/szgyyqtzyq/tzdt/202501/abd7f5596606481bbb658b9e38e0bb33.shtml",
+            "label": "园区概念验证中心指导性立项报道"
+          },
+          {
+            "url": "https://www.sipac.gov.cn/szdshkjcxq/gzdt/202501/ad89f43d5ff6406a9bc14b7b28d441ba.shtml",
+            "label": "校方或主管部门原文"
+          }
+        ],
+        "note": "园区报道载其医药与增材制造研发平台获苏州市概念验证中心指导性立项。 独墅湖科教创新区官方称该院医药与增材制造研发平台获得苏州市概念验证中心指导性立项。"
       }
     },
     {
@@ -7833,6 +9883,9 @@ window.HUIHU_DATA = {
             "state": "not_continued"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -7878,6 +9931,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -7937,6 +9993,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -7986,6 +10045,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -8030,6 +10092,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -8069,6 +10134,9 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -8111,6 +10179,24 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "roles": [
+          {
+            "role": "申报单位",
+            "units": [
+              "上海交通大学苏州人工智能研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://file.smejs.cn/file/group1/M00/00/94/rBIAAWgNxi6Abd7qAAHkbwAsv3Q218.pdf",
+            "label": "2025年苏州市成果转化平台建设项目受理名单第21项"
+          }
+        ],
+        "note": "2025年受理公示确认申报单位。受理公示仅能确认受理阶段，正式立项情况需单独核实。"
       }
     },
     {
@@ -8145,6 +10231,9 @@ window.HUIHU_DATA = {
         "aliases": [
           "耀腾光电—上交苏州智研院联合实验室（正式全称待核）"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -8175,6 +10264,9 @@ window.HUIHU_DATA = {
         "sources": [
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -8219,6 +10311,23 @@ window.HUIHU_DATA = {
             "state": "operating"
           }
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_show/61.html",
+            "label": "下一代WEB服务计算重点实验室官网介绍"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/xyjs_content_single/index.html",
+            "label": "中国科大苏州高研院科研机构目录"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_list/index.html",
+            "label": "中科大苏州高研院科研平台"
+          }
+        ]
       }
     },
     {
@@ -8256,6 +10365,27 @@ window.HUIHU_DATA = {
         "reportYears": [],
         "sources": [
           "高校平台资源档案"
+        ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "依托单位",
+            "units": [
+              "东南大学"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276158/page.htm",
+            "label": "东南大学苏州校区实验室介绍"
+          },
+          {
+            "url": "https://szxq.seu.edu.cn/24527/list.htm",
+            "label": "东南大学苏州校区科研平台"
+          }
         ]
       }
     },
@@ -8297,6 +10427,9 @@ window.HUIHU_DATA = {
         "aliases": [
           "3D打印砂轮联合实验室"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -8333,6 +10466,9 @@ window.HUIHU_DATA = {
           "慧湖50L100E共建记录",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -8369,6 +10505,9 @@ window.HUIHU_DATA = {
           "慧湖50L100E共建记录",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -8405,6 +10544,9 @@ window.HUIHU_DATA = {
           "慧湖50L100E共建记录",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -8440,6 +10582,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -8475,6 +10620,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -8510,6 +10658,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -8544,6 +10695,9 @@ window.HUIHU_DATA = {
           "慧湖50L100E共建记录",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -8589,6 +10743,29 @@ window.HUIHU_DATA = {
           "多组学质谱联合实验室",
           "西浦-拜谱生物多组学质谱 联合实验室合作协议"
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "西交利物浦大学",
+              "上海拜谱生物科技有限公司"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/news/2026/05/xjtlu-bioprofile-jointlab",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/study/departments/academy-of-life-and-natural-sciences/aolns-research/research-platforms",
+            "label": "西浦生命与自然科学学院科研平台"
+          }
+        ],
+        "note": "2026年4月22日在西交利物浦大学揭牌。"
       }
     },
     {
@@ -8632,6 +10809,9 @@ window.HUIHU_DATA = {
         "aliases": [
           "国产算力联合研究中心"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -8673,6 +10853,9 @@ window.HUIHU_DATA = {
           "半导体联合研究中心",
           "半导体校企联合研究中心"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -8708,6 +10891,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "stage": "筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -8743,6 +10929,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -8778,6 +10967,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -8813,6 +11005,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -8848,6 +11043,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -8883,6 +11081,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -8918,6 +11119,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -8953,6 +11157,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -8988,6 +11195,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9023,6 +11233,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9058,6 +11271,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9098,6 +11314,9 @@ window.HUIHU_DATA = {
           "智造AI数据协同创新联合体"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9137,6 +11356,9 @@ window.HUIHU_DATA = {
           "AI+AR智能眼镜创新联合体"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9173,6 +11395,9 @@ window.HUIHU_DATA = {
           "慧湖50L100E共建记录",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9208,6 +11433,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9243,6 +11471,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案",
           "高能级创新平台台账"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9278,6 +11509,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案",
           "高能级创新平台台账"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9314,6 +11548,9 @@ window.HUIHU_DATA = {
           "慧湖50L100E共建记录",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9350,6 +11587,9 @@ window.HUIHU_DATA = {
           "慧湖50L100E共建记录",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9386,6 +11626,9 @@ window.HUIHU_DATA = {
           "慧湖50L100E共建记录",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9420,6 +11663,9 @@ window.HUIHU_DATA = {
           "慧湖50L100E共建记录",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9459,6 +11705,9 @@ window.HUIHU_DATA = {
           "OPC创新联合体"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9493,6 +11742,9 @@ window.HUIHU_DATA = {
           "慧湖50L100E共建记录",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9532,6 +11784,9 @@ window.HUIHU_DATA = {
           "低空智能边缘计算创新联合体"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9567,6 +11822,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9602,6 +11860,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9637,6 +11898,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9672,6 +11936,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9707,6 +11974,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9742,6 +12012,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9782,6 +12055,9 @@ window.HUIHU_DATA = {
         "aliases": [
           "飞秒联合实验室"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9818,6 +12094,9 @@ window.HUIHU_DATA = {
           "高能级创新平台台账"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9853,6 +12132,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "stage": "申报或筹建"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9887,6 +12169,9 @@ window.HUIHU_DATA = {
           "慧湖50L100E共建记录",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9924,6 +12209,19 @@ window.HUIHU_DATA = {
           "慧湖50L100E阶段成果",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://fzb.suda.edu.cn/de/c6/c8539a712390/page.htm",
+            "label": "苏州大学公告两家重点实验室揭牌"
+          },
+          {
+            "url": "https://www.sipac.gov.cn/szgyyq/dthg202607/202607/e2d55b6605ac4ebd84f7ffea8a28f652.shtml",
+            "label": "官方资料提及"
+          }
+        ]
       }
     },
     {
@@ -9958,6 +12256,9 @@ window.HUIHU_DATA = {
           "慧湖50L100E共建记录",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -9994,6 +12295,9 @@ window.HUIHU_DATA = {
           "慧湖50L100E共建记录",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -10042,6 +12346,25 @@ window.HUIHU_DATA = {
           "校企联合实验室",
           "机器人校企联合实验室"
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "西交利物浦大学",
+              "知行机器人科技（苏州）有限公司"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/news/2026/02/xipuyuzhixingjiqirenchenglixiaoqilianheshiyanshi",
+            "label": "校方或主管部门原文"
+          }
+        ],
+        "note": "2026年2月4日，校方在创业家学院（太仓）举行揭牌仪式。"
       }
     },
     {
@@ -10085,6 +12408,32 @@ window.HUIHU_DATA = {
         "aliases": [
           "自动驾驶联合实验室"
         ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "上海交通大学计算机学院",
+              "九识智能科技有限公司"
+            ]
+          },
+          {
+            "role": "依托单位",
+            "units": [
+              "上海交通大学计算机学院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://news.sjtu.edu.cn/zhxw/20250820/213732.html",
+            "label": "上海交通大学签约揭牌公告"
+          }
+        ],
+        "scope": "落地待核",
+        "note": "2025年8月签约揭牌，校方报道未列园区固定实验场地。"
       }
     },
     {
@@ -10122,6 +12471,19 @@ window.HUIHU_DATA = {
           "慧湖50L100E阶段成果",
           "高校平台资源档案"
         ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://fzb.suda.edu.cn/de/c6/c8539a712390/page.htm",
+            "label": "苏州大学公告两家重点实验室揭牌"
+          },
+          {
+            "url": "https://www.sipac.gov.cn/szgyyq/dthg202607/202607/e2d55b6605ac4ebd84f7ffea8a28f652.shtml",
+            "label": "官方资料提及"
+          }
+        ]
       }
     },
     {
@@ -10157,6 +12519,19 @@ window.HUIHU_DATA = {
         "sources": [
           "慧湖50L100E共建记录",
           "高校平台资源档案"
+        ]
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://fzb.suda.edu.cn/de/c6/c8539a712390/page.htm",
+            "label": "苏州大学公告两家重点实验室揭牌"
+          },
+          {
+            "url": "https://www.sipac.gov.cn/szgyyq/dthg202607/202607/e2d55b6605ac4ebd84f7ffea8a28f652.shtml",
+            "label": "官方资料提及"
+          }
         ]
       }
     },
@@ -10196,6 +12571,39 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "牵头单位",
+            "units": [
+              "苏州工业园区新国大研究院"
+            ]
+          },
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州工业园区服务外包职业学院",
+              "苏州梦想人软件科技有限公司"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.nppa.gov.cn/xxfb/tzgs/202102/t20210210_666249.html",
+            "label": "国家新闻出版署重点实验室名单第21项"
+          },
+          {
+            "url": "https://www.siso.edu.cn/info/1007/1019.htm",
+            "label": "学校2021年度大事记"
+          },
+          {
+            "url": "https://www.nusri.cn/nusri/news/nusrinews/754.html",
+            "label": "新国大研究院官方企业全称"
+          }
+        ],
+        "note": "国家新闻出版署公布的牵头单位全称为苏州工业园区新国大研究院，公布类别为出版业科技与标准重点实验室。"
       }
     },
     {
@@ -10233,6 +12641,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -10270,6 +12681,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -10307,6 +12721,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -10344,6 +12761,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -10381,6 +12801,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -10412,6 +12835,37 @@ window.HUIHU_DATA = {
           "慧湖50L100E阶段成果"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "旷达科技集团股份有限公司",
+              "中国科学院苏州纳米技术与纳米仿生研究所",
+              "江苏集萃中科纳米科技有限公司"
+            ]
+          },
+          {
+            "role": "落地单位",
+            "units": [
+              "旷达科技集团股份有限公司"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.kuangdacn.com/index.php?a=index&aid=584&c=View&m=home",
+            "label": "旷达科技签约、落地公告和办公地址"
+          },
+          {
+            "url": "https://static.cninfo.com.cn/finalpage/2026-10-30/1225643415.PDF",
+            "label": "旷达科技2026年三季度报告"
+          }
+        ],
+        "scope": "落地待核",
+        "note": "签约仪式在中科院苏州纳米所举行。旷达公告明确实验室落户旷达科技，公司办公地址在常州市武进区，公开材料未列实验室具体门牌。"
       }
     },
     {
@@ -10441,6 +12895,30 @@ window.HUIHU_DATA = {
         "reportYears": [],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "星辰光电科技（苏州）有限公司",
+              "北京航空航天大学"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.sipac.gov.cn/kjzszx/xwzx/202602/f16d1be5413642d8beeb5ca530957557.shtml",
+            "label": "园区科技招商中心签约公告"
+          },
+          {
+            "url": "https://www.sipac.gov.cn/kjzszx/tpxw/202604/bed5ea3a2e5149ae8c99ea1f5f7ac29c.shtml",
+            "label": "园区科技招商中心一季度回顾"
+          }
+        ],
+        "scope": "落地待核",
+        "note": "2026年2月1日在苏州纳米城签约。公告未列实验室固定场地。"
       }
     },
     {
@@ -10472,6 +12950,9 @@ window.HUIHU_DATA = {
           "慧湖50L100E阶段成果"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -10503,6 +12984,9 @@ window.HUIHU_DATA = {
           "慧湖50L100E阶段成果"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -10537,6 +13021,24 @@ window.HUIHU_DATA = {
           "贸易大数据与AI联合实验室"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "江苏神州博海信息科技有限公司",
+              "姑苏实验室"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.sipac.gov.cn/kjzszx/tpxw/202604/bed5ea3a2e5149ae8c99ea1f5f7ac29c.shtml",
+            "label": "园区科技招商中心一季度回顾"
+          }
+        ]
       }
     },
     {
@@ -10568,6 +13070,25 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "武汉大学",
+              "苏州神海港航数据服务有限公司",
+              "浙江新一海海运有限公司"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.sipac.gov.cn/szdaglzx/dsj/201810/e1c83b530c88435186634542e09a15ff.shtml",
+            "label": "苏州工业园区档案管理中心揭牌记录"
+          }
+        ]
       }
     },
     {
@@ -10597,6 +13118,32 @@ window.HUIHU_DATA = {
         "reportYears": [],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "西交利物浦大学",
+              "苏州中鑫新能源有限公司"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/jxcgzs/ssfa/xspypt/xqlhxmjyjpt",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/professional-services/zooming-new-energy-xjtlu-smart-energy-joint-laboratory",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
+          }
+        ]
       }
     },
     {
@@ -10626,6 +13173,9 @@ window.HUIHU_DATA = {
         "reportYears": [],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -10655,6 +13205,9 @@ window.HUIHU_DATA = {
         "reportYears": [],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -10684,6 +13237,24 @@ window.HUIHU_DATA = {
         "reportYears": [],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "西交利物浦大学慧湖药学院",
+              "苏州海狸生物医学工程有限公司"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/study/departments/academy-of-life-and-natural-sciences/aolns-research/research-platforms",
+            "label": "校方或主管部门原文"
+          }
+        ]
       }
     },
     {
@@ -10715,6 +13286,30 @@ window.HUIHU_DATA = {
         "reportYears": [],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "建设单位",
+            "units": [
+              "东南大学苏州研究院"
+            ]
+          },
+          {
+            "role": "所属校区",
+            "units": [
+              "东南大学苏州校区"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://szxq.seu.edu.cn/2024/0823/c24525a500556/pagem.htm",
+            "label": "东南大学苏州校区获认可公告"
+          }
+        ],
+        "note": "校方公布2022年8月批准成立。CNAS为检测能力认可。"
       }
     },
     {
@@ -10752,6 +13347,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -10782,6 +13380,28 @@ window.HUIHU_DATA = {
         "reportYears": [],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "牵头单位",
+            "units": [
+              "苏州纳微科技股份有限公司"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.sipac.gov.cn/kjhxxhj/gzdt/202509/c418cec959e046609748d539877e596f.shtml",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://www.sipac.gov.cn/szgyyq/202510cxlhtxgbd/202510/ac94ab4b885840caa9a8208a81b4dd2c.shtml",
+            "label": "校方或主管部门原文"
+          }
+        ],
+        "note": "园区科创委确认中国科学院苏州纳米技术与纳米仿生研究所、纳谱分析为成员单位。现有档案中的苏州纳米所属于成员。"
       }
     },
     {
@@ -10817,6 +13437,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -10853,6 +13476,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -10888,6 +13514,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -10923,6 +13552,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -10958,6 +13590,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -10987,6 +13622,9 @@ window.HUIHU_DATA = {
           "慧湖50L100E阶段成果"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -11019,6 +13657,9 @@ window.HUIHU_DATA = {
           "侵入式脑机接口与神经调控创新联合体"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -11048,6 +13689,10 @@ window.HUIHU_DATA = {
           "慧湖50L100E阶段成果"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending",
+        "note": "现有材料仅提供联合体线索，正式建设单位和苏州落地点待补公开依据。"
       }
     },
     {
@@ -11077,6 +13722,9 @@ window.HUIHU_DATA = {
           "慧湖50L100E阶段成果"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -11092,7 +13740,7 @@ window.HUIHU_DATA = {
       "联系人": "",
       "联系电话": "",
       "序号": "PT050",
-      "平台名称": "半导体晶圆键合工艺创新联合体",
+      "平台名称": "苏州工业园区半导体晶圆键合工艺光学精密检测技术创新联合体",
       "所属高校": "西安交通大学苏州研究院",
       "分类标签": [
         {
@@ -11105,51 +13753,33 @@ window.HUIHU_DATA = {
         "sources": [
           "慧湖50L100E阶段成果"
         ],
-        "supplemented": true
-      }
-    },
-    {
-      "一级产业分类": "",
-      "二级产业分类": "",
-      "细分产业领域": "",
-      "平台等级": "国家级",
-      "研究方向": "",
-      "核心技术能力": "",
-      "可对外提供的核心服务": "",
-      "标杆转化案例": "",
-      "核心共享设备": "",
-      "联系人": "",
-      "联系电话": "",
-      "序号": "PT080",
-      "平台名称": "国家自然科学基金依托单位",
-      "所属高校": "苏州工业园区蒙纳士科学技术研究院",
-      "分类标签": [
-        {
-          "category": "科研中心/服务平台",
-          "level": "国家级",
-          "authority": "国家自然科学基金委员会",
-          "year": 2023,
-          "source": "高校年报"
-        }
-      ],
-      "存量梳理": {
-        "reportYears": [
-          2023,
-          2024,
-          2025
-        ],
-        "sources": [
-          "2026年3–5月平台梳理",
-          "早期高校平台概览"
-        ],
-        "operatingReports": [
+        "supplemented": true,
+        "aliases": [
+          "半导体晶圆键合工艺创新联合体"
+        ]
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
           {
-            "period": "2026-03-27",
-            "source": "2026年3–5月平台梳理",
-            "state": "operating"
+            "role": "共建单位",
+            "units": [
+              "西安交通大学苏州研究院",
+              "吾拾微电子（苏州）有限公司"
+            ]
           }
         ],
-        "supplemented": true
+        "sources": [
+          {
+            "url": "https://www.sipac.gov.cn/szdshkjcxq/gzdt/202512/0f086dc21f4141aeb0738aabe258c8d0.shtml",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://www.sipac.gov.cn/szgyyq/mtjj/202512/36f6fa86105340e8af7fa095c908452d.shtml",
+            "label": "校方或主管部门原文"
+          }
+        ],
+        "note": "园区两篇官方报道列出同一联合体及校企双方。"
       }
     },
     {
@@ -11186,6 +13816,31 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "东南大学",
+              "苏州高新区",
+              "江苏省产业技术研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://ibmd.seu.edu.cn/gywm/list.htm",
+            "label": "东南大学苏州医疗器械研究院官网概况"
+          },
+          {
+            "url": "https://www.seu.edu.cn/2017/0823/c154a194004/page.psp",
+            "label": "东南大学揭牌报道"
+          }
+        ],
+        "scope": "园区外",
+        "note": "位于苏州高新区江苏省医疗器械科技产业园。"
       }
     },
     {
@@ -11202,7 +13857,7 @@ window.HUIHU_DATA = {
       "联系电话": "",
       "序号": "PT083",
       "平台名称": "江苏省产业技术研究院工业过程模拟与优化研究所",
-      "所属高校": "东南大学苏州校区",
+      "所属高校": "江苏省产业技术研究院",
       "分类标签": [
         {
           "category": "研究院所",
@@ -11222,6 +13877,35 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "江苏省产业技术研究院",
+              "苏州工业园区管理委员会"
+            ]
+          },
+          {
+            "role": "建设团队",
+            "units": [
+              "余艾冰教授团队"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.sipac.gov.cn/szdaglzx/dsj/201610/be65587f437d4a3495e2cd3076fbac00.shtml",
+            "label": "园区档案管理中心签约记录"
+          },
+          {
+            "url": "https://szxq.seu.edu.cn/2022/1211/c24377a431598/page.htm",
+            "label": "东南大学苏州校区战略合作公告"
+          }
+        ],
+        "note": "东南大学苏州校区与该研究所签署战略合作，设立研究生实习基地。"
       }
     },
     {
@@ -11238,7 +13922,7 @@ window.HUIHU_DATA = {
       "联系电话": "",
       "序号": "PT084",
       "平台名称": "江苏省产业技术研究院未来城市应用技术研究所",
-      "所属高校": "东南大学苏州校区",
+      "所属高校": "江苏省产业技术研究院",
       "分类标签": [
         {
           "category": "研究院所",
@@ -11258,6 +13942,37 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "江苏省产业技术研究院",
+              "苏州市产业技术研究院",
+              "相城经济技术开发区管理委员会"
+            ]
+          },
+          {
+            "role": "建设团队",
+            "units": [
+              "王庆项目团队"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.jitri.cn/static/custom/jitri/%E9%9B%86%E8%90%83%E5%B9%B4%E6%8A%A5/2020/1561516516120210728.pdf",
+            "label": "江苏省产业技术研究院2020年报"
+          },
+          {
+            "url": "https://szxq.seu.edu.cn/2022/0610/c24434a411412/page.htm",
+            "label": "东南大学苏州校区战略合作公告"
+          }
+        ],
+        "scope": "园区外",
+        "note": "研究所位于苏州市相城区。东南大学苏州校区为研究生就业实习基地合作方。"
       }
     },
     {
@@ -11294,6 +14009,15 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://szxq.seu.edu.cn/24527/list.htm",
+            "label": "东南大学苏州校区科研平台"
+          }
+        ]
       }
     },
     {
@@ -11337,6 +14061,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -11391,6 +14118,25 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "牛津大学高等研究院（苏州）",
+              "牛津大学"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.sipac.gov.cn/szgyyq/dthg202402/202402/2c0a1c373e3b40f4bdf069c5545a0cf5.shtml",
+            "label": "苏州工业园区公布省重大科技开放合作平台立项"
+          }
+        ],
+        "note": "园区报道明确牛津大学高等研究院联合校本部共建国际合作平台并获江苏省重大科技开放合作平台立项，台账名称为项目类通用称谓。"
       }
     },
     {
@@ -11427,6 +14173,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -11463,6 +14212,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -11499,6 +14251,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -11535,6 +14290,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -11571,6 +14329,15 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ]
       }
     },
     {
@@ -11607,6 +14374,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -11643,13 +14413,22 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ]
       }
     },
     {
       "一级产业分类": "",
       "二级产业分类": "",
       "细分产业领域": "",
-      "平台等级": "省部级",
+      "平台等级": "国家级",
       "研究方向": "",
       "核心技术能力": "",
       "可对外提供的核心服务": "",
@@ -11663,10 +14442,11 @@ window.HUIHU_DATA = {
       "分类标签": [
         {
           "category": "科研中心/服务平台",
-          "level": "省部级",
+          "level": "国家级",
           "authority": "科技部",
           "year": 2009,
-          "source": "高校年报"
+          "source": "高校或主管部门公开依据",
+          "url": "https://scit.suda.edu.cn/gjjpt/list.htm"
         }
       ],
       "存量梳理": {
@@ -11679,6 +14459,32 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "承担单位之一",
+            "units": [
+              "苏州大学"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/gjjpt/list.htm",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://www.suda.edu.cn/suda_news/sdyw/200905/B08947E1-A765-4E35-885D-75E850CF4451.html",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ],
+        "note": "跨区域共同组建，苏州大学是5家主要承担单位之一，学校报道未列其余主要承担单位。"
       }
     },
     {
@@ -11715,6 +14521,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -11751,6 +14560,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -11787,6 +14599,15 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ]
       }
     },
     {
@@ -11823,6 +14644,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -11859,6 +14683,19 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://nanocic.suda.edu.cn/kypt/list.htm",
+            "label": "苏州纳米科技协同创新中心科研平台目录"
+          },
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ]
       }
     },
     {
@@ -11895,6 +14732,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -11931,6 +14771,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -11967,6 +14810,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -12003,6 +14849,15 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ]
       }
     },
     {
@@ -12039,6 +14894,15 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ]
       }
     },
     {
@@ -12075,6 +14939,15 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ]
       }
     },
     {
@@ -12111,13 +14984,22 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ]
       }
     },
     {
       "一级产业分类": "",
       "二级产业分类": "",
       "细分产业领域": "",
-      "平台等级": "校（院）级",
+      "平台等级": "省部级",
       "研究方向": "",
       "核心技术能力": "",
       "可对外提供的核心服务": "",
@@ -12131,15 +15013,72 @@ window.HUIHU_DATA = {
       "分类标签": [
         {
           "category": "江苏省重点实验室",
-          "level": "校（院）级",
+          "level": "省部级",
           "mode": "校企联合实验室",
-          "source": "高校平台资料"
+          "source": "高校或主管部门公开依据",
+          "url": "https://www.suda.edu.cn/suda_news/sdyw/202505/49c77c58-7111-4f66-842c-f497a6ee4fc2.html"
         }
       ],
       "存量梳理": {
         "reportYears": [],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建主体",
+            "units": [
+              "苏州大学"
+            ]
+          },
+          {
+            "role": "2025年共建协议签约方",
+            "units": [
+              "苏州大学",
+              "协鑫集团"
+            ]
+          },
+          {
+            "role": "依托单位",
+            "units": [
+              "苏州大学"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.suda.edu.cn/suda_news/sdyw/202505/49c77c58-7111-4f66-842c-f497a6ee4fc2.html",
+            "label": "苏州大学与协鑫集团共建协议"
+          },
+          {
+            "url": "https://www.jsrd.gov.cn/zt/d_11269/d_11274/202604/t20260409_1321541.shtml",
+            "label": "江苏省人大网站报道实验室现场运行"
+          },
+          {
+            "url": "https://www.sibet.cas.cn/xwdt2020/cmsm_169615/202309/t20230912_6878132.html",
+            "label": "2023年公开材料提及阿特斯早期合作"
+          },
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://xjft.suda.edu.cn/dwysm/list.htm",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://www.sipac.gov.cn/szgyyq/mtjj/202511/8d8ed5843cd945f5894a0fd99a021058.shtml",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ],
+        "scope": "苏州",
+        "note": "2025年校方协议明确与协鑫集团联合组建。2023年材料另载阿特斯早期合作，现行完整建设单位名单以正式批文为准。 苏大列入省部级目录并与协鑫集团签署联合组建协议。园区报道另有阿特斯共建记载，官网未公布完整批复名单。"
       }
     },
     {
@@ -12185,6 +15124,15 @@ window.HUIHU_DATA = {
         ],
         "scopeNote": "春季梳理标注该基地在园区外。",
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ]
       }
     },
     {
@@ -12221,6 +15169,47 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "建设单位",
+            "units": [
+              "苏州大学生物医学研究院"
+            ]
+          },
+          {
+            "role": "申建单位",
+            "units": [
+              "苏州大学生物医学研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg/grymy.jsp",
+            "label": "苏州大学科研机构原名与建设介绍"
+          },
+          {
+            "url": "https://ibms.suda.edu.cn/szdsys/list.htm",
+            "label": "实验室直属建设机构官网"
+          },
+          {
+            "url": "https://ibms.suda.edu.cn/yjyjj/list.htm",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://medical.suda.edu.cn/2f/60/c10296a667488/page.htm",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ],
+        "scope": "苏州工业园区独墅湖高等教育区",
+        "note": "苏州大学2010年批准材料中的历史名称。院方现行页面用「感染与免疫省高校重点实验室（苏州大学）」。"
       }
     },
     {
@@ -12257,6 +15246,33 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "依托单位",
+            "units": [
+              "苏州大学"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://cicrm.suda.edu.cn/9032/list.htm",
+            "label": "放射医学协同创新中心科研平台依托单位表"
+          },
+          {
+            "url": "https://sklrmp.suda.edu.cn/9021/list.htm",
+            "label": "放射医学与辐射防护国家重点实验室官网沿革"
+          },
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ],
+        "scope": "苏州",
+        "note": "放射医学与辐射防护国家重点实验室官网将本实验室列入前身。"
       }
     },
     {
@@ -12303,6 +15319,15 @@ window.HUIHU_DATA = {
         ],
         "supplemented": true,
         "officialListing": "https://www.suda.edu.cn/science_research/kyjg.jsp"
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ]
       }
     },
     {
@@ -12339,6 +15364,15 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ]
       }
     },
     {
@@ -12375,6 +15409,15 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ]
       }
     },
     {
@@ -12411,6 +15454,15 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ]
       }
     },
     {
@@ -12447,6 +15499,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -12488,6 +15543,9 @@ window.HUIHU_DATA = {
         ],
         "supplemented": true,
         "officialListing": "https://www.suda.edu.cn/science_research/kyjg.jsp"
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -12524,6 +15582,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -12573,6 +15634,15 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
+          }
+        ]
       }
     },
     {
@@ -12609,6 +15679,15 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ]
       }
     },
     {
@@ -12645,6 +15724,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -12681,6 +15763,15 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ]
       }
     },
     {
@@ -12715,6 +15806,9 @@ window.HUIHU_DATA = {
         ],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -12749,6 +15843,9 @@ window.HUIHU_DATA = {
         ],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -12785,6 +15882,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -12826,6 +15926,15 @@ window.HUIHU_DATA = {
         ],
         "scopeNote": "春季梳理确认苏州大学公法研究中心，标注该中心在园区外。",
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ]
       }
     },
     {
@@ -12865,6 +15974,15 @@ window.HUIHU_DATA = {
           "苏州大学独墅湖校区非物质文化遗产研究基地"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.suda.edu.cn/science_research/kyjg.jsp",
+            "label": "苏州大学科研机构总目录（校级关联）"
+          }
+        ]
       }
     },
     {
@@ -12913,6 +16031,36 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "牵头团队",
+            "units": [
+              "苏州大学苏州医学院放射医学与防护学院周光明团队"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://sklrmp.suda.edu.cn/9021/list.htm",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://fyxy.suda.edu.cn/2b/f9/c9168a601081/page.htm",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://www.sipac.gov.cn/szdshkjcxq/gzdt/202506/1e754e6e062a4a4fb1692973aefec0db.shtml",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
+          }
+        ],
+        "note": "官方写法“辐射损伤与救治江苏省高校重点实验室”，由周光明团队领衔，2024年获批。"
       }
     },
     {
@@ -12949,6 +16097,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -12983,6 +16134,28 @@ window.HUIHU_DATA = {
         ],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "建设单位",
+            "units": [
+              "苏州工业园区服务外包职业学院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.tech.net.cn/upfiles/zlbg2023/xx/jiangsu/jiangsu%20%2855%29.pdf",
+            "label": "苏州工业园区服务外包职业学院2023年度质量年报"
+          },
+          {
+            "url": "https://xxgk.siso.edu.cn/info/1045/4044.htm",
+            "label": "学校信息公开网2026年智库活动"
+          }
+        ],
+        "note": "学院建设的慧湖智库获江苏省科协智库平台项目。"
       }
     },
     {
@@ -13020,6 +16193,28 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州工业园区服务外包职业学院",
+              "江苏省商务厅"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.siso.edu.cn/info/1022/6611.htm",
+            "label": "学校官网刊载共建与认定"
+          },
+          {
+            "url": "https://dds.jscj.edu.cn/_upload/article/files/bd/af/4751c5564e3c99432778fafd00d7/06390272-322e-41fe-8b4a-71c76a81ae51.pdf",
+            "label": "江苏省高等职业教育质量报告"
+          }
+        ]
       }
     },
     {
@@ -13057,6 +16252,25 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州工业园区服务外包职业学院",
+              "苏州中合国际知识产权有限公司",
+              "苏州云葫芦信息科技有限公司"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.tech.net.cn/upfiles/zlbg2023/xx/jiangsu/jiangsu%20%2855%29.pdf",
+            "label": "苏州工业园区服务外包职业学院2023年度质量年报"
+          }
+        ]
       }
     },
     {
@@ -13094,6 +16308,34 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "申报单位",
+            "units": [
+              "苏州工业园区服务外包职业学院"
+            ]
+          },
+          {
+            "role": "校内建设单位",
+            "units": [
+              "苏州工业园区服务外包职业学院生物科技学院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.siso.edu.cn/info/1007/1017.htm",
+            "label": "学校2023年度大事记"
+          },
+          {
+            "url": "https://www.siso.edu.cn/rcpy/zyjs/swkjxy/swcpjyjy.htm",
+            "label": "学校生物科技学院专业简介"
+          }
+        ],
+        "note": "江苏省教育厅2023年立项名称为自驱动微纳机器人工程技术研究开发中心。"
       }
     },
     {
@@ -13131,6 +16373,28 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州工业园区服务外包职业学院",
+              "苏州金唯智生物科技有限公司"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.siso.edu.cn/info/1021/4788.htm",
+            "label": "学校发布省级立项及共建单位"
+          },
+          {
+            "url": "https://www.siso.edu.cn/swb/info/1024/7316.htm",
+            "label": "学校发布中心验收"
+          }
+        ]
       }
     },
     {
@@ -13167,6 +16431,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -13203,6 +16470,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -13240,6 +16510,34 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州工业园区职业技术学院",
+              "三星电子（苏州）半导体有限公司"
+            ]
+          },
+          {
+            "role": "校内建设单位",
+            "units": [
+              "苏州工业园区职业技术学院人工智能学院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.tech.net.cn/upfiles/zlbg2023_new/xx/jiangsu/jiangsu%20%2857%29.pdf",
+            "label": "苏州工业园区职业技术学院2023年度高等职业教育质量报告"
+          },
+          {
+            "url": "https://www.ivt.edu.cn/info/1014/10182.htm",
+            "label": "学校发布江苏省教育厅验收"
+          }
+        ]
       }
     },
     {
@@ -13277,6 +16575,35 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州工业园区职业技术学院",
+              "三星电子（苏州）半导体有限公司",
+              "苏州昕雨辰电子科技有限公司"
+            ]
+          },
+          {
+            "role": "校内建设单位",
+            "units": [
+              "苏州工业园区职业技术学院人工智能学院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.tech.net.cn/upfiles/zlbg2023_new/xx/jiangsu/jiangsu%20%2857%29.pdf",
+            "label": "苏州工业园区职业技术学院2023年度高等职业教育质量报告"
+          },
+          {
+            "url": "https://www.zstp.edu.cn/__local/C/9D/43/F4CDA4E880335EB4CEE4E92A102_8340F306_D1182.pdf",
+            "label": "教育部办公厅认定名单"
+          }
+        ]
       }
     },
     {
@@ -13320,6 +16647,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -13358,6 +16688,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -13394,42 +16727,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
-      }
-    },
-    {
-      "一级产业分类": "",
-      "二级产业分类": "",
-      "细分产业领域": "",
-      "平台等级": "省部级",
-      "研究方向": "",
-      "核心技术能力": "",
-      "可对外提供的核心服务": "",
-      "标杆转化案例": "",
-      "核心共享设备": "",
-      "联系人": "",
-      "联系电话": "",
-      "序号": "PT177",
-      "平台名称": "氢燃料电池核心零部件及氢能核心装备山东省工程研究中心",
-      "所属高校": "西安交通大学苏州研究院",
-      "分类标签": [
-        {
-          "category": "工程研究中心",
-          "level": "省部级",
-          "mode": "有企业参与，共建待核",
-          "authority": "山东省科技厅",
-          "year": 2024,
-          "source": "高校年报"
-        }
-      ],
-      "存量梳理": {
-        "reportYears": [
-          2024,
-          2025
-        ],
-        "sources": [
-          "早期高校平台概览"
-        ],
-        "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -13466,6 +16766,15 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtusz.cn/yanjiuyuanjianjie.html",
+            "label": "西安交大苏州研究院简介"
+          }
+        ]
       }
     },
     {
@@ -13500,6 +16809,9 @@ window.HUIHU_DATA = {
         ],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -13534,6 +16846,15 @@ window.HUIHU_DATA = {
         ],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtusz.cn/yanjiuyuanjianjie.html",
+            "label": "西安交大苏州研究院简介"
+          }
+        ]
       }
     },
     {
@@ -13570,6 +16891,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -13606,6 +16930,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -13642,6 +16969,30 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "依托单位",
+            "units": [
+              "东南大学系统工程研究所暨物流管理工程系",
+              "东南大学苏州研究院",
+              "苏州市物流协会",
+              "国际物流中心（ILC）"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276170/page.htm",
+            "label": "东南大学苏州校区中心介绍"
+          },
+          {
+            "url": "https://szxq.seu.edu.cn/24527/list.htm",
+            "label": "东南大学苏州校区科研平台"
+          }
+        ]
       }
     },
     {
@@ -13678,6 +17029,15 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://szxq.seu.edu.cn/24527/list.htm",
+            "label": "东南大学苏州校区科研平台"
+          }
+        ]
       }
     },
     {
@@ -13727,6 +17087,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -13764,6 +17127,25 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "roles": [
+          {
+            "role": "申报单位",
+            "units": [
+              "中国科学技术大学苏州高等研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://sz.ustc.edu.cn/cn_mobile/xwgg_show/907.html",
+            "label": "苏州高研院外籍院士工作站授牌公告"
+          }
+        ],
+        "scope": "苏州工业园区",
+        "note": "院士团队和中国科学技术大学—香港城市大学环境科学技术联合实验室团队提供科研支持。"
       }
     },
     {
@@ -13807,6 +17189,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -13854,6 +17239,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -13907,6 +17295,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -13943,6 +17334,15 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          }
+        ]
       }
     },
     {
@@ -13975,6 +17375,9 @@ window.HUIHU_DATA = {
         ],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -14011,6 +17414,15 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtusz.cn/yanjiuyuanjianjie.html",
+            "label": "西安交大苏州研究院简介"
+          }
+        ]
       }
     },
     {
@@ -14045,6 +17457,15 @@ window.HUIHU_DATA = {
         ],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtusz.cn/yanjiuyuanjianjie.html",
+            "label": "西安交大苏州研究院简介"
+          }
+        ]
       }
     },
     {
@@ -14079,6 +17500,15 @@ window.HUIHU_DATA = {
         ],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtusz.cn/yanjiuyuanjianjie.html",
+            "label": "西安交大苏州研究院简介"
+          }
+        ]
       }
     },
     {
@@ -14115,6 +17545,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -14151,6 +17584,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -14187,6 +17623,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -14223,6 +17662,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -14255,6 +17697,9 @@ window.HUIHU_DATA = {
           "高能级创新平台台账"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -14287,6 +17732,9 @@ window.HUIHU_DATA = {
           "高能级创新平台台账"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -14320,6 +17768,29 @@ window.HUIHU_DATA = {
         ],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "建设主体",
+            "units": [
+              "中国科学技术大学苏州高等研究院智能医疗器械研究中心"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://sz.ustc.edu.cn/cn_mobile/xwgg_show/1214.html",
+            "label": "苏州高研院中心会议报道确认平台获批"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/cn_mobile/djgz_show/573.html",
+            "label": "苏州高研院公开材料列出中心所获平台认定"
+          }
+        ],
+        "scope": "苏州工业园区",
+        "note": "苏州高研院智能医疗器械研究中心获批的优质创新平台。保留该平台与中心之间的依托关系。"
       }
     },
     {
@@ -14352,6 +17823,9 @@ window.HUIHU_DATA = {
           "高能级创新平台台账"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -14388,6 +17862,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -14425,6 +17902,27 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "建设单位",
+            "units": [
+              "苏州工业园区服务外包职业学院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.siso.edu.cn/rcpy/zyjs/znglxy/zncpkfyyy.htm",
+            "label": "学校智能管理学院专业简介"
+          },
+          {
+            "url": "https://www.tech.net.cn/upfiles/zlbg2023_new/xx/jiangsu/jiangsu%20%2856%29.pdf",
+            "label": "苏州工业园区服务外包职业学院2023学年质量年度报告"
+          }
+        ]
       }
     },
     {
@@ -14462,6 +17960,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -14499,6 +18000,27 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "建设单位",
+            "units": [
+              "苏州工业园区服务外包职业学院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.siso.edu.cn/rcpy/zyjs/znglxy/zncpkfyyy.htm",
+            "label": "学校智能管理学院专业简介"
+          },
+          {
+            "url": "https://www.tech.net.cn/upfiles/zlbg2023_new/xx/jiangsu/jiangsu%20%2856%29.pdf",
+            "label": "苏州工业园区服务外包职业学院2023学年质量年度报告"
+          }
+        ]
       }
     },
     {
@@ -14536,6 +18058,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -14572,6 +18097,34 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "建设单位",
+            "units": [
+              "苏州工业园区服务外包职业学院"
+            ]
+          },
+          {
+            "role": "校内建设单位",
+            "units": [
+              "苏州工业园区服务外包职业学院生物科技学院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.siso.edu.cn/rcpy/zyjs/swkjxy/swcpjyjy.htm",
+            "label": "学校生物科技学院专业简介"
+          },
+          {
+            "url": "https://www.siso.edu.cn/info/1022/10540.htm",
+            "label": "学校2026年发布运行案例"
+          }
+        ],
+        "note": "学校将该成果平台列为科教创新区优质创新重点平台。"
       }
     },
     {
@@ -14616,6 +18169,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -14657,6 +18213,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -14689,6 +18248,15 @@ window.HUIHU_DATA = {
           "高能级创新平台台账"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
+          }
+        ]
       }
     },
     {
@@ -14725,6 +18293,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -14761,6 +18332,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -14797,6 +18371,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -14833,6 +18410,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -14869,6 +18449,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -14905,6 +18488,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -14941,6 +18527,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -14977,6 +18566,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -15014,6 +18606,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -15050,6 +18645,24 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "设立单位",
+            "units": [
+              "东南大学"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://szxq.seu.edu.cn/xqgk/mainm.htm",
+            "label": "东南大学苏州校区简介"
+          }
+        ],
+        "note": "东南大学苏州校区官网将该中心列入该校苏州办学沿革，列明2013年设立。"
       }
     },
     {
@@ -15086,6 +18699,15 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://szxq.seu.edu.cn/2026/1113/c24377a589486/page.htm",
+            "label": "官方资料提及"
+          }
+        ]
       }
     },
     {
@@ -15122,6 +18744,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -15157,6 +18782,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -15193,6 +18821,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -15229,6 +18860,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -15265,6 +18899,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -15301,6 +18938,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -15337,6 +18977,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -15373,6 +19016,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -15409,6 +19055,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -15445,6 +19094,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -15481,6 +19133,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -15517,6 +19172,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -15553,6 +19211,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -15589,6 +19250,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -15625,6 +19289,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -15661,6 +19328,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -15697,6 +19367,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -15733,6 +19406,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -15768,6 +19444,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -15804,6 +19483,28 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "东南大学苏州研究院",
+              "苏州赛富科技有限公司"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276172/page.htm",
+            "label": "东南大学苏州校区共建中心介绍"
+          },
+          {
+            "url": "https://szxq.seu.edu.cn/24527/list.htm",
+            "label": "东南大学苏州校区科研平台"
+          }
+        ]
       }
     },
     {
@@ -15847,6 +19548,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -15879,6 +19583,27 @@ window.HUIHU_DATA = {
         ],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "设立单位",
+            "units": [
+              "中国人民大学"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://news.ruc.edu.cn/687456934360518.html",
+            "label": "中国人民大学与苏州市人民政府合作材料"
+          },
+          {
+            "url": "https://sc.ruc.edu.cn/research/index.htm",
+            "label": "中国人民大学苏州校区科研创新介绍"
+          }
+        ]
       }
     },
     {
@@ -15922,6 +19647,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -15965,6 +19693,23 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "设立单位",
+            "units": [
+              "中国人民大学"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://news.ruc.edu.cn/687456934360518.html",
+            "label": "中国人民大学与苏州市人民政府合作材料"
+          }
+        ]
       }
     },
     {
@@ -16008,6 +19753,30 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "设立单位",
+            "units": [
+              "中国人民大学新质生产力研究中心"
+            ]
+          },
+          {
+            "role": "苏州落地单位",
+            "units": [
+              "中国人民大学苏州校区"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://sc.ruc.edu.cn/research/index.htm",
+            "label": "中国人民大学苏州校区科研创新介绍"
+          }
+        ],
+        "note": "校区官网明确为中国人民大学新质生产力研究中心设在苏州校区的分中心。"
       }
     },
     {
@@ -16040,6 +19809,9 @@ window.HUIHU_DATA = {
         ],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -16077,6 +19849,33 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "roles": [
+          {
+            "role": "所属机构",
+            "units": [
+              "中国科学技术大学苏州高等研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_show/115.html",
+            "label": "医学影像智能与机器人研究中心官网介绍"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/xyjs_content_single/index.html",
+            "label": "中国科大苏州高研院科研机构目录"
+          },
+          {
+            "url": "https://sz.ustc.edu.cn/kxyj_list/index.html",
+            "label": "中科大苏州高研院科研平台"
+          }
+        ],
+        "scope": "苏州工业园区",
+        "note": "科研平台隶属苏州高研院科研部架构，研究团队主要成员隶属中国科大生物医学工程学院。"
       }
     },
     {
@@ -16113,6 +19912,10 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending",
+        "note": "历史清单仅列企业名称，具体科研平台实体待核。"
       }
     },
     {
@@ -16150,6 +19953,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -16187,6 +19993,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -16224,6 +20033,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -16261,6 +20073,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -16298,6 +20113,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -16335,6 +20153,23 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "建设单位",
+            "units": [
+              "苏州工业园区服务外包职业学院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.tech.net.cn/upfiles/zlbg2023/xx/jiangsu/jiangsu%20%2855%29.pdf",
+            "label": "苏州工业园区服务外包职业学院2023年度质量年报"
+          }
+        ]
       }
     },
     {
@@ -16372,6 +20207,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -16409,6 +20247,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -16446,6 +20287,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -16483,6 +20327,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -16520,6 +20367,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -16556,6 +20406,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -16591,6 +20444,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -16626,6 +20482,25 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "北京理工大学生命学院",
+              "苏州独墅湖科教创新区管理委员会",
+              "洛加大先进技术研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.bit.edu.cn/xww/zhxw/a136116.htm",
+            "label": "北京理工大学联合研究中心签约揭牌公告"
+          }
+        ]
       }
     },
     {
@@ -16662,6 +20537,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -16698,6 +20576,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -16734,6 +20615,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -16770,6 +20654,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -16806,6 +20693,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -16848,6 +20738,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -16891,6 +20784,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -16934,6 +20830,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -16977,6 +20876,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -17019,6 +20921,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -17061,6 +20966,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -17098,6 +21006,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -17135,6 +21046,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -17171,6 +21085,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -17212,6 +21129,9 @@ window.HUIHU_DATA = {
           "西交大-洛加大苏州微纳制造技术与材料国际联合实验室"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -17248,6 +21168,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -17280,6 +21203,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -17306,6 +21232,9 @@ window.HUIHU_DATA = {
         "reportYears": [],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -17346,6 +21275,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -17385,6 +21317,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -17425,6 +21360,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -17465,6 +21403,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -17505,6 +21446,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -17545,6 +21489,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -17584,6 +21531,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -17634,6 +21584,15 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/institutes-centres-and-labs/the-platform-for-suzhou-municipal-key-lab-of-virtual-reality-technology",
+            "label": "西交利物浦大学虚拟工程建设沿革"
+          }
+        ]
       }
     },
     {
@@ -17664,6 +21623,9 @@ window.HUIHU_DATA = {
         ],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -17709,6 +21671,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -17737,6 +21702,9 @@ window.HUIHU_DATA = {
           "慧湖50L100E阶段成果"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -17776,6 +21744,24 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "设立单位",
+            "units": [
+              "苏州工业园区卡鲁生产技术研究院（GAMI）"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.kit.edu/kit/english/pi_2018_141_kit-opens-research-factory-for-artificial-intelligence-in-suzhou.php",
+            "label": "卡尔斯鲁厄理工学院关于 GAMI 科研平台的新闻稿"
+          }
+        ],
+        "note": "2018年卡尔斯鲁厄理工学院发布 GAMI 在苏州开设人工智能创新工场的公告。"
       }
     },
     {
@@ -17815,6 +21801,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -17854,6 +21843,28 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "roles": [
+          {
+            "role": "运营单位",
+            "units": [
+              "苏州工业园区卡鲁生产技术研究院（GAMI）"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.kit.edu/kit/english/pi_2018_141_kit-opens-research-factory-for-artificial-intelligence-in-suzhou.php",
+            "label": "卡尔斯鲁厄理工学院关于 GAMI 科研平台的新闻稿"
+          },
+          {
+            "url": "https://www.sipac.gov.cn/szdaglzx/dsj/201512/c0830b7150e942f28086cfe626217bbb.shtml",
+            "label": "园区档案关于2015年独墅湖揭牌的记录"
+          }
+        ],
+        "note": "卡尔斯鲁厄理工学院资料可确认 GAMI 运营该中心，园区档案确认在独墅湖科教创新区揭牌。证据属于历史运营记录。"
       }
     },
     {
@@ -17893,6 +21904,27 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "建设单位",
+            "units": [
+              "苏州工业园区新国大研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.nusri.cn/nusri/news/nusrinews/708.html",
+            "label": "新国大苏研院建院与科研中心建设回顾"
+          },
+          {
+            "url": "https://www.nusri.cn/nusri/news/nusrinews/1033.html",
+            "label": "新国大苏研院科研中心综述"
+          }
+        ]
       }
     },
     {
@@ -17932,6 +21964,27 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "建设单位",
+            "units": [
+              "苏州工业园区新国大研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.nusri.cn/nusri/news/nusrinews/708.html",
+            "label": "新国大苏研院建院与科研中心建设回顾"
+          },
+          {
+            "url": "https://www.nusri.cn/nusri/news/nusrinews/1033.html",
+            "label": "新国大苏研院科研中心综述"
+          }
+        ]
       }
     },
     {
@@ -17971,6 +22024,27 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "建设单位",
+            "units": [
+              "苏州工业园区新国大研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.nusri.cn/nusri/news/nusrinews/708.html",
+            "label": "新国大苏研院建院与科研中心建设回顾"
+          },
+          {
+            "url": "https://www.nusri.cn/nusri/news/nusrinews/990.html",
+            "label": "新国大苏研院活动报道"
+          }
+        ]
       }
     },
     {
@@ -18010,6 +22084,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -18050,6 +22127,36 @@ window.HUIHU_DATA = {
         ],
         "note": "2026年2月旧清单填报为未继续运行。新国大苏研院官网在同年10月发布了研究院的新动态。",
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "新加坡国立大学",
+              "苏州工业园区"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.nusri.cn/nusri/news/nusrinews/708.html",
+            "label": "新国大苏研院建院与科研中心建设回顾"
+          },
+          {
+            "url": "https://www.nusri.cn/nusri/news/nusrinews/457.html",
+            "label": "新国大苏研院战略共建回顾"
+          },
+          {
+            "url": "https://www.nusri.cn/aboutus/nusriprofile/",
+            "label": "新国大苏研院官方简介"
+          },
+          {
+            "url": "https://www.nusri.cn/",
+            "label": "官方资料提及"
+          }
+        ]
       }
     },
     {
@@ -18089,6 +22196,9 @@ window.HUIHU_DATA = {
           }
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -18122,6 +22232,30 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州工业园区职业技术学院",
+              "豪梅特航空机件（苏州）有限公司"
+            ]
+          },
+          {
+            "role": "校内建设单位",
+            "units": [
+              "苏州工业园区职业技术学院智能制造学院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.tech.net.cn/upfiles/zlbg2023_new/xx/jiangsu/jiangsu%20%2857%29.pdf",
+            "label": "苏州工业园区职业技术学院2023年度高等职业教育质量报告"
+          }
+        ]
       }
     },
     {
@@ -18155,6 +22289,31 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州工业园区职业技术学院",
+              "江苏哈工海渡教育集团有限公司"
+            ]
+          },
+          {
+            "role": "校内建设单位",
+            "units": [
+              "苏州工业园区职业技术学院智能制造学院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.tech.net.cn/upfiles/zlbg2023_new/xx/jiangsu/jiangsu%20%2857%29.pdf",
+            "label": "苏州工业园区职业技术学院2023年度高等职业教育质量报告"
+          }
+        ],
+        "note": "校方年报平台标题写作“哈工海度”，共建企业全称写作“江苏哈工海渡教育集团有限公司”。"
       }
     },
     {
@@ -18188,6 +22347,30 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州工业园区职业技术学院",
+              "史赛克（苏州）医疗技术有限公司"
+            ]
+          },
+          {
+            "role": "校内建设单位",
+            "units": [
+              "苏州工业园区职业技术学院智能制造学院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.tech.net.cn/upfiles/zlbg2023_new/xx/jiangsu/jiangsu%20%2857%29.pdf",
+            "label": "苏州工业园区职业技术学院2023年度高等职业教育质量报告"
+          }
+        ]
       }
     },
     {
@@ -18221,6 +22404,34 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州工业园区职业技术学院",
+              "三星电子（苏州）半导体有限公司"
+            ]
+          },
+          {
+            "role": "校内建设单位",
+            "units": [
+              "苏州工业园区职业技术学院人工智能学院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.tech.net.cn/upfiles/zlbg2023_new/xx/jiangsu/jiangsu%20%2857%29.pdf",
+            "label": "苏州工业园区职业技术学院2023年度高等职业教育质量报告"
+          },
+          {
+            "url": "https://www.ivt.edu.cn/zkb/info/1017/1025.htm",
+            "label": "学校发布与三星共建项目"
+          }
+        ]
       }
     },
     {
@@ -18253,6 +22464,28 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州工业园区职业技术学院",
+              "三星电子（苏州）半导体有限公司"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.ivt.edu.cn/zkb/info/1017/1025.htm",
+            "label": "学校发布与三星共建项目"
+          },
+          {
+            "url": "https://www.ivt.edu.cn/xxgk/dsj.htm",
+            "label": "学校大事记"
+          }
+        ]
       }
     },
     {
@@ -18283,6 +22516,30 @@ window.HUIHU_DATA = {
         ],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州工业园区职业技术学院",
+              "江苏德造电子商务有限公司"
+            ]
+          },
+          {
+            "role": "校内建设单位",
+            "units": [
+              "苏州工业园区职业技术学院商学院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.tech.net.cn/upfiles/zlbg2023_new/xx/jiangsu/jiangsu%20%2857%29.pdf",
+            "label": "苏州工业园区职业技术学院2023年度高等职业教育质量报告"
+          }
+        ]
       }
     },
     {
@@ -18316,6 +22573,30 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州工业园区职业技术学院",
+              "江苏知德汽车科技有限公司"
+            ]
+          },
+          {
+            "role": "校内建设单位",
+            "units": [
+              "苏州工业园区职业技术学院智能制造学院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.tech.net.cn/upfiles/zlbg2023_new/xx/jiangsu/jiangsu%20%2857%29.pdf",
+            "label": "苏州工业园区职业技术学院2023年度高等职业教育质量报告"
+          }
+        ]
       }
     },
     {
@@ -18349,6 +22630,30 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州工业园区职业技术学院",
+              "苏州红蚂蚁装饰股份有限公司"
+            ]
+          },
+          {
+            "role": "校内建设单位",
+            "units": [
+              "苏州工业园区职业技术学院建筑与艺术学院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.tech.net.cn/upfiles/zlbg2023_new/xx/jiangsu/jiangsu%20%2857%29.pdf",
+            "label": "苏州工业园区职业技术学院2023年度高等职业教育质量报告"
+          }
+        ]
       }
     },
     {
@@ -18382,6 +22687,34 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州工业园区职业技术学院",
+              "博世汽车部件（苏州）有限公司"
+            ]
+          },
+          {
+            "role": "校内建设单位",
+            "units": [
+              "苏州工业园区职业技术学院智能制造学院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.tech.net.cn/upfiles/zlbg2023_new/xx/jiangsu/jiangsu%20%2857%29.pdf",
+            "label": "苏州工业园区职业技术学院2023年度高等职业教育质量报告"
+          },
+          {
+            "url": "https://www.ivt.edu.cn/xxgk/jgsz.htm",
+            "label": "学校机构及平台目录"
+          }
+        ]
       }
     },
     {
@@ -18415,6 +22748,31 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州工业园区职业技术学院",
+              "江淮集团"
+            ]
+          },
+          {
+            "role": "校内建设单位",
+            "units": [
+              "苏州工业园区职业技术学院商学院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.tech.net.cn/upfiles/zlbg2023_new/xx/jiangsu/jiangsu%20%2857%29.pdf",
+            "label": "苏州工业园区职业技术学院2023年度高等职业教育质量报告"
+          }
+        ],
+        "note": "校方年报将江淮集团列为共建方，苏州轨道交通公司列为站务、安全与突发情况处理等方面的研究合作方。"
       }
     },
     {
@@ -18443,6 +22801,9 @@ window.HUIHU_DATA = {
           "慧湖50L100E阶段成果"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -18470,6 +22831,28 @@ window.HUIHU_DATA = {
         "reportYears": [],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "西交利物浦大学",
+              "深圳市华芯邦科技有限公司"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/news/2025/03/xipuhuaxinbanggongjianyanjiuyuan",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
+          }
+        ]
       }
     },
     {
@@ -18497,6 +22880,28 @@ window.HUIHU_DATA = {
         "reportYears": [],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "西交利物浦大学",
+              "友达光电（昆山）有限公司"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/school_post/academy-of-artificial-intelligence-and-advanced-technology/research-centres/the-centre-for-cognitive-intelligence-and-agentic-ai/academic-and-industrial-collaborators",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
+          }
+        ]
       }
     },
     {
@@ -18524,6 +22929,24 @@ window.HUIHU_DATA = {
         "reportYears": [],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "西交利物浦大学",
+              "红与蓝微电子（上海）有限公司"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/jxcgzs/ssfa/xspypt/xqlhxmjyjpt",
+            "label": "校方或主管部门原文"
+          }
+        ]
       }
     },
     {
@@ -18551,6 +22974,25 @@ window.HUIHU_DATA = {
         "reportYears": [],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "西交利物浦大学生命与自然科学学院",
+              "悦丰岛有机农场"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/study/departments/academy-of-life-and-natural-sciences/aolns-research/research-platforms",
+            "label": "校方或主管部门原文"
+          }
+        ],
+        "note": "位于傀儡湖和阳澄湖水源保护区之间，具体地址需要平台原文补足。"
       }
     },
     {
@@ -18578,6 +23020,24 @@ window.HUIHU_DATA = {
         "reportYears": [],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "西交利物浦大学",
+              "南京派光智慧感知信息技术有限公司"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/jxcgzs/ssfa/xspypt/xqlhxmjyjpt",
+            "label": "校方或主管部门原文"
+          }
+        ]
       }
     },
     {
@@ -18605,6 +23065,36 @@ window.HUIHU_DATA = {
         "reportYears": [],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "西交利物浦大学慧湖药学院",
+              "派格生物医药（苏州）股份有限公司"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/news/2022/12/xjtlu-pegbio",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/professional-services/xjtlu-pegbio-joint-research-institute-of-chronic-diseases",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/study/departments/academy-of-life-and-natural-sciences/aolns-research/research-platforms",
+            "label": "西交利物浦大学生命与自然科学学院科研平台"
+          },
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
+          }
+        ]
       }
     },
     {
@@ -18632,6 +23122,28 @@ window.HUIHU_DATA = {
         "reportYears": [],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "西交利物浦大学",
+              "上海益航网络科技有限公司"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/jxcgzs/ssfa/xspypt/xqlhxmjyjpt",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
+          }
+        ]
       }
     },
     {
@@ -18659,6 +23171,19 @@ window.HUIHU_DATA = {
         "reportYears": [],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
+            "label": "西交利物浦大学科研机构目录"
+          },
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/study/departments/academy-of-life-and-natural-sciences/aolns-research/research-platforms",
+            "label": "西浦生命与自然科学学院科研平台"
+          }
+        ]
       }
     },
     {
@@ -18686,6 +23211,24 @@ window.HUIHU_DATA = {
         "reportYears": [],
         "sources": [],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "西交利物浦大学集萃学院",
+              "苏州快可光伏电子股份有限公司"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.xjtlu.edu.cn/zh/jxcgzs/ssfa/xspypt/xqlhxmjyjpt",
+            "label": "校方或主管部门原文"
+          }
+        ]
       }
     },
     {
@@ -18715,6 +23258,9 @@ window.HUIHU_DATA = {
           "慧湖50L100E阶段成果"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -18747,6 +23293,9 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -18779,6 +23328,24 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "建设单位",
+            "units": [
+              "西安交通大学纳米科学与工程技术学院（苏州）"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://news.xjtu.edu.cn/info/1003/72206.htm",
+            "label": "西安交通大学新闻网关于纳米科技合作的报道"
+          }
+        ],
+        "note": "院方报道明确纳米科学与工程技术学院（苏州）承担微纳机电制造专业中心建设任务。"
       }
     },
     {
@@ -18811,6 +23378,26 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "西安交通大学医学部药学院",
+              "斯旺西大学"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.xjtu.edu.cn/xynr.jsp?urltype=tree.TreeTempUrl&wbtreeid=1634&wbxjtucollegeid=453",
+            "label": "西安交通大学医学部药学院官方介绍"
+          }
+        ],
+        "scope": "落地待核",
+        "note": "药学院公开确认与斯旺西大学建立该中心，公开页面未证实在苏州工业园区落地。"
       }
     },
     {
@@ -18848,6 +23435,9 @@ window.HUIHU_DATA = {
           "纳米技术联合实验室及公共服务平台"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -18880,6 +23470,29 @@ window.HUIHU_DATA = {
           "早期高校平台概览"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "西安交通大学纳米科学与工程技术学院（苏州）",
+              "江苏省苏州纳米研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://news.xjtu.edu.cn/info/1003/72206.htm",
+            "label": "西安交通大学公布微纳机电技术产学研合作中心共建方"
+          },
+          {
+            "url": "https://gs.xjtu.edu.cn/info/1144/4763.htm",
+            "label": "西安交通大学研究生院关于同一签约的报道"
+          }
+        ],
+        "note": "苏州纳米科技发展有限公司签约的是同场的研究生联合培养基地，产学研合作中心的共建方是江苏省苏州纳米研究院。"
       }
     },
     {
@@ -18908,6 +23521,28 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "东南大学",
+              "澳大利亚蒙纳士大学"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://oic.seu.edu.cn/2013/1105/c18985a204951/page.htm",
+            "label": "东南大学国际合作处成立公告"
+          },
+          {
+            "url": "https://szxq.seu.edu.cn/xqgk/mainm.htm",
+            "label": "东南大学苏州校区简介"
+          }
+        ]
       }
     },
     {
@@ -18936,6 +23571,24 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "设立单位",
+            "units": [
+              "东南大学"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://szxq.seu.edu.cn/xqgk/mainm.htm",
+            "label": "东南大学苏州校区简介"
+          }
+        ],
+        "note": "东南大学苏州校区官网将该科技园列入该校苏州办学沿革，列明2008年设立。"
       }
     },
     {
@@ -18966,13 +23619,33 @@ window.HUIHU_DATA = {
         ],
         "supplemented": true,
         "officialListing": "https://szxq.seu.edu.cn/2021/0521/c24434a372055/page.htm"
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "东南大学苏州校区",
+              "江苏剑桥颐华律师事务所",
+              "深圳峰创智诚科技有限公司",
+              "苏州创路投资管理有限公司"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://szxq.seu.edu.cn/2021/0521/c24434a372055/page.htm",
+            "label": "东南大学苏州校区签约揭牌公告"
+          }
+        ]
       }
     },
     {
       "一级产业分类": "",
       "二级产业分类": "",
       "细分产业领域": "",
-      "平台等级": "校（院）级",
+      "平台等级": "市级",
       "研究方向": "",
       "核心技术能力": "",
       "可对外提供的核心服务": "",
@@ -18986,9 +23659,10 @@ window.HUIHU_DATA = {
       "分类标签": [
         {
           "category": "苏州市重点实验室",
-          "level": "校（院）级",
+          "level": "市级",
           "mode": "校企联合实验室",
-          "source": "高校平台资料"
+          "source": "高校或主管部门公开依据",
+          "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276157/pagem.htm"
         }
       ],
       "存量梳理": {
@@ -18997,6 +23671,35 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "依托单位",
+            "units": [
+              "东南大学苏州研究院"
+            ]
+          },
+          {
+            "role": "合作建设单位",
+            "units": [
+              "苏州大学",
+              "苏州一光仪器有限公司"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276157/pagem.htm",
+            "label": "东南大学苏州校区实验室介绍"
+          },
+          {
+            "url": "https://szxq.seu.edu.cn/24527/list.htm",
+            "label": "东南大学苏州校区科研平台"
+          }
+        ],
+        "note": "校方明确列为市级重点实验室，位于苏州独墅湖高等教育区。"
       }
     },
     {
@@ -19028,6 +23731,30 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "依托单位",
+            "units": [
+              "东南大学苏州研究院",
+              "南京微创医学科技有限公司",
+              "东南大学附属中大医院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://szxq.seu.edu.cn/2019/0604/c24527a276156/page.htm",
+            "label": "东南大学苏州校区实验室介绍"
+          },
+          {
+            "url": "https://szxq.seu.edu.cn/24527/list.htm",
+            "label": "东南大学苏州校区科研平台"
+          }
+        ],
+        "note": "校方明确列为市级重点实验室，位于苏州独墅湖高等教育区。"
       }
     },
     {
@@ -19056,6 +23783,30 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "中国科学技术协会",
+              "中国人民大学"
+            ]
+          },
+          {
+            "role": "苏州落地单位",
+            "units": [
+              "中国人民大学苏州校区"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://news.ruc.edu.cn/687456954754502.html",
+            "label": "中国人民大学苏州校区科研机构揭牌公告"
+          }
+        ]
       }
     },
     {
@@ -19084,13 +23835,16 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
       "一级产业分类": "",
       "二级产业分类": "",
       "细分产业领域": "",
-      "平台等级": "",
+      "平台等级": "省部级",
       "研究方向": "",
       "核心技术能力": "",
       "可对外提供的核心服务": "",
@@ -19103,7 +23857,10 @@ window.HUIHU_DATA = {
       "所属高校": "中国人民大学苏州校区",
       "分类标签": [
         {
-          "category": "部委重点实验室"
+          "category": "部委重点实验室",
+          "level": "省部级",
+          "source": "高校或主管部门公开依据",
+          "url": "https://www.moe.gov.cn/jyb_xxgk/gk_gbgg/moe_0/moe_1133/moe_1134/tnull_14166.html"
         }
       ],
       "存量梳理": {
@@ -19112,13 +23869,45 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "依托单位",
+            "units": [
+              "中国人民大学"
+            ]
+          },
+          {
+            "role": "苏州落地单位",
+            "units": [
+              "中国人民大学苏州校区"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.moe.gov.cn/jyb_xxgk/gk_gbgg/moe_0/moe_1133/moe_1134/tnull_14166.html",
+            "label": "教育部重点实验室立项名单"
+          },
+          {
+            "url": "https://news.ruc.edu.cn/687456954754502.html",
+            "label": "中国人民大学苏州校区科研机构揭牌公告"
+          },
+          {
+            "url": "https://se-office.ruc.edu.cn/xwdt/c8181f7ee330421fb73a39c1e56f52c0.htm",
+            "label": "中国人民大学科学技术发展部开放课题指南"
+          }
+        ],
+        "note": "2024年校方公布在苏州校区落地。实验室主体依托中国人民大学。"
       }
     },
     {
       "一级产业分类": "",
       "二级产业分类": "",
       "细分产业领域": "",
-      "平台等级": "",
+      "平台等级": "省部级",
       "研究方向": "",
       "核心技术能力": "",
       "可对外提供的核心服务": "",
@@ -19131,7 +23920,10 @@ window.HUIHU_DATA = {
       "所属高校": "中国人民大学苏州校区",
       "分类标签": [
         {
-          "category": "工程研究中心"
+          "category": "工程研究中心",
+          "level": "省部级",
+          "source": "高校或主管部门公开依据",
+          "url": "https://keyan.ruc.edu.cn/kyjg/jybgcyjzx/index.htm"
         }
       ],
       "存量梳理": {
@@ -19140,13 +23932,41 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "依托单位",
+            "units": [
+              "中国人民大学"
+            ]
+          },
+          {
+            "role": "苏州落地单位",
+            "units": [
+              "中国人民大学苏州校区"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://keyan.ruc.edu.cn/kyjg/jybgcyjzx/index.htm",
+            "label": "中国人民大学科研处工程研究中心介绍"
+          },
+          {
+            "url": "https://news.ruc.edu.cn/687456954754502.html",
+            "label": "中国人民大学苏州校区科研机构揭牌公告"
+          }
+        ],
+        "note": "2024年校方公布在苏州校区落地。"
       }
     },
     {
       "一级产业分类": "",
       "二级产业分类": "",
       "细分产业领域": "",
-      "平台等级": "",
+      "平台等级": "省部级",
       "研究方向": "",
       "核心技术能力": "",
       "可对外提供的核心服务": "",
@@ -19159,7 +23979,10 @@ window.HUIHU_DATA = {
       "所属高校": "中国人民大学苏州校区",
       "分类标签": [
         {
-          "category": "工程研究中心"
+          "category": "工程研究中心",
+          "level": "省部级",
+          "source": "高校或主管部门公开依据",
+          "url": "https://ai.ruc.edu.cn/kxyj/yjjg/sbjyjjg/3cf415b3b95743ff9dbfd74f486cf15c.htm"
         }
       ],
       "存量梳理": {
@@ -19168,6 +23991,34 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "roles": [
+          {
+            "role": "主体单位",
+            "units": [
+              "中国人民大学高瓴人工智能学院"
+            ]
+          },
+          {
+            "role": "苏州落地单位",
+            "units": [
+              "中国人民大学苏州校区"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://ai.ruc.edu.cn/kxyj/yjjg/sbjyjjg/3cf415b3b95743ff9dbfd74f486cf15c.htm",
+            "label": "中国人民大学高瓴人工智能学院中心介绍"
+          },
+          {
+            "url": "https://news.ruc.edu.cn/687456954754502.html",
+            "label": "中国人民大学苏州校区科研机构揭牌公告"
+          }
+        ],
+        "note": "2024年校方公布在苏州校区落地。"
       }
     },
     {
@@ -19196,66 +24047,24 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "supplemented": true
-      }
-    },
-    {
-      "一级产业分类": "",
-      "二级产业分类": "",
-      "细分产业领域": "",
-      "平台等级": "国家级",
-      "研究方向": "",
-      "核心技术能力": "",
-      "可对外提供的核心服务": "",
-      "标杆转化案例": "",
-      "核心共享设备": "",
-      "联系人": "",
-      "联系电话": "",
-      "序号": "PT481",
-      "平台名称": "精准智能化学全国重点实验室",
-      "所属高校": "中国科学技术大学苏州高等研究院",
-      "分类标签": [
-        {
-          "category": "全国重点实验室",
-          "level": "国家级",
-          "authority": "科技部",
-          "year": 2024,
-          "source": "已核认定或设立资料"
-        }
-      ],
-      "存量梳理": {
-        "reportYears": [],
-        "sources": [
-          "高校平台资源档案"
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "roles": [
+          {
+            "role": "苏州落地单位",
+            "units": [
+              "中国人民大学苏州校区"
+            ]
+          }
         ],
-        "supplemented": true
-      }
-    },
-    {
-      "一级产业分类": "",
-      "二级产业分类": "",
-      "细分产业领域": "",
-      "平台等级": "",
-      "研究方向": "",
-      "核心技术能力": "",
-      "可对外提供的核心服务": "",
-      "标杆转化案例": "",
-      "核心共享设备": "",
-      "联系人": "",
-      "联系电话": "",
-      "序号": "PT483",
-      "平台名称": "量子信息与量子科技创新研究院（苏州）",
-      "所属高校": "中国科学技术大学苏州高等研究院",
-      "分类标签": [
-        {
-          "category": "研究院所"
-        }
-      ],
-      "存量梳理": {
-        "reportYears": [],
         "sources": [
-          "高校平台资源档案"
+          {
+            "url": "https://news.ruc.edu.cn/687456954754502.html",
+            "label": "中国人民大学苏州校区科研机构揭牌公告"
+          }
         ],
-        "supplemented": true
+        "note": "苏州园区支持建设，校方公布平台在苏州校区成立。"
       }
     },
     {
@@ -19284,6 +24093,30 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "北京京东方能源科技有限公司",
+              "华北电力大学",
+              "华北电力大学苏州研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://szyjy.ncepu.edu.cn/tzgg/73d7a0e3ca3c4fa2868e6842269fcb81.htm",
+            "label": "华北电力大学苏州研究院三方共建及工作站招生信息"
+          },
+          {
+            "url": "https://szyjy.ncepu.edu.cn/",
+            "label": "华北电力大学苏州研究院官网"
+          }
+        ],
+        "note": "2020年三方签约共建。研究院下设京东方—华电苏州研究生联合培养工作站，公开地址包括苏州工业园区。"
       }
     },
     {
@@ -19312,6 +24145,9 @@ window.HUIHU_DATA = {
           "慧湖50L100E阶段成果"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -19340,6 +24176,36 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州工业园区管理委员会",
+              "南京医科大学",
+              "山东大学"
+            ]
+          },
+          {
+            "role": "合作实施单位",
+            "units": [
+              "南京医科大学姑苏创新研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.zgjssw.gov.cn/shixianchuanzhen/suzhou/202102/t20210228_6994070.shtml",
+            "label": "江苏省委新闻网三方签约揭牌与实施单位报道"
+          },
+          {
+            "url": "https://kjj.suzhou.gov.cn/szkj/sxdt/202104/e356ee741b6542fdaec364989b13ca03.shtml",
+            "label": "苏州市科技局公告南京医科大学与山东大学共建中心"
+          }
+        ],
+        "note": "正式揭牌名称为南京医科大学—山东大学苏州生殖医学协同创新中心。签约方为园区管委会及两校，后续由南京医科大学姑苏创新研究院与山东大学开展合作共建。"
       }
     },
     {
@@ -19368,6 +24234,10 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending",
+        "note": "已查到山东大学相关全国重点实验室与苏州研究院的交流报道，苏州合作基地的正式设立依据待补。"
       }
     },
     {
@@ -19396,6 +24266,15 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "sources": [
+          {
+            "url": "https://www.sipac.gov.cn/szdshkjcxq/gdjy/201905/e396dfa90c9a4773bfeb53e465e8dd2f.shtml",
+            "label": "独墅湖科教创新区高校院所名录"
+          }
+        ]
       }
     },
     {
@@ -19424,6 +24303,29 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "牛津大学",
+              "牛津大学高等研究院（苏州）",
+              "Prenetics Limited"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://oscar.site.ox.ac.uk/news-0",
+            "label": "牛津大学高等研究院（苏州）共建公告"
+          },
+          {
+            "url": "https://oscar.site.ox.ac.uk/uk-ambassador-inaugurates-oscar-prenetics-innovation-and-technology-centre-advanced-molecular",
+            "label": "牛津大学高等研究院（苏州）揭牌报道"
+          }
+        ]
       }
     },
     {
@@ -19452,6 +24354,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -19480,6 +24385,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -19508,6 +24416,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -19536,6 +24447,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -19564,6 +24478,9 @@ window.HUIHU_DATA = {
           "高校平台资源档案"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -19593,6 +24510,9 @@ window.HUIHU_DATA = {
         ],
         "stage": "申报或筹建",
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -19622,6 +24542,35 @@ window.HUIHU_DATA = {
         ],
         "stage": "筹建",
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "牵头建设单位",
+            "units": [
+              "度亘核芯光电技术（苏州）股份有限公司"
+            ]
+          },
+          {
+            "role": "共建单位",
+            "units": [
+              "中国科学院苏州纳米技术与纳米仿生研究所",
+              "中科纳米张家港化合物半导体研究所"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.dogain.com/news-company/bd8228b9-e020-4f28-b174-47e45f837f88",
+            "label": "度亘核芯关于省重点实验室获批筹建的公告"
+          },
+          {
+            "url": "https://www.dogain.com/news-company/9f59b287-8919-4976-afcc-3efcb351fae8",
+            "label": "牵头公司法定名称变更公告"
+          }
+        ],
+        "note": "官方全称为江苏省量子精密测量集成光源技术重点实验室（筹）。按苏委科办发〔2026〕12号获批筹建。"
       }
     },
     {
@@ -19652,6 +24601,9 @@ window.HUIHU_DATA = {
         ],
         "stage": "申报或筹建",
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "pending"
       }
     },
     {
@@ -19684,6 +24636,23 @@ window.HUIHU_DATA = {
         "supplemented": true,
         "officialListing": "https://szxq.seu.edu.cn/xqgk/mainm.htm",
         "note": "东南大学苏州校区官网列为双方联合研究院下设中心，旧表所填认定级别待补依据。"
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "设置单位",
+            "units": [
+              "东南大学—蒙纳士大学苏州联合研究院"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://szxq.seu.edu.cn/xqgk/mainm.htm",
+            "label": "东南大学苏州校区简介"
+          }
+        ]
       }
     },
     {
@@ -19715,6 +24684,28 @@ window.HUIHU_DATA = {
           "高校或园区官网"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "依托单位",
+            "units": [
+              "苏州大学"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.sipac.gov.cn/szdshkjcxq/gzdt/202607/32f46ce4315e4b7884c4f1b174b0027f.shtml",
+            "label": "校方或主管部门原文"
+          },
+          {
+            "url": "https://www.sipac.gov.cn/szdshkjcxq/gzdt/202606/d1ca064a46d7414190a51e95f183b884.shtml",
+            "label": "官方资料提及"
+          }
+        ],
+        "note": "园区官网明确为苏州大学校直属大型仪器共享平台。"
       }
     },
     {
@@ -19745,6 +24736,24 @@ window.HUIHU_DATA = {
           "高校或园区官网"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "listed",
+        "roles": [
+          {
+            "role": "上级平台",
+            "units": [
+              "苏州大学现代丝绸国家工程实验室"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.sipac.gov.cn/szdshkjcxq/gzdt/202607/32f46ce4315e4b7884c4f1b174b0027f.shtml",
+            "label": "校方或主管部门原文"
+          }
+        ],
+        "note": "评价检测中心为实验室下的检测机构。"
       }
     },
     {
@@ -19775,6 +24784,28 @@ window.HUIHU_DATA = {
           "高校或园区官网"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "依托单位",
+            "units": [
+              "苏州大学"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://funsom.suda.edu.cn/_s138/2729/list.psp",
+            "label": "苏州大学功能纳米与软物质研究院官网介绍"
+          },
+          {
+            "url": "https://www.sipac.gov.cn/szdshkjcxq/gzdt/202607/32f46ce4315e4b7884c4f1b174b0027f.shtml",
+            "label": "园区官方苏大科研平台现场参访"
+          }
+        ],
+        "scope": "苏州独墅湖校区"
       }
     },
     {
@@ -19809,6 +24840,36 @@ window.HUIHU_DATA = {
           "高校或园区官网"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州大学材料与化学化工学部",
+              "苏州独墅湖科教创新区"
+            ]
+          },
+          {
+            "role": "揭牌单位",
+            "units": [
+              "苏州大学材料与化学化工学部",
+              "苏州独墅湖科教创新区"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://fzb.suda.edu.cn/de/c6/c8539a712390/page.htm",
+            "label": "苏州大学国内合作发展处揭牌报道"
+          },
+          {
+            "url": "https://scit.suda.edu.cn/stjpt/list.htm",
+            "label": "苏州大学科学技术研究院市厅级平台目录"
+          }
+        ],
+        "note": "校方报道明确于2026年7月28日揭牌。正式依托单位以批复为准。"
       }
     },
     {
@@ -19843,19 +24904,48 @@ window.HUIHU_DATA = {
           "高校或园区官网"
         ],
         "supplemented": true
+      },
+      "建设单位核对": {
+        "status": "verified",
+        "roles": [
+          {
+            "role": "共建单位",
+            "units": [
+              "苏州大学纳米科学技术学院",
+              "苏州工业园区科技创新委员会"
+            ]
+          },
+          {
+            "role": "揭牌单位",
+            "units": [
+              "苏州大学纳米科学技术学院",
+              "苏州工业园区科技创新委员会"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://fzb.suda.edu.cn/de/c6/c8539a712390/page.htm",
+            "label": "苏州大学国内合作发展处揭牌报道"
+          },
+          {
+            "url": "https://scit.suda.edu.cn/sbjpt/list.htm",
+            "label": "苏州大学科学技术研究院省部级平台目录"
+          }
+        ],
+        "note": "校方报道明确于2026年7月28日揭牌。正式依托单位以批复为准。"
       }
     }
   ],
   "labs": [
     {
       "university": "中国科学技术大学苏州高等研究院",
-      "sourceUniversity": "中国科学技术大学苏州高等研究院",
+      "sourceUniversity": "中国科学技术大学",
       "labs": [
         "处理器芯片全国重点实验室",
         "火灾安全全国重点实验室",
         "认知智能全国重点实验室",
         "深空探测全国重点实验室",
-        "精准智能化学全国重点实验室",
         "免疫应答与免疫治疗全国重点实验室",
         "视觉健康全国重点实验室",
         "可控聚变物理前沿全国重点实验室"
@@ -19907,7 +24997,22 @@ window.HUIHU_DATA = {
         "先进光场显示芯片与系统全国重点实验室",
         "高端装备涂料全国重点实验室",
         "中药功效成分发掘与利用全国重点实验室"
-      ]
+      ],
+      "catalogue": {
+        "url": "https://www.sdu.edu.cn/zzjg/kyjg.htm",
+        "listed": [
+          "生殖医学与子代健康全国重点实验室",
+          "金属成形高端装备与先进技术全国重点实验室",
+          "高端工程机械智能制造全国重点实验室",
+          "络病理论创新转化全国重点实验室",
+          "隧道工程灾变防控与智能建养全国重点实验室",
+          "微生物改造技术全国重点实验室",
+          "晶体材料全国重点实验室",
+          "密码与数字经济安全全国重点实验室",
+          "高端装备涂料全国重点实验室",
+          "中药功效成分发掘与利用全国重点实验室"
+        ]
+      }
     },
     {
       "university": "南京大学苏州研究生院、高新技术研究院",
@@ -19923,7 +25028,20 @@ window.HUIHU_DATA = {
         "生命分析化学全国重点实验室",
         "灾害天气科学与技术全国重点实验室",
         "配位化学全国重点实验室"
-      ]
+      ],
+      "catalogue": {
+        "url": "https://scit.nju.edu.cn/gjzdsys/list.htm",
+        "listed": [
+          "医药生物技术全国重点实验室",
+          "自旋芯片与技术全国重点实验室",
+          "计算机软件新技术全国重点实验室",
+          "关键地球物质循环与成矿全国重点实验室",
+          "水污染控制与资源绿色循环全国重点实验室",
+          "生命分析化学全国重点实验室",
+          "灾害天气科学与技术全国重点实验室",
+          "配位化学全国重点实验室"
+        ]
+      }
     },
     {
       "university": "武汉大学苏州研究院",
@@ -19943,7 +25061,13 @@ window.HUIHU_DATA = {
       "sourceUniversity": "华北电力大学",
       "labs": [
         "新能源电力系统全国重点实验室"
-      ]
+      ],
+      "catalogue": {
+        "url": "https://www.ncepu.edu.cn/kxyj/syyyjjd/index.htm",
+        "listed": [
+          "新能源电力系统全国重点实验室"
+        ]
+      }
     },
     {
       "university": "上海交通大学苏州人工智能研究院",

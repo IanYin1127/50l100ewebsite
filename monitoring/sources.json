@@ -290,8 +290,6 @@
         "PT046",
         "PT047",
         "PT082",
-        "PT083",
-        "PT084",
         "PT085",
         "PT184",
         "PT191",
@@ -357,7 +355,6 @@
       "platformIds": [
         "23",
         "24",
-        "25",
         "26",
         "27",
         "28",
@@ -439,7 +436,6 @@
         "PT045",
         "PT050",
         "PT175",
-        "PT177",
         "PT178",
         "PT180",
         "PT181",
@@ -547,9 +543,7 @@
         "PT200",
         "PT277",
         "PT351",
-        "PT352",
-        "PT481",
-        "PT483"
+        "PT352"
       ],
       "dedicated": false,
       "kind": "动态",
@@ -561,7 +555,7 @@
   "platforms": [
     {
       "id": "33",
-      "name": "儿童血液与肿瘤省高校重点实验室",
+      "name": "江苏省儿童血液与肿瘤高校重点实验室",
       "university": "苏州大学独墅湖校区",
       "aliases": [],
       "homepage": "",
@@ -1289,7 +1283,7 @@
     },
     {
       "id": "100",
-      "name": "现代丝绸国家工程技术研究中心",
+      "name": "现代丝绸国家工程实验室",
       "university": "苏州大学独墅湖校区",
       "aliases": [],
       "homepage": "",
@@ -1575,7 +1569,7 @@
     },
     {
       "id": "152",
-      "name": "苏州市虚拟现实技术重点实验室",
+      "name": "苏州市虚拟现实技术重点实验室建设平台",
       "university": "西交利物浦大学",
       "aliases": [],
       "homepage": "",
@@ -2153,17 +2147,6 @@
       "verification": null
     },
     {
-      "id": "25",
-      "name": "山东大学博兴智能厨具研究院",
-      "university": "山东大学苏州研究院",
-      "aliases": [],
-      "homepage": "",
-      "sourceIds": [
-        "sdu-news"
-      ],
-      "verification": null
-    },
-    {
       "id": "26",
       "name": "吸附材料及热物性表征实验室",
       "university": "山东大学苏州研究院",
@@ -2340,15 +2323,6 @@
         "苏州市生物材料概念验证中心",
         "长三角G60科创走廊概念验证中心"
       ],
-      "homepage": "",
-      "sourceIds": [],
-      "verification": null
-    },
-    {
-      "id": "111",
-      "name": "国家自然科学基金优秀青年科学基金项目海外",
-      "university": "苏州工业园区蒙纳士科学技术研究院",
-      "aliases": [],
       "homepage": "",
       "sourceIds": [],
       "verification": null
@@ -3345,7 +3319,7 @@
     },
     {
       "id": "PT050",
-      "name": "半导体晶圆键合工艺创新联合体",
+      "name": "苏州工业园区半导体晶圆键合工艺光学精密检测技术创新联合体",
       "university": "西安交通大学苏州研究院",
       "aliases": [],
       "homepage": "",
@@ -3353,15 +3327,6 @@
       "sourceIds": [
         "xjtu-news"
       ]
-    },
-    {
-      "id": "PT080",
-      "name": "国家自然科学基金依托单位",
-      "university": "苏州工业园区蒙纳士科学技术研究院",
-      "aliases": [],
-      "homepage": "",
-      "verification": null,
-      "sourceIds": []
     },
     {
       "id": "PT082",
@@ -3377,24 +3342,20 @@
     {
       "id": "PT083",
       "name": "江苏省产业技术研究院工业过程模拟与优化研究所",
-      "university": "东南大学苏州校区",
+      "university": "江苏省产业技术研究院",
       "aliases": [],
       "homepage": "",
       "verification": null,
-      "sourceIds": [
-        "seu-news"
-      ]
+      "sourceIds": []
     },
     {
       "id": "PT084",
       "name": "江苏省产业技术研究院未来城市应用技术研究所",
-      "university": "东南大学苏州校区",
+      "university": "江苏省产业技术研究院",
       "aliases": [],
       "homepage": "",
       "verification": null,
-      "sourceIds": [
-        "seu-news"
-      ]
+      "sourceIds": []
     },
     {
       "id": "PT085",
@@ -3987,17 +3948,6 @@
     {
       "id": "PT175",
       "name": "信息安全实践创新基地",
-      "university": "西安交通大学苏州研究院",
-      "aliases": [],
-      "homepage": "",
-      "verification": null,
-      "sourceIds": [
-        "xjtu-news"
-      ]
-    },
-    {
-      "id": "PT177",
-      "name": "氢燃料电池核心零部件及氢能核心装备山东省工程研究中心",
       "university": "西安交通大学苏州研究院",
       "aliases": [],
       "homepage": "",
@@ -5647,28 +5597,6 @@
       "homepage": "",
       "verification": null,
       "sourceIds": []
-    },
-    {
-      "id": "PT481",
-      "name": "精准智能化学全国重点实验室",
-      "university": "中国科学技术大学苏州高等研究院",
-      "aliases": [],
-      "homepage": "",
-      "verification": null,
-      "sourceIds": [
-        "ustc-suzhou-news"
-      ]
-    },
-    {
-      "id": "PT483",
-      "name": "量子信息与量子科技创新研究院（苏州）",
-      "university": "中国科学技术大学苏州高等研究院",
-      "aliases": [],
-      "homepage": "",
-      "verification": null,
-      "sourceIds": [
-        "ustc-suzhou-news"
-      ]
     },
     {
       "id": "PT484",

@@ -39,6 +39,17 @@ class AuditTests(unittest.TestCase):
   result=a.run_audit(Path('/tmp'),CONFIG,data,lambda *_:'<main>其他信息</main>',NOW)
   self.assertEqual(result['records'][0]['status'],'not_found_in_checked_pages')
   self.assertFalse(result['confirmedClosures'])
+ def test_reviewed_exclusions_and_renames_stay_out_of_discovery(self):
+  meta={'excludedPlatformNames':[EVIDENCE['name']],
+        'correctedIdentities':{'1':{'name':'曾用名重点实验室','university':UNIT['name']}}}
+  data={'meta':meta,'resources':[]}
+  registry={'platforms':[],'sources':[]}
+  old_name={**EVIDENCE,'name':'曾用名重点实验室'}
+  config={**CONFIG,'verifiedApprovals':[EVIDENCE,old_name]}
+  self.assertEqual(a.apply_verified_approvals(Path('/tmp'),config,data,registry,NOW),([],[]))
+  listing='<a href="/one">苏州市示例重点实验室</a><a href="/two">曾用名重点实验室</a>'
+  result=a.run_audit(Path('/tmp'),config,data,lambda *_:listing,NOW)
+  self.assertEqual(result['candidates'],[])
  def test_complete_approval_added_once_without_fabricated_fields(self):
   with tempfile.TemporaryDirectory() as d:
    root=Path(d);(root/'monitoring').mkdir()

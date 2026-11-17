@@ -7,6 +7,7 @@ const directoryDefaults = {
   level: "全部",
   mode: "全部",
   inventorySource: "全部",
+  ownership: "全部",
 };
 
 const state = {
@@ -60,11 +61,12 @@ const fields = [
   ["一级产业分类", "行业大类，用于宏观产业分布"],
   ["二级产业分类", "产业子类，用于细分筛选"],
   ["细分产业领域", "更具体的技术或应用方向"],
-  ["所属高校", "资源所属高校或研究院"],
+  ["所属高校", "档案的收录机构"],
   ["平台等级", "国家级、省级、市级、校级等平台属性"],
   ["研究方向", "平台主要研究主题"],
   ["核心技术能力", "可供链接的技术能力"],
-  ["可对外提供的核心服务", "面向企业、园区或项目的服务内容"],
+  ["平台介绍", "平台定位、研究方向和主要能力"],
+  ["可对外提供的核心服务", "旧版资源清单字段"],
   ["标杆转化案例", "已有转化案例或代表性成果"],
   ["核心共享设备", "可共享或支撑服务的核心设备"],
   ["联系人", "资源联系人"],
@@ -73,9 +75,15 @@ const fields = [
 ];
 
 const resourceFields = fields.map(([name]) => name);
+const optionalResourceFields = new Set(["平台介绍", "可对外提供的核心服务"]);
 const resourceSearchFields = resourceFields.filter((name) => name !== "平台等级");
 const schoolLevel = "校（院）级";
 const cooperationLabMode = "校企联合实验室";
+const ownershipLabels = {
+  verified: "有建设或依托单位依据",
+  listed: "官网列名，建设单位待核",
+  pending: "待补公开依据",
+};
 const operatingReportLabels = {
   operating: "填报为继续运行",
   not_continued: "填报为未继续运行",
@@ -230,14 +238,16 @@ function getFiltered() {
   return resources.filter((item) => {
     const tags = resourceClassifications(item);
     const matchQ = !q || resourceSearchFields.some((field) => String(item[field] || "").toLowerCase().includes(q))
-      || tags.some((tag) => includes(tag, q)) || includes(item["50L清单"] || {}, q) || matchesInventoryAlias(item, q);
+      || tags.some((tag) => includes(tag, q)) || includes(item["50L清单"] || {}, q) || matchesInventoryAlias(item, q)
+      || (item["建设单位核对"]?.roles || []).some(({ units }) => units.some((unit) => unit.toLowerCase().includes(q)));
     const matchUni = state.university === "全部" || item["所属高校"] === state.university;
     const matchIndustry = state.industry === "全部" || item["一级产业分类"] === state.industry;
     const matchSub = state.subIndustry === "全部" || item["二级产业分类"] === state.subIndustry;
     const matchTags = tags.some((tag) => directoryFilterFields.every(([key]) =>
       state[key] === "全部" || classificationValue(tag, key) === state[key]));
     const matchInventory = state.inventorySource === "全部" || inventorySources(item).includes(state.inventorySource);
-    return matchQ && matchUni && matchIndustry && matchSub && matchTags && matchInventory;
+    const matchOwnership = state.ownership === "全部" || ownershipLabels[item["建设单位核对"]?.status || "pending"] === state.ownership;
+    return matchQ && matchUni && matchIndustry && matchSub && matchTags && matchInventory && matchOwnership;
   });
 }
 
@@ -246,6 +256,7 @@ function initFilters() {
   setOptions(el("industryFilter"), uniq(resources.map((r) => r["一级产业分类"])), state.industry, "全部一级产业");
   setOptions(el("inventorySourceFilter"), uniq(resources.flatMap(inventorySources)), state.inventorySource, "全部来源");
   state.inventorySource = el("inventorySourceFilter").value;
+  setOptions(el("ownershipFilter"), Object.values(ownershipLabels), state.ownership, "全部核对状态");
   refreshSubIndustryOptions();
   for (const [key, id, allLabel] of directoryFilterFields) {
     const choices = Object.keys(classificationCounts(resources, key));
@@ -266,7 +277,7 @@ function refreshSubIndustryOptions() {
 function renderKPIs() {
   const items = [
     ["平台档案", resources.length],
-    ["所属机构", uniq(resources.map((r) => r["所属高校"])).length],
+    ["收录机构", uniq(resources.map((r) => r["所属高校"])).length],
     ["平台类别", Object.keys(classificationCounts(resources, "category")).filter((label) => label !== pendingClassifications.category).length],
   ];
   el("heroKpis").innerHTML = items.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${value}</dd></div>`).join("");
@@ -306,7 +317,7 @@ function render({ keepPage = false } = {}) {
     renderKeyLabs();
     return;
   }
-  el("resultSummary").textContent = `共 ${filtered.length} 份档案 · ${uniq(filtered.map((r) => r["所属高校"])).length} 个所属机构`;
+  el("resultSummary").textContent = `共 ${filtered.length} 份档案 · ${uniq(filtered.map((r) => r["所属高校"])).length} 个收录机构`;
   if (state.view === "cards" || state.view === "table") {
     const pageSize = directoryMobile.matches ? 6 : 12;
     const lastPage = Math.max(1, Math.ceil(filtered.length / pageSize));
@@ -347,6 +358,14 @@ function syncResourceCollapseButton() {
   btn.setAttribute("aria-controls", "resourceView");
 }
 
+function platformIntroduction(item) {
+  for (const key of ["平台介绍", "研究方向", "核心技术能力", "可对外提供的核心服务"]) {
+    const value = String(item[key] || "").trim();
+    if (value && !/^(?:暂无|无|[—/\\\-]+)$/.test(value)) return value;
+  }
+  return "";
+}
+
 function renderCards(items) {
   if (!items.length) {
     el("resourceView").className = "resource-grid";
@@ -355,14 +374,13 @@ function renderCards(items) {
   }
   el("resourceView").className = "resource-grid";
   el("resourceView").innerHTML = items.map((item) => {
-    const service = item["可对外提供的核心服务"];
-    const excerpt = truncate(service || item["研究方向"], 155);
+    const excerpt = truncate(platformIntroduction(item), 155);
     return `
     <article class="resource-card">
       <p class="resource-institution">${escapeHtml(item["所属高校"])}</p>
       <h3>${escapeHtml(item["平台名称"]).replace(/\r?\n/g, "<br>")}</h3>
       ${renderClassificationLabels(item)}
-      ${excerpt ? `<div class="resource-excerpt"><h4>${service ? "可对外提供的服务" : "研究方向"}</h4><p>${formatText(excerpt)}</p></div>` : ""}
+      ${excerpt ? `<div class="resource-excerpt"><h4>平台介绍</h4><p>${formatText(excerpt)}</p></div>` : ""}
       ${resourceDetailButton(item, "平台详情")}
       <details class="resource-verification">
         <summary>平台核验</summary>
@@ -437,7 +455,6 @@ function renderKeywordCards(item) {
   const sets = [
     subjects.length ? ["研究主题", subjects] : ["名称关键词", titleKeywords(item["平台名称"])],
     capabilities.length ? ["技术能力", capabilities] : ["产业领域", [...new Set(industry)]],
-    ["对外服务", keywordPhrases(item["可对外提供的核心服务"])],
     ["共享设备", keywordPhrases(item["核心共享设备"], /[\n；;、]+/)],
   ].filter(([, terms]) => terms.length);
   if (!sets.length) return "";
@@ -477,23 +494,38 @@ function renderInventoryDetails(item) {
   ].join("");
 }
 
+function renderOwnershipDetails(item) {
+  const review = item["建设单位核对"] || {};
+  const sources = (review.sources || []).map(({ url, label }) => externalLink(url, label)).filter(Boolean);
+  return [
+    ...(review.roles || []).map(({ role, units, platform }) =>
+      detail(platform ? `${platform} · ${role}` : role, units.join("、"))),
+    detail("核对状态", ownershipLabels[review.status || "pending"]),
+    detail("所在地", review.scope),
+    detail("核对说明", review.note),
+    sources.length ? `<div><b>公开依据</b><span>${sources.join("<br>")}</span></div>` : "",
+  ];
+}
+
 function showResourceDetail(item) {
   const dialog = el("resourceDetail");
   const body = el("resourceDetailBody");
   el("resourceDetailInstitution").textContent = item["所属高校"] || "";
   el("resourceDetailTitle").textContent = item["平台名称"];
+  const introduction = platformIntroduction(item);
   body.innerHTML = [
     renderClassificationLabels(item),
     renderKeywordCards(item),
-    resourceDetailSection("合作与服务", [
-      detail("可对外提供的核心服务", item["可对外提供的核心服务"]),
+    resourceDetailSection("平台介绍", introduction ? [`<div><span>${formatText(introduction)}</span></div>`] : []),
+    resourceDetailSection("建设与依托单位", renderOwnershipDetails(item)),
+    resourceDetailSection("合作资料", [
       detail("核心共享设备", item["核心共享设备"]),
       detail("标杆转化案例", item["标杆转化案例"]),
       detail("联系信息", [item["联系人"], item["联系电话"]].filter(Boolean).join(" ")),
     ]),
     resourceDetailSection("研究与技术", [
-      detail("研究方向", item["研究方向"]),
-      detail("核心技术能力", item["核心技术能力"]),
+      detail("研究方向", item["研究方向"] === introduction ? "" : item["研究方向"]),
+      detail("核心技术能力", item["核心技术能力"] === introduction ? "" : item["核心技术能力"]),
       detail("产业分类", [item["一级产业分类"], item["二级产业分类"], item["细分产业领域"]].filter(Boolean).join(" · ")),
     ]),
     resourceDetailSection("认定与共建", [renderClassificationEvidence(item), renderCooperationDetails(item)]),
@@ -557,11 +589,11 @@ function renderTable(items) {
       <thead>
         <tr>
           <th>平台名称</th>
-          <th>所属高校</th>
+          <th>收录机构</th>
           <th>一级产业</th>
           <th>二级产业</th>
           <th>平台分类</th>
-          <th>核心服务</th>
+          <th>平台介绍</th>
           <th>联系人</th>
         </tr>
       </thead>
@@ -573,7 +605,7 @@ function renderTable(items) {
             <td>${escapeHtml(item["一级产业分类"])}</td>
             <td>${escapeHtml(item["二级产业分类"])}</td>
             <td>${renderClassificationLabels(item)}</td>
-            <td>${formatText(truncate(item["可对外提供的核心服务"], 160))}</td>
+            <td>${formatText(truncate(platformIntroduction(item), 160))}</td>
             <td>${escapeHtml([item["联系人"], item["联系电话"]].filter(Boolean).join(" "))}</td>
           </tr>
         `).join("")}
@@ -589,7 +621,7 @@ function renderCharts() {
   const industryCount = uniq(resources.map((item) => item["一级产业分类"])).length;
   const levelCount = resources.filter((item) =>
     resourceClassifications(item).some((tag) => classificationValue(tag, "level"))).length;
-  el("insightsScope").textContent = `全站 ${resources.length} 份平台档案 · ${universityCount} 个所属机构 · ${industryCount} 个一级产业`;
+  el("insightsScope").textContent = `全站 ${resources.length} 份平台档案 · ${universityCount} 个收录机构 · ${industryCount} 个一级产业`;
   el("levelCoverage").textContent = `已标注级别 ${levelCount} / ${resources.length} 份档案`;
   renderBarChart("universityChart", universities);
   renderBarChart("industryChart", industries);
@@ -608,15 +640,22 @@ function renderBarChart(id, counts) {
   `).join("") || `<div class="empty">暂无数据</div>`;
 }
 
+function renderLinkedLabNames(group) {
+  return (group.labs || []).map((lab) => {
+    const link = group.catalogue?.listed?.includes(lab) ? externalLink(group.catalogue.url, "校方名录 ↗") : "";
+    return `<li>${escapeHtml(lab)} ${link}</li>`;
+  }).join("");
+}
+
 function renderLabs() {
   const labs = [...(data.labs || [])].sort((a, b) => compareUniversityName(a.university, b.university));
   el("labView").innerHTML = labs.map((group) => `
     <article class="lab-card">
       <span class="tag">${(group.labs || []).length} 个实验室</span>
-      <h3>${escapeHtml(group.university)}</h3>
-      ${group.sourceUniversity && group.sourceUniversity !== group.university ? `<p>依托高校：${escapeHtml(group.sourceUniversity)}</p>` : ""}
+      <h3>${escapeHtml(group.sourceUniversity || group.university)}</h3>
+      <p>本地对接机构 ${escapeHtml(group.university)}</p>
       <ul class="mini-list">
-        ${(group.labs || []).map((lab) => `<li>${escapeHtml(lab)}</li>`).join("")}
+        ${renderLinkedLabNames(group)}
       </ul>
     </article>
   `).join("") || `<div class="empty">暂无重点实验室数据。</div>`;
@@ -636,18 +675,18 @@ function getFilteredLabs() {
 function renderKeyLabs() {
   const labs = getFilteredLabs();
   const total = labs.reduce((sum, group) => sum + (group.labs || []).length, 0);
-  el("resultSummary").textContent = `当前展示 ${labs.length} 所高校、${total} 个全国重点实验室资源`;
+  el("resultSummary").textContent = `当前展示 ${labs.length} 组高校资源、${total} 个可链接实验室`;
   el("resourceView").className = "lab-grid";
   el("resourceView").innerHTML = labs.map((group) => `
     <article class="lab-card">
-      <span class="tag">全重资源</span>
-      <h3>${escapeHtml(group.university)}</h3>
-      <p>共 ${(group.labs || []).length} 个全国重点实验室。${group.sourceUniversity && group.sourceUniversity !== group.university ? `依托高校：${escapeHtml(group.sourceUniversity)}。` : ""}</p>
+      <span class="tag">${(group.labs || []).length} 个实验室</span>
+      <h3>${escapeHtml(group.sourceUniversity || group.university)}</h3>
+      <p>本地对接机构 ${escapeHtml(group.university)}</p>
       <ul class="mini-list">
-        ${(group.labs || []).map((lab) => `<li>${escapeHtml(lab)}</li>`).join("")}
+        ${renderLinkedLabNames(group)}
       </ul>
     </article>
-  `).join("") || `<div class="empty">没有匹配的全国重点实验室资源。</div>`;
+  `).join("") || `<div class="empty">没有匹配的实验室资源。</div>`;
 }
 
 function applySearch() {
@@ -659,7 +698,7 @@ function syncSearchMode() {
   const labMode = state.view === "keyLabs";
   el("directoryFilters").hidden = labMode;
   el("resourceBrowse").hidden = labMode;
-  el("globalSearch").placeholder = labMode ? "搜索高校、研究院或重点实验室名称" : "搜索平台、技术服务、共享设备或标签";
+  el("globalSearch").placeholder = labMode ? "搜索高校、研究院或重点实验室名称" : "搜索平台、建设单位、研究方向或设备";
 }
 
 function setDirectoryView(view) {
@@ -812,6 +851,10 @@ function bindEvents() {
     state.inventorySource = e.target.value;
     render();
   });
+  el("ownershipFilter").addEventListener("change", (e) => {
+    state.ownership = e.target.value;
+    render();
+  });
   for (const [key, id] of directoryFilterFields) {
     el(id).addEventListener("change", (e) => {
       state[key] = e.target.value;
@@ -952,7 +995,7 @@ function workbookToResources(workbook) {
     throw new Error("Excel 内容为空或缺少表头");
   }
   const headers = rows[0].map((h) => String(h || "").trim());
-  const missing = resourceFields.filter((f) => !headers.includes(f));
+  const missing = resourceFields.filter((f) => !optionalResourceFields.has(f) && !headers.includes(f));
   if (missing.length) {
     throw new Error(`缺少必需字段：${missing.join("、")}`);
   }
@@ -986,6 +1029,7 @@ function buildDataJs(newResources) {
   const retiredIds = data.meta?.consolidatedArchives || {};
   const inputIds = new Set(newResources.map((item) => String(item["序号"])));
   const updatedResources = newResources.flatMap((item) => {
+    if (data.meta?.excludedPlatformNames?.includes(item["平台名称"])) return [];
     const keptId = retiredIds[String(item["序号"])];
     const canonical = previousById.get(keptId);
     if (canonical && canonical["平台名称"] === item["平台名称"] && canonical["所属高校"] === item["所属高校"]) {
@@ -993,6 +1037,10 @@ function buildDataJs(newResources) {
       item = { ...item, "序号": keptId };
     }
     const prior = previousById.get(String(item["序号"]));
+    const corrected = data.meta?.correctedIdentities?.[String(item["序号"])];
+    if (prior && corrected && corrected.name === item["平台名称"] && corrected.university === item["所属高校"]) {
+      item = { ...item, "平台名称": prior["平台名称"], "所属高校": prior["所属高校"], "平台等级": prior["平台等级"] };
+    }
     // A reused sequence number must not inherit another platform's classifications or sources.
     if (!prior || prior["平台名称"] !== item["平台名称"] || prior["所属高校"] !== item["所属高校"]) return item;
     return { ...prior, ...item };
