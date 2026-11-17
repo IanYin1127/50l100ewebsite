@@ -208,15 +208,16 @@ def platform_status(platform, checks, items, previous, now):
   dates = [item["publishedAt"] for item in items if item["platformId"] == platform["id"] and item.get("publishedAt")]
   latest = max(dates, default=None)
   status = "unconfigured"
-  if relevant:
-    if all(check["state"] == "error" for check in relevant):
-      status = "source_error"
-    elif latest and (now.date() - date.fromisoformat(latest)).days <= RECENT_DAYS:
-      status = "recent_activity"
-    elif latest:
-      status = "needs_review"
-    else:
-      status = "unknown"
+  if latest and 0 <= (now.date() - date.fromisoformat(latest)).days <= RECENT_DAYS:
+    status = "recent_activity"
+  elif relevant and all(check["state"] == "error" for check in relevant):
+    status = "source_error"
+  elif latest:
+    status = "needs_review"
+  elif relevant:
+    status = "unknown"
+  elif platform["sourceIds"]:
+    status = "not_checked"
   verification = platform.get("verification")
   if verification:
     verified_date = date_value(verification.get("date"))
@@ -307,16 +308,22 @@ def collect(config, previous, curated, fetch, now):
 
 
 def write_snapshot(root, snapshot):
-  (root / "monitoring/snapshot.json").write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-  # Pending records remain in the repository but are excluded from website rendering.
   audit_path = root / "monitoring/audit.json"
   if audit_path.exists():
-    audit = json.loads(audit_path.read_text())
+    audit = json.loads(audit_path.read_text(encoding="utf-8"))
     snapshot["discovery"] = {key: audit.get(key, [] if key != "generatedAt" else None) for key in ["generatedAt", "candidates", "added", "confirmedClosures", "closureSignals"]}
-    # Save the exact discovery summary along with the persisted monitoring snapshot.
-    (root / "monitoring/snapshot.json").write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    for row in audit.get("records", []):
+      record = snapshot["platforms"].get(row["platformId"])
+      if (record and record["name"] == row["name"] and record["university"] == row["university"]
+          and row["status"] in {"found_in_official_source", "found_in_official_source_via_web"}):
+        record["officialMentions"] = row.get("evidenceUrls", [])
+  (root / "monitoring/snapshot.json").write_text(
+      json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
+  # Pending records remain in the repository but are excluded from website rendering.
   public = {key: value for key, value in snapshot.items() if key != "pending"}
-  (root / "monitoring-data.js").write_text("window.HUIHU_MONITORING = " + json.dumps(public, ensure_ascii=False, indent=2) + ";\n", encoding="utf-8")
+  (root / "monitoring-data.js").write_text(
+      "window.HUIHU_MONITORING = " + json.dumps(public, ensure_ascii=False, indent=2) + ";\n",
+      encoding="utf-8", newline="\n")
 
 
 def validate_registry(config, data):

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>慧湖50L100E · 高校平台资源</title>
   <meta name="description" content="按平台类别、平台级别和建设方式查找慧湖50L100E高校科研平台，查阅技术服务、共享设备、公开动态和核验记录。" />
-  <link rel="stylesheet" href="./styles.css?v=joint-labs-1" />
+  <link rel="stylesheet" href="./styles.css?v=inventory-1" />
 </head>
 <body>
   <a class="skip-link" href="#mainContent">跳到主要内容</a>
@@ -57,11 +57,12 @@
           <button id="clearSearch" class="search-clear" type="button" aria-label="清空搜索" hidden>×</button>
         </div>
         <div id="directoryFilters">
-          <div class="filters">
+          <div class="filters directory-primary-filters">
             <label>平台类别<select id="categoryFilter"></select></label>
             <label>平台级别<select id="levelFilter"></select></label>
             <label>建设方式<select id="modeFilter"></select></label>
             <label>所属机构<select id="universityFilter"></select></label>
+            <label>收录来源<select id="inventorySourceFilter"></select></label>
           </div>
           <details class="directory-industry">
             <summary>按产业筛选 <span id="industrySelection"></span></summary>
@@ -140,11 +141,15 @@
 
     <section id="updatesSection" class="panel dashboard" data-section="updates">
       <div class="page-heading">
-        <div><h1>平台核验</h1><p>查看公开运行线索、官方来源覆盖和待核查事项。</p></div>
+        <div><h1>平台核验</h1><p>查看历史运行填报和近期公开动态。</p></div>
         <a class="primary-btn feedback-link" href="https://github.com/IanYin1127/50l100ewebsite/issues/new?template=platform-update.yml" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">＋</span> 反馈平台信息 ↗</a>
       </div>
       <div class="collection-strip"><span id="collectionState" class="collection-state">读取监测记录</span><span id="monitorFreshness" role="status"></span></div>
       <div id="monitorStats" class="monitor-stats"></div>
+      <section class="surface operating-summary" aria-labelledby="operatingSummaryHeading">
+        <div class="surface-heading"><h2 id="operatingSummaryHeading">历史运行填报</h2><span class="quiet-label">按各平台最近一份填报统计</span></div>
+        <div id="operatingReportStats" class="operating-report-stats"></div>
+      </section>
 <section class="surface attention-surface" aria-labelledby="attentionHeading"><div class="surface-heading"><div><span class="section-index">01 /</span><h2 id="attentionHeading">优先核查</h2></div><span class="quiet-label">点击进入对应平台</span></div><div id="attentionQueue" class="attention-grid"></div></section>
       <div id="discoveryOverview" class="surface discovery-overview"></div>
       <p class="monitor-note">判读说明：无动态或来源不可访问不直接代表停运。只监测清单内苏州校区、苏州研究院等本地机构，不混入异地校本部的平台名单。</p>
@@ -156,9 +161,10 @@
               <label class="monitor-search"><span class="sr-only">搜索平台或成果</span><input id="updateSearch" type="search" placeholder="搜索平台、高校或成果…" /></label>
               <label><span class="sr-only">高校</span><select id="updateUniversity" aria-label="筛选所属高校"></select></label>
               <label><span class="sr-only">平台核验状态</span><select id="updateStatusFilter" aria-label="筛选平台状态"><option value="all">全部状态</option><option value="recent_activity">近期有公开动态</option><option value="needs_review">长期未见动态</option><option value="source_error">来源访问异常</option><option value="unknown">尚无匹配动态</option><option value="not_checked">尚未执行监测</option><option value="unconfigured">待补充来源</option><option value="verified_operating">人工确认运行</option><option value="verified_ceased">人工确认停运</option></select></label>
+              <label><span class="sr-only">历史运行填报</span><select id="operatingReportFilter" aria-label="筛选历史运行填报"><option value="all">全部填报情况</option><option value="operating">填报为继续运行</option><option value="not_continued">填报为未继续运行</option><option value="conflicting">同批填报有差异</option><option value="none">未见运行填报</option></select></label>
             </div>
             <div class="registry-toolbar"><p id="monitorSummary" role="status" aria-live="polite"></p><label class="sort-label">排序<select id="monitorSort"><option value="attention">核查优先</option><option value="latest">最近动态</option><option value="university">所属高校</option></select></label></div>
-            <div class="registry-columns" aria-hidden="true"><span>平台 / 所属高校</span><span>公开运行线索</span><span>最近动态</span><span>来源</span><span></span></div>
+            <div class="registry-columns" aria-hidden="true"><span>平台 / 所属高校</span><span>运行记录</span><span>最近动态</span><span>来源</span><span></span></div>
             <div id="monitorView" class="monitor-register"></div>
             <div class="pagination"><span id="monitorPageInfo" aria-live="polite"></span><div><button id="monitorPrev" type="button" aria-label="上一页平台">← 上一页</button><button id="monitorNext" type="button" aria-label="下一页平台">下一页 →</button></div></div>
           </section></section>
@@ -250,9 +256,9 @@
     </svg>
   </button>
 
-  <script src="./data.js?v=joint-labs-1"></script>
-  <script src="./monitoring-data.js"></script>
-  <script src="./app.js?v=joint-labs-1"></script>
+  <script src="./data.js?v=inventory-1"></script>
+  <script src="./monitoring-data.js?v=inventory-1"></script>
+  <script src="./app.js?v=inventory-1"></script>
 </body>
 </html>
 

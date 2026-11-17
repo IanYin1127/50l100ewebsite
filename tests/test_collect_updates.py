@@ -56,7 +56,8 @@ class CollectTests(unittest.TestCase):
     failed = c.collect(config, previous, {}, fail, NOW)
     again = c.collect(config, failed, {}, fail, NOW)
     self.assertEqual(failed["items"], previous["items"])
-    self.assertEqual(failed["platforms"]["1"]["status"], "source_error")
+    self.assertEqual(failed["platforms"]["1"]["status"], "recent_activity")
+    self.assertEqual(failed["sourceChecks"]["official"]["state"], "error")
     self.assertEqual(again["sourceChecks"]["official"]["consecutiveFailures"], 2)
     self.assertEqual(again["sourceChecks"]["official"]["lastSuccessAt"], NOW.isoformat())
 
@@ -71,6 +72,15 @@ class CollectTests(unittest.TestCase):
   def test_no_source_never_claims_closed(self):
     platform = {**PLATFORM, "sourceIds": []}
     self.assertEqual(c.platform_status(platform, {}, [], {}, NOW)["status"], "unconfigured")
+
+  def test_curated_activity_counts_without_a_scheduled_source(self):
+    platform = {**PLATFORM, "sourceIds": []}
+    item = {"platformId": "1", "title": "光电重点实验室研究成果",
+            "url": "https://official.example/article/1", "publishedAt": "2026-10-31"}
+    result = c.collect({"platforms": [platform], "sources": []}, PREVIOUS, {"items": [item]}, lambda *_: "", NOW)
+    self.assertEqual(result["platforms"]["1"]["status"], "recent_activity")
+    self.assertEqual(result["platforms"]["1"]["lastActivityAt"], "2026-10-31")
+    self.assertEqual(result["platforms"]["1"]["sourceIds"], [])
 
   def test_rss_and_real_webplus_paths(self):
     source = {**SOURCE, "format": "rss"}

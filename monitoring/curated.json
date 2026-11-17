@@ -21,6 +21,146 @@
       "sourceName": "放射医学与辐射防护国家重点实验室官网",
       "kind": "动态",
       "matchedBy": "人工核实官方原文"
+    },
+    {
+      "platformId": "161",
+      "title": "仿生界面材料科学全国重点实验室研究人造贝壳材料",
+      "url": "https://sz.ustc.edu.cn/xwgg_show/2507.html",
+      "publishedAt": "2026-08-24",
+      "discoveredAt": "2026-11-17T03:17:54.738404+00:00",
+      "sourceName": "中国科大苏州高研院",
+      "kind": "成果",
+      "matchedBy": "人工核对官网原文"
+    },
+    {
+      "platformId": "163",
+      "title": "产学研对接活动参访多模态数字孪生技术重点实验室",
+      "url": "https://www.sipac.gov.cn/szgyyq/jsdt/202610/f7df75434bf3480595c62fa9877671ad.shtml",
+      "publishedAt": "2026-10-30",
+      "discoveredAt": "2026-11-17T03:17:54.738404+00:00",
+      "sourceName": "园区管委会官网",
+      "kind": "动态",
+      "matchedBy": "人工核对官网原文"
+    },
+    {
+      "platformId": "V01",
+      "title": "苏州大学分析测试中心介绍校级仪器共享和预约服务",
+      "url": "https://www.sipac.gov.cn/szdshkjcxq/gzdt/202606/d1ca064a46d7414190a51e95f183b884.shtml",
+      "publishedAt": "2026-06-29",
+      "discoveredAt": "2026-11-17T03:17:54.738404+00:00",
+      "sourceName": "独墅湖科教创新区官网",
+      "kind": "动态",
+      "matchedBy": "人工核对官网原文"
+    },
+    {
+      "platformId": "V01",
+      "title": "苏大科技成果路演参访三家实验与检测平台",
+      "url": "https://www.sipac.gov.cn/szdshkjcxq/gzdt/202607/32f46ce4315e4b7884c4f1b174b0027f.shtml",
+      "publishedAt": "2026-07-20",
+      "discoveredAt": "2026-11-17T03:17:54.738404+00:00",
+      "sourceName": "独墅湖科教创新区官网",
+      "kind": "动态",
+      "matchedBy": "人工核对官网原文"
+    },
+    {
+      "platformId": "V02",
+      "title": "苏大科技成果路演参访三家实验与检测平台",
+      "url": "https://www.sipac.gov.cn/szdshkjcxq/gzdt/202607/32f46ce4315e4b7884c4f1b174b0027f.shtml",
+      "publishedAt": "2026-07-20",
+      "discoveredAt": "2026-11-17T03:17:54.738404+00:00",
+      "sourceName": "独墅湖科教创新区官网",
+      "kind": "动态",
+      "matchedBy": "人工核对官网原文"
+    },
+    {
+      "platformId": "V03",
+      "title": "苏大科技成果路演参访三家实验与检测平台",
+      "url": "https://www.sipac.gov.cn/szdshkjcxq/gzdt/202607/32f46ce4315e4b7884c4f1b174b0027f.shtml",
+      "publishedAt": "2026-07-20",
+      "discoveredAt": "2026-11-17T03:17:54.738404+00:00",
+      "sourceName": "独墅湖科教创新区官网",
+      "kind": "动态",
+      "matchedBy": "人工核对官网原文"
+    },
+    {
+      "platformId": "L50",
+      "title": "园区与苏大签约共建三家研发平台",
+      "url": "https://www.sipac.gov.cn/szgyyq/dthg202607/202607/e2d55b6605ac4ebd84f7ffea8a28f652.shtml",
+      "publishedAt": "2026-07-28",
+      "discoveredAt": "2026-11-17T03:17:54.738404+00:00",
+      "sourceName": "园区管委会官网",
+      "kind": "动态",
+      "matchedBy": "人工核对官网原文"
+    },
+    {
+      "platformId": "L55",
+      "title": "园区与苏大签约共建三家研发平台",
+      "url": "https://www.sipac.gov.cn/szgyyq/dthg202607/202607/e2d55b6605ac4ebd84f7ffea8a28f652.shtml",
+      "publishedAt": "2026-07-28",
+      "discoveredAt": "2026-11-17T03:17:54.738404+00:00",
+      "sourceName": "园区管委会官网",
+      "kind": "动态",
+      "matchedBy": "人工核对官网原文"
+    },
+    {
+      "platformId": "L56",
+      "title": "园区与苏大签约共建三家研发平台",
+      "url": "https://www.sipac.gov.cn/szgyyq/dthg202607/202607/e2d55b6605ac4ebd84f7ffea8a28f652.shtml",
+      "publishedAt": "2026-07-28",
+      "discoveredAt": "2026-11-17T03:17:54.738404+00:00",
+      "sourceName": "园区管委会官网",
+      "kind": "动态",
+      "matchedBy": "人工核对官网原文"
+    },
+    {
+      "platformId": "V04",
+      "title": "苏州大学两家重点实验室揭牌",
+      "url": "https://fzb.suda.edu.cn/de/c6/c8539a712390/page.htm",
+      "publishedAt": "2026-07-29",
+      "discoveredAt": "2026-11-17T03:17:54.738404+00:00",
+      "sourceName": "苏州大学官网",
+      "kind": "动态",
+      "matchedBy": "人工核对官网原文"
+    },
+    {
+      "platformId": "V05",
+      "title": "苏州大学两家重点实验室揭牌",
+      "url": "https://fzb.suda.edu.cn/de/c6/c8539a712390/page.htm",
+      "publishedAt": "2026-07-29",
+      "discoveredAt": "2026-11-17T03:17:54.738404+00:00",
+      "sourceName": "苏州大学官网",
+      "kind": "动态",
+      "matchedBy": "人工核对官网原文"
+    },
+    {
+      "platformId": "PT023",
+      "title": "贸易大数据与人工智能联合实验室揭牌",
+      "url": "https://www.sipac.gov.cn/kjzszx/tpxw/202604/bed5ea3a2e5149ae8c99ea1f5f7ac29c.shtml",
+      "publishedAt": "2026-04-08",
+      "discoveredAt": "2026-11-17T03:17:54.738404+00:00",
+      "sourceName": "苏州工业园区科技招商中心官网",
+      "kind": "动态",
+      "matchedBy": "人工核对官网原文"
+    },
+    {
+      "platformId": "PT018",
+      "title": "高速全光通信联合实验室签约共建",
+      "url": "https://www.sipac.gov.cn/kjzszx/tpxw/202604/bed5ea3a2e5149ae8c99ea1f5f7ac29c.shtml",
+      "publishedAt": "2026-04-08",
+      "discoveredAt": "2026-11-17T03:17:54.738404+00:00",
+      "sourceName": "苏州工业园区科技招商中心官网",
+      "kind": "动态",
+      "matchedBy": "人工核对官网原文"
+    },
+    {
+      "platformId": "PT436",
+      "title": "新国大苏研院发布中新国际科技交流会开幕消息",
+      "url": "https://www.nusri.cn/",
+      "publishedAt": "2026-10-14",
+      "discoveredAt": "2026-11-17T03:17:54.738404+00:00",
+      "sourceName": "新国大苏研院官网新闻动态",
+      "kind": "动态",
+      "matchedBy": "人工核对官网原文"
     }
   ],
   "rejectedIds": []

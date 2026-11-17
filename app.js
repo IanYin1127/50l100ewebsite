@@ -6,6 +6,7 @@ const directoryDefaults = {
   category: "全部",
   level: "全部",
   mode: "全部",
+  inventorySource: "全部",
 };
 
 const state = {
@@ -75,6 +76,12 @@ const resourceFields = fields.map(([name]) => name);
 const resourceSearchFields = resourceFields.filter((name) => name !== "平台等级");
 const schoolLevel = "校（院）级";
 const cooperationLabMode = "校企联合实验室";
+const operatingReportLabels = {
+  operating: "填报为继续运行",
+  not_continued: "填报为未继续运行",
+  conflicting: "同批填报有差异",
+  none: "未见运行填报",
+};
 const directoryLevels = ["国家级", "省部级", "市级", "区级", schoolLevel, "不适用"];
 const directoryFilterFields = [
   ["category", "categoryFilter", "全部类别"],
@@ -204,24 +211,41 @@ function classificationCounts(items, key) {
   return counts;
 }
 
+function inventorySources(item) {
+  const evidence = item["存量梳理"];
+  const years = evidence?.reportYears || [];
+  return [...years.map((year) => `${year} 年高校年报`), ...(evidence?.sources || [])];
+}
+
+function matchesInventoryAlias(item, q) {
+  return (item["存量梳理"]?.aliases || []).some((name) => name.toLowerCase().includes(q));
+}
+
+function latestOperatingReport(item) {
+  return item["存量梳理"]?.operatingReports?.[0];
+}
+
 function getFiltered() {
   const q = state.q.trim().toLowerCase().replace(/校企(?:合作|共建)实验室/g, cooperationLabMode);
   return resources.filter((item) => {
     const tags = resourceClassifications(item);
     const matchQ = !q || resourceSearchFields.some((field) => String(item[field] || "").toLowerCase().includes(q))
-      || tags.some((tag) => includes(tag, q)) || includes(item["50L清单"] || {}, q);
+      || tags.some((tag) => includes(tag, q)) || includes(item["50L清单"] || {}, q) || matchesInventoryAlias(item, q);
     const matchUni = state.university === "全部" || item["所属高校"] === state.university;
     const matchIndustry = state.industry === "全部" || item["一级产业分类"] === state.industry;
     const matchSub = state.subIndustry === "全部" || item["二级产业分类"] === state.subIndustry;
     const matchTags = tags.some((tag) => directoryFilterFields.every(([key]) =>
       state[key] === "全部" || classificationValue(tag, key) === state[key]));
-    return matchQ && matchUni && matchIndustry && matchSub && matchTags;
+    const matchInventory = state.inventorySource === "全部" || inventorySources(item).includes(state.inventorySource);
+    return matchQ && matchUni && matchIndustry && matchSub && matchTags && matchInventory;
   });
 }
 
 function initFilters() {
   setOptions(el("universityFilter"), uniqByUniversityOrder(resources.map((r) => r["所属高校"])), state.university, "全部机构");
   setOptions(el("industryFilter"), uniq(resources.map((r) => r["一级产业分类"])), state.industry, "全部一级产业");
+  setOptions(el("inventorySourceFilter"), uniq(resources.flatMap(inventorySources)), state.inventorySource, "全部来源");
+  state.inventorySource = el("inventorySourceFilter").value;
   refreshSubIndustryOptions();
   for (const [key, id, allLabel] of directoryFilterFields) {
     const choices = Object.keys(classificationCounts(resources, key));
@@ -433,6 +457,26 @@ function resourceDetailSection(title, entries) {
   </section>` : "";
 }
 
+function renderOperatingReports(item) {
+  const reports = item["存量梳理"]?.operatingReports || [];
+  if (!reports.length) return "";
+  return detail("历史运行填报", reports.map(({ period, source, state }) =>
+    `${period} · ${operatingReportLabels[state]} · ${source}`).join("\n"));
+}
+
+function renderInventoryDetails(item) {
+  const evidence = item["存量梳理"];
+  if (!evidence) return "";
+  return [
+    detail("收录来源", inventorySources(item).join("、")),
+    detail("其他登记名称", (evidence.aliases || []).join("\n")),
+    detail("建设进展", evidence.stage),
+    detail("园区归属", evidence.scopeNote),
+    detail("核对记录", evidence.note),
+    evidence.officialListing ? `<div><b>官方列名依据</b>${externalLink(evidence.officialListing, "查看官网资料 ↗")}</div>` : "",
+  ].join("");
+}
+
 function showResourceDetail(item) {
   const dialog = el("resourceDetail");
   const body = el("resourceDetailBody");
@@ -453,6 +497,7 @@ function showResourceDetail(item) {
       detail("产业分类", [item["一级产业分类"], item["二级产业分类"], item["细分产业领域"]].filter(Boolean).join(" · ")),
     ]),
     resourceDetailSection("认定与共建", [renderClassificationEvidence(item), renderCooperationDetails(item)]),
+    resourceDetailSection("运行与收录", [renderOperatingReports(item), renderPlatformUpdates(item, false), renderInventoryDetails(item)]),
   ].join("");
   dialog.showModal();
   body.scrollTop = 0;
@@ -763,6 +808,10 @@ function bindEvents() {
     state.subIndustry = e.target.value;
     render();
   });
+  el("inventorySourceFilter").addEventListener("change", (e) => {
+    state.inventorySource = e.target.value;
+    render();
+  });
   for (const [key, id] of directoryFilterFields) {
     el(id).addEventListener("change", (e) => {
       state[key] = e.target.value;
@@ -934,15 +983,24 @@ function buildDataJs(newResources) {
   const labsCount = (data.labs || []).reduce((sum, group) => sum + (group.labs || []).length, 0);
   const today = new Date().toISOString().slice(0, 10);
   const previousById = new Map(resources.map((item) => [String(item["序号"]), item]));
-  const updatedResources = newResources.map((item) => {
+  const retiredIds = data.meta?.consolidatedArchives || {};
+  const inputIds = new Set(newResources.map((item) => String(item["序号"])));
+  const updatedResources = newResources.flatMap((item) => {
+    const keptId = retiredIds[String(item["序号"])];
+    const canonical = previousById.get(keptId);
+    if (canonical && canonical["平台名称"] === item["平台名称"] && canonical["所属高校"] === item["所属高校"]) {
+      if (inputIds.has(keptId)) return [];
+      item = { ...item, "序号": keptId };
+    }
     const prior = previousById.get(String(item["序号"]));
     // A reused sequence number must not inherit another platform's classifications or sources.
     if (!prior || prior["平台名称"] !== item["平台名称"] || prior["所属高校"] !== item["所属高校"]) return item;
     return { ...prior, ...item };
   });
   const importedIds = new Set(updatedResources.map((item) => String(item["序号"])));
-  // The base Excel template can predate the cooperation list.
-  updatedResources.push(...resources.filter((item) => item["50L清单"] && !importedIds.has(String(item["序号"]))));
+  // Historical templates do not include archives added outside the base workbook.
+  updatedResources.push(...resources.filter((item) =>
+    (item["50L清单"] || item["存量梳理"]?.supplemented) && !importedIds.has(String(item["序号"]))));
   const newData = {
     ...data,
     meta: {
@@ -1070,15 +1128,19 @@ function monitoringStale() {
   return monitoring.generatedAt && Date.now() - Date.parse(monitoring.generatedAt) > 3 * 86400000;
 }
 
-function renderPlatformUpdates(item) {
+function renderPlatformUpdates(item, showReport = true) {
   const record = monitorRecord(item);
   const news = monitorNews(item);
+  const report = showReport ? latestOperatingReport(item) : null;
   return `<div class="platform-updates">
     ${monitorBadge(record)}
+    ${report ? `<small>${escapeHtml(report.period)} · ${escapeHtml(operatingReportLabels[report.state])}</small>` : ""}
     ${monitoringStale() ? '<small>监测记录已超过 3 天未刷新</small>' : ""}
     ${record.lastActivityAt ? `<small>最近公开动态：${escapeHtml(record.lastActivityAt)}</small>` : ""}
     ${news.length ? `<details><summary>成果与动态（${news.length}）</summary><ul class="mini-list">${news.slice(0, 3).map((entry) => `<li>${externalLink(entry.url, entry.title)}<br><small>${escapeHtml(entry.publishedAt || "日期待核实")} · ${escapeHtml(entry.sourceName)}</small></li>`).join("")}</ul></details>` : ""}
     ${record.homepage ? externalLink(record.homepage, "访问平台官方页面 ↗") : ""}
+    ${(record.officialMentions || []).slice(0, 3).map((url, index) =>
+      externalLink(url, `官方页面线索 ${index + 1} ↗`)).join("")}
   </div>`;
 }
 
@@ -1104,7 +1166,7 @@ function initMonitoring() {
   });
   setOptions(el("activityUniversity"), uniqByUniversityOrder(resources.map((r) => r["所属高校"])), "全部");
   setOptions(el("updateUniversity"), uniqByUniversityOrder(resources.map((r) => r["所属高校"])), "全部");
-  ["updateSearch", "updateUniversity", "updateStatusFilter", "monitorSort"].forEach((id) => {
+  ["updateSearch", "updateUniversity", "updateStatusFilter", "operatingReportFilter", "monitorSort"].forEach((id) => {
     el(id).addEventListener(id === "updateSearch" ? "input" : "change", () => {
       monitorUI.page = 1;
       monitorUI.expandedFeed = false;
@@ -1117,10 +1179,14 @@ function initMonitoring() {
   el("discoveryOverview").addEventListener("click", (event) => {
     if (event.target.closest("[data-show-discovery]")) setActiveSection("registry");
   });
-  el("resetMonitorFilters").addEventListener("click", () => applyMonitorFilter("all", false));
+  el("resetMonitorFilters").addEventListener("click", () => applyMonitorFilter({ scroll: false }));
   el("attentionQueue").addEventListener("click", (event) => {
     const button = event.target.closest("[data-monitor-filter]");
-    if (button) applyMonitorFilter(button.dataset.monitorFilter);
+    if (button) applyMonitorFilter({ status: button.dataset.monitorFilter });
+  });
+  el("operatingReportStats").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-report-filter]");
+    if (button) applyMonitorFilter({ report: button.dataset.reportFilter });
   });
   el("monitorPrev").addEventListener("click", () => changeMonitorPage(-1));
   el("monitorNext").addEventListener("click", () => changeMonitorPage(1));
@@ -1132,19 +1198,15 @@ function initMonitoring() {
     const button = event.target.closest("[data-open-resource]");
     if (!button) return;
     const item = resources.find((resource) => String(resource["序号"]) === button.dataset.openResource);
-    if (!item) return;
-    resetDirectoryFilters({ q: item["平台名称"], university: item["所属高校"] });
-    setDirectoryView("cards");
-    setActiveSection("resources");
-    window.scrollTo({ top: 0 });
-    el("globalSearch").focus({ preventScroll: true });
+    if (item) showResourceDetail(item);
   });
 }
 
-function applyMonitorFilter(status, scroll = true) {
+function applyMonitorFilter({ status = "all", report = "all", scroll = true } = {}) {
   el("updateSearch").value = "";
   el("updateUniversity").value = "全部";
   el("updateStatusFilter").value = status;
+  el("operatingReportFilter").value = report;
   el("monitorSort").value = "attention";
   monitorUI.page = 1;
   monitorUI.expandedFeed = false;
@@ -1163,11 +1225,13 @@ function renderMonitoring() {
   const q = el("updateSearch").value.trim().toLowerCase();
   const university = el("updateUniversity").value;
   const status = el("updateStatusFilter").value;
+  const filterReport = el("operatingReportFilter").value;
   const sort = el("monitorSort").value;
   const priority = { source_error: 0, needs_review: 1, verified_ceased: 2, recent_activity: 3, verified_operating: 3, unknown: 4, not_checked: 5, unconfigured: 6 };
   const selected = resources.filter((item) => (university === "全部" || item["所属高校"] === university)
     && (status === "all" || monitorRecord(item).status === status)
-    && (!q || includes(item, q) || monitorNews(item).some((entry) => includes(entry, q))));
+    && (filterReport === "all" || (latestOperatingReport(item)?.state || "none") === filterReport)
+    && (!q || includes(item, q) || matchesInventoryAlias(item, q) || monitorNews(item).some((entry) => includes(entry, q))));
   selected.sort((a, b) => {
     const ra = monitorRecord(a), rb = monitorRecord(b);
     if (sort === "latest") return String(rb.lastActivityAt || "").localeCompare(String(ra.lastActivityAt || "")) || compareResource(a, b);
@@ -1200,6 +1264,12 @@ function renderMonitoring() {
     ["已收录成果与动态", allNews.length, "保留发布日期与官方原文链接", "04"],
   ];
   el("monitorStats").innerHTML = counters.map(([label, value, note, index]) => `<article class="metric-card"><div><span>${escapeHtml(label)}</span><span class="metric-index">${index}</span></div><strong>${value}<em>${index === "04" ? "条" : "个"}</em></strong><p>${escapeHtml(note)}</p>${index === "02" ? `<div class="coverage-track" role="progressbar" aria-label="官方来源配置覆盖率" aria-valuenow="${coverage}" aria-valuemin="0" aria-valuemax="100"><span style="width:${coverage}%"></span></div>` : ""}</article>`).join("");
+  const reportCounts = countBy(resources.map((item) => ({ state: latestOperatingReport(item)?.state || "none" })), "state");
+  el("operatingReportStats").innerHTML = Object.entries(operatingReportLabels)
+    .filter(([key]) => key !== "conflicting" || reportCounts[key])
+    .map(([key, label]) => `<button class="ghost-tab" type="button" data-report-filter="${key}">
+      ${escapeHtml(label)} <strong>${reportCounts[key] || 0}</strong>
+    </button>`).join("");
   const stale = monitoringStale();
   el("collectionState").className = `collection-state ${!monitoring.generatedAt || stale || errors ? "is-warning" : "is-healthy"}`;
   el("collectionState").textContent = !monitoring.generatedAt ? "等待首次采集" : stale ? "采集记录待刷新" : errors ? `${errors} 个来源访问异常` : "来源检查正常";
@@ -1219,11 +1289,33 @@ function renderMonitoring() {
   const start = (monitorUI.page - 1) * monitorUI.pageSize;
   el("monitorView").innerHTML = selected.slice(start, start + monitorUI.pageSize).map((item) => {
     const record = monitorRecord(item);
+    const report = latestOperatingReport(item);
+    const reportLabel = report ? `${report.period} · ${operatingReportLabels[report.state]}` : item["存量梳理"]?.stage;
     const sources = (record.sourceIds || []).map((sid) => {
       const check = monitoring.sourceChecks?.[sid];
       return check ? `<li><span class="source-dot ${check.state === "error" ? "is-warning" : ""}"></span><div>${externalLink(check.url, check.name)}<small>${check.state === "error" ? `访问异常，连续 ${Number(check.consecutiveFailures) || 1} 次` : "来源检查完成"} · ${escapeHtml(dateLabel(check.checkedAt))}</small></div></li>` : `<li>${escapeHtml(sid)}：尚未检查</li>`;
     }).join("");
-    return `<details class="registry-row"><summary><span class="registry-platform"><b>${escapeHtml(item["平台名称"])}</b><small>${escapeHtml(item["所属高校"])}</small></span><span>${monitorBadge(record)}</span><time class="registry-date">${record.lastActivityAt ? escapeHtml(dateLabel(record.lastActivityAt)) : "—"}</time><span class="source-count">${(record.sourceIds || []).length} 个</span><span class="row-chevron" aria-hidden="true">⌄</span></summary><div class="registry-detail"><div><h3>公开动态与核验记录</h3>${renderPlatformUpdates(item)}${record.verification ? `<p>人工核验：${escapeHtml(record.verification.date)} ${externalLink(record.verification.evidenceUrl, "查看核验依据")}</p>` : ""}<button class="text-button" data-open-resource="${escapeHtml(item["序号"])}" type="button">查看完整平台档案 →</button></div><div><h3>监测依据</h3>${sources ? `<ul class="source-list">${sources}</ul>` : '<p class="muted">尚未配置官方来源，可通过“反馈平台信息”提供线索。</p>'}<small class="muted">来源可访问不等于平台已确认运行。</small></div></div></details>`;
+    return `<details class="registry-row">
+      <summary>
+        <span class="registry-platform"><b>${escapeHtml(item["平台名称"])}</b><small>${escapeHtml(item["所属高校"])}</small></span>
+        <span class="registry-evidence">${monitorBadge(record)}${reportLabel ? `<small>${escapeHtml(reportLabel)}</small>` : ""}</span>
+        <time class="registry-date">${record.lastActivityAt ? escapeHtml(dateLabel(record.lastActivityAt)) : "—"}</time>
+        <span class="source-count">${(record.sourceIds || []).length} 个</span><span class="row-chevron" aria-hidden="true">⌄</span>
+      </summary>
+      <div class="registry-detail">
+        <div>
+          <h3>公开动态与核验记录</h3>
+          ${renderPlatformUpdates(item, false)}
+          ${record.verification ? `<p>人工核验：${escapeHtml(record.verification.date)} ${externalLink(record.verification.evidenceUrl, "查看核验依据")}</p>` : ""}
+          <div class="detail-list">${renderOperatingReports(item)}</div>
+          <button class="text-button" data-open-resource="${escapeHtml(item["序号"])}" type="button">查看完整平台档案 →</button>
+        </div>
+        <div>
+          <h3>监测依据</h3>
+          ${sources ? `<ul class="source-list">${sources}</ul>` : '<p class="muted">尚未配置官方来源，可通过“反馈平台信息”提供线索。</p>'}
+        </div>
+      </div>
+    </details>`;
   }).join("") || '<div class="empty"><strong>没有匹配的平台</strong><p>调整搜索或状态条件，或点击“重置筛选”。</p></div>';
   el("monitorPageInfo").textContent = selected.length ? `${start + 1}–${Math.min(start + monitorUI.pageSize, selected.length)} / ${selected.length} · 第 ${monitorUI.page} / ${pages} 页` : "0 个结果";
   el("monitorPrev").disabled = monitorUI.page <= 1;
