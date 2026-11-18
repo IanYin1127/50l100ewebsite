@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-17T07:58:55.789110+00:00",
+  "generatedAt": "2026-11-18T07:35:06.203682+00:00",
   "scope": "清单内苏州机构官网，仅检查列明页面；未查到不等于停运",
   "checks": [
     {
       "unit": "上海交通大学苏州人工智能研究院",
       "url": "https://szai.sjtu.edu.cn/?list/29=",
       "kind": "news",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00",
-      "state": "ok",
-      "error": null
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00",
+      "state": "error",
+      "error": "<urlopen error [Errno 101] Network is unreachable>"
     },
     {
       "unit": "东南大学苏州校区",
       "url": "https://szxq.seu.edu.cn/24527/list.htm",
       "kind": "directory",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00",
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00",
       "state": "ok",
       "error": null
     },
@@ -22,7 +22,7 @@
       "unit": "中国人民大学苏州校区",
       "url": "https://sc.ruc.edu.cn/research/index.htm",
       "kind": "directory",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00",
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00",
       "state": "error",
       "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
     },
@@ -30,7 +30,7 @@
       "unit": "中国科学技术大学苏州高等研究院",
       "url": "https://sz.ustc.edu.cn/kxyj_list/index.html",
       "kind": "directory",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00",
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00",
       "state": "ok",
       "error": null
     },
@@ -38,7 +38,7 @@
       "unit": "华北电力大学苏州研究院",
       "url": "https://szyjy.ncepu.edu.cn/xwdt/index.htm",
       "kind": "news",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00",
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00",
       "state": "ok",
       "error": null
     },
@@ -46,15 +46,15 @@
       "unit": "山东大学苏州研究院",
       "url": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
       "kind": "directory",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00",
-      "state": "ok",
-      "error": null
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00",
+      "state": "error",
+      "error": "<urlopen error [Errno 101] Network is unreachable>"
     },
     {
       "unit": "牛津大学高等研究院（苏州）",
       "url": "https://oscar.site.ox.ac.uk/home",
       "kind": "news",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00",
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00",
       "state": "ok",
       "error": null
     },
@@ -62,7 +62,7 @@
       "unit": "苏州大学独墅湖校区",
       "url": "https://sklrmp.suda.edu.cn/",
       "kind": "平台官网",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00",
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00",
       "state": "ok",
       "error": null
     },
@@ -70,7 +70,7 @@
       "unit": "苏州工业园区新国大研究院",
       "url": "https://www.nusri.cn/news/nusrinews/",
       "kind": "news",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00",
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00",
       "state": "ok",
       "error": null
     },
@@ -78,7 +78,7 @@
       "unit": "苏州工业园区蒙纳士科学技术研究院",
       "url": "https://www.monash.edu/suzhou/news-and-events",
       "kind": "news",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00",
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00",
       "state": "error",
       "error": "robots.txt 无法核实，稍后重试"
     },
@@ -86,15 +86,15 @@
       "unit": "西交利物浦大学",
       "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
       "kind": "directory",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00",
-      "state": "ok",
-      "error": null
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00",
+      "state": "error",
+      "error": "The read operation timed out"
     },
     {
       "unit": "西安交通大学苏州研究院",
       "url": "https://www.xjtusz.cn/xinwendongtai.html",
       "kind": "news",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00",
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00",
       "state": "ok",
       "error": null
     }
@@ -107,7 +107,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "34",
@@ -116,7 +116,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "35",
@@ -125,7 +125,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "36",
@@ -136,7 +136,7 @@
         "https://sklrmp.suda.edu.cn/"
       ],
       "lastKnownActivityAt": "2026-11-16",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "37",
@@ -145,7 +145,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "38",
@@ -154,7 +154,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "39",
@@ -163,7 +163,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "40",
@@ -172,7 +172,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "41",
@@ -181,7 +181,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "42",
@@ -190,7 +190,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "43",
@@ -199,7 +199,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "44",
@@ -208,7 +208,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "45",
@@ -217,7 +217,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "46",
@@ -226,7 +226,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "47",
@@ -235,7 +235,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "48",
@@ -244,7 +244,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "49",
@@ -253,7 +253,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "50",
@@ -262,7 +262,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "51",
@@ -271,7 +271,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "52",
@@ -280,7 +280,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "54",
@@ -289,7 +289,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "55",
@@ -298,7 +298,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "56",
@@ -307,7 +307,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "57",
@@ -316,7 +316,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": "2026-10-28",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "58",
@@ -325,7 +325,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "59",
@@ -334,7 +334,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": "2026-10-28",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "60",
@@ -343,7 +343,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "61",
@@ -352,7 +352,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "62",
@@ -361,7 +361,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "63",
@@ -370,7 +370,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "64",
@@ -379,7 +379,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "65",
@@ -388,7 +388,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "66",
@@ -397,7 +397,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "67",
@@ -406,7 +406,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "68",
@@ -415,7 +415,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "69",
@@ -424,7 +424,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "70",
@@ -433,7 +433,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "71",
@@ -442,7 +442,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "72",
@@ -451,7 +451,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "73",
@@ -460,7 +460,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "74",
@@ -469,7 +469,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "75",
@@ -478,7 +478,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "76",
@@ -487,7 +487,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "77",
@@ -496,7 +496,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "78",
@@ -505,7 +505,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "79",
@@ -514,7 +514,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "80",
@@ -523,7 +523,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "81",
@@ -532,7 +532,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "82",
@@ -541,7 +541,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "83",
@@ -550,7 +550,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "84",
@@ -559,7 +559,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "85",
@@ -568,7 +568,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "86",
@@ -577,7 +577,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "87",
@@ -586,7 +586,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "88",
@@ -595,7 +595,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "89",
@@ -604,7 +604,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "90",
@@ -613,7 +613,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "91",
@@ -622,7 +622,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "92",
@@ -631,7 +631,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "93",
@@ -640,7 +640,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "94",
@@ -649,7 +649,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "95",
@@ -658,7 +658,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "96",
@@ -667,7 +667,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "97",
@@ -676,7 +676,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "98",
@@ -685,7 +685,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "99",
@@ -694,7 +694,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "100",
@@ -703,7 +703,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "101",
@@ -712,7 +712,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "102",
@@ -721,7 +721,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "103",
@@ -730,7 +730,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "104",
@@ -739,7 +739,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "105",
@@ -748,7 +748,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "106",
@@ -757,287 +757,259 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "133",
       "name": "低空创新研究院",
       "university": "西交利物浦大学",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://www.xjtlu.edu.cn/zh/research/research-institutes"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "134",
       "name": "第三代半导体电力电子器件与功率集成国际创新研究院",
       "university": "西交利物浦大学",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://www.xjtlu.edu.cn/zh/research/research-institutes"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "135",
       "name": "功能分子材料和器件优质创新平台",
       "university": "西交利物浦大学",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://www.xjtlu.edu.cn/zh/research/research-institutes"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "136",
       "name": "江苏省数据科学与认知计算工程研究中心",
       "university": "西交利物浦大学",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://www.xjtlu.edu.cn/zh/research/research-institutes"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "137",
       "name": "江苏省细胞治疗纳米制剂重点建设实验室",
       "university": "西交利物浦大学",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://www.xjtlu.edu.cn/zh/research/research-institutes"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "138",
       "name": "人工智能产业研究院",
       "university": "西交利物浦大学",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://www.xjtlu.edu.cn/zh/research/research-institutes"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "139",
       "name": "人工智能应用优质创新提升平台",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "140",
       "name": "苏州多模态大数据创新应用实验室",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "141",
       "name": "苏州工业园区 MEMS 先进高性能传感器芯片成果转化平台",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "142",
       "name": "苏州工业园区单分子单细胞成像分析创新科研平台",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "143",
       "name": "苏州工业园区泛能源大数据与智能计算创新科研平台",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "144",
       "name": "苏州市 AI 驱动生物创新药概念验证中心",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "145",
       "name": "苏州市代谢综合症新药研究重点实验室",
       "university": "西交利物浦大学",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://www.xjtlu.edu.cn/zh/research/research-institutes"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "146",
       "name": "苏州市泛能源大数据创新应用实验室",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "147",
       "name": "苏州市供应链技术重点实验室",
       "university": "西交利物浦大学",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://www.xjtlu.edu.cn/zh/research/research-institutes"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "148",
       "name": "苏州市具身智能未来教育概念验证中心",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "149",
       "name": "苏州市宽带无线接入技术重点实验室",
       "university": "西交利物浦大学",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://www.xjtlu.edu.cn/zh/research/research-institutes"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "150",
       "name": "苏州市认知计算应用技术重点实验室",
       "university": "西交利物浦大学",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://www.xjtlu.edu.cn/zh/research/research-institutes"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "151",
       "name": "苏州市新能源技术重点实验室",
       "university": "西交利物浦大学",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://www.xjtlu.edu.cn/zh/research/research-institutes"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "152",
       "name": "苏州市虚拟现实技术重点实验室建设平台",
       "university": "西交利物浦大学",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://www.xjtlu.edu.cn/zh/research/research-institutes"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "153",
       "name": "苏州市智能虚拟工程重点实验室",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "154",
       "name": "退行性疾病药物研究创新平台",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "155",
       "name": "西交利物浦大学后量子迁移交叉学科实验室",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "156",
       "name": "西浦慧湖生物大分子表征分析中心",
       "university": "西交利物浦大学",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://www.xjtlu.edu.cn/zh/research/research-institutes"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "157",
       "name": "西浦文化、传播与社会研究中心",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "158",
       "name": "西浦先进半导体研究中心",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "159",
       "name": "西浦智库",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "160",
       "name": "先进材料研究中心",
       "university": "西交利物浦大学",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://www.xjtlu.edu.cn/zh/research/research-institutes"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "161",
@@ -1048,7 +1020,7 @@
         "https://sz.ustc.edu.cn/kxyj_list/index.html"
       ],
       "lastKnownActivityAt": "2026-08-24",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "162",
@@ -1059,7 +1031,7 @@
         "https://sz.ustc.edu.cn/kxyj_list/index.html"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "163",
@@ -1070,7 +1042,7 @@
         "https://sz.ustc.edu.cn/kxyj_list/index.html"
       ],
       "lastKnownActivityAt": "2026-10-30",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "165",
@@ -1081,7 +1053,7 @@
         "https://sz.ustc.edu.cn/kxyj_list/index.html"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "166",
@@ -1092,7 +1064,7 @@
         "https://sz.ustc.edu.cn/kxyj_list/index.html"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "167",
@@ -1103,7 +1075,7 @@
         "https://sz.ustc.edu.cn/kxyj_list/index.html"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "168",
@@ -1114,7 +1086,7 @@
         "https://sz.ustc.edu.cn/kxyj_list/index.html"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "169",
@@ -1125,7 +1097,7 @@
         "https://sz.ustc.edu.cn/kxyj_list/index.html"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "170",
@@ -1136,7 +1108,7 @@
         "https://sz.ustc.edu.cn/kxyj_list/index.html"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "172",
@@ -1147,7 +1119,7 @@
         "https://sz.ustc.edu.cn/kxyj_list/index.html"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "173",
@@ -1156,7 +1128,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "1",
@@ -1167,7 +1139,7 @@
         "https://szxq.seu.edu.cn/24527/list.htm"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "2",
@@ -1176,7 +1148,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "3",
@@ -1185,7 +1157,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "4",
@@ -1196,7 +1168,7 @@
         "https://szxq.seu.edu.cn/24527/list.htm"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "5",
@@ -1205,7 +1177,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "6",
@@ -1216,7 +1188,7 @@
         "https://szxq.seu.edu.cn/24527/list.htm"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "7",
@@ -1225,7 +1197,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "8",
@@ -1236,7 +1208,7 @@
         "https://szxq.seu.edu.cn/24527/list.htm"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "9",
@@ -1247,7 +1219,7 @@
         "https://szxq.seu.edu.cn/24527/list.htm"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "10",
@@ -1258,7 +1230,7 @@
         "https://szxq.seu.edu.cn/24527/list.htm"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "11",
@@ -1269,7 +1241,7 @@
         "https://szxq.seu.edu.cn/24527/list.htm"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "12",
@@ -1278,7 +1250,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "174",
@@ -1287,7 +1259,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "175",
@@ -1296,7 +1268,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "176",
@@ -1305,7 +1277,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "177",
@@ -1314,7 +1286,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "178",
@@ -1323,7 +1295,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "179",
@@ -1332,7 +1304,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "180",
@@ -1341,7 +1313,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "181",
@@ -1350,7 +1322,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "182",
@@ -1359,7 +1331,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "122",
@@ -1368,7 +1340,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "123",
@@ -1377,7 +1349,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "124",
@@ -1386,7 +1358,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "125",
@@ -1395,7 +1367,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "126",
@@ -1404,7 +1376,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "127",
@@ -1413,7 +1385,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "128",
@@ -1422,7 +1394,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "129",
@@ -1431,7 +1403,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "130",
@@ -1440,7 +1412,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "131",
@@ -1449,7 +1421,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "132",
@@ -1458,71 +1430,61 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "23",
       "name": "过程微纳技术应用优质创新平台",
       "university": "山东大学苏州研究院",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://suz.sdu.edu.cn/kxyj/kypt.htm"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "24",
       "name": "纳米材料制备及应用实验室",
       "university": "山东大学苏州研究院",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://suz.sdu.edu.cn/kxyj/kypt.htm"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "26",
       "name": "吸附材料及热物性表征实验室",
       "university": "山东大学苏州研究院",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://suz.sdu.edu.cn/kxyj/kypt.htm"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "27",
       "name": "新能源与环保技术创新平台",
       "university": "山东大学苏州研究院",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://suz.sdu.edu.cn/kxyj/kypt.htm"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "28",
       "name": "新一代半导体材料及器件产业化平台",
       "university": "山东大学苏州研究院",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://suz.sdu.edu.cn/kxyj/kypt.htm"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "29",
       "name": "药物研发与一致性评价协同创新平台",
       "university": "山东大学苏州研究院",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "17",
@@ -1531,7 +1493,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "18",
@@ -1540,7 +1502,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "19",
@@ -1549,7 +1511,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "120",
@@ -1558,7 +1520,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "121",
@@ -1567,7 +1529,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "13",
@@ -1576,7 +1538,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "14",
@@ -1585,7 +1547,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "15",
@@ -1594,7 +1556,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "118",
@@ -1605,7 +1567,7 @@
         "https://www.nusri.cn/news/nusrinews/"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "119",
@@ -1614,7 +1576,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "20",
@@ -1623,7 +1585,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "21",
@@ -1632,7 +1594,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "22",
@@ -1641,7 +1603,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "112",
@@ -1650,7 +1612,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "113",
@@ -1659,7 +1621,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "114",
@@ -1668,7 +1630,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "115",
@@ -1677,7 +1639,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "116",
@@ -1686,7 +1648,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "117",
@@ -1695,7 +1657,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "107",
@@ -1704,7 +1666,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "108",
@@ -1713,7 +1675,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "109",
@@ -1722,7 +1684,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "110",
@@ -1731,7 +1693,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "16",
@@ -1740,34 +1702,34 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "30",
       "name": "苏州市人工智能与系统集成概念验证中心",
       "university": "上海交通大学苏州人工智能研究院",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "31",
       "name": "智能车载系统研究联合实验室",
       "university": "上海交通大学苏州人工智能研究院",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "32",
       "name": "AI 大数据联合实验室",
       "university": "上海交通大学苏州人工智能研究院",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "171",
@@ -1778,7 +1740,7 @@
         "https://sz.ustc.edu.cn/kxyj_list/index.html"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "approval-45d770dd4859803c",
@@ -1789,61 +1751,61 @@
         "https://szxq.seu.edu.cn/24527/list.htm"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L01",
       "name": "共同建设3D打印砂轮联合实验室",
       "university": "山东大学苏州研究院",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L03",
       "name": "共建“智能制造联合实验室”",
       "university": "上海交通大学苏州人工智能研究院",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L04",
       "name": "共建“具身智能机器人联合实验室”",
       "university": "上海交通大学苏州人工智能研究院",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L05",
       "name": "共建“AI多模态机器人智能研磨联合实验室”",
       "university": "上海交通大学苏州人工智能研究院",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L06",
       "name": "苏州市无人作业车智能驾驶技术创新联合体",
       "university": "上海交通大学苏州人工智能研究院",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L07",
       "name": "苏州市基于VLA大模型和触觉的人形机器人研发与应用创新联合体",
       "university": "上海交通大学苏州人工智能研究院",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L08",
@@ -1852,7 +1814,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L09",
@@ -1861,142 +1823,142 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L10",
       "name": "西浦-拜谱生物多组学质谱联合实验室",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L11",
       "name": "西浦智能工程学院-武创高新国产算力联合研究中心",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L12",
       "name": "西浦-绿蒜智能半导体校企联合研究中心",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L13",
       "name": "江苏省抗量子密码芯片技术重点实验室（筹）",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L14",
       "name": "校企实验室（名称待补）",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L15",
       "name": "苏州市医疗超声机器人技术创新联合体",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L16",
       "name": "苏州市低碳AI水处理技术与智能材料创新联合体",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L17",
       "name": "苏州市AI湿地新质装备创新联合体",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L18",
       "name": "苏州市肠癌早筛全自动核酸检测系统创新联合体",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L19",
       "name": "苏州市新型智慧医疗天地一体体系建设创新联合体",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L20",
       "name": "苏州市具身智能+AI 全域智能城市综合应用创新联合体",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L21",
       "name": "苏州市AI辅助神经精神类创新药物研发创新联合体",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L22",
       "name": "苏州市“AI+数据”融合赋能创新联合体",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L23",
       "name": "苏州市金融数据标准及数智化技术创新联合体",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L24",
       "name": "苏州智造全球AI数据协同产业创新联合体",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L25",
@@ -2005,7 +1967,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L26",
@@ -2014,7 +1976,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L27",
@@ -2023,7 +1985,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L28",
@@ -2032,7 +1994,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L29",
@@ -2041,7 +2003,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L30",
@@ -2050,7 +2012,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L31",
@@ -2059,7 +2021,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L32",
@@ -2068,7 +2030,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L33",
@@ -2077,7 +2039,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L34",
@@ -2086,7 +2048,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L35",
@@ -2095,7 +2057,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L37",
@@ -2104,7 +2066,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L38",
@@ -2113,7 +2075,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L39",
@@ -2122,7 +2084,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L40",
@@ -2131,7 +2093,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L41",
@@ -2140,7 +2102,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L42",
@@ -2149,7 +2111,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L43",
@@ -2158,7 +2120,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L44",
@@ -2167,7 +2129,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L45",
@@ -2176,7 +2138,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L47",
@@ -2185,7 +2147,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L48",
@@ -2194,7 +2156,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L50",
@@ -2203,7 +2165,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": "2026-07-28",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L51",
@@ -2212,7 +2174,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L52",
@@ -2221,16 +2183,16 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L53",
       "name": "西交利物浦大学—知行机器人校企联合实验室",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L54",
@@ -2239,7 +2201,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L55",
@@ -2248,7 +2210,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": "2026-07-28",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "L56",
@@ -2257,7 +2219,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": "2026-07-28",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT002",
@@ -2266,7 +2228,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT005",
@@ -2275,7 +2237,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT006",
@@ -2284,7 +2246,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT007",
@@ -2293,7 +2255,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT008",
@@ -2302,7 +2264,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT009",
@@ -2311,7 +2273,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT017",
@@ -2320,7 +2282,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT018",
@@ -2329,7 +2291,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": "2026-04-08",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT020",
@@ -2338,7 +2300,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT021",
@@ -2347,7 +2309,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT023",
@@ -2356,7 +2318,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": "2026-04-08",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT024",
@@ -2365,43 +2327,43 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT026",
       "name": "中鑫-西浦智慧能源联合实验室",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT027",
       "name": "西交利物浦大学—Deepleaper即时知识引擎联合实验室",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT028",
       "name": "西交利物浦大学—深圳无芯科技有限公司联合实验室",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT029",
       "name": "西浦慧湖药学院-海狸生物联合科学实验室",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT036",
@@ -2410,7 +2372,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT038",
@@ -2419,7 +2381,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT039",
@@ -2428,7 +2390,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT041",
@@ -2437,7 +2399,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT042",
@@ -2446,7 +2408,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT043",
@@ -2455,7 +2417,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT044",
@@ -2464,7 +2426,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT045",
@@ -2473,7 +2435,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT046",
@@ -2482,7 +2444,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT047",
@@ -2491,7 +2453,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT048",
@@ -2500,7 +2462,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT049",
@@ -2509,7 +2471,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT050",
@@ -2518,7 +2480,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT082",
@@ -2527,7 +2489,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT083",
@@ -2536,7 +2498,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT084",
@@ -2545,7 +2507,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT085",
@@ -2556,16 +2518,16 @@
         "https://szxq.seu.edu.cn/24527/list.htm"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT087",
       "name": "江苏省高精度自动化智能装备工程技术研究中心",
       "university": "山东大学苏州研究院",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT089",
@@ -2574,7 +2536,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT090",
@@ -2583,7 +2545,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT091",
@@ -2592,7 +2554,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT092",
@@ -2601,7 +2563,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT093",
@@ -2610,7 +2572,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT094",
@@ -2619,7 +2581,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT095",
@@ -2628,7 +2590,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT097",
@@ -2637,7 +2599,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT098",
@@ -2646,7 +2608,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT099",
@@ -2655,7 +2617,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT100",
@@ -2664,7 +2626,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT102",
@@ -2673,7 +2635,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT106",
@@ -2682,7 +2644,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT107",
@@ -2691,7 +2653,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT110",
@@ -2700,7 +2662,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT111",
@@ -2709,7 +2671,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT112",
@@ -2718,7 +2680,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT113",
@@ -2727,7 +2689,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT114",
@@ -2736,7 +2698,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT115",
@@ -2745,7 +2707,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT116",
@@ -2754,7 +2716,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT119",
@@ -2763,7 +2725,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT120",
@@ -2772,7 +2734,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT121",
@@ -2781,7 +2743,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT122",
@@ -2792,7 +2754,7 @@
         "https://sklrmp.suda.edu.cn/"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT123",
@@ -2801,7 +2763,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT124",
@@ -2810,7 +2772,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT126",
@@ -2819,7 +2781,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT131",
@@ -2828,7 +2790,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT136",
@@ -2837,7 +2799,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT138",
@@ -2846,7 +2808,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT143",
@@ -2855,7 +2817,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT146",
@@ -2864,7 +2826,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT150",
@@ -2873,7 +2835,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT152",
@@ -2882,7 +2844,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT153",
@@ -2891,7 +2853,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT154",
@@ -2900,7 +2862,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": "2026-11-06",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT155",
@@ -2909,7 +2871,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT156",
@@ -2918,7 +2880,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT157",
@@ -2927,7 +2889,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT158",
@@ -2936,7 +2898,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT160",
@@ -2945,7 +2907,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT161",
@@ -2954,7 +2916,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT162",
@@ -2963,7 +2925,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT163",
@@ -2972,7 +2934,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT164",
@@ -2981,7 +2943,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT165",
@@ -2990,7 +2952,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT166",
@@ -2999,7 +2961,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT167",
@@ -3008,7 +2970,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT168",
@@ -3017,7 +2979,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT169",
@@ -3026,7 +2988,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT170",
@@ -3035,7 +2997,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT171",
@@ -3044,7 +3006,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT172",
@@ -3053,7 +3015,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT175",
@@ -3062,7 +3024,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT178",
@@ -3071,7 +3033,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT180",
@@ -3080,7 +3042,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT181",
@@ -3089,7 +3051,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT182",
@@ -3098,7 +3060,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT184",
@@ -3107,7 +3069,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT191",
@@ -3118,7 +3080,7 @@
         "https://szxq.seu.edu.cn/24527/list.htm"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT192",
@@ -3129,7 +3091,7 @@
         "https://szxq.seu.edu.cn/24527/list.htm"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT194",
@@ -3138,7 +3100,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT200",
@@ -3147,16 +3109,16 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT205",
       "name": "苏州市晶硅太阳能电池工程技术研究中心",
       "university": "山东大学苏州研究院",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT206",
@@ -3165,7 +3127,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT207",
@@ -3174,7 +3136,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT220",
@@ -3183,7 +3145,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT247",
@@ -3192,7 +3154,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT263",
@@ -3201,7 +3163,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT264",
@@ -3210,7 +3172,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT265",
@@ -3219,7 +3181,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT269",
@@ -3228,7 +3190,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT270",
@@ -3237,7 +3199,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT272",
@@ -3246,7 +3208,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT273",
@@ -3255,7 +3217,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT274",
@@ -3264,7 +3226,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT275",
@@ -3273,7 +3235,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT277",
@@ -3282,7 +3244,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT278",
@@ -3291,7 +3253,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT282",
@@ -3300,7 +3262,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT283",
@@ -3309,7 +3271,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT284",
@@ -3318,7 +3280,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT285",
@@ -3327,7 +3289,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT286",
@@ -3336,7 +3298,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT287",
@@ -3345,7 +3307,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT288",
@@ -3354,7 +3316,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT289",
@@ -3363,16 +3325,16 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT298",
       "name": "苏州工业园区情感计算与互动健康交叉创新科研平台",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT306",
@@ -3381,7 +3343,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT308",
@@ -3390,7 +3352,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT309",
@@ -3399,7 +3361,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT310",
@@ -3408,7 +3370,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT311",
@@ -3417,7 +3379,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT312",
@@ -3426,7 +3388,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT313",
@@ -3435,7 +3397,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT314",
@@ -3444,7 +3406,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT315",
@@ -3453,7 +3415,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT316",
@@ -3462,7 +3424,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT317",
@@ -3471,7 +3433,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": "2026-11-13",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT319",
@@ -3480,7 +3442,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT320",
@@ -3489,7 +3451,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT321",
@@ -3498,7 +3460,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT322",
@@ -3507,7 +3469,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT323",
@@ -3516,7 +3478,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT325",
@@ -3525,7 +3487,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT326",
@@ -3534,7 +3496,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT327",
@@ -3543,7 +3505,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT328",
@@ -3552,7 +3514,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT329",
@@ -3561,7 +3523,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT330",
@@ -3570,7 +3532,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT331",
@@ -3579,7 +3541,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT332",
@@ -3588,7 +3550,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT333",
@@ -3597,7 +3559,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT334",
@@ -3606,7 +3568,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT335",
@@ -3615,7 +3577,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT336",
@@ -3624,7 +3586,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT338",
@@ -3633,7 +3595,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT339",
@@ -3642,7 +3604,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT340",
@@ -3653,7 +3615,7 @@
         "https://szxq.seu.edu.cn/24527/list.htm"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT344",
@@ -3662,7 +3624,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT345",
@@ -3671,7 +3633,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT346",
@@ -3680,7 +3642,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT349",
@@ -3689,7 +3651,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT350",
@@ -3698,7 +3660,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT351",
@@ -3707,7 +3669,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT352",
@@ -3718,7 +3680,7 @@
         "https://sz.ustc.edu.cn/kxyj_list/index.html"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT355",
@@ -3727,7 +3689,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT357",
@@ -3736,7 +3698,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT358",
@@ -3745,7 +3707,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT359",
@@ -3754,7 +3716,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT360",
@@ -3763,7 +3725,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT361",
@@ -3772,7 +3734,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT362",
@@ -3781,7 +3743,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT363",
@@ -3790,7 +3752,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT364",
@@ -3799,7 +3761,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT365",
@@ -3808,7 +3770,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT366",
@@ -3817,7 +3779,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT367",
@@ -3826,7 +3788,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT368",
@@ -3835,7 +3797,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT369",
@@ -3844,7 +3806,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT371",
@@ -3853,7 +3815,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT372",
@@ -3862,7 +3824,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT373",
@@ -3871,7 +3833,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT374",
@@ -3880,7 +3842,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT375",
@@ -3889,7 +3851,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT376",
@@ -3898,7 +3860,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT378",
@@ -3907,7 +3869,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT379",
@@ -3916,7 +3878,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT380",
@@ -3925,7 +3887,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT381",
@@ -3934,7 +3896,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT382",
@@ -3943,7 +3905,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT383",
@@ -3952,7 +3914,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT384",
@@ -3961,7 +3923,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT385",
@@ -3970,7 +3932,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT393",
@@ -3979,7 +3941,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT395",
@@ -3988,7 +3950,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT396",
@@ -3997,7 +3959,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT397",
@@ -4006,7 +3968,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT398",
@@ -4015,69 +3977,61 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT405",
       "name": "中药煎制人工智能联合实验室",
       "university": "山东大学苏州研究院",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://suz.sdu.edu.cn/kxyj/kypt.htm"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT409",
       "name": "新能源与环保技术研究所",
       "university": "山东大学苏州研究院",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT410",
       "name": "智能制造联合实验室",
       "university": "山东大学苏州研究院",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT411",
       "name": "智能检测技术联合实验室",
       "university": "山东大学苏州研究院",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://suz.sdu.edu.cn/kxyj/kypt.htm"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT412",
       "name": "智能环保技术联合实验室",
       "university": "山东大学苏州研究院",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://suz.sdu.edu.cn/kxyj/kypt.htm"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT413",
       "name": "物联网技术联合实验室",
       "university": "山东大学苏州研究院",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://suz.sdu.edu.cn/kxyj/kypt.htm"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT415",
@@ -4086,7 +4040,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT418",
@@ -4095,7 +4049,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT419",
@@ -4104,7 +4058,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT420",
@@ -4113,7 +4067,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT423",
@@ -4122,7 +4076,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT426",
@@ -4131,7 +4085,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT427",
@@ -4140,7 +4094,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT428",
@@ -4149,7 +4103,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT430",
@@ -4158,7 +4112,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT431",
@@ -4167,7 +4121,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT432",
@@ -4176,7 +4130,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT433",
@@ -4185,7 +4139,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT436",
@@ -4196,7 +4150,7 @@
         "https://www.nusri.cn/news/nusrinews/"
       ],
       "lastKnownActivityAt": "2026-10-14",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT438",
@@ -4205,7 +4159,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT439",
@@ -4214,7 +4168,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT440",
@@ -4223,7 +4177,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT441",
@@ -4232,7 +4186,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT442",
@@ -4241,7 +4195,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT443",
@@ -4250,7 +4204,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT444",
@@ -4259,7 +4213,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT445",
@@ -4268,7 +4222,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT446",
@@ -4277,7 +4231,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT447",
@@ -4286,7 +4240,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT448",
@@ -4295,101 +4249,97 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT449",
       "name": "生命科学楼五大卓越中心",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT450",
       "name": "西交利物浦大学-华芯先进半导体校企联合研究院",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT451",
       "name": "西交利物浦大学-友达光电校企联合研究中心",
       "university": "西交利物浦大学",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://www.xjtlu.edu.cn/zh/research/research-institutes"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT452",
       "name": "西交利物浦大学-红与蓝微电子校企联合研究中心",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT453",
       "name": "西交利物浦大学悦丰岛生态站",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT454",
       "name": "西浦-派光智慧联合研究中心",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT455",
       "name": "西浦-派格慢病研究院",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT456",
       "name": "西浦-益航机器人联合研究中心",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT457",
       "name": "西浦-联盛经皮给药技术研究院",
       "university": "西交利物浦大学",
-      "status": "found_in_official_source",
-      "evidenceUrls": [
-        "https://www.xjtlu.edu.cn/zh/research/research-institutes"
-      ],
+      "status": "source_unavailable",
+      "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT458",
       "name": "西浦集萃学院-快可光伏院企联合研究中心",
       "university": "西交利物浦大学",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT459",
@@ -4398,7 +4348,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT460",
@@ -4407,7 +4357,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT463",
@@ -4416,7 +4366,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT464",
@@ -4425,7 +4375,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT465",
@@ -4434,7 +4384,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT466",
@@ -4443,7 +4393,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT468",
@@ -4452,7 +4402,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT469",
@@ -4461,7 +4411,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT470",
@@ -4470,7 +4420,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT471",
@@ -4481,7 +4431,7 @@
         "https://szxq.seu.edu.cn/24527/list.htm"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT472",
@@ -4492,7 +4442,7 @@
         "https://szxq.seu.edu.cn/24527/list.htm"
       ],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT475",
@@ -4501,7 +4451,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT476",
@@ -4510,7 +4460,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT477",
@@ -4519,7 +4469,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT478",
@@ -4528,7 +4478,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT479",
@@ -4537,7 +4487,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT480",
@@ -4546,7 +4496,7 @@
       "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT484",
@@ -4555,7 +4505,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT486",
@@ -4564,25 +4514,25 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT487",
       "name": "山东大学苏州生殖医学协同创新中心",
       "university": "山东大学苏州研究院",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT488",
       "name": "微生物技术国家重点实验室苏州合作基地",
       "university": "山东大学苏州研究院",
-      "status": "not_found_in_checked_pages",
+      "status": "source_unavailable",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT489",
@@ -4591,7 +4541,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT491",
@@ -4600,7 +4550,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT492",
@@ -4609,7 +4559,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT493",
@@ -4618,7 +4568,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT494",
@@ -4627,7 +4577,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT495",
@@ -4636,7 +4586,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT509",
@@ -4645,7 +4595,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT510",
@@ -4654,7 +4604,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT511",
@@ -4663,7 +4613,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "PT513",
@@ -4672,7 +4622,7 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "S1dd10de419",
@@ -4681,7 +4631,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "V01",
@@ -4690,7 +4640,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": "2026-07-20",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "V02",
@@ -4699,7 +4649,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": "2026-07-20",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "V03",
@@ -4708,7 +4658,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": "2026-07-20",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "V04",
@@ -4717,7 +4667,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": "2026-07-29",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "V05",
@@ -4726,7 +4676,7 @@
       "status": "not_found_in_checked_pages",
       "evidenceUrls": [],
       "lastKnownActivityAt": "2026-07-29",
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     },
     {
       "platformId": "V06",
@@ -4735,17 +4685,10 @@
       "status": "no_verified_local_source",
       "evidenceUrls": [],
       "lastKnownActivityAt": null,
-      "checkedAt": "2026-11-17T07:58:55.789110+00:00"
+      "checkedAt": "2026-11-18T07:35:06.203682+00:00"
     }
   ],
   "candidates": [
-    {
-      "name": "苏州大数据与人工智能研究工程中心",
-      "university": "中国科学技术大学苏州高等研究院",
-      "url": "https://sz.ustc.edu.cn/kxyj_show/171.html",
-      "directoryUrl": "https://sz.ustc.edu.cn/kxyj_list/index.html",
-      "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-    },
     {
       "name": "苏州东南动漫公共技术服务平台",
       "university": "东南大学苏州校区",
@@ -4782,122 +4725,10 @@
       "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
     },
     {
-      "name": "退行性疾病药物研究平台",
-      "university": "西交利物浦大学",
-      "url": "https://www.xjtlu.edu.cn/zh/research/institutes-centres-and-labs/innovation-platform-for-chronic-disease-study",
-      "directoryUrl": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
-      "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-    },
-    {
-      "name": "苏州工业园区情感计算与互动健康交叉创新（科研）平台",
-      "university": "西交利物浦大学",
-      "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes/suzhou-industrial-park-affective-computing-interactive-health-interdisciplinary-innovation-research-platform",
-      "directoryUrl": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
-      "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-    },
-    {
-      "name": "西浦人工智能产业研究院",
-      "university": "西交利物浦大学",
-      "url": "https://www.xjtlu.edu.cn/zh/research/research-centre/ai-university-research-centre",
-      "directoryUrl": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
-      "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-    },
-    {
-      "name": "西浦文化传播与社会研究中心",
-      "university": "西交利物浦大学",
-      "url": "https://www.xjtlu.edu.cn/zh/research/research-centre/cccs",
-      "directoryUrl": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
-      "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-    },
-    {
-      "name": "先进半导体研究中心",
-      "university": "西交利物浦大学",
-      "url": "https://www.xjtlu.edu.cn/zh/professional-services/advanced-semiconductor-research-center",
-      "directoryUrl": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
-      "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-    },
-    {
-      "name": "西交利物浦大学后量子迁移交叉实验室",
-      "university": "西交利物浦大学",
-      "url": "https://www.xjtlu.edu.cn/zh/xjtlu-pqc-x",
-      "directoryUrl": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
-      "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-    },
-    {
-      "name": "西浦低空创新研究院",
-      "university": "西交利物浦大学",
-      "url": "https://www.xjtlu.edu.cn/zh/research/research-institutes/institute-for-low-altitude-innovation",
-      "directoryUrl": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
-      "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-    },
-    {
-      "name": "和谐管理研究中心",
-      "university": "西交利物浦大学",
-      "url": "https://www.xjtlu.edu.cn/zh/research/institutes-centres-and-labs/hexie-management-research-centre",
-      "directoryUrl": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
-      "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-    },
-    {
-      "name": "西浦派格慢病研究院",
-      "university": "西交利物浦大学",
-      "url": "https://www.xjtlu.edu.cn/zh/professional-services/xjtlu-pegbio-joint-research-institute-of-chronic-diseases",
-      "directoryUrl": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
-      "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-    },
-    {
-      "name": "中鑫-西浦智慧能碳联合实验室",
-      "university": "西交利物浦大学",
-      "url": "https://www.xjtlu.edu.cn/zh/professional-services/zooming-new-energy-xjtlu-smart-energy-joint-laboratory",
-      "directoryUrl": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
-      "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-    },
-    {
-      "name": "西浦-派光人工智能联合研究中心",
-      "university": "西交利物浦大学",
-      "url": "https://www.xjtlu.edu.cn/zh/professional-services/xjtlu-pai-ai-collaborative-research-centre",
-      "directoryUrl": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
-      "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-    },
-    {
-      "name": "西浦- 益航机器人校企联合研究中心",
-      "university": "西交利物浦大学",
-      "url": "https://www.xjtlu.edu.cn/zh/professional-services/xjtlu-ugo-robotics-research-centre",
-      "directoryUrl": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
-      "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-    },
-    {
-      "name": "西浦-华芯先进半导体校企联合研究院",
-      "university": "西交利物浦大学",
-      "url": "https://www.xjtlu.edu.cn/zh/professional-services/huaxin-advanced-semiconductor-collaborative-research-institute",
-      "directoryUrl": "https://www.xjtlu.edu.cn/zh/research/research-institutes",
-      "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-    },
-    {
-      "name": "山东大学技术转移转化分中心（苏州）",
-      "university": "山东大学苏州研究院",
-      "url": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
-      "directoryUrl": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
-      "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-    },
-    {
-      "name": "生物医药技术联合实验室",
-      "university": "山东大学苏州研究院",
-      "url": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
-      "directoryUrl": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
-      "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-    },
-    {
-      "name": "生物医药研发与药物评价创新中心",
-      "university": "山东大学苏州研究院",
-      "url": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
-      "directoryUrl": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
-      "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
-    },
-    {
-      "name": "智能制造技术联合实验室",
-      "university": "山东大学苏州研究院",
-      "url": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
-      "directoryUrl": "https://suz.sdu.edu.cn/kxyj/kypt.htm",
+      "name": "苏州大数据与人工智能研究工程中心",
+      "university": "中国科学技术大学苏州高等研究院",
+      "url": "https://sz.ustc.edu.cn/kxyj_show/171.html",
+      "directoryUrl": "https://sz.ustc.edu.cn/kxyj_list/index.html",
       "reason": "学校目录中新发现；缺少完整正式认定与最新运行依据，待核实"
     }
   ],
