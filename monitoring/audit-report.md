@@ -1,6 +1,6 @@
 # 苏州机构平台核查报告
 
-核查时间：2026-11-22T06:55:58.895337+00:00
+核查时间：2026-11-23T07:44:48.429435+00:00
 
 清单内苏州机构官网，仅检查列明页面；未查到不等于停运
 
@@ -25,6 +25,12 @@
 
 ## 学校目录中新发现，待核实
 
+- **苏州东南动漫公共技术服务平台** · 东南大学苏州校区 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://szxq.seu.edu.cn/2019/0604/c24527a276173/page.htm)
+- **苏州市高频高功率器件与集成技术研究中心** · 东南大学苏州校区 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://szxq.seu.edu.cn/2019/0604/c24527a276168/page.htm)
+- **苏州市儿童发展与学习科学媒体技术实验室** · 东南大学苏州校区 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://szxq.seu.edu.cn/2019/0604/c24527a276155/page.htm)
+- **苏州市电气设备与自动化重点实验室** · 东南大学苏州校区 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://szxq.seu.edu.cn/2019/0604/c24527a276148/page.htm)
+- **苏州市无线网络与信息安全重点实验室** · 东南大学苏州校区 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://szxq.seu.edu.cn/2019/0604/c24527a276134/page.htm)
+- **苏州大数据与人工智能研究工程中心** · 中国科学技术大学苏州高等研究院 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://sz.ustc.edu.cn/kxyj_show/171.html)
 - **退行性疾病药物研究平台** · 西交利物浦大学 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://www.xjtlu.edu.cn/zh/research/institutes-centres-and-labs/innovation-platform-for-chronic-disease-study)
 - **苏州工业园区情感计算与互动健康交叉创新（科研）平台** · 西交利物浦大学 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://www.xjtlu.edu.cn/zh/research/research-institutes/suzhou-industrial-park-affective-computing-interactive-health-interdisciplinary-innovation-research-platform)
 - **西浦人工智能产业研究院** · 西交利物浦大学 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://www.xjtlu.edu.cn/zh/research/research-centre/ai-university-research-centre)
@@ -38,12 +44,6 @@
 - **西浦-派光人工智能联合研究中心** · 西交利物浦大学 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://www.xjtlu.edu.cn/zh/professional-services/xjtlu-pai-ai-collaborative-research-centre)
 - **西浦- 益航机器人校企联合研究中心** · 西交利物浦大学 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://www.xjtlu.edu.cn/zh/professional-services/xjtlu-ugo-robotics-research-centre)
 - **西浦-华芯先进半导体校企联合研究院** · 西交利物浦大学 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://www.xjtlu.edu.cn/zh/professional-services/huaxin-advanced-semiconductor-collaborative-research-institute)
-- **苏州东南动漫公共技术服务平台** · 东南大学苏州校区 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://szxq.seu.edu.cn/2019/0604/c24527a276173/page.htm)
-- **苏州市高频高功率器件与集成技术研究中心** · 东南大学苏州校区 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://szxq.seu.edu.cn/2019/0604/c24527a276168/page.htm)
-- **苏州市儿童发展与学习科学媒体技术实验室** · 东南大学苏州校区 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://szxq.seu.edu.cn/2019/0604/c24527a276155/page.htm)
-- **苏州市电气设备与自动化重点实验室** · 东南大学苏州校区 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://szxq.seu.edu.cn/2019/0604/c24527a276148/page.htm)
-- **苏州市无线网络与信息安全重点实验室** · 东南大学苏州校区 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://szxq.seu.edu.cn/2019/0604/c24527a276134/page.htm)
-- **苏州大数据与人工智能研究工程中心** · 中国科学技术大学苏州高等研究院 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://sz.ustc.edu.cn/kxyj_show/171.html)
 - **山东大学技术转移转化分中心（苏州）** · 山东大学苏州研究院 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://suz.sdu.edu.cn/kxyj/kypt.htm)
 - **生物医药技术联合实验室** · 山东大学苏州研究院 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://suz.sdu.edu.cn/kxyj/kypt.htm)
 - **生物医药研发与药物评价创新中心** · 山东大学苏州研究院 · 学校目录中新发现；缺少完整正式认定与最新运行依据，待核实 · [学校原文](https://suz.sdu.edu.cn/kxyj/kypt.htm)
